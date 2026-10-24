@@ -1,0 +1,2701 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="大学课程个人学习讲义，按学期和课程组织，支持网页端直接阅读">
+      
+      
+      
+        <link rel="canonical" href="https://yunbianmailang.github.io/university-course-materials/%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%B3%BB%E7%BB%9F/%E7%AC%AC6%E8%AE%B2_%E6%8B%89%E6%99%AE%E6%8B%89%E6%96%AF%E5%8F%98%E6%8D%A2%E7%9A%84%E6%80%A7%E8%B4%A8/">
+      
+      
+        <link rel="prev" href="../%E7%AC%AC5%E8%AE%B2_%E5%85%B8%E5%9E%8B%E5%8F%98%E6%8D%A2%E5%AF%B9%E4%B8%8E%E6%8A%BD%E6%A0%B7%E5%AE%9A%E7%90%86/">
+      
+      
+        <link rel="next" href="../%E7%AC%AC7%E8%AE%B2_%E6%8B%89%E6%99%AE%E6%8B%89%E6%96%AF%E9%80%86%E5%8F%98%E6%8D%A2%E4%B8%8E%20s%20%E5%9F%9F%E6%A8%A1%E5%9E%8B/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>第6讲 拉普拉斯变换的性质 - 大学课程学习资料</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/custom.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#第6讲-拉普拉斯变换的性质" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../.." title="大学课程学习资料" class="md-header__button md-logo" aria-label="大学课程学习资料" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            大学课程学习资料
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              第6讲 拉普拉斯变换的性质
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="indigo"  aria-label="切换到深色模式"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="切换到深色模式" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="indigo"  aria-label="切换到浅色模式"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="切换到浅色模式" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="分享" aria-label="分享" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/yunbianmailang/university-course-materials" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    大学课程学习资料
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="大学课程学习资料" class="md-nav__button md-logo" aria-label="大学课程学习资料" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    大学课程学习资料
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/yunbianmailang/university-course-materials" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    大学课程学习资料
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    首页
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    复变函数与数理方程
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    复变函数与数理方程
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0%E4%B8%8E%E6%95%B0%E7%90%86%E6%96%B9%E7%A8%8B/%E8%AF%BE%E7%A8%8B%E8%AF%B4%E6%98%8E/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    课程说明
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0%E4%B8%8E%E6%95%B0%E7%90%86%E6%96%B9%E7%A8%8B/%E7%AC%AC1%E8%AE%B2_%E5%A4%8D%E6%95%B0%E5%87%A0%E4%BD%95%E6%A8%A1%E7%9A%84%E6%9E%81%E5%80%BC%E4%B8%8E%E6%8C%87%E6%95%B0%E6%98%A0%E5%B0%84/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第1讲 复数几何模的极值与指数映射
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0%E4%B8%8E%E6%95%B0%E7%90%86%E6%96%B9%E7%A8%8B/%E7%AC%AC2%E8%AE%B2_%E5%A4%8D%E5%B9%82%E8%A7%A3%E6%9E%90%E6%80%A7%E4%B8%8E%E5%A4%8D%E5%B9%B3%E9%9D%A2%E6%98%A0%E5%B0%84/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第2讲 复幂解析性与复平面映射
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0%E4%B8%8E%E6%95%B0%E7%90%86%E6%96%B9%E7%A8%8B/%E7%AC%AC3%E8%AE%B2_%E5%A4%8D%E7%A7%AF%E5%88%86%E6%9F%AF%E8%A5%BF%E5%85%AC%E5%BC%8F%E4%B8%8E%E8%A7%A3%E6%9E%90%E5%87%BD%E6%95%B0%E7%9A%84%E6%95%B4%E4%BD%93%E6%80%A7%E8%B4%A8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第3讲 复积分柯西公式与解析函数的整体性质
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0%E4%B8%8E%E6%95%B0%E7%90%86%E6%96%B9%E7%A8%8B/%E7%AC%AC4%E8%AE%B2_%E5%B9%82%E7%BA%A7%E6%95%B0%E6%94%B6%E6%95%9B%E4%B8%8E%E6%B3%B0%E5%8B%92%E6%B4%9B%E6%9C%97%E5%B1%95%E5%BC%80/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第4讲 幂级数收敛与泰勒洛朗展开
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0%E4%B8%8E%E6%95%B0%E7%90%86%E6%96%B9%E7%A8%8B/%E7%AC%AC5%E8%AE%B2_%E9%9B%B6%E7%82%B9%E5%A5%87%E7%82%B9%E4%B8%8E%E7%95%99%E6%95%B0%E7%A7%AF%E5%88%86/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第5讲 零点奇点与留数积分
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    信号与系统
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    信号与系统
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E8%AF%BE%E7%A8%8B%E8%AF%B4%E6%98%8E/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    课程说明
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC1%E8%AE%B2_%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF%E4%B8%8E%E5%9F%BA%E6%9C%AC%E8%AF%AD%E8%A8%80/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第1讲 学习路线与基本语言
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC2%E8%AE%B2_%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B%E7%BB%8F%E5%85%B8%E6%B3%95%E4%B8%8E%E5%93%8D%E5%BA%94%E5%88%86%E8%A7%A3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第2讲 微分方程经典法与响应分解
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC3%E8%AE%B2_%E5%82%85%E9%87%8C%E5%8F%B6%E7%BA%A7%E6%95%B0%E4%B8%8E%E9%A2%91%E8%B0%B1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第3讲 傅里叶级数与频谱
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC4%E8%AE%B2_%E5%82%85%E9%87%8C%E5%8F%B6%E5%8F%98%E6%8D%A2%E4%B8%8E%E5%85%B8%E5%9E%8B%E4%BF%A1%E5%8F%B7%E9%A2%91%E8%B0%B1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第4讲 傅里叶变换与典型信号频谱
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC5%E8%AE%B2_%E5%85%B8%E5%9E%8B%E5%8F%98%E6%8D%A2%E5%AF%B9%E4%B8%8E%E6%8A%BD%E6%A0%B7%E5%AE%9A%E7%90%86/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第5讲 典型变换对与抽样定理
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第6讲 拉普拉斯变换的性质
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第6讲 拉普拉斯变换的性质
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-本课路线与必要准备" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1 本课路线与必要准备
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-从傅里叶变换到拉普拉斯变换" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2 从傅里叶变换到拉普拉斯变换
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2 从傅里叶变换到拉普拉斯变换">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#单边定义与原点约定" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        单边定义与原点约定
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#逆变换从哪里来" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        逆变换从哪里来
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-收敛域决定变换能在哪里使用" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3 收敛域决定变换能在哪里使用
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-常用变换对及其推导" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4 常用变换对及其推导
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4 常用变换对及其推导">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#阶跃-指数与幂函数" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        阶跃 指数与幂函数
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#冲激与线性" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        冲激与线性
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#正弦与余弦" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        正弦与余弦
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-与傅里叶谱的关系" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5 与傅里叶谱的关系
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-时域微分与零时刻跳变" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6 时域微分与零时刻跳变
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6 时域微分与零时刻跳变">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#冲激偶例题" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        冲激偶例题
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-s-域微分-积分与时域积分" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7 s 域微分 积分与时域积分
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7 s 域微分 积分与时域积分">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#对-s-求导对应时域乘负-t" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        对 s 求导对应时域乘负 t
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#对-s-积分对应时域除以-t" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        对 s 积分对应时域除以 t
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#时域积分对应除以-s-并保留初始积累" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        时域积分对应除以 s 并保留初始积累
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-电容模型与-rc-开关例题" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8 电容模型与 RC 开关例题
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8 电容模型与 RC 开关例题">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#零初始电压的完整计算" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        零初始电压的完整计算
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-时域延迟与四种斜坡" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9 时域延迟与四种斜坡
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-右边周期信号" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10 右边周期信号
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10 右边周期信号">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#周期矩形脉冲例题" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        周期矩形脉冲例题
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-s-域平移与衰减方波" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11 s 域平移与衰减方波
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="11 s 域平移与衰减方波">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#衰减的双极性方波例题" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        衰减的双极性方波例题
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-尺度变换" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12 尺度变换
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13-初值定理与终值定理" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13 初值定理与终值定理
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="13 初值定理与终值定理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#初值定理" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        初值定理
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#终值定理" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        终值定理
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#三个并排判断" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三个并排判断
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14-两种卷积定理与算子意义" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14 两种卷积定理与算子意义
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="14 两种卷积定理与算子意义">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#时域卷积" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        时域卷积
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#复频域卷积" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        复频域卷积
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#积分器与微分器" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        积分器与微分器
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#15-性质速查与易错提醒" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        15 性质速查与易错提醒
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#16-自测与关键步骤详解" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        16 自测与关键步骤详解
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="16 自测与关键步骤详解">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#答案与检验" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        答案与检验
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#17-作业-复习与资料索引" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        17 作业 复习与资料索引
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC7%E8%AE%B2_%E6%8B%89%E6%99%AE%E6%8B%89%E6%96%AF%E9%80%86%E5%8F%98%E6%8D%A2%E4%B8%8E%20s%20%E5%9F%9F%E6%A8%A1%E5%9E%8B/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第7讲 拉普拉斯逆变换与 s 域模型
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC8%E8%AE%B2_%E9%A2%91%E7%8E%87%E5%93%8D%E5%BA%94%E4%B8%8E%E7%A8%B3%E5%AE%9A%E6%80%A7/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第8讲 频率响应与稳定性
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    基础物理学2（光学）
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    基础物理学2（光学）
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%9F%BA%E7%A1%80%E7%89%A9%E7%90%86%E5%AD%A62/%E8%AF%BE%E7%A8%8B%E8%AF%B4%E6%98%8E/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    课程说明
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%9F%BA%E7%A1%80%E7%89%A9%E7%90%86%E5%AD%A62/%E7%AC%AC1%E8%AE%B2_%E5%87%A0%E4%BD%95%E5%85%89%E5%AD%A6%E7%AE%80%E4%BB%8B/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第1讲 几何光学简介
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%9F%BA%E7%A1%80%E7%89%A9%E7%90%86%E5%AD%A62/%E7%AC%AC2%E8%AE%B2_%E6%B3%A2%E5%8A%A8%E5%85%89%E5%AD%A6%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86%EF%BC%88%E4%B8%80%EF%BC%89/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第2讲 波动光学基本原理（一）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%9F%BA%E7%A1%80%E7%89%A9%E7%90%86%E5%AD%A62/%E7%AC%AC3%E8%AE%B2_%E5%85%89%E7%9A%84%E5%B9%B2%E6%B6%89%E4%B8%8E%E6%97%B6%E7%A9%BA%E7%9B%B8%E5%B9%B2%E6%80%A7/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第3讲 光的干涉与时空相干性
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%9F%BA%E7%A1%80%E7%89%A9%E7%90%86%E5%AD%A62/%E7%AC%AC4%E8%AE%B2_%E5%85%89%E7%9A%84%E8%A1%8D%E5%B0%84%E4%B8%8E%E5%88%86%E8%BE%A8%E6%9C%AC%E9%A2%86/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第4讲 光的衍射与分辨本领
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%9F%BA%E7%A1%80%E7%89%A9%E7%90%86%E5%AD%A62/%E7%AC%AC5%E8%AE%B2_%E8%A1%8D%E5%B0%84%E5%85%89%E6%A0%85%E4%B8%8E%E6%99%B6%E4%BD%93%E8%A1%8D%E5%B0%84/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第5讲 衍射光栅与晶体衍射
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%9F%BA%E7%A1%80%E7%89%A9%E7%90%86%E5%AD%A62/%E7%AC%AC6%E8%AE%B2_%E5%81%8F%E6%8C%AF%E6%80%81%E4%B8%8E%E8%8F%B2%E6%B6%85%E8%80%B3%E5%85%AC%E5%BC%8F/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第6讲 偏振态与菲涅耳公式
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%9F%BA%E7%A1%80%E7%89%A9%E7%90%86%E5%AD%A62/%E7%AC%AC7%E8%AE%B2_%E5%8F%8C%E6%8A%98%E5%B0%84%E4%B8%8E%E5%81%8F%E6%8C%AF%E5%85%89%E5%BA%94%E7%94%A8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第7讲 双折射与偏振光应用
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-本课路线与必要准备" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1 本课路线与必要准备
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-从傅里叶变换到拉普拉斯变换" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2 从傅里叶变换到拉普拉斯变换
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2 从傅里叶变换到拉普拉斯变换">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#单边定义与原点约定" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        单边定义与原点约定
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#逆变换从哪里来" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        逆变换从哪里来
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-收敛域决定变换能在哪里使用" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3 收敛域决定变换能在哪里使用
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-常用变换对及其推导" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4 常用变换对及其推导
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4 常用变换对及其推导">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#阶跃-指数与幂函数" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        阶跃 指数与幂函数
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#冲激与线性" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        冲激与线性
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#正弦与余弦" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        正弦与余弦
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-与傅里叶谱的关系" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5 与傅里叶谱的关系
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-时域微分与零时刻跳变" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6 时域微分与零时刻跳变
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6 时域微分与零时刻跳变">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#冲激偶例题" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        冲激偶例题
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-s-域微分-积分与时域积分" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7 s 域微分 积分与时域积分
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7 s 域微分 积分与时域积分">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#对-s-求导对应时域乘负-t" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        对 s 求导对应时域乘负 t
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#对-s-积分对应时域除以-t" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        对 s 积分对应时域除以 t
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#时域积分对应除以-s-并保留初始积累" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        时域积分对应除以 s 并保留初始积累
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-电容模型与-rc-开关例题" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8 电容模型与 RC 开关例题
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8 电容模型与 RC 开关例题">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#零初始电压的完整计算" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        零初始电压的完整计算
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-时域延迟与四种斜坡" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9 时域延迟与四种斜坡
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-右边周期信号" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10 右边周期信号
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10 右边周期信号">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#周期矩形脉冲例题" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        周期矩形脉冲例题
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-s-域平移与衰减方波" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11 s 域平移与衰减方波
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="11 s 域平移与衰减方波">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#衰减的双极性方波例题" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        衰减的双极性方波例题
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-尺度变换" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12 尺度变换
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13-初值定理与终值定理" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13 初值定理与终值定理
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="13 初值定理与终值定理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#初值定理" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        初值定理
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#终值定理" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        终值定理
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#三个并排判断" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三个并排判断
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14-两种卷积定理与算子意义" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14 两种卷积定理与算子意义
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="14 两种卷积定理与算子意义">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#时域卷积" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        时域卷积
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#复频域卷积" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        复频域卷积
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#积分器与微分器" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        积分器与微分器
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#15-性质速查与易错提醒" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        15 性质速查与易错提醒
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#16-自测与关键步骤详解" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        16 自测与关键步骤详解
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="16 自测与关键步骤详解">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#答案与检验" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        答案与检验
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#17-作业-复习与资料索引" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        17 作业 复习与资料索引
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="第6讲-拉普拉斯变换的性质">第6讲 拉普拉斯变换的性质<a class="headerlink" href="#第6讲-拉普拉斯变换的性质" title="Permanent link">#</a></h1>
+<div class="admonition tip">
+<p class="admonition-title">本讲配套文件</p>
+<ul>
+<li><a href="../../%E6%96%87%E4%BB%B6/%E7%AC%AC%E5%85%AD%E8%8A%82%E8%AF%BE%20%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%B3%BB%E7%BB%9F%E8%87%AA%E5%AD%A6%E7%AC%94%E8%AE%B0.docx">Word 下载（第六节课 信号与系统自学笔记.docx）</a></li>
+</ul>
+</div>
+<h2 id="1-本课路线与必要准备">1 本课路线与必要准备<a class="headerlink" href="#1-本课路线与必要准备" title="Permanent link">#</a></h2>
+<p><span class="pill pill-src">资料内容</span> 讲义第 1—5 页。本课学习拉普拉斯变换的定义、收敛域、常用变换与基本性质，为下一步逆变换和连续时间系统的 s 域分析作准备。它把微分方程变为代数方程，并把初始储能纳入计算；以后可借助系统函数的零极点分析响应与稳定性。
+课程位置：连续时间系统的时域分析 → 傅里叶分析 → 拉普拉斯分析；离散时间的对应路线是时域分析 → DTFT 与 z 变换。后续还涉及四种傅里叶变换的关系与 DFT/FFT、滤波器、反馈、状态变量，以及向量空间的模与内积、PCM 和时分复用等应用。这里的 A、D 分别指模拟与数字的课程分支。
+历史背景简记：Heaviside 的算子法先用于电工计算，拉普拉斯变换随后为这类运算提供严格基础；本课着眼于连续时间线性时不变系统。</p>
+<div class="admonition info">
+<p class="admonition-title">录音补充</p>
+<p>00:00—01:51、64:47—65:17：学习目标同时包括信号的表示和系统对信号的作用。学习本课性质时，与傅里叶性质逐项比较，重点理解初始条件如何进入运算。</p>
+</div>
+<p><img alt="第6讲 插图 roadmap" loading="lazy" src="../%E6%8F%92%E5%9B%BE/%E7%AC%AC6%E8%AE%B2/roadmap.png" />
+<em>图 1 依据讲义第 2、5 页整理 本课与后续内容的关系</em></p>
+<p>读图：上排为本课主体，下排为后续应用；箭头表示使用关系。后续的零极点分析还包括全通系统与最小相移函数。逆变换在本课先通过常用变换对使用，系统方法留待后续。</p>
+<div class="admonition info">
+<p class="admonition-title">补充讲解</p>
+<p>本课默认 <span class="arithmatex">\(j^2=-1\)</span>，复频率 <span class="arithmatex">\(s=\sigma+j\omega\)</span>；<span class="arithmatex">\(\sigma\)</span> 的单位为每秒，<span class="arithmatex">\(\omega\)</span> 为弧度每秒。<span class="arithmatex">\(u(t)\)</span> 是单位阶跃，<span class="arithmatex">\(\delta(t)\)</span> 是单位冲激，<span class="arithmatex">\(f(0^-)\)</span>、<span class="arithmatex">\(f(0^+)\)</span> 分别为零时刻左右极限。普通函数在单个点的取值不改变积分，但位于原点的冲激不能忽略。
+必要工具：欧拉公式 <span class="arithmatex">\(e^{j\theta}=\cos\theta+j\sin\theta\)</span>；分部积分 <span class="arithmatex">\(\int u\,dv=uv-\int v\,du\)</span>；因果信号卷积 <span class="arithmatex">\(f*g=\int_0^t f(\tau)g(t-\tau)d\tau\)</span>。冲激的筛选与导数规则为</p>
+<div class="arithmatex">\[\int_{-\infty}^{\infty}\delta(t-t_0)\varphi(t)dt=\varphi(t_0),\qquad \int_{-\infty}^{\infty}\delta'(t)\varphi(t)dt=-\varphi'(0).\]</div>
+<p>后一个公式来自分布导数的定义，是计算冲激偶变换的依据。不要把冲激当成“某一点取无穷大”的普通函数。</p>
+</div>
+<h2 id="2-从傅里叶变换到拉普拉斯变换">2 从傅里叶变换到拉普拉斯变换<a class="headerlink" href="#2-从傅里叶变换到拉普拉斯变换" title="Permanent link">#</a></h2>
+<p><span class="pill pill-src">资料内容</span> 讲义第 6—9 页。先将信号乘以指数权重，再作傅里叶变换。取 <span class="arithmatex">\(s=\sigma+j\omega\)</span>，有</p>
+<div class="arithmatex">\[F(s)=\int_{-\infty}^{\infty}f(t)e^{-st}dt=\int_{-\infty}^{\infty}[f(t)e^{-\sigma t}]e^{-j\omega t}dt.\]</div>
+<p>这就是双边拉普拉斯变换。实部 <span class="arithmatex">\(\sigma\)</span> 调整衰减或增长，虚部 <span class="arithmatex">\(\omega\)</span> 描述振荡；允许选择 <span class="arithmatex">\(\sigma\)</span> 后，一些普通傅里叶积分不收敛的信号也能变换。
+例如右边增长信号 <span class="arithmatex">\(e^{at}u(t)\)</span>，乘权后为 <span class="arithmatex">\(e^{-(\sigma-a)t}u(t)\)</span>。只有 <span class="arithmatex">\(\sigma&gt;a\)</span> 时向右衰减且绝对可积，变换才由普通积分给出。指数权重不能任意挽救所有双边信号：对全时轴常数，正时间要求 <span class="arithmatex">\(\sigma&gt;0\)</span>，负时间却要求 <span class="arithmatex">\(\sigma&lt;0\)</span>，二者冲突。</p>
+<div class="admonition warning">
+<p class="admonition-title">资料校核</p>
+<p>第 6 页“直流信号 <span class="arithmatex">\(u(t)\)</span>”应理解为从零开始接通的常量；它是阶跃，不是全时轴常数。常数和周期正弦可以有广义傅里叶谱；“不满足普通积分条件”不等于“没有任何意义下的傅里叶变换”。第 8 页“实际信号总是因果信号”是本课采用的起始时刻建模约定，并非普遍事实，也不能据此判定系统因果性。</p>
+</div>
+<h3 id="单边定义与原点约定">单边定义与原点约定<a class="headerlink" href="#单边定义与原点约定" title="Permanent link">#</a></h3>
+<p>本课采用包含原点冲激的单边变换，以下 <span class="arithmatex">\(\mathcal L\)</span> 均指这一约定：</p>
+<div class="arithmatex">\[F(s)=\mathcal L\{f(t)\}=\int_{0^-}^{\infty}f(t)e^{-st}dt.\]</div>
+<p>对于因果信号，它与双边变换相同；对非因果信号，它只记录零时刻及以后的部分，零时刻之前的历史通过初始条件进入系统方程。<span class="arithmatex">\(f(t)\)</span> 叫原函数，<span class="arithmatex">\(F(s)\)</span> 叫像函数。</p>
+<h3 id="逆变换从哪里来">逆变换从哪里来<a class="headerlink" href="#逆变换从哪里来" title="Permanent link">#</a></h3>
+<p>固定收敛域内的实数 <span class="arithmatex">\(c\)</span>，先对 <span class="arithmatex">\(f(t)e^{-ct}\)</span> 作傅里叶逆变换，再乘回 <span class="arithmatex">\(e^{ct}\)</span>：</p>
+<div class="arithmatex">\[f(t)=\frac{1}{2\pi}\int_{-\infty}^{\infty}F(c+j\omega)e^{(c+j\omega)t}d\omega=\frac{1}{2\pi j}\int_{c-j\infty}^{c+j\infty}F(s)e^{st}ds.\]</div>
+<p>其中沿竖直线积分时 <span class="arithmatex">\(ds=j\,d\omega\)</span>，因此系数是 <span class="arithmatex">\(1/(2\pi j)\)</span>。积分线必须位于收敛域内。普通分段光滑函数在连续点恢复原值，在跳变点按通常反演条件得到左右平均；冲激按广义函数理解。它表示以复指数为基元的叠加，而非把不同实部的指数任意相加。</p>
+<h2 id="3-收敛域决定变换能在哪里使用">3 收敛域决定变换能在哪里使用<a class="headerlink" href="#3-收敛域决定变换能在哪里使用" title="Permanent link">#</a></h2>
+<p><span class="pill pill-src">资料内容</span> 讲义第 10—11 页。收敛域 ROC 是使变换积分收敛的复数 <span class="arithmatex">\(s\)</span> 的集合。对本课常见的右边指数型信号，绝对收敛域是某条竖线右侧的半平面；边界是否收敛需另查。
+一个常用充分条件：<span class="arithmatex">\(f(t)\)</span> 在每个有限区间分段连续，且存在 <span class="arithmatex">\(M,\alpha,t_1\)</span>，使 <span class="arithmatex">\(t\ge t_1\)</span> 时 <span class="arithmatex">\(|f(t)|\le M e^{\alpha t}\)</span>。当 <span class="arithmatex">\(\sigma&gt;\alpha\)</span> 时，尾部积分被可积的 <span class="arithmatex">\(M e^{-(\sigma-\alpha)t}\)</span> 控制，所以变换存在。更一般只需局部可积等适当条件；“分段连续且指数阶”不是必要条件。</p>
+<p><img alt="第6讲 插图 roc" loading="lazy" src="../%E6%8F%92%E5%9B%BE/%E7%AC%AC6%E8%AE%B2/roc.png" />
+<em>图 2 依据讲义第 10 页重绘 收敛域与反演路径</em></p>
+<p>读图：横轴为实部，纵轴为虚部；阴影表示 <span class="arithmatex">\(\sigma&gt;\sigma_0\)</span>，虚线边界不自动包含。反演线 <span class="arithmatex">\(\sigma=c\)</span> 必须在阴影内；改变 <span class="arithmatex">\(\omega\)</span> 是沿同一竖线移动。
+常见例子：<span class="arithmatex">\(u(t)\)</span>、<span class="arithmatex">\(t^nu(t)\)</span> 和右边正弦的 ROC 为 <span class="arithmatex">\(\sigma&gt;0\)</span>；<span class="arithmatex">\(e^{at}u(t)\)</span> 为 <span class="arithmatex">\(\sigma&gt;a\)</span>；<span class="arithmatex">\(e^{-at}u(t)\)</span> 为 <span class="arithmatex">\(\sigma&gt;-a\)</span>。有限宽脉冲 <span class="arithmatex">\(u(t)-u(t-T)\)</span>（<span class="arithmatex">\(T&gt;0\)</span>）只在有限区间积分，因此整个有限 s 平面都可收敛。</p>
+<div class="admonition info">
+<p class="admonition-title">补充讲解</p>
+<p>有限脉冲的式子 <span class="arithmatex">\((1-e^{-sT})/s\)</span> 在 <span class="arithmatex">\(s=0\)</span> 看似分母为零，但极限为 <span class="arithmatex">\(T\)</span>，这里是可去奇点，不是极点。相反，<span class="arithmatex">\(e^{t^2}u(t)\)</span> 对任意固定实数 <span class="arithmatex">\(\sigma\)</span> 都有 <span class="arithmatex">\(t^2-\sigma t\to+\infty\)</span>，没有普通单边拉普拉斯变换。
+易错提醒｜写出一个代数表达式并不等于说明变换存在；做积分、平移和初终值判断时仍要保留 ROC。对于双边变换，同一个有理式搭配不同 ROC 可对应不同信号；本课固定右边解释，才通常能由式子确定对应波形。</p>
+</div>
+<h2 id="4-常用变换对及其推导">4 常用变换对及其推导<a class="headerlink" href="#4-常用变换对及其推导" title="Permanent link">#</a></h2>
+<p><span class="pill pill-src">资料内容</span> 讲义第 12—17 页。下列普通波形均按右边信号理解；省略 <span class="arithmatex">\(u(t)\)</span> 时不表示将其延伸到负时间。</p>
+<h3 id="阶跃-指数与幂函数">阶跃 指数与幂函数<a class="headerlink" href="#阶跃-指数与幂函数" title="Permanent link">#</a></h3>
+<div class="arithmatex">\[\mathcal L\{u(t)\}=\int_0^\infty e^{-st}dt=\left[-\frac{e^{-st}}s\right]_0^\infty=\frac1s,\qquad \sigma&gt;0.\]</div>
+<p>这里无穷远端为零，依赖于 <span class="arithmatex">\(|e^{-st}|=e^{-\sigma t}\to0\)</span>。同理</p>
+<div class="arithmatex">\[\mathcal L\{e^{-at}u(t)\}=\frac1{s+a},\qquad \sigma&gt;-a\quad(a\text{ 为实数}).\]</div>
+<p>幂函数令 <span class="arithmatex">\(I_n=\int_0^\infty t^ne^{-st}dt\)</span>。对非负整数 <span class="arithmatex">\(n\)</span>，<span class="arithmatex">\(I_0=1/s\)</span>；当 <span class="arithmatex">\(n\ge1\)</span> 时分部积分，边界项在零点和无穷远均为零：</p>
+<div class="arithmatex">\[I_n=\left[-\frac{t^ne^{-st}}s\right]_0^\infty+\frac ns\int_0^\infty t^{n-1}e^{-st}dt=\frac ns I_{n-1}=\frac{n!}{s^{n+1}},\qquad \sigma&gt;0.\]</div>
+<p>因此斜坡 <span class="arithmatex">\(tu(t)\)</span> 对应 <span class="arithmatex">\(1/s^2\)</span>，<span class="arithmatex">\(t^2u(t)\)</span> 对应 <span class="arithmatex">\(2/s^3\)</span>；阶乘不能漏。</p>
+<h3 id="冲激与线性">冲激与线性<a class="headerlink" href="#冲激与线性" title="Permanent link">#</a></h3>
+<p>原点冲激被 <span class="arithmatex">\(0^-\)</span> 下限包含，由筛选性质得 <span class="arithmatex">\(\mathcal L\{\delta(t)\}=e^0=1\)</span>，ROC 为整个有限 s 平面。更一般 <span class="arithmatex">\(\mathcal L\{\delta(t-t_0)\}=e^{-st_0}\)</span>（<span class="arithmatex">\(t_0\ge0\)</span>）。
+积分的线性直接给出 <span class="arithmatex">\(\mathcal L\{a f_1+b f_2\}=aF_1+bF_2\)</span>。可先在两者 ROC 的公共区域使用；相消后实际 ROC 可能扩大。</p>
+<h3 id="正弦与余弦">正弦与余弦<a class="headerlink" href="#正弦与余弦" title="Permanent link">#</a></h3>
+<p>用欧拉公式拆成两个复指数，且二者均要求 <span class="arithmatex">\(\sigma&gt;0\)</span>：</p>
+<div class="arithmatex">\[\mathcal L\{\sin(\omega_0t)u(t)\}=\frac1{2j}\left(\frac1{s-j\omega_0}-\frac1{s+j\omega_0}\right)=\frac{\omega_0}{s^2+\omega_0^2}.\]</div>
+<div class="arithmatex">\[\mathcal L\{\cos(\omega_0t)u(t)\}=\frac12\left(\frac1{s-j\omega_0}+\frac1{s+j\omega_0}\right)=\frac{s}{s^2+\omega_0^2}.\]</div>
+<p>取非零实数 <span class="arithmatex">\(\omega_0\)</span>；零频率的退化情况单独代回波形判断。正弦分子是频率，余弦分子是 <span class="arithmatex">\(s\)</span>，可用初值区别：正弦零起点，余弦起点为 1。</p>
+<h2 id="5-与傅里叶谱的关系">5 与傅里叶谱的关系<a class="headerlink" href="#5-与傅里叶谱的关系" title="Permanent link">#</a></h2>
+<p><span class="pill pill-src">资料内容与校核</span> 讲义第 15 页。只有当虚轴位于 ROC 内、相应傅里叶积分存在时，才能直接写 <span class="arithmatex">\(F(j\omega)=F(s)|_{s=j\omega}\)</span>。若虚轴在边界，可能需要取 <span class="arithmatex">\(s=\varepsilon+j\omega\)</span>、<span class="arithmatex">\(\varepsilon\to0^+\)</span> 的广义极限，不能只把分母中的 <span class="arithmatex">\(s\)</span> 换掉。
+在本课傅里叶约定 <span class="arithmatex">\(\int f(t)e^{-j\omega t}dt\)</span> 下：</p>
+<div class="arithmatex">\[\mathcal F\{\delta(t)\}=1,\qquad \mathcal F\{u(t)\}=\operatorname{PV}\frac1{j\omega}+\pi\delta(\omega).\]</div>
+<div class="arithmatex">\[\mathcal F\{e^{-at}u(t)\}=\frac1{a+j\omega},\qquad a&gt;0.\]</div>
+<div class="arithmatex">\[\mathcal F\{\sin(\omega_0t)u(t)\}=\operatorname{PV}\frac{\omega_0}{\omega_0^2-\omega^2}+\frac\pi{2j}[\delta(\omega-\omega_0)-\delta(\omega+\omega_0)].\]</div>
+<div class="arithmatex">\[\mathcal F\{\cos(\omega_0t)u(t)\}=\operatorname{PV}\frac{j\omega}{\omega_0^2-\omega^2}+\frac\pi2[\delta(\omega-\omega_0)+\delta(\omega+\omega_0)].\]</div>
+<div class="admonition info">
+<p class="admonition-title">补充讲解</p>
+<p>PV 表示对奇点作对称排除后取极限的柯西主值。傅里叶时域乘 <span class="arithmatex">\(t\)</span> 对应 <span class="arithmatex">\(j\,d/d\omega\)</span>，所以幂函数的严谨统一写法是</p>
+<div class="arithmatex">\[\mathcal F\{t^nu(t)\}=j^n\frac{d^n}{d\omega^n}\left(\operatorname{PV}\frac1{j\omega}+\pi\delta(\omega)\right).\]</div>
+<p>讲义将其简写为 <span class="arithmatex">\(n!/(j\omega)^{n+1}+j^n\pi\delta^{(n)}(\omega)\)</span>；其中高阶倒数项须按分布导数或有限部分理解，不能当作处处有意义的普通函数。这里只需抓住结论：在 ROC 边界直接代值会漏掉冲激谱。
+录音补充｜16:08—18:17：含冲激的广义频谱不能随意作普通函数除法。拉普拉斯变换在收敛域内便于进行代数运算，这也是它适合求解系统微分方程的原因之一。</p>
+</div>
+<h2 id="6-时域微分与零时刻跳变">6 时域微分与零时刻跳变<a class="headerlink" href="#6-时域微分与零时刻跳变" title="Permanent link">#</a></h2>
+<p><span class="pill pill-src">资料内容</span> 讲义第 18—20 页。对普通的右侧可微函数，从 <span class="arithmatex">\(0^+\)</span> 开始分部积分，假设无穷远边界项消失：</p>
+<div class="arithmatex">\[\int_{0^+}^\infty f'(t)e^{-st}dt=\left[f(t)e^{-st}\right]_{0^+}^\infty+sF(s)=sF(s)-f(0^+).\]</div>
+<p>如果零时刻有跳变 <span class="arithmatex">\(\Delta f=f(0^+)-f(0^-)\)</span>，完整导数中还有 <span class="arithmatex">\(\Delta f\,\delta(t)\)</span>。采用包含原点的 <span class="arithmatex">\(0^-\)</span> 约定，就应加回这项：</p>
+<div class="arithmatex">\[\mathcal L\{f'(t)\}=sF(s)-f(0^+)+\Delta f=sF(s)-f(0^-).\]</div>
+<p>初始值不是额外“修正技巧”，而是积分下边界留下的项。这正是单边变换能自动纳入初始条件的原因。</p>
+<div class="admonition info">
+<p class="admonition-title">录音补充</p>
+<p>58:21—63:09：理解微分性质时，同时看普通导数和启动跳变产生的冲激；对电路，初始项还记录电容、电感在开关动作前的储能。第 8 节把这个数学边界项写成电容的初始电压源。
+对有相应左右初始值的普通部分，逐次应用得到</p>
+<div class="arithmatex">\[\mathcal L\{f''(t)\}=s^2F(s)-sf(0^-)-f'(0^-).\]</div>
+<div class="arithmatex">\[\mathcal L\{f^{(n)}(t)\}=s^nF(s)-\sum_{r=0}^{n-1}s^{n-1-r}f^{(r)}(0^-).\]</div>
+<p>适用条件：分段光滑、各阶变换及边界项有意义，跳变产生的冲激按分布处理。不要把有原点冲激的函数的“初值”当普通数塞进公式。</p>
+</div>
+<h3 id="冲激偶例题">冲激偶例题<a class="headerlink" href="#冲激偶例题" title="Permanent link">#</a></h3>
+<p><span class="pill pill-src">资料例题</span> 求 <span class="arithmatex">\(\mathcal L\{\delta'(t)\}\)</span>。用第 1 节的分布导数规则最直接：</p>
+<div class="arithmatex">\[\mathcal L\{\delta'(t)\}=-\left.\frac d{dt}e^{-st}\right|_{t=0}=s.\]</div>
+<p>若改成从 <span class="arithmatex">\(0^+\)</span> 积分，则原点的冲激和冲激偶都被排除，对应积分为零。这说明下限约定会改变是否记录开关瞬间。</p>
+<div class="admonition warning">
+<p class="admonition-title">资料校核</p>
+<p>第 20 页在套用一阶微分公式时，将初始项印成了 <span class="arithmatex">\(\delta'(0^\pm)\)</span>；形式上原函数应是 <span class="arithmatex">\(\delta\)</span>，但分布本身不宜按普通点值处理。该页最终结论“<span class="arithmatex">\(0^-\)</span> 得 <span class="arithmatex">\(s\)</span>，<span class="arithmatex">\(0^+\)</span> 得 0”保留，推导采用上面的分布规则。
+补充检验｜阶跃的完整导数是 <span class="arithmatex">\(\delta(t)\)</span>，因此 <span class="arithmatex">\(s(1/s)-u(0^-)=1\)</span>；如果误减 <span class="arithmatex">\(u(0^+)=1\)</span>，就会把原点冲激漏掉。</p>
+</div>
+<h2 id="7-s-域微分-积分与时域积分">7 s 域微分 积分与时域积分<a class="headerlink" href="#7-s-域微分-积分与时域积分" title="Permanent link">#</a></h2>
+<p><span class="pill pill-src">资料内容</span> 讲义第 21—23 页。三种运算要分清作用变量。</p>
+<h3 id="对-s-求导对应时域乘负-t">对 s 求导对应时域乘负 t<a class="headerlink" href="#对-s-求导对应时域乘负-t" title="Permanent link">#</a></h3>
+<p>在 ROC 内可在适当支配条件下交换求导与积分：</p>
+<div class="arithmatex">\[F'(s)=\int_0^\infty f(t)(-t)e^{-st}dt=\mathcal L\{-tf(t)\}.\]</div>
+<p>逐次求导得到 <span class="arithmatex">\(\mathcal L\{t^nf(t)\}=(-1)^nF^{(n)}(s)\)</span>。例如从 <span class="arithmatex">\(1/(s+a)\)</span> 出发，有 <span class="arithmatex">\(\mathcal L\{te^{-at}u(t)\}=1/(s+a)^2\)</span>，ROC 仍为 <span class="arithmatex">\(\sigma&gt;-a\)</span>。这与时域求导得到 <span class="arithmatex">\(sF(s)-f(0^-)\)</span> 完全不同。</p>
+<h3 id="对-s-积分对应时域除以-t">对 s 积分对应时域除以 t<a class="headerlink" href="#对-s-积分对应时域除以-t" title="Permanent link">#</a></h3>
+<p>若 <span class="arithmatex">\(f(t)/t\)</span> 在零点附近可积，且可以交换积分，则</p>
+<div class="arithmatex">\[\int_s^{s+\infty}F(p)dp=\int_0^\infty f(t)\left[\int_s^{s+\infty}e^{-pt}dp\right]dt=\int_0^\infty\frac{f(t)}t e^{-st}dt.\]</div>
+<p>这里路径从 <span class="arithmatex">\(s\)</span> 水平向右到实部无穷大，虚部保持不变；不是任意跨过极点的路径。内积分为 <span class="arithmatex">\(e^{-st}/t\)</span>。不能直接对 <span class="arithmatex">\(f(t)=u(t)\)</span> 使用，因为 <span class="arithmatex">\(1/t\)</span> 在零点不可积。</p>
+<div class="admonition info">
+<p class="admonition-title">补充例题</p>
+<p><span class="arithmatex">\(a&gt;0\)</span> 时，求 <span class="arithmatex">\((1-e^{-at})u(t)/t\)</span> 的变换。分子在零点约为 <span class="arithmatex">\(at\)</span>，除以 <span class="arithmatex">\(t\)</span> 后极限为 <span class="arithmatex">\(a\)</span>，满足局部可积条件。于是</p>
+<div class="arithmatex">\[\int_s^{s+\infty}\left(\frac1p-\frac1{p+a}\right)dp=\left[\ln p-\ln(p+a)\right]_s^{s+\infty}=\ln\frac{s+a}s,\qquad \sigma&gt;0.\]</div>
+<p>对数取与正实轴连续一致的解析分支，不能随意加入不同的 <span class="arithmatex">\(2\pi j\)</span>。</p>
+</div>
+<h3 id="时域积分对应除以-s-并保留初始积累">时域积分对应除以 s 并保留初始积累<a class="headerlink" href="#时域积分对应除以-s-并保留初始积累" title="Permanent link">#</a></h3>
+<p>令 <span class="arithmatex">\(y(t)=\int_{-\infty}^t f(\tau)d\tau\)</span>，则 <span class="arithmatex">\(y'=f\)</span>，且 <span class="arithmatex">\(y(0^-)\)</span> 是零时刻以前的积累。由微分性质直接得</p>
+<div class="arithmatex">\[sY(s)-y(0^-)=F(s),\qquad Y(s)=\frac{F(s)}s+\frac{y(0^-)}s.\]</div>
+<p>零初始积累时 <span class="arithmatex">\(\mathcal L\{\int_0^t f(\tau)d\tau\}=F(s)/s\)</span>；若原点有冲激，积分起点应按包含该冲激的约定写 <span class="arithmatex">\(0^-\)</span>。除以 <span class="arithmatex">\(s\)</span> 可能引入零极点，ROC 需重新判断，不能机械照搬原 ROC。</p>
+<h2 id="8-电容模型与-rc-开关例题">8 电容模型与 RC 开关例题<a class="headerlink" href="#8-电容模型与-rc-开关例题" title="Permanent link">#</a></h2>
+<p><span class="pill pill-src">资料内容</span> 讲义第 24—25 页。电流参考方向取流入电压正端，电容满足 <span class="arithmatex">\(i_C=C\,dv_C/dt\)</span>。电流的变换为 <span class="arithmatex">\(I_C(s)\)</span>，初始电压记 <span class="arithmatex">\(v_0=v_C(0^-)\)</span>，则</p>
+<div class="arithmatex">\[I_C(s)=C[sV_C(s)-v_0],\qquad V_C(s)=\frac{I_C(s)}{sC}+\frac{v_0}s.\]</div>
+<p>右式可用阻抗 <span class="arithmatex">\(1/(sC)\)</span> 与初始电压源 <span class="arithmatex">\(v_0/s\)</span> 串联表示。初始源极性必须与电压参考正端一致；这是 s 域模型中的源，不是时域电压恒为 <span class="arithmatex">\(v_0/s\)</span>。</p>
+<p><img alt="第6讲 插图 circuit" loading="lazy" src="../%E6%8F%92%E5%9B%BE/%E7%AC%AC6%E8%AE%B2/circuit.png" />
+<em>图 3 依据讲义第 24—25 页重绘 电容等效模型与 RC 开关电路</em></p>
+<p>读图：上排先核对电流流入正端，再看等效串联源的正负号；下排开关在零时刻闭合，电源经电阻向电容充电，输出为电容上正下负的电压。</p>
+<h3 id="零初始电压的完整计算">零初始电压的完整计算<a class="headerlink" href="#零初始电压的完整计算" title="Permanent link">#</a></h3>
+<div class="admonition info">
+<p class="admonition-title">题设补足</p>
+<p><span class="arithmatex">\(R,C&gt;0\)</span>，输入电源为 <span class="arithmatex">\(E\)</span>，开关在 <span class="arithmatex">\(t=0\)</span> 闭合，且 <span class="arithmatex">\(v_C(0^-)=0\)</span>。讲义的解答隐含了这一零初始条件。
+第一步，列方程。由回路电压 <span class="arithmatex">\(Ri+v_C=Eu(t)\)</span> 和 <span class="arithmatex">\(i=Cv_C'\)</span> 得 <span class="arithmatex">\(RCv_C'+v_C=Eu(t)\)</span>。
+第二步，变换并带入初值：</p>
+<div class="arithmatex">\[RC[sV_C(s)-0]+V_C(s)=\frac Es,\qquad V_C(s)=\frac E{s(1+RCs)}.\]</div>
+<p>第三步，令 <span class="arithmatex">\(a=1/(RC)&gt;0\)</span>，把常数提干净再作部分分式：</p>
+<div class="arithmatex">\[V_C(s)=\frac{Ea}{s(s+a)}=E\left(\frac1s-\frac1{s+a}\right).\]</div>
+<p>核验系数：右侧通分后分子为 <span class="arithmatex">\(E[(s+a)-s]=Ea\)</span>，所以两项系数是 <span class="arithmatex">\(E\)</span> 与 <span class="arithmatex">\(-E\)</span>。
+第四步，按第 4 节变换对反演：</p>
+<div class="arithmatex">\[v_C(t)=E(1-e^{-t/(RC)})u(t).\]</div>
+<p>核验：<span class="arithmatex">\(v_C(0^+)=0\)</span>，<span class="arithmatex">\(v_C(\infty)=E\)</span>，初始斜率为 <span class="arithmatex">\(E/(RC)\)</span>；对 <span class="arithmatex">\(t&gt;0\)</span> 代回微分方程恰得 <span class="arithmatex">\(E\)</span>。时间常数 <span class="arithmatex">\(\tau=RC\)</span>，到 <span class="arithmatex">\(t=\tau\)</span> 时达到终值的约 63.2%。</p>
+</div>
+<p><img alt="第6讲 插图 rcresponse" loading="lazy" src="../%E6%8F%92%E5%9B%BE/%E7%AC%AC6%E8%AE%B2/rcresponse.png" />
+<em>图 4 补充图示 RC 零状态充电曲线</em></p>
+<p>读图：终值虚线是 <span class="arithmatex">\(E\)</span>，零时刻切线的斜率是 <span class="arithmatex">\(E/\tau\)</span>；横坐标归一化为 <span class="arithmatex">\(t/\tau\)</span>。曲线向终值渐近，不能画成有限时刻突然充满。</p>
+<div class="admonition warning">
+<p class="admonition-title">资料校核</p>
+<p>第 25 页部分分式前的中间分母误写成 <span class="arithmatex">\(s(1+1/(RC))\)</span>，应为 <span class="arithmatex">\(s(s+1/(RC))\)</span>。最终结果与上式一致。
+补充讲解｜若初始电压为 <span class="arithmatex">\(v_0\)</span>，则 <span class="arithmatex">\((RCs+1)V_C=E/s+RCv_0\)</span>。整理得 <span class="arithmatex">\(V_C=E/s+(v_0-E)/(s+1/(RC))\)</span>，所以零时刻之后 <span class="arithmatex">\(v_C(t)=E+(v_0-E)e^{-t/(RC)}\)</span>。无冲激电流时电容电压连续，故 <span class="arithmatex">\(v_C(0^+)=v_0\)</span>；非零初值不能在变换时静默删去。</p>
+</div>
+<h2 id="9-时域延迟与四种斜坡">9 时域延迟与四种斜坡<a class="headerlink" href="#9-时域延迟与四种斜坡" title="Permanent link">#</a></h2>
+<p><span class="pill pill-src">资料内容</span> 讲义第 26—27 页。对 <span class="arithmatex">\(t_0\ge0\)</span> 的延迟，必须同时移动波形和启动时刻：</p>
+<div class="arithmatex">\[\mathcal L\{f(t-t_0)u(t-t_0)\}=e^{-st_0}F(s).\]</div>
+<p>来源：阶跃把下限变为 <span class="arithmatex">\(t_0\)</span>，令 <span class="arithmatex">\(\tau=t-t_0\)</span>，得到</p>
+<div class="arithmatex">\[\int_{t_0}^\infty f(t-t_0)e^{-st}dt=e^{-st_0}\int_0^\infty f(\tau)e^{-s\tau}d\tau.\]</div>
+<p>延迟因子只记录晚了多久，不会把多项式里的 <span class="arithmatex">\(t\)</span> 自动变成 <span class="arithmatex">\(t-t_0\)</span>。对普通右边信号，有限延迟不改变尾部收敛半平面。</p>
+<p><img alt="第6讲 插图 ramps" loading="lazy" src="../%E6%8F%92%E5%9B%BE/%E7%AC%AC6%E8%AE%B2/ramps.png" />
+<em>图 5 依据讲义第 27 页重绘 四种斜坡必须分别识别</em></p>
+<p>读图：先看何时离开零轴，再看离开时的高度，最后看斜率。虚线只标示跳变位置，端点单个值不影响普通积分。</p>
+<div class="admonition info">
+<p class="admonition-title">录音补充</p>
+<p>72:13—74:55：下面四个波形应分别辨认。先把表达式改写成同一延迟变量的函数，再套公式，可避免只移动阶跃、忘记移动斜坡的错误。
+（a）<span class="arithmatex">\(tu(t)\)</span> 从原点上升，直接得 <span class="arithmatex">\(1/s^2\)</span>。
+（b）<span class="arithmatex">\((t-1)u(t-1)\)</span> 从 <span class="arithmatex">\(t=1\)</span> 的零高度上升，是整个斜坡延迟 1，得 <span class="arithmatex">\(e^{-s}/s^2\)</span>。
+（c）<span class="arithmatex">\((t-1)u(t)=tu(t)-u(t)\)</span> 在零时刻从 <span class="arithmatex">\(-1\)</span> 起步，得 <span class="arithmatex">\(1/s^2-1/s\)</span>。这里只有竖直减 1，没有延迟启动。
+（d）<span class="arithmatex">\(tu(t-1)\)</span> 在 <span class="arithmatex">\(t=1\)</span> 跳到高度 1。先改写 <span class="arithmatex">\(t=(t-1)+1\)</span>，再延迟：</p>
+<div class="arithmatex">\[\mathcal L\{tu(t-1)\}=e^{-s}\mathcal L\{(t+1)u(t)\}=e^{-s}\left(\frac1{s^2}+\frac1s\right).\]</div>
+<p>四式的 ROC 均为 <span class="arithmatex">\(\sigma&gt;0\)</span>。可用定义核验最后一式：<span class="arithmatex">\(\int_1^\infty te^{-st}dt=e^{-s}(1/s+1/s^2)\)</span>。</p>
+</div>
+<h2 id="10-右边周期信号">10 右边周期信号<a class="headerlink" href="#10-右边周期信号" title="Permanent link">#</a></h2>
+<p><span class="pill pill-src">资料内容</span> 讲义第 28 页。先取一个周期 <span class="arithmatex">\(f_0(t)\)</span>，只在 <span class="arithmatex">\(0\le t&lt;T\)</span> 非零；再向右复制。这里“周期信号”指周期波形从零时刻接通，负时间仍为零。</p>
+<div class="arithmatex">\[f(t)=\sum_{k=0}^\infty f_0(t-kT),\qquad F_0(s)=\int_0^T f_0(t)e^{-st}dt.\]</div>
+<p>利用延迟定理和等比级数，当 <span class="arithmatex">\(|e^{-sT}|=e^{-\sigma T}&lt;1\)</span> 即 <span class="arithmatex">\(\sigma&gt;0\)</span> 时：</p>
+<div class="arithmatex">\[F(s)=F_0(s)\sum_{k=0}^\infty e^{-ksT}=\frac{F_0(s)}{1-e^{-sT}}.\]</div>
+<p>对于本课的非零有界周期波形，ROC 为 <span class="arithmatex">\(\sigma&gt;0\)</span>。一个周期的边界端点如何赋值，不影响普通积分；但周期内若有冲激，必须明确端点归属，不能重复计入。</p>
+<h3 id="周期矩形脉冲例题">周期矩形脉冲例题<a class="headerlink" href="#周期矩形脉冲例题" title="Permanent link">#</a></h3>
+<p>每周期 <span class="arithmatex">\(T=2\)</span>，前 1 秒幅度为 1，后 1 秒为零。取 <span class="arithmatex">\(f_0=u(t)-u(t-1)\)</span>，则</p>
+<div class="arithmatex">\[F_0(s)=\frac{1-e^{-s}}s,\qquad F(s)=\frac{1-e^{-s}}{s(1-e^{-2s})}=\frac1{s(1+e^{-s})}.\]</div>
+<p>最后一步使用 <span class="arithmatex">\(1-e^{-2s}=(1-e^{-s})(1+e^{-s})\)</span>；在 ROC 内可约去公共因子。检查高实频极限 <span class="arithmatex">\(sF(s)\to1\)</span>，与零时刻右侧高度 1 一致。</p>
+<p><img alt="第6讲 插图 pulses" loading="lazy" src="../%E6%8F%92%E5%9B%BE/%E7%AC%AC6%E8%AE%B2/pulses.png" />
+<em>图 6 依据讲义第 28 页重绘 单周期与向右延拓</em></p>
+<p>读图：上图仅保留 <span class="arithmatex">\([0,2)\)</span> 内的一周期，下图每隔 2 秒复制；空白的后半周期也属于一个周期，不可把周期误读为 1。</p>
+<div class="admonition info">
+<p class="admonition-title">补充提醒</p>
+<p><span class="arithmatex">\(s\to0^+\)</span> 时 <span class="arithmatex">\(sF(s)\to1/2\)</span>，但这个周期波形没有时间终值；此极限在这里给出周期平均值，不能当作终值定理的合法应用。</p>
+</div>
+<h2 id="11-s-域平移与衰减方波">11 s 域平移与衰减方波<a class="headerlink" href="#11-s-域平移与衰减方波" title="Permanent link">#</a></h2>
+<p><span class="pill pill-src">资料内容</span> 讲义第 29—30 页。时间信号乘以指数，对应变换自变量平移：</p>
+<div class="arithmatex">\[\mathcal L\{e^{-at}f(t)\}=\int_0^\infty f(t)e^{-(s+a)t}dt=F(s+a).\]</div>
+<p>若 <span class="arithmatex">\(a\)</span> 为实数、原 ROC 为 <span class="arithmatex">\(\sigma&gt;\sigma_0\)</span>，新 ROC 为 <span class="arithmatex">\(\sigma&gt;\sigma_0-a\)</span>。当 <span class="arithmatex">\(a&gt;0\)</span> 时，极点和 ROC 边界均向左移 <span class="arithmatex">\(a\)</span>；不能因为式中是“加 a”就判断向右移。
+直接应用：<span class="arithmatex">\(e^{-at}\sin(\omega_0t)u(t)\)</span> 的变换为 <span class="arithmatex">\(\omega_0/[(s+a)^2+\omega_0^2]\)</span>，ROC 为 <span class="arithmatex">\(\sigma&gt;-a\)</span>。平移应替换表达式里的每一个 <span class="arithmatex">\(s\)</span>。</p>
+<h3 id="衰减的双极性方波例题">衰减的双极性方波例题<a class="headerlink" href="#衰减的双极性方波例题" title="Permanent link">#</a></h3>
+<p>先构造单周期 <span class="arithmatex">\(q_0(t)=u(t)-2u(t-1)+u(t-2)\)</span>：在 <span class="arithmatex">\([0,1)\)</span> 为 <span class="arithmatex">\(+1\)</span>，在 <span class="arithmatex">\([1,2)\)</span> 为 <span class="arithmatex">\(-1\)</span>，其余为零。</p>
+<div class="arithmatex">\[Q_0(s)=\frac{1-2e^{-s}+e^{-2s}}s=\frac{(1-e^{-s})^2}s.\]</div>
+<p>以 <span class="arithmatex">\(T=2\)</span> 向右延拓得 <span class="arithmatex">\(q(t)\)</span>，再乘包络 <span class="arithmatex">\(e^{-t}\)</span> 得题目波形 <span class="arithmatex">\(f(t)\)</span>。分两步变换：</p>
+<div class="arithmatex">\[Q(s)=\frac{Q_0(s)}{1-e^{-2s}}=\frac{1-e^{-s}}{s(1+e^{-s})},\qquad \sigma&gt;0.\]</div>
+<div class="arithmatex">\[F(s)=Q(s+1)=\frac{1-e^{-(s+1)}}{(s+1)[1+e^{-(s+1)}]},\qquad \sigma&gt;-1.\]</div>
+<p><img alt="第6讲 插图 bipolar" loading="lazy" src="../%E6%8F%92%E5%9B%BE/%E7%AC%AC6%E8%AE%B2/bipolar.png" />
+<em>图 7 依据讲义第 29 页重绘 单周期 延拓与指数加权</em></p>
+<p>读图：第一图要看清 <span class="arithmatex">\(+1,-1,0\)</span> 三种高度；第二图保持幅度但反复换号；第三图在每个整数时刻换号，所有曲线分别贴着 <span class="arithmatex">\(+e^{-t}\)</span> 或 <span class="arithmatex">\(-e^{-t}\)</span>。跳变的连接线仅表示瞬间切换。
+核验：零时刻右值为 1；正实轴上 <span class="arithmatex">\(sF(s)\to1\)</span>；时间趋于无穷时包络趋于零，故信号终值为零。式子在 <span class="arithmatex">\(s=-1\)</span> 的表面 <span class="arithmatex">\(0/0\)</span> 可去，但其他边界极点仍在 <span class="arithmatex">\(\sigma=-1\)</span>，不能据一次约分把 ROC 扩成整个平面。</p>
+<h2 id="12-尺度变换">12 尺度变换<a class="headerlink" href="#12-尺度变换" title="Permanent link">#</a></h2>
+<p><span class="pill pill-src">资料内容</span> 讲义第 31 页。对正数 <span class="arithmatex">\(a\)</span>，令 <span class="arithmatex">\(\tau=at\)</span>，从而 <span class="arithmatex">\(dt=d\tau/a\)</span>，且积分方向不变：</p>
+<div class="arithmatex">\[\mathcal L\{f(at)\}=\frac1a\int_0^\infty f(\tau)e^{-(s/a)\tau}d\tau=\frac1aF\left(\frac sa\right),\qquad a&gt;0.\]</div>
+<p>当 <span class="arithmatex">\(a&gt;1\)</span> 时，波形在时间上压缩，变换自变量除以 <span class="arithmatex">\(a\)</span>，同时幅度系数为 <span class="arithmatex">\(1/a\)</span>。若原 ROC 是 <span class="arithmatex">\(\sigma&gt;\sigma_0\)</span>，新 ROC 为 <span class="arithmatex">\(\sigma&gt;a\sigma_0\)</span>。</p>
+<div class="admonition info">
+<p class="admonition-title">补充例题</p>
+<p><span class="arithmatex">\(f(t)=e^{-2t}u(t)\)</span>，取 <span class="arithmatex">\(a=3\)</span>：<span class="arithmatex">\((1/3)F(s/3)=(1/3)/(s/3+2)=1/(s+6)\)</span>，与直接对 <span class="arithmatex">\(e^{-6t}u(t)\)</span> 变换一致，ROC 为 <span class="arithmatex">\(\sigma&gt;-6\)</span>。
+易错提醒｜不能把单边公式直接推广为负 <span class="arithmatex">\(a\)</span>：负尺度会调用原函数在负时间的部分，而单边 <span class="arithmatex">\(F(s)\)</span> 没有记录它。双边变换与傅里叶变换的 <span class="arithmatex">\(1/|a|\)</span> 规则有各自的积分区间条件，不能机械照搬。</p>
+</div>
+<h2 id="13-初值定理与终值定理">13 初值定理与终值定理<a class="headerlink" href="#13-初值定理与终值定理" title="Permanent link">#</a></h2>
+<p><span class="pill pill-src">资料内容</span> 讲义第 32—34 页。它们帮助在不求完整反变换的情况下检查起点和稳态，但使用前必须先查条件。</p>
+<h3 id="初值定理">初值定理<a class="headerlink" href="#初值定理" title="Permanent link">#</a></h3>
+<p>若 <span class="arithmatex">\(f\)</span> 的右极限有限、原点不含冲激，并满足指数阶等通常条件，则沿正实轴</p>
+<div class="arithmatex">\[f(0^+)=\lim_{s\to+\infty}sF(s).\]</div>
+<p>来源有两种理解。由微分式 <span class="arithmatex">\(sF(s)=f(0^+)+\int_{0^+}^\infty f'(t)e^{-st}dt\)</span>，在允许取极限的条件下，后项趋零。也可令 <span class="arithmatex">\(x=st\)</span>，则 <span class="arithmatex">\(sF(s)=\int_0^\infty f(x/s)e^{-x}dx\)</span>；权重总量为 1，随着 <span class="arithmatex">\(s\)</span> 增大越来越强调零点附近，故趋向 <span class="arithmatex">\(f(0^+)\)</span>。</p>
+<div class="admonition info">
+<p class="admonition-title">录音补充</p>
+<p>82:44—85:38：从微分定理推初值定理时，要先单独处理零时刻的跳变，再对右侧普通导数积分取极限。这就是公式最终出现 <span class="arithmatex">\(f(0^+)\)</span>、而微分定理保留 <span class="arithmatex">\(f(0^-)\)</span> 的原因。
+这里取的是零时刻之后的值；开关前的 <span class="arithmatex">\(f(0^-)\)</span> 仍用于包含原点的微分定理。若 <span class="arithmatex">\(F(s)=1\)</span> 对应冲激，<span class="arithmatex">\(sF(s)\)</span> 发散，并不意味着冲激有一个普通的无限初值。</p>
+</div>
+<h3 id="终值定理">终值定理<a class="headerlink" href="#终值定理" title="Permanent link">#</a></h3>
+<p>若时间终值存在且满足通常收敛条件，则</p>
+<div class="arithmatex">\[f(\infty)=\lim_{t\to\infty}f(t)=\lim_{s\to0^+}sF(s).\]</div>
+<p>一种充分的推导条件是右侧普通导数绝对可积：令 <span class="arithmatex">\(s\to0^+\)</span>，有 <span class="arithmatex">\(sF(s)=f(0^+)+\int_0^\infty f'(t)e^{-st}dt\to f(0^+)+\int_0^\infty f'(t)dt=f(\infty)\)</span>。
+对本课常见的真有理或严格真有理变换、且普通时间响应无原点冲激时，可操作的检验是：约去真正的公共因子后，<span class="arithmatex">\(sF(s)\)</span> 的所有极点均须严格位于左半平面。等价地，<span class="arithmatex">\(F(s)\)</span> 除原点可有一个单极点外，其余极点都在左半平面；虚轴振荡极点、右半平面极点、原点高阶极点都会使条件失败。</p>
+<h3 id="三个并排判断">三个并排判断<a class="headerlink" href="#三个并排判断" title="Permanent link">#</a></h3>
+<p>补充例题 A｜<span class="arithmatex">\(F(s)=(s+3)/[(s+1)(s+2)]\)</span>。初值为 1；<span class="arithmatex">\(sF\)</span> 极点是 <span class="arithmatex">\(-1,-2\)</span>，故终值为 0。部分分式 <span class="arithmatex">\(F=2/(s+1)-1/(s+2)\)</span>，反演为 <span class="arithmatex">\((2e^{-t}-e^{-2t})u(t)\)</span>，两端检查一致。
+补充例题 B｜<span class="arithmatex">\(F(s)=1/[s(s+1)]\)</span>。<span class="arithmatex">\(F\)</span> 在原点有单极点，但 <span class="arithmatex">\(sF=1/(s+1)\)</span> 的极点只有 <span class="arithmatex">\(-1\)</span>，所以允许用终值定理，终值为 1；响应为 <span class="arithmatex">\((1-e^{-t})u(t)\)</span>。
+反例｜<span class="arithmatex">\(\sin t\,u(t)\)</span> 的变换为 <span class="arithmatex">\(1/(s^2+1)\)</span>，代算 <span class="arithmatex">\(sF(s)\to0\)</span>，但 <span class="arithmatex">\(sF\)</span> 在 <span class="arithmatex">\(\pm j\)</span> 有极点，时间响应持续振荡，无终值。<span class="arithmatex">\(e^tu(t)\)</span> 同样不能用终值定理：右半平面极点 <span class="arithmatex">\(s=1\)</span> 已经否定条件。</p>
+<p><img alt="第6讲 插图 finalvalues" loading="lazy" src="../%E6%8F%92%E5%9B%BE/%E7%AC%AC6%E8%AE%B2/finalvalues.png" />
+<em>图 8 补充图示 收敛 振荡与增长的时间响应</em></p>
+<p>读图：只有左图趋于确定常数；中图即使有平均值，也没有终值；右图增长。先判断这种长期行为，再看代数极限。</p>
+<div class="admonition warning">
+<p class="admonition-title">资料校核</p>
+<p>第 34 页把 <span class="arithmatex">\(s\to0\)</span>、<span class="arithmatex">\(s\to\infty\)</span> 与低高频作直观联系，可用于理解但不能取代定理：本节极限沿实轴，不能随意改为沿虚轴 <span class="arithmatex">\(\omega\to0\)</span> 或 <span class="arithmatex">\(\omega\to\infty\)</span>。高实频强调初始时刻，低实频在满足终值条件时反映稳态。</p>
+</div>
+<h2 id="14-两种卷积定理与算子意义">14 两种卷积定理与算子意义<a class="headerlink" href="#14-两种卷积定理与算子意义" title="Permanent link">#</a></h2>
+<p><span class="pill pill-src">资料内容</span> 讲义第 35—37 页。时域卷积与 s 域乘法对应；时域乘法则对应复平面上的竖线卷积，两者不能混写。</p>
+<h3 id="时域卷积">时域卷积<a class="headerlink" href="#时域卷积" title="Permanent link">#</a></h3>
+<p>对因果信号，<span class="arithmatex">\(h(t)=\int_0^t f_1(\tau)f_2(t-\tau)d\tau\)</span>。在绝对收敛等允许交换积分的条件下，将区域 <span class="arithmatex">\(0\le\tau\le t\)</span> 改写，令 <span class="arithmatex">\(x=t-\tau\ge0\)</span>：</p>
+<div class="arithmatex">\[H(s)=\int_0^\infty f_1(\tau)e^{-s\tau}\left[\int_0^\infty f_2(x)e^{-sx}dx\right]d\tau=F_1(s)F_2(s).\]</div>
+<p>系数为 1，没有傅里叶频域卷积中的 <span class="arithmatex">\(1/(2\pi)\)</span>。ROC 至少包含两个变换 ROC 的交集；如果极点相消，实际 ROC 可能更大。</p>
+<div class="admonition info">
+<p class="admonition-title">录音补充</p>
+<p>92:30—93:31：证明能拆成两个积分，关键在指数核满足 <span class="arithmatex">\(e^{-s(x+\tau)}=e^{-sx}e^{-s\tau}\)</span>。记住这一步，就能理解卷积为什么变成乘法。
+补充例题｜计算 <span class="arithmatex">\(e^{-t}u(t)*e^{-2t}u(t)\)</span>。变换相乘得 <span class="arithmatex">\(1/[(s+1)(s+2)]=1/(s+1)-1/(s+2)\)</span>，反演为 <span class="arithmatex">\((e^{-t}-e^{-2t})u(t)\)</span>。直接核验：<span class="arithmatex">\(\int_0^t e^{-\tau}e^{-2(t-\tau)}d\tau=e^{-2t}(e^t-1)\)</span>，完全一致。</p>
+</div>
+<h3 id="复频域卷积">复频域卷积<a class="headerlink" href="#复频域卷积" title="Permanent link">#</a></h3>
+<p>把 <span class="arithmatex">\(f_1(t)\)</span> 的逆变换代入 <span class="arithmatex">\(\mathcal L\{f_1f_2\}\)</span>，交换积分后，内层变成 <span class="arithmatex">\(F_2(s-p)\)</span>：</p>
+<div class="arithmatex">\[\mathcal L\{f_1(t)f_2(t)\}=\frac1{2\pi j}\int_{c-j\infty}^{c+j\infty}F_1(p)F_2(s-p)dp.\]</div>
+<p>条件：时域乘积有定义、相关积分收敛，且积分线 <span class="arithmatex">\(\operatorname{Re}p=c\)</span> 位于 <span class="arithmatex">\(F_1\)</span> 的 ROC，同时 <span class="arithmatex">\(s-p\)</span> 位于 <span class="arithmatex">\(F_2\)</span> 的 ROC。若两者右边界为 <span class="arithmatex">\(\alpha_1,\alpha_2\)</span>，应能选到 <span class="arithmatex">\(\alpha_1&lt;c&lt;\operatorname{Re}s-\alpha_2\)</span>，所以通常要求 <span class="arithmatex">\(\operatorname{Re}s&gt;\alpha_1+\alpha_2\)</span>。该式不是沿实轴对 <span class="arithmatex">\(s\)</span> 的普通卷积，竖直积分路径与系数 <span class="arithmatex">\(1/(2\pi j)\)</span> 都必须写清；不能随意将两个冲激相乘。</p>
+<h3 id="积分器与微分器">积分器与微分器<a class="headerlink" href="#积分器与微分器" title="Permanent link">#</a></h3>
+<p>因果积分等于与阶跃卷积，完整因果导数等于与冲激偶卷积。因此零状态下积分器在 s 域乘 <span class="arithmatex">\(1/s\)</span>，微分器乘 <span class="arithmatex">\(s\)</span>：</p>
+<div class="arithmatex">\[\int_0^t f(\tau)d\tau=(fu)*u\quad\longleftrightarrow\quad \frac{F(s)}s.\]</div>
+<div class="arithmatex">\[\frac d{dt}[f(t)u(t)]=f'(t)u(t)+f(0^+)\delta(t)\quad\longleftrightarrow\quad sF(s).\]</div>
+<p><img alt="第6讲 插图 operators" loading="lazy" src="../%E6%8F%92%E5%9B%BE/%E7%AC%AC6%E8%AE%B2/operators.png" />
+<em>图 9 依据讲义第 37 页重绘 时域运算及 s 域框图</em></p>
+<p>读图：两行分别表示积分和完整因果微分；乘 <span class="arithmatex">\(s\)</span> 的框图包含启动时刻的冲激。若只求 <span class="arithmatex">\(t&gt;0\)</span> 的普通导数，则应减去 <span class="arithmatex">\(f(0^+)\)</span>；若有系统初始储能，也不能只保留零状态框图。</p>
+<h2 id="15-性质速查与易错提醒">15 性质速查与易错提醒<a class="headerlink" href="#15-性质速查与易错提醒" title="Permanent link">#</a></h2>
+<p>资料整理｜讲义第 16、38 页。下列各式均沿用本笔记的单边约定；先查相应章节的条件，再使用速查式。</p>
+<table>
+<thead>
+<tr>
+<th>运算与条件</th>
+<th>变换结果</th>
+<th>正文</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>线性组合</td>
+<td><span class="arithmatex">\(af_1+bf_2\ \longleftrightarrow\ aF_1+bF_2\)</span></td>
+<td>4</td>
+</tr>
+<tr>
+<td>时域一阶微分</td>
+<td><span class="arithmatex">\(f'\ \longleftrightarrow\ sF-f(0^-)\)</span></td>
+<td>6</td>
+</tr>
+<tr>
+<td>时域二阶微分</td>
+<td><span class="arithmatex">\(f''\ \longleftrightarrow\ s^2F-sf(0^-)-f'(0^-)\)</span></td>
+<td>6</td>
+</tr>
+<tr>
+<td>时域积分</td>
+<td><span class="arithmatex">\(Y=F/s+y(0^-)/s\)</span></td>
+<td>7</td>
+</tr>
+<tr>
+<td>时域乘幂</td>
+<td><span class="arithmatex">\(t^nf\ \longleftrightarrow\ (-1)^nF^{(n)}(s)\)</span></td>
+<td>7</td>
+</tr>
+<tr>
+<td>时域除以 t</td>
+<td><span class="arithmatex">\(f/t\ \longleftrightarrow\ \int_s^{s+\infty}F(p)dp\)</span></td>
+<td>7</td>
+</tr>
+<tr>
+<td>延迟 t₀ ≥ 0</td>
+<td><span class="arithmatex">\(f(t-t_0)u(t-t_0)\ \longleftrightarrow\ e^{-st_0}F(s)\)</span></td>
+<td>9</td>
+</tr>
+<tr>
+<td>右边周期延拓</td>
+<td><span class="arithmatex">\(F=F_0/(1-e^{-sT})\)</span></td>
+<td>10</td>
+</tr>
+<tr>
+<td>指数加权</td>
+<td><span class="arithmatex">\(e^{-at}f(t)\ \longleftrightarrow\ F(s+a)\)</span></td>
+<td>11</td>
+</tr>
+<tr>
+<td>正尺度 a &gt; 0</td>
+<td><span class="arithmatex">\(f(at)\ \longleftrightarrow\ F(s/a)/a\)</span></td>
+<td>12</td>
+</tr>
+<tr>
+<td>初值 无原点冲激</td>
+<td><span class="arithmatex">\(f(0^+)=\lim_{s\to+\infty}sF(s)\)</span></td>
+<td>13</td>
+</tr>
+<tr>
+<td>终值 先查极点</td>
+<td><span class="arithmatex">\(f(\infty)=\lim_{s\to0^+}sF(s)\)</span></td>
+<td>13</td>
+</tr>
+<tr>
+<td>时域卷积</td>
+<td><span class="arithmatex">\(f_1*f_2\ \longleftrightarrow\ F_1F_2\)</span></td>
+<td>14</td>
+</tr>
+</tbody>
+</table>
+<p>易错提醒 1｜先声明从 <span class="arithmatex">\(0^-\)</span> 还是 <span class="arithmatex">\(0^+\)</span> 开始，再处理初始项；求终值前先检查极点，不能从极限存在倒推出终值存在。
+易错提醒 2｜延迟是整个表达式的时间平移；只移动阶跃不等于整体延迟。指数加权要把每一个 <span class="arithmatex">\(s\)</span> 替换成 <span class="arithmatex">\(s+a\)</span>。
+易错提醒 3｜s 域微分产生负号；时域幂函数有阶乘；尺度变换有 <span class="arithmatex">\(1/a\)</span>；RC 方程有初始项；这四类系数都可用简单变换对核验。</p>
+<div class="admonition warning">
+<p class="admonition-title">资料校核</p>
+<p>第 38 页高阶微分汇总的初始项应带各阶导数 <span class="arithmatex">\(f^{(r)}(0^-)\)</span>，不能每项都写成 <span class="arithmatex">\(f(0)\)</span>；s 域积分应使用一致的积分变量。本表已按前文推导统一。</p>
+</div>
+<h2 id="16-自测与关键步骤详解">16 自测与关键步骤详解<a class="headerlink" href="#16-自测与关键步骤详解" title="Permanent link">#</a></h2>
+<p>补充练习｜先独立作答，再对照后面的答案。除特别说明外，采用 <span class="arithmatex">\(0^-\)</span> 单边变换。
+1．求 <span class="arithmatex">\(f(t)=3u(t)-2e^{-2t}u(t)+t^2u(t)\)</span> 的变换及 ROC。
+2．求 <span class="arithmatex">\(e^{3t}u(t)\)</span> 的 ROC；它有普通傅里叶积分吗？再求 <span class="arithmatex">\(u(t)-u(t-2)\)</span> 的变换在 <span class="arithmatex">\(s=0\)</span> 的值。
+3．已知 <span class="arithmatex">\(F(s)=1/(s+2)\)</span>、<span class="arithmatex">\(f(0^-)=1\)</span>，求完整导数的变换；若改成 <span class="arithmatex">\(e^{-2t}u(t)\)</span> 的完整因果导数，又是多少？
+4．求 <span class="arithmatex">\(t^2e^{-3t}u(t)\)</span> 与 <span class="arithmatex">\((1-e^{-2t})u(t)/t\)</span> 的变换，说明使用的性质和条件。
+5．求 <span class="arithmatex">\((t+2)u(t-3)\)</span> 的变换，写出变量改写步骤。
+6．周期为 3，第一秒为 1、其余两秒为 0，零时刻启动；求变换及 ROC。
+7．设 <span class="arithmatex">\(q(t)\)</span> 是第 11 节从零启动的周期双极性方波，求 <span class="arithmatex">\(e^{-2t}q(t)\)</span> 的变换，并解释 ROC 的移动。
+8．已知 <span class="arithmatex">\(f(t)=e^{-t}u(t)\)</span>，求 <span class="arithmatex">\(f(4t)\)</span> 的变换；为什么不能仅凭单边 <span class="arithmatex">\(F(s)\)</span> 通用地求 <span class="arithmatex">\(f(-t)\)</span>？
+9．分别判断 <span class="arithmatex">\(F_1=2/[s(s+2)]\)</span>、<span class="arithmatex">\(F_2=s/(s^2+4)\)</span>、<span class="arithmatex">\(F_3=1/(s-1)\)</span> 能否使用终值定理，并求允许的终值。
+10．RC 电路满足 <span class="arithmatex">\(RC=2\)</span> 秒、<span class="arithmatex">\(E=5\)</span> 伏、<span class="arithmatex">\(v_C(0^-)=1\)</span> 伏，求开关闭合后的电压及初始斜率。
+11．用卷积定理求 <span class="arithmatex">\(u(t)*e^{-3t}u(t)\)</span>，再用时域积分核验。
+12．为什么 <span class="arithmatex">\(\mathcal L\{d[f(t)u(t)]/dt\}=sF(s)\)</span> 与 <span class="arithmatex">\(\mathcal L\{f'(t)\}=sF(s)-f(0^-)\)</span> 不矛盾？求 <span class="arithmatex">\(\mathcal L\{\delta'(t)\}\)</span> 作检验。</p>
+<h3 id="答案与检验">答案与检验<a class="headerlink" href="#答案与检验" title="Permanent link">#</a></h3>
+<p>1．线性相加得 <span class="arithmatex">\(F=3/s-2/(s+2)+2/s^3\)</span>。三项公共 ROC 为 <span class="arithmatex">\(\sigma&gt;0\)</span>，零点的三阶极点未消除，故实际 ROC 仍为 <span class="arithmatex">\(\sigma&gt;0\)</span>。
+2．<span class="arithmatex">\(F=1/(s-3)\)</span>，要求 <span class="arithmatex">\(\sigma&gt;3\)</span>，虚轴不在 ROC 内，且时间函数增长，所以没有普通傅里叶积分。有限脉冲为 <span class="arithmatex">\((1-e^{-2s})/s\)</span>；按原积分在 <span class="arithmatex">\(s=0\)</span> 得 <span class="arithmatex">\(\int_0^2 1dt=2\)</span>，不是无穷大。
+3．第一种是右侧为 <span class="arithmatex">\(e^{-2t}\)</span> 且左初值为 1 的连续启动情形，导数变换 <span class="arithmatex">\(s/(s+2)-1=-2/(s+2)\)</span>。第二种左初值为 0，完整导数包含 <span class="arithmatex">\(\delta(t)\)</span>，变换为 <span class="arithmatex">\(s/(s+2)=1-2/(s+2)\)</span>；差别恰为原点冲激的变换 1。
+4．对 <span class="arithmatex">\(1/(s+3)\)</span> 求二阶导数得 <span class="arithmatex">\(2/(s+3)^3\)</span>，ROC 为 <span class="arithmatex">\(\sigma&gt;-3\)</span>。第二式由 s 域积分得 <span class="arithmatex">\(\ln[(s+2)/s]\)</span>，ROC 为 <span class="arithmatex">\(\sigma&gt;0\)</span>；零点附近分子约为 <span class="arithmatex">\(2t\)</span>，除以 <span class="arithmatex">\(t\)</span> 后有限。
+5．先写 <span class="arithmatex">\(t+2=(t-3)+5\)</span>，令 <span class="arithmatex">\(\tau=t-3\)</span>，则 <span class="arithmatex">\(F=e^{-3s}\mathcal L\{(t+5)u(t)\}=e^{-3s}(1/s^2+5/s)\)</span>，ROC 为 <span class="arithmatex">\(\sigma&gt;0\)</span>。从 <span class="arithmatex">\(t=3\)</span> 启动时高度为 5，可据此检查常数项。
+6．单周期 <span class="arithmatex">\(F_0=(1-e^{-s})/s\)</span>；向右周期延拓得 <span class="arithmatex">\(F=(1-e^{-s})/[s(1-e^{-3s})]\)</span>，ROC 为 <span class="arithmatex">\(\sigma&gt;0\)</span>。周期是 3，不是非零脉冲的宽度 1。
+7．从 <span class="arithmatex">\(Q(s)=(1-e^{-s})/[s(1+e^{-s})]\)</span> 出发，把全部 <span class="arithmatex">\(s\)</span> 换成 <span class="arithmatex">\(s+2\)</span>，得到 <span class="arithmatex">\(F=(1-e^{-(s+2)})/[(s+2)(1+e^{-(s+2)})]\)</span>。ROC 左移 2，变为 <span class="arithmatex">\(\sigma&gt;-2\)</span>。
+8．<span class="arithmatex">\((1/4)F(s/4)=1/(s+4)\)</span>，ROC 为 <span class="arithmatex">\(\sigma&gt;-4\)</span>。负尺度会把负时间信息搬到正时间；不同的负时间延拓可有同一个单边 <span class="arithmatex">\(F(s)\)</span>，却有不同的反转结果。题中若额外已知全时轴因果定义，则 <span class="arithmatex">\(f(-t)\)</span> 在 <span class="arithmatex">\(t&gt;0\)</span> 为零，这是利用了额外的时域信息。
+9．<span class="arithmatex">\(sF_1=2/(s+2)\)</span> 仅有左半平面极点，终值为 1。<span class="arithmatex">\(sF_2=s^2/(s^2+4)\)</span> 有 <span class="arithmatex">\(\pm2j\)</span> 极点，响应为余弦，无终值。<span class="arithmatex">\(sF_3=s/(s-1)\)</span> 有右半平面极点，响应增长，无有限终值；后两项即使代算极限也不能用。
+10．变换方程为 <span class="arithmatex">\(2[sV-1]+V=5/s\)</span>，因此 <span class="arithmatex">\(V=5/s-4/(s+1/2)\)</span>。零时刻之后 <span class="arithmatex">\(v_C=5-4e^{-t/2}\)</span> 伏，初始斜率 <span class="arithmatex">\(v_C'(0^+)=2\)</span> 伏每秒；检验 <span class="arithmatex">\(v_C(0^+)=1\)</span>、终值 5，且 <span class="arithmatex">\(2v_C'+v_C=5\)</span>。
+11．<span class="arithmatex">\(H=1/[s(s+3)]=(1/3)[1/s-1/(s+3)]\)</span>，故 <span class="arithmatex">\(h=(1-e^{-3t})u(t)/3\)</span>。直接积分 <span class="arithmatex">\(\int_0^t e^{-3(t-\tau)}d\tau=(1-e^{-3t})/3\)</span>；积分器系数不可遗漏。
+12．完整因果导数包括 <span class="arithmatex">\(f(0^+)\delta(t)\)</span>，其变换把普通右侧导数的 <span class="arithmatex">\(-f(0^+)\)</span> 抵消；含原点约定的物理初始项则由 <span class="arithmatex">\(f(0^-)\)</span> 决定。冲激偶按分布导数作用于 <span class="arithmatex">\(e^{-st}\)</span> 得 <span class="arithmatex">\(-(-s)=s\)</span>，不需要定义冲激的普通点值。</p>
+<h2 id="17-作业-复习与资料索引">17 作业 复习与资料索引<a class="headerlink" href="#17-作业-复习与资料索引" title="Permanent link">#</a></h2>
+<p><span class="pill pill-src">资料内容</span> 讲义第 39 页布置教材 4-1（1）至（10）、4-2；预习第 4.4 至 4.6 节。本次资料没有给出这些教材题面的完整内容，本笔记不编造题目。第 16 节是另外编写的自测，不替代教材作业。
+复习顺序：先不用查表重写阶跃、指数、幂函数、正弦和余弦变换；再独立推导微分、延迟和周期信号公式；最后用 RC 例题串联初始条件、代数求解与初终值核验。
+资料范围：高河伟《信号与系统 第 4 章 拉普拉斯变换 连续时间系统的 s 域分析 I》，2026 年秋季学期，40 页。第 40 页说明课件在邢宇翔、赵自然老师原 PPT 讲稿基础上修改，并参考其他教师资料；此处保留来源说明。正文中的页码均指这份教师 PDF。
+课堂录音：约 95 分钟，文件名为“第七节课.wav”，已确认属于第六节课。标为“录音补充”的内容是结合课件整理的讲解，时间为录音中的分:秒，不是逐字引文。</p>
+<table>
+<thead>
+<tr>
+<th>讲义页码</th>
+<th>内容与图示覆盖</th>
+<th>正文位置</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1—5</td>
+<td>课程位置 历史作用 本章路线图</td>
+<td>1 与图 1</td>
+</tr>
+<tr>
+<td>6—9</td>
+<td>指数加权 双边与单边定义 反演</td>
+<td>2</td>
+</tr>
+<tr>
+<td>10—11</td>
+<td>收敛条件 六类信号 ROC</td>
+<td>3 与图 2</td>
+</tr>
+<tr>
+<td>12—14</td>
+<td>阶跃 指数 幂函数 冲激</td>
+<td>4</td>
+</tr>
+<tr>
+<td>15</td>
+<td>常用傅里叶谱与广义边界</td>
+<td>5</td>
+</tr>
+<tr>
+<td>16—17</td>
+<td>性质概览 线性 正余弦例题</td>
+<td>4 与 15</td>
+</tr>
+<tr>
+<td>18—20</td>
+<td>各阶微分 零点跳变 冲激偶</td>
+<td>6</td>
+</tr>
+<tr>
+<td>21—23</td>
+<td>s 域微分积分 时域积分</td>
+<td>7</td>
+</tr>
+<tr>
+<td>24—25</td>
+<td>电容初始模型 RC 例题</td>
+<td>8 与图 3—4</td>
+</tr>
+<tr>
+<td>26—27</td>
+<td>延迟证明 四种斜坡</td>
+<td>9 与图 5</td>
+</tr>
+<tr>
+<td>28</td>
+<td>周期变换 矩形脉冲</td>
+<td>10 与图 6</td>
+</tr>
+<tr>
+<td>29—30</td>
+<td>衰减方波 指数加权</td>
+<td>11 与图 7</td>
+</tr>
+<tr>
+<td>31</td>
+<td>正尺度及负尺度的限制</td>
+<td>12</td>
+</tr>
+<tr>
+<td>32—34</td>
+<td>初终值条件 推导与解释</td>
+<td>13 与图 8</td>
+</tr>
+<tr>
+<td>35—37</td>
+<td>两种卷积及积分微分算子</td>
+<td>14 与图 9</td>
+</tr>
+<tr>
+<td>38</td>
+<td>性质汇总及排印校核</td>
+<td>15</td>
+</tr>
+<tr>
+<td>39—40</td>
+<td>作业 预习与来源说明</td>
+<td>17</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="页脚" >
+        
+          
+          <a href="../%E7%AC%AC5%E8%AE%B2_%E5%85%B8%E5%9E%8B%E5%8F%98%E6%8D%A2%E5%AF%B9%E4%B8%8E%E6%8A%BD%E6%A0%B7%E5%AE%9A%E7%90%86/" class="md-footer__link md-footer__link--prev" aria-label="上一页: 第5讲 典型变换对与抽样定理">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                上一页
+              </span>
+              <div class="md-ellipsis">
+                第5讲 典型变换对与抽样定理
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../%E7%AC%AC7%E8%AE%B2_%E6%8B%89%E6%99%AE%E6%8B%89%E6%96%AF%E9%80%86%E5%8F%98%E6%8D%A2%E4%B8%8E%20s%20%E5%9F%9F%E6%A8%A1%E5%9E%8B/" class="md-footer__link md-footer__link--next" aria-label="下一页: 第7讲 拉普拉斯逆变换与 s 域模型">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                下一页
+              </span>
+              <div class="md-ellipsis">
+                第7讲 拉普拉斯逆变换与 s 域模型
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.sections", "navigation.expand", "navigation.top", "navigation.footer", "toc.follow", "search.highlight", "search.share"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

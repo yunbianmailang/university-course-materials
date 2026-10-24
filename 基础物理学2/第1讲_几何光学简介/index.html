@@ -1,0 +1,4371 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="大学课程个人学习讲义，按学期和课程组织，支持网页端直接阅读">
+      
+      
+      
+        <link rel="canonical" href="https://yunbianmailang.github.io/university-course-materials/%E5%9F%BA%E7%A1%80%E7%89%A9%E7%90%86%E5%AD%A62/%E7%AC%AC1%E8%AE%B2_%E5%87%A0%E4%BD%95%E5%85%89%E5%AD%A6%E7%AE%80%E4%BB%8B/">
+      
+      
+        <link rel="prev" href="../%E8%AF%BE%E7%A8%8B%E8%AF%B4%E6%98%8E/">
+      
+      
+        <link rel="next" href="../%E7%AC%AC2%E8%AE%B2_%E6%B3%A2%E5%8A%A8%E5%85%89%E5%AD%A6%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86%EF%BC%88%E4%B8%80%EF%BC%89/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>第1讲 几何光学简介 - 大学课程学习资料</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/custom.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#第1讲-几何光学简介" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../.." title="大学课程学习资料" class="md-header__button md-logo" aria-label="大学课程学习资料" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            大学课程学习资料
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              第1讲 几何光学简介
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="indigo"  aria-label="切换到深色模式"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="切换到深色模式" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="indigo"  aria-label="切换到浅色模式"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="切换到浅色模式" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="分享" aria-label="分享" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/yunbianmailang/university-course-materials" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    大学课程学习资料
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="大学课程学习资料" class="md-nav__button md-logo" aria-label="大学课程学习资料" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    大学课程学习资料
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/yunbianmailang/university-course-materials" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    大学课程学习资料
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    首页
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    复变函数与数理方程
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    复变函数与数理方程
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0%E4%B8%8E%E6%95%B0%E7%90%86%E6%96%B9%E7%A8%8B/%E8%AF%BE%E7%A8%8B%E8%AF%B4%E6%98%8E/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    课程说明
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0%E4%B8%8E%E6%95%B0%E7%90%86%E6%96%B9%E7%A8%8B/%E7%AC%AC1%E8%AE%B2_%E5%A4%8D%E6%95%B0%E5%87%A0%E4%BD%95%E6%A8%A1%E7%9A%84%E6%9E%81%E5%80%BC%E4%B8%8E%E6%8C%87%E6%95%B0%E6%98%A0%E5%B0%84/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第1讲 复数几何模的极值与指数映射
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0%E4%B8%8E%E6%95%B0%E7%90%86%E6%96%B9%E7%A8%8B/%E7%AC%AC2%E8%AE%B2_%E5%A4%8D%E5%B9%82%E8%A7%A3%E6%9E%90%E6%80%A7%E4%B8%8E%E5%A4%8D%E5%B9%B3%E9%9D%A2%E6%98%A0%E5%B0%84/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第2讲 复幂解析性与复平面映射
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0%E4%B8%8E%E6%95%B0%E7%90%86%E6%96%B9%E7%A8%8B/%E7%AC%AC3%E8%AE%B2_%E5%A4%8D%E7%A7%AF%E5%88%86%E6%9F%AF%E8%A5%BF%E5%85%AC%E5%BC%8F%E4%B8%8E%E8%A7%A3%E6%9E%90%E5%87%BD%E6%95%B0%E7%9A%84%E6%95%B4%E4%BD%93%E6%80%A7%E8%B4%A8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第3讲 复积分柯西公式与解析函数的整体性质
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0%E4%B8%8E%E6%95%B0%E7%90%86%E6%96%B9%E7%A8%8B/%E7%AC%AC4%E8%AE%B2_%E5%B9%82%E7%BA%A7%E6%95%B0%E6%94%B6%E6%95%9B%E4%B8%8E%E6%B3%B0%E5%8B%92%E6%B4%9B%E6%9C%97%E5%B1%95%E5%BC%80/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第4讲 幂级数收敛与泰勒洛朗展开
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0%E4%B8%8E%E6%95%B0%E7%90%86%E6%96%B9%E7%A8%8B/%E7%AC%AC5%E8%AE%B2_%E9%9B%B6%E7%82%B9%E5%A5%87%E7%82%B9%E4%B8%8E%E7%95%99%E6%95%B0%E7%A7%AF%E5%88%86/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第5讲 零点奇点与留数积分
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    信号与系统
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    信号与系统
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%B3%BB%E7%BB%9F/%E8%AF%BE%E7%A8%8B%E8%AF%B4%E6%98%8E/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    课程说明
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%B3%BB%E7%BB%9F/%E7%AC%AC1%E8%AE%B2_%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF%E4%B8%8E%E5%9F%BA%E6%9C%AC%E8%AF%AD%E8%A8%80/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第1讲 学习路线与基本语言
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%B3%BB%E7%BB%9F/%E7%AC%AC2%E8%AE%B2_%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B%E7%BB%8F%E5%85%B8%E6%B3%95%E4%B8%8E%E5%93%8D%E5%BA%94%E5%88%86%E8%A7%A3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第2讲 微分方程经典法与响应分解
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%B3%BB%E7%BB%9F/%E7%AC%AC3%E8%AE%B2_%E5%82%85%E9%87%8C%E5%8F%B6%E7%BA%A7%E6%95%B0%E4%B8%8E%E9%A2%91%E8%B0%B1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第3讲 傅里叶级数与频谱
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%B3%BB%E7%BB%9F/%E7%AC%AC4%E8%AE%B2_%E5%82%85%E9%87%8C%E5%8F%B6%E5%8F%98%E6%8D%A2%E4%B8%8E%E5%85%B8%E5%9E%8B%E4%BF%A1%E5%8F%B7%E9%A2%91%E8%B0%B1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第4讲 傅里叶变换与典型信号频谱
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%B3%BB%E7%BB%9F/%E7%AC%AC5%E8%AE%B2_%E5%85%B8%E5%9E%8B%E5%8F%98%E6%8D%A2%E5%AF%B9%E4%B8%8E%E6%8A%BD%E6%A0%B7%E5%AE%9A%E7%90%86/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第5讲 典型变换对与抽样定理
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%B3%BB%E7%BB%9F/%E7%AC%AC6%E8%AE%B2_%E6%8B%89%E6%99%AE%E6%8B%89%E6%96%AF%E5%8F%98%E6%8D%A2%E7%9A%84%E6%80%A7%E8%B4%A8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第6讲 拉普拉斯变换的性质
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%B3%BB%E7%BB%9F/%E7%AC%AC7%E8%AE%B2_%E6%8B%89%E6%99%AE%E6%8B%89%E6%96%AF%E9%80%86%E5%8F%98%E6%8D%A2%E4%B8%8E%20s%20%E5%9F%9F%E6%A8%A1%E5%9E%8B/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第7讲 拉普拉斯逆变换与 s 域模型
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%B3%BB%E7%BB%9F/%E7%AC%AC8%E8%AE%B2_%E9%A2%91%E7%8E%87%E5%93%8D%E5%BA%94%E4%B8%8E%E7%A8%B3%E5%AE%9A%E6%80%A7/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第8讲 频率响应与稳定性
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    基础物理学2（光学）
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    基础物理学2（光学）
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E8%AF%BE%E7%A8%8B%E8%AF%B4%E6%98%8E/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    课程说明
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第1讲 几何光学简介
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第1讲 几何光学简介
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#本讲知识地图" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        本讲知识地图
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="本讲知识地图">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#先掌握这四个问题" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        先掌握这四个问题
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#阅读导航" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        阅读导航
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#本讲范围与标记" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        本讲范围与标记
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#光源与光强" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        光源与光强
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="光源与光强">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#光学的三个层次" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        光学的三个层次
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#从电磁场到能流" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        从电磁场到能流
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#光强正比于振幅平方" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        光强正比于振幅平方
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#几何光学基本定律" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        几何光学基本定律
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="几何光学基本定律">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#直线传播与界面定律" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        直线传播与界面定律
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#全反射的两个条件" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        全反射的两个条件
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#曲面界面与光路可逆" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        曲面界面与光路可逆
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#课堂例题一-水中物体为什么显浅" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        课堂例题一 水中物体为什么显浅
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="课堂例题一 水中物体为什么显浅">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#思路与推导" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        思路与推导
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#近轴结论及物理意义" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        近轴结论及物理意义
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#棱镜与色散" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        棱镜与色散
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="棱镜与色散">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#最小偏向角与折射率" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        最小偏向角与折射率
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#色散如何产生" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        色散如何产生
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#光程与费马原理" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        光程与费马原理
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="光程与费马原理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#用光程比较不同介质中的传播" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        用光程比较不同介质中的传播
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#光程差与相位差" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        光程差与相位差
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#费马原理的准确含义" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        费马原理的准确含义
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#关键推导-用费马原理得到反射与折射" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        关键推导 用费马原理得到反射与折射
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="关键推导 用费马原理得到反射与折射">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#反射定律-建议理解" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        反射定律 建议理解
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#折射定律-必须掌握" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        折射定律 必须掌握
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#成像与虚实物像" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        成像与虚实物像
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="成像与虚实物像">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#成像要求保持光束的同心性" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        成像要求保持光束的同心性
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#实物与虚物-看入射光束" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        实物与虚物 看入射光束
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#实像与虚像-看出射光束" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        实像与虚像 看出射光束
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#共轭的含义" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        共轭的含义
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#等光程性与齐明点" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        等光程性与齐明点
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="等光程性与齐明点">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#同一物像对之间-为什么各路光程相等" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        同一物像对之间 为什么各路光程相等
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#反射等光程面" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        反射等光程面
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#折射球面的齐明点-建议理解" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        折射球面的齐明点 建议理解
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#单球面成像-从精确关系到傍轴近似" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        单球面成像 从精确关系到傍轴近似
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="单球面成像 从精确关系到傍轴近似">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#几何量与精确追迹" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        几何量与精确追迹
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#傍轴近似-必须掌握" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        傍轴近似 必须掌握
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#符号-焦距-放大率与球面镜" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        符号 焦距 放大率与球面镜
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="符号 焦距 放大率与球面镜">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#先固定符号-再代公式" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        先固定符号 再代公式
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#球面折射的焦点" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        球面折射的焦点
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#横向放大率" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        横向放大率
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#球面反射镜" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        球面反射镜
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#薄透镜公式与光焦度" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        薄透镜公式与光焦度
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="薄透镜公式与光焦度">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#关键推导-两个折射球面相加" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        关键推导 两个折射球面相加
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#空气中的磨镜者公式" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        空气中的磨镜者公式
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#课堂例题二-焦距换算为屈光度" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        课堂例题二 焦距换算为屈光度
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#焦面与薄透镜作图" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        焦面与薄透镜作图
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="焦面与薄透镜作图">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#三条特殊光线" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三条特殊光线
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#焦点是一点-焦面是一个平面" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        焦点是一点 焦面是一个平面
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#实物经会聚透镜的像" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        实物经会聚透镜的像
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#透镜的等光程性与厚透镜入口" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        透镜的等光程性与厚透镜入口
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="透镜的等光程性与厚透镜入口">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#如何理解透镜不产生附加光程差" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        如何理解透镜不产生附加光程差
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#厚透镜-为什么不能继续从光心测所有距离" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        厚透镜 为什么不能继续从光心测所有距离
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#焦距与顶点焦距" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        焦距与顶点焦距
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#透镜组与虚物" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        透镜组与虚物
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="透镜组与虚物">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#逐次成像的固定步骤" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        逐次成像的固定步骤
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#教材补充例题-虚物经发散透镜成实像" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        教材补充例题 虚物经发散透镜成实像
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#课堂例题三-望远镜为什么看起来放大" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        课堂例题三 望远镜为什么看起来放大
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="课堂例题三 望远镜为什么看起来放大">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#思路-分两次成像-保留中间精度" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        思路 分两次成像 保留中间精度
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#横向放大率与视角放大率" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        横向放大率与视角放大率
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#自学提要-惠更斯原理与光学仪器" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        自学提要 惠更斯原理与光学仪器
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="自学提要 惠更斯原理与光学仪器">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#惠更斯原理-了解波面的传播" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        惠更斯原理 了解波面的传播
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#投影仪-把近焦面物体成远处实像" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        投影仪 把近焦面物体成远处实像
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#照相机-把远处物体成近焦面实像" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        照相机 把远处物体成近焦面实像
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#放大镜与目镜-放大的是视角" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        放大镜与目镜 放大的是视角
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#自然现象中的折射-反射与色散" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        自然现象中的折射 反射与色散
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="自然现象中的折射 反射与色散">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#主虹" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        主虹
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#副虹与暗带" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        副虹与暗带
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#日晕与月晕" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        日晕与月晕
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#将现象还原成光路" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        将现象还原成光路
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#公式速查一-传播与光程" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        公式速查一 传播与光程
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="公式速查一 传播与光程">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#光强" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        光强
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#反射-折射-全反射" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        反射 折射 全反射
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#平面界面视深" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        平面界面视深
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#棱镜" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        棱镜
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#光程-相位与费马原理" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        光程 相位与费马原理
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#公式速查二-成像与仪器" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        公式速查二 成像与仪器
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="公式速查二 成像与仪器">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#单球面折射-傍轴条件" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        单球面折射 傍轴条件
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#球面反射镜-傍轴条件" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        球面反射镜 傍轴条件
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#薄透镜" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        薄透镜
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#逐次成像与放大率" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        逐次成像与放大率
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#本讲易错清单" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        本讲易错清单
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="本讲易错清单">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-角度量错了基准" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1 角度量错了基准
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-把光密当成质量密度大" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2 把光密当成质量密度大
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-相位公式重复乘了折射率" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3 相位公式重复乘了折射率
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-把费马原理记成光总走最短路" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4 把费马原理记成光总走最短路
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-看左右位置就判虚实" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5 看左右位置就判虚实
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-曲率半径全部取正" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6 曲率半径全部取正
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-放大与正立混在一起" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7 放大与正立混在一起
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-把透镜组的中间像距直接当下一物距" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8 把透镜组的中间像距直接当下一物距
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9-以为薄透镜完全不改变相位" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9 以为薄透镜完全不改变相位
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-过早舍入-或混用两种放大率" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10 过早舍入 或混用两种放大率
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#自测题" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        自测题
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="自测题">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#题-1-概念与条件" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        题 1 概念与条件
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#题-2-界面折射与全反射" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        题 2 界面折射与全反射
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#题-3-薄透镜计算" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        题 3 薄透镜计算
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#题-4-公式推导与极限检验" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        题 4 公式推导与极限检验
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#题-5-透镜组综合" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        题 5 透镜组综合
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#作答检查" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        作答检查
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#自测答案与来源索引" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        自测答案与来源索引
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="自测答案与来源索引">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#题-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        题 1
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#题-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        题 2
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#题-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        题 3
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#题-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        题 4
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#题-5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        题 5
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#资料索引" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        资料索引
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC2%E8%AE%B2_%E6%B3%A2%E5%8A%A8%E5%85%89%E5%AD%A6%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86%EF%BC%88%E4%B8%80%EF%BC%89/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第2讲 波动光学基本原理（一）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC3%E8%AE%B2_%E5%85%89%E7%9A%84%E5%B9%B2%E6%B6%89%E4%B8%8E%E6%97%B6%E7%A9%BA%E7%9B%B8%E5%B9%B2%E6%80%A7/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第3讲 光的干涉与时空相干性
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC4%E8%AE%B2_%E5%85%89%E7%9A%84%E8%A1%8D%E5%B0%84%E4%B8%8E%E5%88%86%E8%BE%A8%E6%9C%AC%E9%A2%86/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第4讲 光的衍射与分辨本领
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC5%E8%AE%B2_%E8%A1%8D%E5%B0%84%E5%85%89%E6%A0%85%E4%B8%8E%E6%99%B6%E4%BD%93%E8%A1%8D%E5%B0%84/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第5讲 衍射光栅与晶体衍射
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC6%E8%AE%B2_%E5%81%8F%E6%8C%AF%E6%80%81%E4%B8%8E%E8%8F%B2%E6%B6%85%E8%80%B3%E5%85%AC%E5%BC%8F/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第6讲 偏振态与菲涅耳公式
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC7%E8%AE%B2_%E5%8F%8C%E6%8A%98%E5%B0%84%E4%B8%8E%E5%81%8F%E6%8C%AF%E5%85%89%E5%BA%94%E7%94%A8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第7讲 双折射与偏振光应用
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#本讲知识地图" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        本讲知识地图
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="本讲知识地图">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#先掌握这四个问题" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        先掌握这四个问题
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#阅读导航" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        阅读导航
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#本讲范围与标记" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        本讲范围与标记
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#光源与光强" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        光源与光强
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="光源与光强">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#光学的三个层次" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        光学的三个层次
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#从电磁场到能流" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        从电磁场到能流
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#光强正比于振幅平方" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        光强正比于振幅平方
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#几何光学基本定律" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        几何光学基本定律
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="几何光学基本定律">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#直线传播与界面定律" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        直线传播与界面定律
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#全反射的两个条件" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        全反射的两个条件
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#曲面界面与光路可逆" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        曲面界面与光路可逆
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#课堂例题一-水中物体为什么显浅" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        课堂例题一 水中物体为什么显浅
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="课堂例题一 水中物体为什么显浅">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#思路与推导" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        思路与推导
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#近轴结论及物理意义" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        近轴结论及物理意义
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#棱镜与色散" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        棱镜与色散
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="棱镜与色散">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#最小偏向角与折射率" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        最小偏向角与折射率
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#色散如何产生" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        色散如何产生
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#光程与费马原理" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        光程与费马原理
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="光程与费马原理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#用光程比较不同介质中的传播" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        用光程比较不同介质中的传播
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#光程差与相位差" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        光程差与相位差
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#费马原理的准确含义" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        费马原理的准确含义
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#关键推导-用费马原理得到反射与折射" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        关键推导 用费马原理得到反射与折射
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="关键推导 用费马原理得到反射与折射">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#反射定律-建议理解" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        反射定律 建议理解
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#折射定律-必须掌握" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        折射定律 必须掌握
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#成像与虚实物像" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        成像与虚实物像
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="成像与虚实物像">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#成像要求保持光束的同心性" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        成像要求保持光束的同心性
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#实物与虚物-看入射光束" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        实物与虚物 看入射光束
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#实像与虚像-看出射光束" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        实像与虚像 看出射光束
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#共轭的含义" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        共轭的含义
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#等光程性与齐明点" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        等光程性与齐明点
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="等光程性与齐明点">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#同一物像对之间-为什么各路光程相等" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        同一物像对之间 为什么各路光程相等
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#反射等光程面" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        反射等光程面
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#折射球面的齐明点-建议理解" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        折射球面的齐明点 建议理解
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#单球面成像-从精确关系到傍轴近似" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        单球面成像 从精确关系到傍轴近似
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="单球面成像 从精确关系到傍轴近似">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#几何量与精确追迹" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        几何量与精确追迹
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#傍轴近似-必须掌握" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        傍轴近似 必须掌握
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#符号-焦距-放大率与球面镜" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        符号 焦距 放大率与球面镜
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="符号 焦距 放大率与球面镜">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#先固定符号-再代公式" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        先固定符号 再代公式
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#球面折射的焦点" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        球面折射的焦点
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#横向放大率" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        横向放大率
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#球面反射镜" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        球面反射镜
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#薄透镜公式与光焦度" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        薄透镜公式与光焦度
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="薄透镜公式与光焦度">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#关键推导-两个折射球面相加" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        关键推导 两个折射球面相加
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#空气中的磨镜者公式" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        空气中的磨镜者公式
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#课堂例题二-焦距换算为屈光度" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        课堂例题二 焦距换算为屈光度
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#焦面与薄透镜作图" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        焦面与薄透镜作图
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="焦面与薄透镜作图">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#三条特殊光线" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三条特殊光线
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#焦点是一点-焦面是一个平面" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        焦点是一点 焦面是一个平面
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#实物经会聚透镜的像" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        实物经会聚透镜的像
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#透镜的等光程性与厚透镜入口" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        透镜的等光程性与厚透镜入口
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="透镜的等光程性与厚透镜入口">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#如何理解透镜不产生附加光程差" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        如何理解透镜不产生附加光程差
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#厚透镜-为什么不能继续从光心测所有距离" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        厚透镜 为什么不能继续从光心测所有距离
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#焦距与顶点焦距" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        焦距与顶点焦距
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#透镜组与虚物" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        透镜组与虚物
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="透镜组与虚物">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#逐次成像的固定步骤" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        逐次成像的固定步骤
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#教材补充例题-虚物经发散透镜成实像" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        教材补充例题 虚物经发散透镜成实像
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#课堂例题三-望远镜为什么看起来放大" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        课堂例题三 望远镜为什么看起来放大
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="课堂例题三 望远镜为什么看起来放大">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#思路-分两次成像-保留中间精度" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        思路 分两次成像 保留中间精度
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#横向放大率与视角放大率" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        横向放大率与视角放大率
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#自学提要-惠更斯原理与光学仪器" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        自学提要 惠更斯原理与光学仪器
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="自学提要 惠更斯原理与光学仪器">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#惠更斯原理-了解波面的传播" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        惠更斯原理 了解波面的传播
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#投影仪-把近焦面物体成远处实像" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        投影仪 把近焦面物体成远处实像
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#照相机-把远处物体成近焦面实像" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        照相机 把远处物体成近焦面实像
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#放大镜与目镜-放大的是视角" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        放大镜与目镜 放大的是视角
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#自然现象中的折射-反射与色散" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        自然现象中的折射 反射与色散
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="自然现象中的折射 反射与色散">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#主虹" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        主虹
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#副虹与暗带" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        副虹与暗带
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#日晕与月晕" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        日晕与月晕
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#将现象还原成光路" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        将现象还原成光路
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#公式速查一-传播与光程" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        公式速查一 传播与光程
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="公式速查一 传播与光程">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#光强" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        光强
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#反射-折射-全反射" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        反射 折射 全反射
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#平面界面视深" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        平面界面视深
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#棱镜" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        棱镜
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#光程-相位与费马原理" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        光程 相位与费马原理
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#公式速查二-成像与仪器" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        公式速查二 成像与仪器
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="公式速查二 成像与仪器">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#单球面折射-傍轴条件" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        单球面折射 傍轴条件
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#球面反射镜-傍轴条件" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        球面反射镜 傍轴条件
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#薄透镜" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        薄透镜
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#逐次成像与放大率" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        逐次成像与放大率
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#本讲易错清单" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        本讲易错清单
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="本讲易错清单">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-角度量错了基准" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1 角度量错了基准
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-把光密当成质量密度大" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2 把光密当成质量密度大
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-相位公式重复乘了折射率" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3 相位公式重复乘了折射率
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-把费马原理记成光总走最短路" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4 把费马原理记成光总走最短路
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-看左右位置就判虚实" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5 看左右位置就判虚实
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-曲率半径全部取正" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6 曲率半径全部取正
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-放大与正立混在一起" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7 放大与正立混在一起
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-把透镜组的中间像距直接当下一物距" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8 把透镜组的中间像距直接当下一物距
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9-以为薄透镜完全不改变相位" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9 以为薄透镜完全不改变相位
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-过早舍入-或混用两种放大率" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10 过早舍入 或混用两种放大率
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#自测题" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        自测题
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="自测题">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#题-1-概念与条件" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        题 1 概念与条件
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#题-2-界面折射与全反射" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        题 2 界面折射与全反射
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#题-3-薄透镜计算" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        题 3 薄透镜计算
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#题-4-公式推导与极限检验" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        题 4 公式推导与极限检验
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#题-5-透镜组综合" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        题 5 透镜组综合
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#作答检查" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        作答检查
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#自测答案与来源索引" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        自测答案与来源索引
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="自测答案与来源索引">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#题-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        题 1
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#题-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        题 2
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#题-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        题 3
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#题-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        题 4
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#题-5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        题 5
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#资料索引" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        资料索引
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="第1讲-几何光学简介">第1讲 几何光学简介<a class="headerlink" href="#第1讲-几何光学简介" title="Permanent link">#</a></h1>
+<div class="admonition tip">
+<p class="admonition-title">本讲配套文件</p>
+<ul>
+<li><a href="../../%E6%96%87%E4%BB%B6/%E5%9F%BA%E7%A1%80%E7%89%A9%E7%90%86%E5%AD%A62_%E7%AC%AC1%E8%AE%B2_%E5%87%A0%E4%BD%95%E5%85%89%E5%AD%A6%E7%AE%80%E4%BB%8B_%E5%AD%A6%E4%B9%A0%E8%AE%B2%E4%B9%89.pdf">PDF 在线阅读（基础物理学2_第1讲_几何光学简介_学习讲义.pdf）</a></li>
+<li><a href="../../%E6%96%87%E4%BB%B6/%E5%9F%BA%E7%A1%80%E7%89%A9%E7%90%86%E5%AD%A62_%E7%AC%AC1%E8%AE%B2_%E5%87%A0%E4%BD%95%E5%85%89%E5%AD%A6%E7%AE%80%E4%BB%8B_%E5%AD%A6%E4%B9%A0%E8%AE%B2%E4%B9%89.docx">Word 下载（基础物理学2_第1讲_几何光学简介_学习讲义.docx）</a></li>
+<li><a href="../../%E6%96%87%E4%BB%B6/%E5%9F%BA%E7%A1%80%E7%89%A9%E7%90%86%E5%AD%A62_%E7%AC%AC1%E8%AE%B2_%E5%87%A0%E4%BD%95%E5%85%89%E5%AD%A6%E7%AE%80%E4%BB%8B_%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93.pdf">知识点总结 PDF（基础物理学2_第1讲_几何光学简介_知识点总结.pdf）</a></li>
+<li><a href="../../%E6%96%87%E4%BB%B6/%E5%9F%BA%E7%A1%80%E7%89%A9%E7%90%86%E5%AD%A62_%E7%AC%AC1%E8%AE%B2_%E5%87%A0%E4%BD%95%E5%85%89%E5%AD%A6%E7%AE%80%E4%BB%8B_%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93.docx">知识点总结 Word（基础物理学2_第1讲_几何光学简介_知识点总结.docx）</a></li>
+</ul>
+</div>
+<h2 id="本讲知识地图">本讲知识地图<a class="headerlink" href="#本讲知识地图" title="Permanent link">#</a></h2>
+<blockquote>
+<p><strong>资料范围</strong>：课件 PDF 第 1—54 页  教材绪论与第一章相关节</p>
+</blockquote>
+<p>本讲研究光线如何传播，以及光学系统如何把物点变成像点。学习的主线是：先用反射、折射追迹光线，再用光程统一理解这些规律，最后在傍轴近似下建立成像公式。</p>
+<h3 id="先掌握这四个问题">先掌握这四个问题<a class="headerlink" href="#先掌握这四个问题" title="Permanent link">#</a></h3>
+<p>光走哪条路：均匀介质中直线传播，界面处满足反射与折射定律。
+为什么走这条路：费马原理要求实际光路的光程对邻近路径的微小变化保持平稳。
+什么叫成像：一个同心入射光束经过系统后，仍成为同心出射光束。
+怎样计算像的位置和大小：先判断虚实并确定符号，再使用球面或薄透镜公式，最后计算放大率。</p>
+<h3 id="阅读导航">阅读导航<a class="headerlink" href="#阅读导航" title="Permanent link">#</a></h3>
+<p>第 3—6 页　光强、基本定律、水下视深、棱镜与色散。
+第 7—8 页　光程、费马原理、反射与折射定律的推导。
+第 9—12 页　虚实物像、等光程性、齐明点、球面折射与反射。
+第 13—17 页　薄透镜、作图、透镜组及课堂例题。
+第 18—19 页　自学内容与自然光学现象的理解入口。
+第 20—24 页　公式速查、易错清单、自测题及答案。</p>
+<h3 id="本讲范围与标记">本讲范围与标记<a class="headerlink" href="#本讲范围与标记" title="Permanent link">#</a></h3>
+<p><span class="pill pill-ppt">PPT重点</span>表示课件中的定义、核心公式、强调内容或课堂例题。<span class="pill pill-src">教材补充</span>标出课件未展开但经教材核对的内容。<span class="pill pill-und">理解补充</span>表示重述、重绘或用于解释的简短推演。
+惠更斯原理和光学仪器按“自学”处理；厚透镜只作介绍；课件标“略”的共轴球面组与理想光具组不展开一般理论。不过，已放在课件 §1.4 中讲授的单球面傍轴成像仍属于本讲正文。
+!复习时先看第 20—22 页；遇到不清楚的条件或符号，再返回相应正文与光路图。光程和相位的联系，也会在后续波动光学中继续使用。</p>
+<h2 id="光源与光强">光源与光强<a class="headerlink" href="#光源与光强" title="Permanent link">#</a></h2>
+<blockquote>
+<p><strong>资料范围</strong>：课件 PDF 第 2—5 页  教材印刷页 2—4</p>
+</blockquote>
+<h3 id="光学的三个层次">光学的三个层次<a class="headerlink" href="#光学的三个层次" title="Permanent link">#</a></h3>
+<p><span class="pill pill-ppt">PPT重点</span>几何光学用光线描述传播和成像；波动光学研究干涉、衍射、偏振等现象；量子光学研究以量子理论描述的光与物质相互作用。本讲主要采用几何光学模型。
+热辐射来自一定温度下物体的辐射；非热发光包括电致发光、荧光、磷光、化学发光与生物发光。按课件，可见光波长约为 400—760 nm；这相当于 4000—7600 Å，边界是近似范围。</p>
+<h3 id="从电磁场到能流">从电磁场到能流<a class="headerlink" href="#从电磁场到能流" title="Permanent link">#</a></h3>
+<p><span class="pill pill-ppt">PPT重点</span>在均匀、各向同性、无源透明介质中，平面简谐波采用课件的时间因子约定：</p>
+<div class="arithmatex">\[\vec E=\vec E_0 e^{i(\vec k\cdot\vec r-\omega t)},\qquad \vec H=\vec H_0 e^{i(\vec k\cdot\vec r-\omega t)}\]</div>
+<p>代入麦克斯韦方程，空间微分相当于乘 <span class="arithmatex">\(i\vec k\)</span>，时间微分相当于乘 <span class="arithmatex">\(-i\omega\)</span>，于是</p>
+<div class="arithmatex">\[\vec k\cdot\vec E=\vec k\cdot\vec H=0,\quad \vec k\times\vec E=\mu\omega\vec H,\quad \vec k\times\vec H=-\epsilon\omega\vec E\]</div>
+<p>这说明电场、磁场与传播方向互相垂直，构成右手关系；场的大小满足 <span class="arithmatex">\(E/H=\sqrt{\mu/\epsilon}\)</span>。这里 <span class="arithmatex">\(\epsilon=\epsilon_0\epsilon_r\)</span>，<span class="arithmatex">\(\mu=\mu_0\mu_r\)</span>。</p>
+<h3 id="光强正比于振幅平方">光强正比于振幅平方<a class="headerlink" href="#光强正比于振幅平方" title="Permanent link">#</a></h3>
+<p>瞬时坡印廷矢量应由真实电磁场计算。对通常光学介质取 <span class="arithmatex">\(\mu_r\approx1\)</span>，则 <span class="arithmatex">\(n\approx\sqrt{\epsilon_r}\)</span>，并有</p>
+<div class="arithmatex">\[\vec S=\vec E\times\vec H,\qquad S=\frac{n}{c\mu_0}E^2\]</div>
+<p>简谐振动一个周期的平方平均为振幅平方的一半，所以</p>
+<div class="arithmatex">\[\langle E^2\rangle_T=\frac{E_0^2}{2},\qquad I=\langle S\rangle_T=\frac{n}{2c\mu_0}E_0^2\propto E_0^2\]</div>
+<p>!<span class="pill pill-src">教材补充</span>只有在同一种介质内比较相对光强时，才可省略比例系数写成 <span class="arithmatex">\(I=E_0^2\)</span>。跨介质比较不能丢掉折射率因子。这里的光强指平均能流密度，单位为 <span class="arithmatex">\(\mathrm{W}\,\mathrm{m}^{-2}\)</span>。</p>
+<h2 id="几何光学基本定律">几何光学基本定律<a class="headerlink" href="#几何光学基本定律" title="Permanent link">#</a></h2>
+<blockquote>
+<p><strong>资料范围</strong>：课件 PDF 第 7—8、10—11、16 页  教材印刷页 7—10、14</p>
+</blockquote>
+<h3 id="直线传播与界面定律">直线传播与界面定律<a class="headerlink" href="#直线传播与界面定律" title="Permanent link">#</a></h3>
+<p><span class="pill pill-ppt">PPT重点</span>在均匀、各向同性介质中，光线沿直线传播。折射率随空间变化时，光线可以弯曲。几何光学忽略衍射，在相关几何尺度远大于波长时通常适用。
+入射光线与界面法线确定入射面。反射线、折射线都在入射面内，角度均从法线量起：</p>
+<div class="arithmatex">\[i'=i,\qquad n_1\sin i=n_2\sin r\]</div>
+<p>进入折射率较大的介质，折射线更靠近法线；进入折射率较小的介质，折射线更远离法线。光密、光疏指折射率大小，并非质量密度大小。</p>
+<p><img alt="第1讲 插图 laws" loading="lazy" src="../%E6%8F%92%E5%9B%BE/%E7%AC%AC1%E8%AE%B2/laws.png" />
+<em>图 1 反射、折射及临界角。右图画的是临界状态，入射角再增大即发生全反射。</em></p>
+<h3 id="全反射的两个条件">全反射的两个条件<a class="headerlink" href="#全反射的两个条件" title="Permanent link">#</a></h3>
+<p><span class="pill pill-ppt">PPT重点</span>必须从光密介质射向光疏介质，并且入射角大于临界角。令临界折射角为直角可得</p>
+<div class="arithmatex">\[n_1&gt;n_2,\qquad i_c=\arcsin\frac{n_2}{n_1},\qquad i&gt;i_c\]</div>
+<p>从水射向空气，若 <span class="arithmatex">\(n_1=4/3\)</span>、<span class="arithmatex">\(n_2\approx1\)</span>，则 <span class="arithmatex">\(i_c\approx48.6^\circ\)</span>。课件用棱镜反射器等图像说明光线可以多次改变方向。</p>
+<h3 id="曲面界面与光路可逆">曲面界面与光路可逆<a class="headerlink" href="#曲面界面与光路可逆" title="Permanent link">#</a></h3>
+<p><span class="pill pill-und">理解补充</span>光遇到曲面时，在入射点作切面，以该点的局部法线使用同一组定律。球面的局部法线就是该点与球心的连线。
+<span class="pill pill-ppt">PPT重点</span>在本讲的普通透明介质条件下，沿出射光线反向入射，光会沿原路径返回。这是物像共轭和反向作图的依据。
+!看到光路题，先画界面与法线，再标折射率及传播方向，最后写角度关系。不能把光线与界面的夹角直接代入斯涅耳定律。</p>
+<h2 id="课堂例题一-水中物体为什么显浅">课堂例题一 水中物体为什么显浅<a class="headerlink" href="#课堂例题一-水中物体为什么显浅" title="Permanent link">#</a></h2>
+<blockquote>
+<p><strong>资料范围</strong>：课件例 1.1.1  PDF 第 9 页  对应教材印刷页 8—9</p>
+</blockquote>
+<p><span class="pill pill-ppt">PPT重点</span>水中点光源 <span class="arithmatex">\(Q\)</span> 距水面深度为 <span class="arithmatex">\(y\)</span>，水的折射率为 <span class="arithmatex">\(n\)</span>，空气折射率取 1。一条出射光线反向延长，与水面法线 <span class="arithmatex">\(QO\)</span> 交于 <span class="arithmatex">\(Q'\)</span>。求交点深度 <span class="arithmatex">\(y'\)</span> 与入射角 <span class="arithmatex">\(i\)</span> 的关系。</p>
+<p><img alt="第1讲 插图 apparent" loading="lazy" src="../%E6%8F%92%E5%9B%BE/%E7%AC%AC1%E8%AE%B2/apparent.png" />
+<em>图 2 水下视深。虚线表示出射光线的反向延长，并非水中的实际光路。</em></p>
+<h3 id="思路与推导">思路与推导<a class="headerlink" href="#思路与推导" title="Permanent link">#</a></h3>
+<p>模型是“平面界面折射加几何延长线”。设入射点为 <span class="arithmatex">\(M\)</span>，水平距离 <span class="arithmatex">\(OM=x\)</span>，折射角为 <span class="arithmatex">\(r\)</span>。先用几何关系消去共同的水平距离，再用折射定律消去折射角：</p>
+<div class="arithmatex">\[x=y\tan i=y'\tan r,\qquad \sin r=n\sin i\]</div>
+<div class="arithmatex">\[y'=y\frac{\tan i}{\tan r}=y\frac{\sin i\cos r}{\sin r\cos i}=\frac{y\sqrt{1-n^2\sin^2 i}}{n\cos i}\]</div>
+<p>结果只适用于能够射出水面的光线，即 <span class="arithmatex">\(0\le i&lt;i_c\)</span>；垂直方向的值按 <span class="arithmatex">\(i\to0\)</span> 的极限理解。</p>
+<h3 id="近轴结论及物理意义">近轴结论及物理意义<a class="headerlink" href="#近轴结论及物理意义" title="Permanent link">#</a></h3>
+<p>当 <span class="arithmatex">\(i\)</span> 很小时，<span class="arithmatex">\(\sin i\approx i\)</span>、<span class="arithmatex">\(\cos i\approx1\)</span>，得到</p>
+<div class="arithmatex">\[y'\approx\frac{y}{n}=\frac{3y}{4}\quad(n=4/3)\]</div>
+<p><span class="pill pill-und">理解补充</span>斜看时，交点深度随入射角变化。因此，不同方向的出射线并不严格交于同一个虚像点；“水深变为四分之三”是近法线、小孔径观察的近似。
+!易错点：题目中的 <span class="arithmatex">\(i\)</span> 是水内入射角。不能把空气中的观察角直接当成 <span class="arithmatex">\(i\)</span>，也不能把 <span class="arithmatex">\(y'=y/n\)</span> 当成任意角度都成立的精确公式。</p>
+<h2 id="棱镜与色散">棱镜与色散<a class="headerlink" href="#棱镜与色散" title="Permanent link">#</a></h2>
+<blockquote>
+<p><strong>资料范围</strong>：课件 PDF 第 12—15 页  教材印刷页 11—14</p>
+</blockquote>
+<p><span class="pill pill-ppt">PPT重点</span>三棱镜的主截面垂直于棱边；沿主截面传播时，光在两个面上依次折射。设棱角为 <span class="arithmatex">\(\alpha\)</span>，外侧入射角和出射角为 <span class="arithmatex">\(i,i'\)</span>，内部折射角为 <span class="arithmatex">\(r,r'\)</span>，总偏向角为 <span class="arithmatex">\(\delta\)</span>。</p>
+<div class="arithmatex">\[r+r'=\alpha,\qquad \delta=(i-r)+(i'-r')=i+i'-\alpha\]</div>
+<p><img alt="第1讲 插图 prism" loading="lazy" src="../%E6%8F%92%E5%9B%BE/%E7%AC%AC1%E8%AE%B2/prism.png" />
+<em>图 3 最小偏向时的对称光路。棱镜两侧介质相同，内部光线关于主截面的对称轴对称。</em></p>
+<h3 id="最小偏向角与折射率">最小偏向角与折射率<a class="headerlink" href="#最小偏向角与折射率" title="Permanent link">#</a></h3>
+<p>固定棱角和波长，改变入射角，可找到最小偏向角 <span class="arithmatex">\(\delta_m\)</span>。对于课件讨论的空气中普通棱镜，最小值对应对称光路：</p>
+<div class="arithmatex">\[i=i',\quad r=r'=\frac{\alpha}{2},\quad i=\frac{\alpha+\delta_m}{2}\]</div>
+<p>代入第一界面的折射定律，得到实验测量折射率的公式：</p>
+<div class="arithmatex">\[n=\frac{\sin[(\alpha+\delta_m)/2]}{\sin(\alpha/2)}\]</div>
+<p><span class="pill pill-src">教材补充</span>推导对称条件时，对 <span class="arithmatex">\(\delta=i+i'-\alpha\)</span> 求导；由 <span class="arithmatex">\(r+r'=\alpha\)</span> 及两界面的斯涅耳定律，得到</p>
+<div class="arithmatex">\[\frac{d\delta}{di}=1-\frac{\cos i\cos r'}{\cos r\cos i'}\]</div>
+<p>令导数为零，并结合折射关系可得 <span class="arithmatex">\(i=i'\)</span>。教材还验证该驻点对应极小值。重点掌握对称条件及测量公式，导数证明建议理解。</p>
+<h3 id="色散如何产生">色散如何产生<a class="headerlink" href="#色散如何产生" title="Permanent link">#</a></h3>
+<p>折射率随波长变化，称为色散。通常透明玻璃在可见光区表现为正常色散：波长越短，折射率越大，因此紫光偏折较大、红光偏折较小。课件中的玻璃数据表用于比较这一趋势，无需逐项记忆。
+!两侧介质不是空气时，测量式中的 <span class="arithmatex">\(n\)</span> 应理解为棱镜相对周围介质的折射率。最小偏向公式不能套用到任意入射状态。</p>
+<h2 id="光程与费马原理">光程与费马原理<a class="headerlink" href="#光程与费马原理" title="Permanent link">#</a></h2>
+<blockquote>
+<p><strong>资料范围</strong>：课件 PDF 第 18—20 页  教材印刷页 24—26</p>
+</blockquote>
+<h3 id="用光程比较不同介质中的传播">用光程比较不同介质中的传播<a class="headerlink" href="#用光程比较不同介质中的传播" title="Permanent link">#</a></h3>
+<p><span class="pill pill-ppt">PPT重点</span>设真空波长为 <span class="arithmatex">\(\lambda\)</span>，介质中的相速度为 <span class="arithmatex">\(u=c/n\)</span>。界面两侧频率 <span class="arithmatex">\(\nu\)</span> 不变，因此介质中的波长变为</p>
+<div class="arithmatex">\[\lambda'=\frac{u}{\nu}=\frac{\lambda}{n}\]</div>
+<p>光在均匀介质内传播几何路程 <span class="arithmatex">\(l\)</span>，积累的空间相位为 <span class="arithmatex">\(2\pi l/\lambda'\)</span>。把它换成真空波长表示，就自然引入光程 <span class="arithmatex">\(L\)</span>：</p>
+<div class="arithmatex">\[L=nl,\qquad L=\sum_j n_jl_j,\qquad L=\int_Q^P n\,dl\]</div>
+<p>依次对应均匀介质、分段均匀介质和连续变化介质。光程是等效真空路程，具有长度量纲，不是简单的几何长度。</p>
+<h3 id="光程差与相位差">光程差与相位差<a class="headerlink" href="#光程差与相位差" title="Permanent link">#</a></h3>
+<p>对同频光，以一致的路径相减顺序定义光程差，则传播造成的相位差为</p>
+<div class="arithmatex">\[\Delta\varphi_{\mathrm{prop}}=\frac{2\pi}{\lambda}\Delta L\]</div>
+<p><span class="pill pill-und">理解补充</span>分母用真空波长。若比较两束光的总相位差，还须考虑初相位差和反射等过程引入的相位变化。本讲先建立传播光程与相位的联系。</p>
+<h3 id="费马原理的准确含义">费马原理的准确含义<a class="headerlink" href="#费马原理的准确含义" title="Permanent link">#</a></h3>
+<p><span class="pill pill-ppt">PPT重点</span>固定起点、终点及传播条件，实际光路的光程对邻近可能路径的微小变化是平稳的：</p>
+<div class="arithmatex">\[\delta L=\delta\int_Q^P n\,dl=0\]</div>
+<p>这里的 <span class="arithmatex">\(\delta\)</span> 表示对路径的变分。按课件要求，不展开变分计算；可以把它理解为：稍微改变路径，光程的一阶改变量为零。
+<span class="pill pill-src">教材补充</span>“平稳”不等于“一定最短”。实际光路可以对应极小值、极大值或恒定值；严格数学上也可有其他驻值情形。课件用半球反射示意光程取极大的情形。
+!使用费马原理时，比较的是满足相同端点和界面约束的邻近路径。在本讲非色散或固定频率的光线模型中可写 <span class="arithmatex">\(t=L/c\)</span>；不要据此混淆色散介质中脉冲的群传播时间。</p>
+<h2 id="关键推导-用费马原理得到反射与折射">关键推导 用费马原理得到反射与折射<a class="headerlink" href="#关键推导-用费马原理得到反射与折射" title="Permanent link">#</a></h2>
+<blockquote>
+<p><strong>资料范围</strong>：课件 PDF 第 21—22 页  教材印刷页 26—27</p>
+</blockquote>
+<h3 id="反射定律-建议理解">反射定律 建议理解<a class="headerlink" href="#反射定律-建议理解" title="Permanent link">#</a></h3>
+<p>把终点 <span class="arithmatex">\(P\)</span> 关于反射平面镜像为 <span class="arithmatex">\(P'\)</span>。任一界面点 <span class="arithmatex">\(M\)</span> 都满足 <span class="arithmatex">\(MP=MP'\)</span>，所以折线路程 <span class="arithmatex">\(QM+MP\)</span> 等于 <span class="arithmatex">\(QM+MP'\)</span>。均匀介质中，两点之间直线最短，故最优的 <span class="arithmatex">\(Q,M,P'\)</span> 共线。
+由镜面对称性，入射角等于反射角。这个方法把“有反射的折线”转化为“没有反射的直线”，是几何作图中常用的展开法。</p>
+<h3 id="折射定律-必须掌握">折射定律 必须掌握<a class="headerlink" href="#折射定律-必须掌握" title="Permanent link">#</a></h3>
+<p>设光从 <span class="arithmatex">\(n_1\)</span> 介质的 <span class="arithmatex">\(Q\)</span> 经平面界面到达 <span class="arithmatex">\(n_2\)</span> 介质的 <span class="arithmatex">\(P\)</span>。起终点距界面为 <span class="arithmatex">\(h_1,h_2\)</span>，垂足间距为 <span class="arithmatex">\(p\)</span>，入射点的水平位置为 <span class="arithmatex">\(x\)</span>。</p>
+<p><img alt="第1讲 插图 fermat" loading="lazy" src="../%E6%8F%92%E5%9B%BE/%E7%AC%AC1%E8%AE%B2/fermat.png" />
+<em>图 4 改变入射点的位置，就在比较一族相邻光路。两段长度必须先分别乘各自折射率。</em></p>
+<div class="arithmatex">\[L(x)=n_1\sqrt{h_1^2+x^2}+n_2\sqrt{h_2^2+(p-x)^2}\]</div>
+<p>固定 <span class="arithmatex">\(h_1,h_2,p\)</span>，对 <span class="arithmatex">\(x\)</span> 求导并令其为零：</p>
+<div class="arithmatex">\[\frac{dL}{dx}=\frac{n_1x}{\sqrt{h_1^2+x^2}}-\frac{n_2(p-x)}{\sqrt{h_2^2+(p-x)^2}}=0\]</div>
+<p>两项中的几何比值分别等于 <span class="arithmatex">\(\sin i_1\)</span> 与 <span class="arithmatex">\(\sin i_2\)</span>，于是</p>
+<div class="arithmatex">\[n_1\sin i_1=n_2\sin i_2\]</div>
+<p><span class="pill pill-und">理解补充</span>若路径偏离由两端点和界面法线确定的平面，将其投影回该平面会同时缩短两段路程，因此实际光路在入射面内。
+!第二项求导的负号来自 <span class="arithmatex">\(d(p-x)/dx=-1\)</span>。它表示把交点向一侧移动时，一段路变长，另一段路变短；平稳条件是两者的加权变化相互抵消。</p>
+<h2 id="成像与虚实物像">成像与虚实物像<a class="headerlink" href="#成像与虚实物像" title="Permanent link">#</a></h2>
+<blockquote>
+<p><strong>资料范围</strong>：课件 PDF 第 23—25 页  教材印刷页 28—30</p>
+</blockquote>
+<h3 id="成像要求保持光束的同心性">成像要求保持光束的同心性<a class="headerlink" href="#成像要求保持光束的同心性" title="Permanent link">#</a></h3>
+<p><span class="pill pill-ppt">PPT重点</span>同心光束是光线本身或其延长线交于同一点的光束；平行光束可视为中心在无穷远。以 <span class="arithmatex">\(Q\)</span> 为中心的入射同心光束，通过系统后成为以 <span class="arithmatex">\(Q'\)</span> 为中心的同心光束，就称 <span class="arithmatex">\(Q\)</span> 成像于 <span class="arithmatex">\(Q'\)</span>。</p>
+<p><img alt="第1讲 插图 images" loading="lazy" src="../%E6%8F%92%E5%9B%BE/%E7%AC%AC1%E8%AE%B2/images.png" />
+<em>图 5 同一个实物可以形成实像，也可以形成虚像。图中实线为实际光线，暖色虚线为反向延长线。</em></p>
+<h3 id="实物与虚物-看入射光束">实物与虚物 看入射光束<a class="headerlink" href="#实物与虚物-看入射光束" title="Permanent link">#</a></h3>
+<p><span class="pill pill-src">教材补充</span>对当前正在分析的光学系统，入射光束若从一个中心发散，该中心为实物；入射光束若正在向一个中心会聚，该预期会聚中心为虚物。
+虚物常见于透镜组：第一片透镜的光还未会聚，第二片已插入光路，第二片接收到的就是会聚光束。物点的虚实必须针对所选系统判断。</p>
+<h3 id="实像与虚像-看出射光束">实像与虚像 看出射光束<a class="headerlink" href="#实像与虚像-看出射光束" title="Permanent link">#</a></h3>
+<p>出射光束实际会聚的中心为实像，可在像点处用屏幕接收。出射光束若发散，其反向延长线的交点为虚像，不能直接在该虚像位置放屏接收。
+<span class="pill pill-und">理解补充</span>虚像仍然可以被眼睛看到，因为真实光线进入眼睛后，眼的光学系统会在视网膜上成实像。平面镜中的像就是典型例子。</p>
+<h3 id="共轭的含义">共轭的含义<a class="headerlink" href="#共轭的含义" title="Permanent link">#</a></h3>
+<p><span class="pill pill-ppt">PPT重点</span>一对相互对应的物点与像点称为共轭点。根据光路可逆性，让光从原像点沿反方向传播，会在原物点处形成对应像。傍轴成像中，对应的物平面、像平面称为共轭平面。
+!“物一定在左、像一定在右”不是定义。必须先确认传播方向和当前系统，再根据入射、出射光束的状态判断虚实。</p>
+<h2 id="等光程性与齐明点">等光程性与齐明点<a class="headerlink" href="#等光程性与齐明点" title="Permanent link">#</a></h2>
+<blockquote>
+<p><strong>资料范围</strong>：课件 PDF 第 26—28 页  教材印刷页 30—32</p>
+</blockquote>
+<h3 id="同一物像对之间-为什么各路光程相等">同一物像对之间 为什么各路光程相等<a class="headerlink" href="#同一物像对之间-为什么各路光程相等" title="Permanent link">#</a></h3>
+<p><span class="pill pill-ppt">PPT重点</span>理想成像时，连接同一物点与像点的光线连续分布。沿这一族真实光路移动，费马原理使光程的一阶变化处处为零，因此这一族光线的光程保持相同。
+<span class="pill pill-src">教材补充</span>若涉及虚物或虚像，要用带符号的光程：沿真实光线延长线补出的虚路段取负。它是成像计算的约定，并不是光真的走了负的路程。</p>
+<h3 id="反射等光程面">反射等光程面<a class="headerlink" href="#反射等光程面" title="Permanent link">#</a></h3>
+<p>在同一种介质中，从 <span class="arithmatex">\(Q\)</span> 经反射点 <span class="arithmatex">\(M\)</span> 到实像 <span class="arithmatex">\(Q'\)</span> 的等光程条件为</p>
+<div class="arithmatex">\[QM+MQ'=\mathrm{constant}\]</div>
+<p><span class="pill pill-ppt">PPT重点</span>以两点为焦点的椭球反射面满足这一条件；一个共轭点移到无穷远时，对应的反射面为抛物面，可以把轴向平行光会聚到焦点。球面镜一般只在傍轴范围内近似成像。</p>
+<h3 id="折射球面的齐明点-建议理解">折射球面的齐明点 建议理解<a class="headerlink" href="#折射球面的齐明点-建议理解" title="Permanent link">#</a></h3>
+<p>球内折射率 <span class="arithmatex">\(n\)</span> 大于球外折射率 <span class="arithmatex">\(n'\)</span>，球半径的几何大小记为 <span class="arithmatex">\(a&gt;0\)</span>。沿同一条从球心 <span class="arithmatex">\(C\)</span> 出发的射线取点 <span class="arithmatex">\(Q,Q'\)</span>，满足</p>
+<div class="arithmatex">\[CQ=\frac{n'}{n}a,\qquad CQ'=\frac{n}{n'}a\]</div>
+<p><span class="pill pill-und">理解补充</span>这里用 <span class="arithmatex">\(a\)</span> 区分“半径的大小”和后文带符号的曲率半径 <span class="arithmatex">\(R\)</span>。由相似三角形，对于参与成像的球面点 <span class="arithmatex">\(M\)</span>，有</p>
+<div class="arithmatex">\[\frac{QM}{MQ'}=\frac{n'}{n},\qquad nQM-n'MQ'=0\]</div>
+<p>出射光线的反向延长线交于 <span class="arithmatex">\(Q'\)</span>，所以 <span class="arithmatex">\(Q'\)</span> 是 <span class="arithmatex">\(Q\)</span> 的虚像。这对特殊共轭点叫齐明点，说明宽光束严格成像只在特殊位置才能实现。
+!等光程讨论必须指定“同一个物点、同一个像点、同一连续成像光束”。两条随意相交的光线并不因此等光程；齐明点关系也不能用于任意物距。</p>
+<h2 id="单球面成像-从精确关系到傍轴近似">单球面成像 从精确关系到傍轴近似<a class="headerlink" href="#单球面成像-从精确关系到傍轴近似" title="Permanent link">#</a></h2>
+<blockquote>
+<p><strong>资料范围</strong>：课件 PDF 第 29—33 页  教材印刷页 33—35</p>
+</blockquote>
+<h3 id="几何量与精确追迹">几何量与精确追迹<a class="headerlink" href="#几何量与精确追迹" title="Permanent link">#</a></h3>
+<p>设顶点为 <span class="arithmatex">\(A\)</span>，球心为 <span class="arithmatex">\(C\)</span>，物距、像距为 <span class="arithmatex">\(s,s'\)</span>，曲率半径为 <span class="arithmatex">\(R\)</span>，光线入射高度为 <span class="arithmatex">\(h\)</span>。课件图示的一般实物成实像情形满足 <span class="arithmatex">\(R&gt;0\)</span>。</p>
+<p><img alt="第1讲 插图 sphere" loading="lazy" src="../%E6%8F%92%E5%9B%BE/%E7%AC%AC1%E8%AE%B2/sphere.png" />
+<em>图 6 单球面折射。法线沿球心与入射点的连线，曲面顶点是物距与像距的共同基准。</em></p>
+<p><span class="pill pill-ppt">PPT重点</span>设实际两段长度为 <span class="arithmatex">\(p,p'\)</span>，球面极角为 <span class="arithmatex">\(\phi\)</span>。斯涅耳定律加正弦、余弦定理给出</p>
+<div class="arithmatex">\[\frac{p}{n(s+R)}=\frac{p'}{n'(s'-R)}\]</div>
+<div class="arithmatex">\[p^2=s^2+4R(s+R)\sin^2\frac{\phi}{2},\quad p'^2=s'^2-4R(s'-R)\sin^2\frac{\phi}{2}\]</div>
+<p>平方并消去 <span class="arithmatex">\(p,p'\)</span>，可写成“与孔径无关的项＝孔径项”：</p>
+<div class="arithmatex">\[\frac{s^2}{n^2(s+R)^2}-\frac{s'^2}{n'^2(s'-R)^2}=-4R\sin^2\frac{\phi}{2}\left[\frac{1}{n^2(s+R)}+\frac{1}{n'^2(s'-R)}\right]\]</div>
+<p>宽光束下，要让像距不随 <span class="arithmatex">\(\phi\)</span> 改变，通常需要左右两边的系数同时为零。在课件讨论的非退化齐明点分支上，得到 <span class="arithmatex">\(s=-(n+n')R/n\)</span>、<span class="arithmatex">\(s'=(n+n')R/n'\)</span>。这不是任意物距都适用的成像公式。</p>
+<h3 id="傍轴近似-必须掌握">傍轴近似 必须掌握<a class="headerlink" href="#傍轴近似-必须掌握" title="Permanent link">#</a></h3>
+<p>当 <span class="arithmatex">\(h^2\ll s^2,s'^2,R^2\)</span>，并且相关倾角很小时，忽略上式中与 <span class="arithmatex">\(\sin^2(\phi/2)\)</span> 成正比的高阶孔径项；按光路取正确符号开方、整理，得到</p>
+<div class="arithmatex">\[\frac{n}{s}+\frac{n'}{s'}=\frac{n'-n}{R}\]</div>
+<p><span class="pill pill-und">理解补充</span>等价的角度推导为 <span class="arithmatex">\(i\approx h/s+h/R\)</span>、<span class="arithmatex">\(r\approx h/R-h/s'\)</span>，再代入 <span class="arithmatex">\(ni\approx n'r\)</span>。角度须用弧度；<span class="arithmatex">\(\sin\theta\approx\theta\)</span> 舍去三阶起的项，相对误差从二阶开始。</p>
+<h2 id="符号-焦距-放大率与球面镜">符号 焦距 放大率与球面镜<a class="headerlink" href="#符号-焦距-放大率与球面镜" title="Permanent link">#</a></h2>
+<blockquote>
+<p><strong>资料范围</strong>：课件 PDF 第 29、33—35 页  教材印刷页 35—37</p>
+</blockquote>
+<h3 id="先固定符号-再代公式">先固定符号 再代公式<a class="headerlink" href="#先固定符号-再代公式" title="Permanent link">#</a></h3>
+<p><span class="pill pill-ppt">PPT重点</span>以入射光从左向右为例：实物 <span class="arithmatex">\(s&gt;0\)</span>，虚物 <span class="arithmatex">\(s&lt;0\)</span>；对折射系统，右侧实像 <span class="arithmatex">\(s'&gt;0\)</span>，左侧虚像 <span class="arithmatex">\(s'&lt;0\)</span>。球心在顶点右侧 <span class="arithmatex">\(R&gt;0\)</span>，在左侧 <span class="arithmatex">\(R&lt;0\)</span>。物、像在光轴上方时高度为正，下方为负。
+课件角度约定为：从光轴或法线转到相应光线方向，所取锐角逆时针为正、顺时针为负。不要把这一套符号与其他教材的笛卡尔坐标约定混用。</p>
+<h3 id="球面折射的焦点">球面折射的焦点<a class="headerlink" href="#球面折射的焦点" title="Permanent link">#</a></h3>
+<p>像在轴上无穷远时，物点位于物方焦点 <span class="arithmatex">\(F\)</span>；物在轴上无穷远时，像点位于像方焦点 <span class="arithmatex">\(F'\)</span>。分别令 <span class="arithmatex">\(s'\to\infty\)</span> 或 <span class="arithmatex">\(s\to\infty\)</span>：</p>
+<div class="arithmatex">\[f=\frac{nR}{n'-n},\quad f'=\frac{n'R}{n'-n},\quad \frac{f}{s}+\frac{f'}{s'}=1\]</div>
+<p><span class="pill pill-und">理解补充</span>物、像方介质不同，两个焦距通常不相等；二者之比为 <span class="arithmatex">\(f'/f=n'/n\)</span>。焦距的正负分别遵从物距与像距的约定。</p>
+<h3 id="横向放大率">横向放大率<a class="headerlink" href="#横向放大率" title="Permanent link">#</a></h3>
+<p>对近轴物点，取经过球面顶点的光线，使用小角度折射关系，可得</p>
+<div class="arithmatex">\[n\frac{y}{s}=n'\frac{-y'}{s'},\qquad V=\frac{y'}{y}=-\frac{ns'}{n's}\]</div>
+<p><span class="pill pill-ppt">PPT重点</span><span class="arithmatex">\(|V|&gt;1\)</span> 表示放大，<span class="arithmatex">\(|V|&lt;1\)</span> 表示缩小；<span class="arithmatex">\(V&gt;0\)</span> 为正立，<span class="arithmatex">\(V&lt;0\)</span> 为倒立。它们分别判断大小与方向，互不替代。</p>
+<h3 id="球面反射镜">球面反射镜<a class="headerlink" href="#球面反射镜" title="Permanent link">#</a></h3>
+<p><span class="pill pill-ppt">PPT重点</span>反射后传播方向反转，所以左侧的实像仍取 <span class="arithmatex">\(s'&gt;0\)</span>。入射光从左向右时，凹面镜球心在左，<span class="arithmatex">\(R&lt;0\)</span>。课件以角平分线定理作傍轴推导：</p>
+<div class="arithmatex">\[\frac{s+R}{-(s'+R)}\approx\frac{s}{s'}\quad\Rightarrow\quad \frac{1}{s}+\frac{1}{s'}=-\frac{2}{R}=\frac{1}{f},\quad f=-\frac{R}{2}\]</div>
+<p>!凹面镜的焦距为正，而带符号的曲率半径为负。公式中的负号来自本讲约定；若把几何半径大小代入带符号公式，就会把实像误算成虚像。</p>
+<h2 id="薄透镜公式与光焦度">薄透镜公式与光焦度<a class="headerlink" href="#薄透镜公式与光焦度" title="Permanent link">#</a></h2>
+<blockquote>
+<p><strong>资料范围</strong>：课件 PDF 第 37—40 页  教材印刷页 40—44</p>
+</blockquote>
+<h3 id="关键推导-两个折射球面相加">关键推导 两个折射球面相加<a class="headerlink" href="#关键推导-两个折射球面相加" title="Permanent link">#</a></h3>
+<p><span class="pill pill-ppt">PPT重点</span>透镜折射率为 <span class="arithmatex">\(n_L\)</span>，前后介质为 <span class="arithmatex">\(n,n'\)</span>，两球面曲率半径为 <span class="arithmatex">\(R_1,R_2\)</span>，厚度为 <span class="arithmatex">\(d\)</span>。分别对两次折射写成像公式：</p>
+<div class="arithmatex">\[\frac{n}{s_1}+\frac{n_L}{s_1'}=\frac{n_L-n}{R_1},\qquad \frac{n_L}{s_2}+\frac{n'}{s_2'}=\frac{n'-n_L}{R_2}\]</div>
+<p>中间像是第二界面的物，几何关系为 <span class="arithmatex">\(s_2=d-s_1'\)</span>。薄透镜近似忽略两面顶点的间距，取 <span class="arithmatex">\(s_2\approx-s_1'\)</span>、<span class="arithmatex">\(s\approx s_1\)</span>、<span class="arithmatex">\(s'\approx s_2'\)</span>，两式相加消去中间量：</p>
+<div class="arithmatex">\[\frac{n}{s}+\frac{n'}{s'}=\frac{n_L-n}{R_1}+\frac{n'-n_L}{R_2}\]</div>
+<p>适用条件是傍轴光线且透镜厚度对当前成像尺度的影响可忽略；此时物距和像距都从光心 <span class="arithmatex">\(O\)</span> 起算。</p>
+<h3 id="空气中的磨镜者公式">空气中的磨镜者公式<a class="headerlink" href="#空气中的磨镜者公式" title="Permanent link">#</a></h3>
+<p>当两侧都是空气，<span class="arithmatex">\(n=n'\approx1\)</span>，两个焦距相等，得到</p>
+<div class="arithmatex">\[\frac{1}{f}=(n_L-1)\left(\frac{1}{R_1}-\frac{1}{R_2}\right),\qquad \frac{1}{s}+\frac{1}{s'}=\frac{1}{f}\]</div>
+<p>双凸透镜在此传播方向下为 <span class="arithmatex">\(R_1&gt;0,R_2&lt;0\)</span>，所以在 <span class="arithmatex">\(n_L&gt;1\)</span> 时焦距为正。平面的曲率半径可视为无穷大，其倒数为零。
+<span class="pill pill-src">教材补充</span>会聚或发散还取决于透镜和周围介质的相对折射率，不能只凭外形判定。式中两面的半径必须分别带符号。</p>
+<h3 id="课堂例题二-焦距换算为屈光度">课堂例题二 焦距换算为屈光度<a class="headerlink" href="#课堂例题二-焦距换算为屈光度" title="Permanent link">#</a></h3>
+<p><span class="pill pill-ppt">PPT重点</span>课件例 1.6.1 给出凹透镜 <span class="arithmatex">\(f=-50.0\,\mathrm{cm}\)</span>，求光焦度。先把长度换成米，再取倒数：</p>
+<div class="arithmatex">\[P=\frac{1}{f}=\frac{1}{-0.500\,\mathrm{m}}=-2.00\,\mathrm{D}\]</div>
+<p>一屈光度等于每米。按课件的眼镜度数换算，此值对应 −200 度。负号表示该空气中透镜的发散作用。
+!光焦度 <span class="arithmatex">\(P=1/f\)</span> 是此处空气中的写法。一般物像方介质下，教材定义为 <span class="arithmatex">\(P=n/f=n'/f'\)</span>，应与具体条件配套使用。</p>
+<h2 id="焦面与薄透镜作图">焦面与薄透镜作图<a class="headerlink" href="#焦面与薄透镜作图" title="Permanent link">#</a></h2>
+<blockquote>
+<p><strong>资料范围</strong>：课件 PDF 第 41—42 页  教材印刷页 44—46</p>
+</blockquote>
+<h3 id="三条特殊光线">三条特殊光线<a class="headerlink" href="#三条特殊光线" title="Permanent link">#</a></h3>
+<p><span class="pill pill-ppt">PPT重点</span>在薄透镜、傍轴及两侧介质相同的条件下，可以选取：经过光心的光线方向不变；平行于光轴的光线出射后经过像方焦点；经过物方焦点的光线出射后平行于光轴。虚焦点情况用延长线理解。
+从同一个物点画出两条独立光线即可确定像点，第三条用于检查。实像看实际光线交点，虚像看出射线的反向延长线交点。</p>
+<p><img alt="第1讲 插图 lens_rays" loading="lazy" src="../%E6%8F%92%E5%9B%BE/%E7%AC%AC1%E8%AE%B2/lens_rays.png" />
+<em>图 7 会聚薄透镜的实像与虚像。上图物在两倍焦距外，下图物在焦距内；用两条特殊光线定位像点。</em></p>
+<h3 id="焦点是一点-焦面是一个平面">焦点是一点 焦面是一个平面<a class="headerlink" href="#焦点是一点-焦面是一个平面" title="Permanent link">#</a></h3>
+<p>通过物方或像方焦点、垂直于光轴的平面，分别称为物方和像方焦面。轴向平行光汇聚于像方焦点；小角度斜入射平行光会聚于像方焦面上的轴外点。
+<span class="pill pill-und">理解补充</span>若平行光相对光轴的倾角为 <span class="arithmatex">\(\theta\)</span>，在空气中薄透镜的像方焦面上，像高约为 <span class="arithmatex">\(y'=f\tan\theta\approx f\theta\)</span>。因此焦面把传播方向转换成位置。</p>
+<h3 id="实物经会聚透镜的像">实物经会聚透镜的像<a class="headerlink" href="#实物经会聚透镜的像" title="Permanent link">#</a></h3>
+<p><span class="arithmatex">\(s&gt;2f\)</span>：倒立缩小实像；<span class="arithmatex">\(s=2f\)</span>：倒立等大实像；<span class="arithmatex">\(f&lt;s&lt;2f\)</span>：倒立放大实像；<span class="arithmatex">\(s=f\)</span>：出射光平行，像在无穷远；<span class="arithmatex">\(0&lt;s&lt;f\)</span>：正立放大虚像。
+!上述分类要求 <span class="arithmatex">\(f&gt;0\)</span> 且物为实物。遇到虚物、发散透镜或多透镜组合，应回到带符号成像公式，不套用这套位置口诀。</p>
+<h2 id="透镜的等光程性与厚透镜入口">透镜的等光程性与厚透镜入口<a class="headerlink" href="#透镜的等光程性与厚透镜入口" title="Permanent link">#</a></h2>
+<blockquote>
+<p><strong>资料范围</strong>：课件 PDF 第 43、46—48 页  教材印刷页 30、52</p>
+</blockquote>
+<h3 id="如何理解透镜不产生附加光程差">如何理解透镜不产生附加光程差<a class="headerlink" href="#如何理解透镜不产生附加光程差" title="Permanent link">#</a></h3>
+<p><span class="pill pill-ppt">PPT重点</span>在理想成像或傍轴近似范围内，从同一物点到同一像点的各条光线，经过透镜后总光程相同；同一入射等相面到对应焦点的各路总光程也相同。
+<span class="pill pill-und">理解补充</span>“不产生附加光程差”针对的是这些规定好起终点的成像路径。它不表示透镜内部每条光线的光程都一样，也不表示透镜不改变相位。
+会聚透镜中心厚、边缘薄，内部不同位置引入的光程不同，恰好补偿外部传播到焦点时的路程差，使总光程在理想条件下相等。讨论一段玻璃时，不能把整个成像系统的等光程结论单独移用过去。</p>
+<h3 id="厚透镜-为什么不能继续从光心测所有距离">厚透镜 为什么不能继续从光心测所有距离<a class="headerlink" href="#厚透镜-为什么不能继续从光心测所有距离" title="Permanent link">#</a></h3>
+<p><span class="pill pill-ppt">PPT重点 介绍</span>厚度不能忽略时，两个折射界面不能视为重合。可以用两个焦点、两个主点、两个节点描述系统的傍轴行为，本讲只需知道它们各自的作用。
+焦点：轴向平行光的会聚点或发散中心，以及能产生轴向平行出射光的对应物点。
+主面与主点：主面是一对横向放大率为 +1 的共轭面，在傍轴理论中作为测量物像距离的参考平面；与光轴的交点称主点。
+节点：指向第一节点的入射光线，经系统后仿佛从第二节点出射，出射方向与入射方向平行。两侧介质相同时，节点与主点重合。
+<span class="pill pill-src">教材补充</span>薄透镜极限下，两主面与透镜平面近似重合，主点合为光心。厚透镜的主面却不一定落在实体透镜内部。</p>
+<h3 id="焦距与顶点焦距">焦距与顶点焦距<a class="headerlink" href="#焦距与顶点焦距" title="Permanent link">#</a></h3>
+<p>等效焦距从相应主面量到焦点；前、后顶点焦距从透镜最外侧顶点量到焦点。两类测距基准不同，不能直接互换。
+!课件的厚透镜作图按两侧介质相同的常见情形理解。一般介质不同时，应区分“通过节点方向不变”和主点的定义；本讲不展开系统矩阵或一般基点理论。</p>
+<h2 id="透镜组与虚物">透镜组与虚物<a class="headerlink" href="#透镜组与虚物" title="Permanent link">#</a></h2>
+<blockquote>
+<p><strong>资料范围</strong>：课件 PDF 第 44—45 页  教材印刷页 46—48</p>
+</blockquote>
+<h3 id="逐次成像的固定步骤">逐次成像的固定步骤<a class="headerlink" href="#逐次成像的固定步骤" title="Permanent link">#</a></h3>
+<p><span class="pill pill-ppt">PPT重点</span>先把第一片透镜单独处理，求其中间像；再把中间像作为第二片的物，重新计算物距。两片薄透镜的间距为 <span class="arithmatex">\(d\)</span>，光从左向右传播时：</p>
+<div class="arithmatex">\[s_2=d-s_1',\qquad V=V_1V_2\]</div>
+<p>若 <span class="arithmatex">\(s_1'&gt;d\)</span>，中间像在第二片右侧，第二片接收会聚光束，因而 <span class="arithmatex">\(s_2&lt;0\)</span>，它面对的是虚物。</p>
+<p><img alt="第1讲 插图 two_lens" loading="lazy" src="../%E6%8F%92%E5%9B%BE/%E7%AC%AC1%E8%AE%B2/two_lens.png" />
+<em>图 8 第二片在中间会聚点之前。暖色虚线表示移去第二片后光本来会走的路径。</em></p>
+<h3 id="教材补充例题-虚物经发散透镜成实像">教材补充例题 虚物经发散透镜成实像<a class="headerlink" href="#教材补充例题-虚物经发散透镜成实像" title="Permanent link">#</a></h3>
+<p><span class="pill pill-src">教材补充</span>教材第一章 §6 例题 1：空气中第一片焦距为 <span class="arithmatex">\(f_1=20.0\,\mathrm{cm}\)</span>，第二片为 <span class="arithmatex">\(f_2=-40.0\,\mathrm{cm}\)</span>，两片相距 <span class="arithmatex">\(40.0\,\mathrm{cm}\)</span>。物位于第一片左侧 <span class="arithmatex">\(30.0\,\mathrm{cm}\)</span>。
+模型判断：两片薄透镜逐次成像，不能把第二片的负焦距误解为“必成虚像”。</p>
+<div class="arithmatex">\[s_1'=\frac{f_1s_1}{s_1-f_1}=60.0\,\mathrm{cm},\qquad V_1=-\frac{60.0}{30.0}=-2\]</div>
+<p>第二片的新物距为 <span class="arithmatex">\(s_2=40.0-60.0=-20.0\,\mathrm{cm}\)</span>。再代入第二片公式：</p>
+<div class="arithmatex">\[\frac{1}{s_2'}=\frac{1}{-40.0}-\frac{1}{-20.0}=\frac{1}{40.0}\quad(\mathrm{cm}^{-1})\]</div>
+<div class="arithmatex">\[s_2'=40.0\,\mathrm{cm},\qquad V_2=-\frac{40.0}{-20.0}=+2,\qquad V=-4\]</div>
+<p>结果：最终像在第二片右侧 40.0 cm，为倒立、四倍大的实像。第二片虽然使光束发散一些，但入射光本来正在会聚，削弱会聚后仍可能形成实像。
+!逐片重新判断物点和物距。总放大率相乘：<span class="arithmatex">\(y_2'/y_0=(y_1'/y_0)(y_2'/y_1')\)</span>。</p>
+<h2 id="课堂例题三-望远镜为什么看起来放大">课堂例题三 望远镜为什么看起来放大<a class="headerlink" href="#课堂例题三-望远镜为什么看起来放大" title="Permanent link">#</a></h2>
+<blockquote>
+<p><strong>资料范围</strong>：课件例 1.6.2  PDF 第 44—45 页</p>
+</blockquote>
+<p><span class="pill pill-ppt">PPT重点</span>空气中开普勒望远镜，物镜 <span class="arithmatex">\(f_o=0.400\,\mathrm{m}\)</span>，目镜 <span class="arithmatex">\(f_e=0.200\,\mathrm{m}\)</span>，物距 <span class="arithmatex">\(s_1=40.0\,\mathrm{m}\)</span>。按前一页课件的调焦状态，两镜间距 <span class="arithmatex">\(d=f_o+f_e=0.600\,\mathrm{m}\)</span>，求横向放大率。</p>
+<h3 id="思路-分两次成像-保留中间精度">思路 分两次成像 保留中间精度<a class="headerlink" href="#思路-分两次成像-保留中间精度" title="Permanent link">#</a></h3>
+<p>第一步，物镜成实像。采用薄透镜成像公式：</p>
+<div class="arithmatex">\[s_1'=\frac{f_os_1}{s_1-f_o}=\frac{40}{99}\,\mathrm{m}\approx0.404040\,\mathrm{m},\qquad V_1=-\frac{1}{99}\]</div>
+<p>第二步，把中间像当作目镜的实物。它位于目镜前焦点以内：</p>
+<div class="arithmatex">\[s_2=d-s_1'=\frac{97}{495}\,\mathrm{m}\approx0.195960\,\mathrm{m}&lt;f_e\]</div>
+<div class="arithmatex">\[s_2'=\frac{f_es_2}{s_2-f_e}=-9.700\,\mathrm{m},\qquad V_2=-\frac{s_2'}{s_2}=49.5\]</div>
+<p>第三步，相乘得到整个系统的横向放大率：</p>
+<div class="arithmatex">\[V=V_1V_2=-0.500\]</div>
+<p><span class="pill pill-und">理解补充</span>课件中先把中间像距取为 0.404 m，再取 <span class="arithmatex">\(s_2=0.196\)</span> m，得到约 −9.8 m 与 −0.505。差别来自中途舍入；由于 <span class="arithmatex">\(s_2\)</span> 接近焦距，分母很小，舍入会被放大。上述结果按题设数字保留精度计算。</p>
+<h3 id="横向放大率与视角放大率">横向放大率与视角放大率<a class="headerlink" href="#横向放大率与视角放大率" title="Permanent link">#</a></h3>
+<p>横向放大率比较像与物的线尺寸；眼睛感到物体“变大”，直接对应的是视角增加。较小但近得多的虚像，仍可比远物张开更大的视角。
+<span class="pill pill-ppt">PPT重点</span>对无穷远物体，正常调节望远镜使最终光束平行，视角放大率为</p>
+<div class="arithmatex">\[M=\frac{w'}{w}=-\frac{f_o}{f_e}=-2\]</div>
+<p>负号表示倒像，视角变为原来的两倍。此式明确针对远物和正常调节，不能把它误认成前面有限物距计算的 <span class="arithmatex">\(V\)</span>。
+!开普勒式用正物镜和正目镜；伽利略式用正物镜和负目镜，在正常调节下可得正立的角放大像。比较仪器用途时要先说明用的是哪一种放大率。</p>
+<h2 id="自学提要-惠更斯原理与光学仪器">自学提要 惠更斯原理与光学仪器<a class="headerlink" href="#自学提要-惠更斯原理与光学仪器" title="Permanent link">#</a></h2>
+<blockquote>
+<p><strong>资料范围</strong>：课件 PDF 第 17、49—51 页  教材印刷页 19、61—62、64—65</p>
+</blockquote>
+<h3 id="惠更斯原理-了解波面的传播">惠更斯原理 了解波面的传播<a class="headerlink" href="#惠更斯原理-了解波面的传播" title="Permanent link">#</a></h3>
+<p><span class="pill pill-src">教材补充 对应自学</span>同相位各点组成波面。均匀、各向同性介质中，点源形成球面波，远处小范围可近似看作平面波；光线与波面正交。
+波面上每一点都可看作次波源。经过时间 <span class="arithmatex">\(\Delta t\)</span>，次波传播半径为 <span class="arithmatex">\(u\Delta t\)</span>，这些次波面的包络形成新的波面。本讲只需理解“用旧波面构造新波面”的图像，不展开衍射积分。</p>
+<h3 id="投影仪-把近焦面物体成远处实像">投影仪 把近焦面物体成远处实像<a class="headerlink" href="#投影仪-把近焦面物体成远处实像" title="Permanent link">#</a></h3>
+<p><span class="pill pill-ppt">PPT重点 自学</span>画片放在会聚镜头物方焦点稍外，屏幕距镜头远大于焦距，即 <span class="arithmatex">\(s\gtrsim f\)</span>、<span class="arithmatex">\(s'\gg f\)</span>，形成倒立放大的实像。</p>
+<div class="arithmatex">\[V=-\frac{s'}{s}\approx-\frac{s'}{f}\]</div>
+<p>物体不能恰好放在焦面上，否则出射光平行，不会在有限距离的屏幕上清晰会聚。</p>
+<h3 id="照相机-把远处物体成近焦面实像">照相机 把远处物体成近焦面实像<a class="headerlink" href="#照相机-把远处物体成近焦面实像" title="Permanent link">#</a></h3>
+<p>通常 <span class="arithmatex">\(s\gg f\)</span>，因此 <span class="arithmatex">\(s'\approx f\)</span>。通过小范围改变镜头与感光面的距离，使不同物距的物体在感光面上清晰成像。
+光圈缩小后，离焦点在感光面上的弥散斑变小，允许的清晰物距范围变宽，即景深增大。<span class="pill pill-und">理解补充</span>这是课件采用的几何光学解释，讨论的是相同清晰判据下的离焦效应。</p>
+<h3 id="放大镜与目镜-放大的是视角">放大镜与目镜 放大的是视角<a class="headerlink" href="#放大镜与目镜-放大的是视角" title="Permanent link">#</a></h3>
+<p>把物体放在会聚透镜物方焦点内侧附近，使眼睛能舒适观察虚像。以明视距离 <span class="arithmatex">\(s_0\approx25\,\mathrm{cm}\)</span> 处的裸眼观察为比较基准，且眼靠近放大镜：</p>
+<div class="arithmatex">\[w\approx\frac{y}{s_0},\qquad w'\approx\frac{y}{f},\qquad M=\frac{w'}{w}\approx\frac{s_0}{f}\]</div>
+<p><span class="pill pill-src">教材补充</span>课件公式对应 <span class="arithmatex">\(f\ll s_0\)</span>、物在焦点附近的近似；像在无穷远、眼放松时也得到 <span class="arithmatex">\(M=s_0/f\)</span>。有限近点观察时，不能在不说明观察条件的情况下把这一式当成精确通式。
+!投影仪需要放大的屏上实像；照相机需要感光面上的实像；放大镜需要更大的观察视角。三者不能只用一句“凸透镜成像”代替具体条件。</p>
+<h2 id="自然现象中的折射-反射与色散">自然现象中的折射 反射与色散<a class="headerlink" href="#自然现象中的折射-反射与色散" title="Permanent link">#</a></h2>
+<blockquote>
+<p><strong>资料范围</strong>：课件 PDF 第 52—54 页  本页按简介层次整理</p>
+</blockquote>
+<h3 id="主虹">主虹<a class="headerlink" href="#主虹" title="Permanent link">#</a></h3>
+<p><span class="pill pill-ppt">PPT重点 简介</span>太阳光进入水滴后发生折射，在滴内反射一次，再折射出射。不同波长对应不同折射率，出射方向略有差别，因此分出颜色。观察者背对太阳，朝含有水滴的区域看。
+课件以入射角 <span class="arithmatex">\(\alpha\)</span>、滴内折射角 <span class="arithmatex">\(\beta\)</span> 表示一次内反射的光路，近似取水的折射率为 <span class="arithmatex">\(4/3\)</span>：</p>
+<div class="arithmatex">\[\sin\alpha=\frac{4}{3}\sin\beta\]</div>
+<p><span class="pill pill-und">理解补充</span>为了区分两个容易混淆的角，记入射方向与出射方向之间的总偏转为 <span class="arithmatex">\(D\)</span>，虹相对反太阳方向的角半径为 <span class="arithmatex">\(\delta\)</span>。由两次折射与一次内反射的几何关系：</p>
+<div class="arithmatex">\[D=\pi+2\alpha-4\beta,\qquad \delta=\pi-D=4\beta-2\alpha\]</div>
+<p>主虹附近的出射方向变化缓慢，使来自一段入射位置范围的光集中到接近相同的方向。课件图中主虹角半径约为 41°—42°，红在外侧、紫在内侧。</p>
+<h3 id="副虹与暗带">副虹与暗带<a class="headerlink" href="#副虹与暗带" title="Permanent link">#</a></h3>
+<p><span class="pill pill-ppt">PPT图示</span>副虹对应滴内两次反射，比主虹更暗，颜色次序相反。课件图示副虹角半径约为 50°—54°，两虹之间有相对较暗的区域，称为亚历山大暗带。
+<span class="pill pill-und">理解补充</span>在普通主虹光路中，水滴内部的那次反射不应一概叫作全反射；它有部分光反射，也有部分光透射。形成彩虹需要追踪多次折射和反射的特定路径。</p>
+<h3 id="日晕与月晕">日晕与月晕<a class="headerlink" href="#日晕与月晕" title="Permanent link">#</a></h3>
+<p><span class="pill pill-ppt">PPT重点 简介</span>高空冰晶对阳光或月光的折射、反射会形成光环或其他光斑。彩虹主要与液态水滴有关，日晕、月晕则与冰晶有关，二者的介质形状和光路不同。</p>
+<h3 id="将现象还原成光路">将现象还原成光路<a class="headerlink" href="#将现象还原成光路" title="Permanent link">#</a></h3>
+<p>看到自然光学现象时，先确定参与作用的介质和界面，再数清折射、反射的次数，最后判断折射率随波长变化怎样改变出射方向。这里保留直观联系，不把简介扩展为大气光学专题。
+!“出现彩色”不自动等于干涉。本讲棱镜、彩虹中的颜色分离首先来自色散；是否涉及其他机制，需要结合具体装置与现象判断。</p>
+<h2 id="公式速查一-传播与光程">公式速查一 传播与光程<a class="headerlink" href="#公式速查一-传播与光程" title="Permanent link">#</a></h2>
+<blockquote>
+<p><strong>资料范围</strong>：使用前先核对介质 条件 角度与波长约定</p>
+</blockquote>
+<h3 id="光强">光强<a class="headerlink" href="#光强" title="Permanent link">#</a></h3>
+<div class="arithmatex">\[I=\frac{n}{2c\mu_0}E_0^2\propto E_0^2\]</div>
+<p>条件：透明、近似非磁性介质中的平面简谐波。<span class="arithmatex">\(E_0\)</span> 为真实场的峰值振幅。仅比较同介质相对分布时，才省略比例系数。</p>
+<h3 id="反射-折射-全反射">反射 折射 全反射<a class="headerlink" href="#反射-折射-全反射" title="Permanent link">#</a></h3>
+<div class="arithmatex">\[i'=i,\qquad n_1\sin i=n_2\sin r\]</div>
+<div class="arithmatex">\[i_c=\arcsin\frac{n_2}{n_1}\quad(n_1&gt;n_2),\qquad i&gt;i_c\]</div>
+<p>角度从界面局部法线量起。水中看空气方向的临界角约为 48.6°。</p>
+<h3 id="平面界面视深">平面界面视深<a class="headerlink" href="#平面界面视深" title="Permanent link">#</a></h3>
+<div class="arithmatex">\[y'=\frac{y\sqrt{1-n^2\sin^2 i}}{n\cos i}\quad\Rightarrow\quad y'\approx\frac{y}{n}\quad(i\approx0)\]</div>
+<p>这里外侧为空气，<span class="arithmatex">\(i\)</span> 是水内入射角，必须存在出射光线。任意大孔径光束不严格共点。</p>
+<h3 id="棱镜">棱镜<a class="headerlink" href="#棱镜" title="Permanent link">#</a></h3>
+<div class="arithmatex">\[\delta=i+i'-\alpha,\qquad n=\frac{\sin[(\alpha+\delta_m)/2]}{\sin(\alpha/2)}\]</div>
+<p>后式要求最小偏向状态，空气中取绝对折射率；最小偏向时 <span class="arithmatex">\(i=i'\)</span>、<span class="arithmatex">\(r=r'=\alpha/2\)</span>。</p>
+<h3 id="光程-相位与费马原理">光程 相位与费马原理<a class="headerlink" href="#光程-相位与费马原理" title="Permanent link">#</a></h3>
+<div class="arithmatex">\[L=\sum_j n_jl_j=\int n\,dl,\qquad \lambda'=\frac{\lambda}{n}\]</div>
+<div class="arithmatex">\[\Delta\varphi_{\mathrm{prop}}=\frac{2\pi}{\lambda}\Delta L,\qquad \delta\int_Q^P n\,dl=0\]</div>
+<p>分母 <span class="arithmatex">\(\lambda\)</span> 是真空波长；光程差相减方向与相位差定义必须一致。费马原理表示平稳，不保证全局最短。
+!选题入口：涉及方向用界面定律；涉及“等效路程”用光程；需要解释路径选择或推出折射规律时，用费马原理。</p>
+<h2 id="公式速查二-成像与仪器">公式速查二 成像与仪器<a class="headerlink" href="#公式速查二-成像与仪器" title="Permanent link">#</a></h2>
+<blockquote>
+<p><strong>资料范围</strong>：默认入射从左向右  实物实像为正  曲率半径按球心位置定号</p>
+</blockquote>
+<h3 id="单球面折射-傍轴条件">单球面折射 傍轴条件<a class="headerlink" href="#单球面折射-傍轴条件" title="Permanent link">#</a></h3>
+<div class="arithmatex">\[\frac{n}{s}+\frac{n'}{s'}=\frac{n'-n}{R},\quad f=\frac{nR}{n'-n},\quad f'=\frac{n'R}{n'-n}\]</div>
+<div class="arithmatex">\[V=\frac{y'}{y}=-\frac{ns'}{n's},\qquad \frac{f}{s}+\frac{f'}{s'}=1\]</div>
+<p>基准为球面顶点。傍轴要求相关倾角远小于 1 rad，入射高度相对物距、像距及曲率半径都足够小。</p>
+<h3 id="球面反射镜-傍轴条件">球面反射镜 傍轴条件<a class="headerlink" href="#球面反射镜-傍轴条件" title="Permanent link">#</a></h3>
+<div class="arithmatex">\[\frac{1}{s}+\frac{1}{s'}=-\frac{2}{R}=\frac{1}{f},\qquad f=-\frac{R}{2}\]</div>
+<p>反射后左侧实像的像距为正；凹面镜 <span class="arithmatex">\(R&lt;0,f&gt;0\)</span>。</p>
+<h3 id="薄透镜">薄透镜<a class="headerlink" href="#薄透镜" title="Permanent link">#</a></h3>
+<div class="arithmatex">\[\frac{n}{s}+\frac{n'}{s'}=\frac{n_L-n}{R_1}+\frac{n'-n_L}{R_2}\]</div>
+<p>空气中简化为</p>
+<div class="arithmatex">\[\frac{1}{s}+\frac{1}{s'}=\frac{1}{f}=(n_L-1)\left(\frac{1}{R_1}-\frac{1}{R_2}\right),\qquad V=-\frac{s'}{s}\]</div>
+<p>薄透镜以光心为基准；两侧介质相同才可直接使用“过光心方向不变”。</p>
+<h3 id="逐次成像与放大率">逐次成像与放大率<a class="headerlink" href="#逐次成像与放大率" title="Permanent link">#</a></h3>
+<div class="arithmatex">\[s_2=d-s_1',\qquad V=V_1V_2,\qquad P=\frac{1}{f}\quad\mathrm{(air)}\]</div>
+<p>光焦度取焦距的米制数值的倒数。<span class="arithmatex">\(|V|\)</span> 判大小，<span class="arithmatex">\(V\)</span> 的符号判正倒。</p>
+<div class="arithmatex">\[M_{\mathrm{telescope}}=-\frac{f_o}{f_e},\qquad M_{\mathrm{magnifier}}\approx\frac{s_0}{f}\]</div>
+<p>望远镜公式针对无穷远物体、正常调节；放大镜式针对眼靠近透镜、物在焦点附近的条件。<span class="arithmatex">\(M\)</span> 是视角放大率，不是 <span class="arithmatex">\(V\)</span>。
+!解成像题的顺序：画元件与光轴 → 定传播方向和符号 → 求像距 → 判虚实 → 求放大率 → 用一条特殊光线检查位置趋势。</p>
+<h2 id="本讲易错清单">本讲易错清单<a class="headerlink" href="#本讲易错清单" title="Permanent link">#</a></h2>
+<blockquote>
+<p><strong>资料范围</strong>：对照公式与光路图逐项自检</p>
+</blockquote>
+<h3 id="1-角度量错了基准">1 角度量错了基准<a class="headerlink" href="#1-角度量错了基准" title="Permanent link">#</a></h3>
+<p>入射角和折射角从法线量起；遇到球面，先连球心找法线。光线与界面的夹角通常是它们的余角。</p>
+<h3 id="2-把光密当成质量密度大">2 把光密当成质量密度大<a class="headerlink" href="#2-把光密当成质量密度大" title="Permanent link">#</a></h3>
+<p>光密只指折射率较大。只有从高折射率侧射向低折射率侧，且入射角超过临界角，才有全反射。</p>
+<h3 id="3-相位公式重复乘了折射率">3 相位公式重复乘了折射率<a class="headerlink" href="#3-相位公式重复乘了折射率" title="Permanent link">#</a></h3>
+<p>使用真空波长时，传播相位写 <span class="arithmatex">\(2\pi nl/\lambda\)</span>；使用介质波长时写 <span class="arithmatex">\(2\pi l/\lambda'\)</span>。不能把 <span class="arithmatex">\(nl\)</span> 和 <span class="arithmatex">\(\lambda'\)</span> 放在同一表达式里再多计一次 <span class="arithmatex">\(n\)</span>。</p>
+<h3 id="4-把费马原理记成光总走最短路">4 把费马原理记成光总走最短路<a class="headerlink" href="#4-把费马原理记成光总走最短路" title="Permanent link">#</a></h3>
+<p>它要求对邻近路径的光程变化平稳；几何长度最短与光程平稳也不是同一件事。</p>
+<h3 id="5-看左右位置就判虚实">5 看左右位置就判虚实<a class="headerlink" href="#5-看左右位置就判虚实" title="Permanent link">#</a></h3>
+<p>物的虚实看入射光束；像的虚实看出射光束。反射后传播方向反转，实像可能仍在左侧。</p>
+<h3 id="6-曲率半径全部取正">6 曲率半径全部取正<a class="headerlink" href="#6-曲率半径全部取正" title="Permanent link">#</a></h3>
+<p>球心相对顶点的位置决定 <span class="arithmatex">\(R\)</span> 的符号。双凸透镜两面的曲率半径异号；凹球面镜在本讲约定下半径为负。</p>
+<h3 id="7-放大与正立混在一起">7 放大与正立混在一起<a class="headerlink" href="#7-放大与正立混在一起" title="Permanent link">#</a></h3>
+<p><span class="arithmatex">\(V=-2\)</span> 表示倒立、放大两倍；<span class="arithmatex">\(V=+0.5\)</span> 表示正立、缩小一半。判断尺寸只看绝对值。</p>
+<h3 id="8-把透镜组的中间像距直接当下一物距">8 把透镜组的中间像距直接当下一物距<a class="headerlink" href="#8-把透镜组的中间像距直接当下一物距" title="Permanent link">#</a></h3>
+<p>下一片应使用 <span class="arithmatex">\(s_2=d-s_1'\)</span>，必须换测距基准。中间像在下一片右侧时，它是下一片的虚物。</p>
+<h3 id="9-以为薄透镜完全不改变相位">9 以为薄透镜完全不改变相位<a class="headerlink" href="#9-以为薄透镜完全不改变相位" title="Permanent link">#</a></h3>
+<p>理想透镜使规定的物像路径总光程相等；透镜不同位置的内部光程通常不同。等光程性不能脱离比较路径使用。</p>
+<h3 id="10-过早舍入-或混用两种放大率">10 过早舍入 或混用两种放大率<a class="headerlink" href="#10-过早舍入-或混用两种放大率" title="Permanent link">#</a></h3>
+<p>像靠近焦点时，成像公式对小量很敏感；保留中间有效数字。望远镜观察远物的“放大”通常说视角放大率，不能用横向放大率代替。</p>
+<h2 id="自测题">自测题<a class="headerlink" href="#自测题" title="Permanent link">#</a></h2>
+<blockquote>
+<p><strong>资料范围</strong>：以下均为理解补充题  建议先独立作答 再翻至末页核对</p>
+</blockquote>
+<h3 id="题-1-概念与条件">题 1 概念与条件<a class="headerlink" href="#题-1-概念与条件" title="Permanent link">#</a></h3>
+<p>水中物体显浅时，为什么 <span class="arithmatex">\(y'=3y/4\)</span> 不是任意观察方向都成立？请分别说明：公式的近似条件、不同方向光线的延长线是否严格共点，以及入射角超过临界角会怎样。</p>
+<h3 id="题-2-界面折射与全反射">题 2 界面折射与全反射<a class="headerlink" href="#题-2-界面折射与全反射" title="Permanent link">#</a></h3>
+<p>光从折射率 1.50 的玻璃射向空气，入射角为 30°。求折射角和临界角。若入射角改为 45°，是否存在传播到空气远处的几何折射光线？</p>
+<h3 id="题-3-薄透镜计算">题 3 薄透镜计算<a class="headerlink" href="#题-3-薄透镜计算" title="Permanent link">#</a></h3>
+<p>空气中双凸薄透镜的折射率 <span class="arithmatex">\(n_L=1.50\)</span>，前表面 <span class="arithmatex">\(R_1=+20.0\,\mathrm{cm}\)</span>，后表面 <span class="arithmatex">\(R_2=-20.0\,\mathrm{cm}\)</span>。高 2.00 cm 的实物位于光心左侧 30.0 cm，且物像满足傍轴条件。
+求焦距、像距、横向放大率与像高，说明像的虚实、正倒和大小。不要把后表面的负号省略。</p>
+<h3 id="题-4-公式推导与极限检验">题 4 公式推导与极限检验<a class="headerlink" href="#题-4-公式推导与极限检验" title="Permanent link">#</a></h3>
+<p>从球面折射公式出发，依次取物在无穷远、像在无穷远，推导像方与物方焦距。然后说明：当两侧折射率不同，两个焦距是否相等？当曲率半径趋于无穷大，公式退化为什么？</p>
+<h3 id="题-5-透镜组综合">题 5 透镜组综合<a class="headerlink" href="#题-5-透镜组综合" title="Permanent link">#</a></h3>
+<p>空气中两片会聚薄透镜的焦距分别为 <span class="arithmatex">\(f_1=10.0\,\mathrm{cm}\)</span>、<span class="arithmatex">\(f_2=20.0\,\mathrm{cm}\)</span>，两片间距为 <span class="arithmatex">\(d=15.0\,\mathrm{cm}\)</span>。实物在第一片左侧 20.0 cm。
+求第一片的中间像、第二片的物距、最终像距和总横向放大率。请特别解释：为什么第二片的物是虚物，而最终像仍可以是实像？</p>
+<h3 id="作答检查">作答检查<a class="headerlink" href="#作答检查" title="Permanent link">#</a></h3>
+<p>每题至少写出一个适用条件；计算题在代数字之前先写带符号公式；最终结果除数值外，还应有一句物理解释。
+!建议在草稿上画出第 3、5 题的光轴、焦点和中间像，再进行计算。若计算与作图冲突，优先检查传播方向、距离基准和曲率半径的符号。</p>
+<h2 id="自测答案与来源索引">自测答案与来源索引<a class="headerlink" href="#自测答案与来源索引" title="Permanent link">#</a></h2>
+<blockquote>
+<p><strong>资料范围</strong>：自测解析为理解补充  页码均区分课件 PDF 页与教材印刷页</p>
+</blockquote>
+<h3 id="题-1">题 1<a class="headerlink" href="#题-1" title="Permanent link">#</a></h3>
+<p>近法线、小孔径观察时，<span class="arithmatex">\(i\approx0\)</span>，故 <span class="arithmatex">\(y'\approx y/n=3y/4\)</span>。精确交点深度随 <span class="arithmatex">\(i\)</span> 改变，宽角度光束不严格共点。<span class="arithmatex">\(i&gt;i_c\)</span> 时发生全反射，没有该方向的出射折射线可供反向延长。</p>
+<h3 id="题-2">题 2<a class="headerlink" href="#题-2" title="Permanent link">#</a></h3>
+<div class="arithmatex">\[r=\arcsin(1.50\sin30^\circ)\approx48.6^\circ,\qquad i_c=\arcsin\frac{1}{1.50}\approx41.8^\circ\]</div>
+<p>45° 大于临界角，发生全反射；按几何光学模型，没有传播到空气远处的折射光线。</p>
+<h3 id="题-3">题 3<a class="headerlink" href="#题-3" title="Permanent link">#</a></h3>
+<div class="arithmatex">\[\frac{1}{f}=0.50\left(\frac{1}{20.0}-\frac{1}{-20.0}\right)=0.0500\,\mathrm{cm}^{-1}\]</div>
+<p>所以 <span class="arithmatex">\(f=20.0\,\mathrm{cm}\)</span>，<span class="arithmatex">\(s'=60.0\,\mathrm{cm}\)</span>，<span class="arithmatex">\(V=-2.00\)</span>，<span class="arithmatex">\(y'=-4.00\,\mathrm{cm}\)</span>。像在右侧，为倒立、放大两倍的实像。</p>
+<h3 id="题-4">题 4<a class="headerlink" href="#题-4" title="Permanent link">#</a></h3>
+<p>取 <span class="arithmatex">\(s\to\infty\)</span> 得 <span class="arithmatex">\(f'=n'R/(n'-n)\)</span>；取 <span class="arithmatex">\(s'\to\infty\)</span> 得 <span class="arithmatex">\(f=nR/(n'-n)\)</span>，故 <span class="arithmatex">\(f'/f=n'/n\)</span>。两侧折射率不同时一般不等焦距。<span class="arithmatex">\(R\to\infty\)</span> 时有 <span class="arithmatex">\(n/s+n'/s'=0\)</span>，即平面折射的傍轴关系 <span class="arithmatex">\(s'=-(n'/n)s\)</span>。</p>
+<h3 id="题-5">题 5<a class="headerlink" href="#题-5" title="Permanent link">#</a></h3>
+<div class="arithmatex">\[s_1'=20.0\,\mathrm{cm},\quad s_2=15.0-20.0=-5.00\,\mathrm{cm},\quad s_2'=4.00\,\mathrm{cm}\]</div>
+<div class="arithmatex">\[V_1=-1,\qquad V_2=+0.800,\qquad V=-0.800\]</div>
+<p>第二片处的入射光束正向右侧中间像会聚，因此是虚物；第二片进一步增强会聚，在其右侧 4.00 cm 形成倒立、缩小的实像。</p>
+<h3 id="资料索引">资料索引<a class="headerlink" href="#资料索引" title="Permanent link">#</a></h3>
+<p>教师课件：《1 26秋基物2 光学.第1章.几何光学简介》，共 54 个 PDF 页面；页内原幻灯片编号不连续，正文来源统一使用 PDF 页序。
+教材：赵凯华、钟锡华《光学（重排本）》，北京大学出版社，2017。所用位置：绪论第 2—4 页；第一章 §1 第 7—14 页，§2 第 19 页，§3 第 24—27 页，§4 第 28—32 页，§5 第 33—37 页，§6 第 40—48 页，§7 第 52 页，§8 第 61—62、64—65 页。
+教材页码指印刷页，本地扫描文件这些正文页面的 PDF 页序为“印刷页码 +13”。正文中的重绘光路图与简短解释均属理解补充，随对应知识点标明课件或教材依据。</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="页脚" >
+        
+          
+          <a href="../%E8%AF%BE%E7%A8%8B%E8%AF%B4%E6%98%8E/" class="md-footer__link md-footer__link--prev" aria-label="上一页: 课程说明">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                上一页
+              </span>
+              <div class="md-ellipsis">
+                课程说明
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../%E7%AC%AC2%E8%AE%B2_%E6%B3%A2%E5%8A%A8%E5%85%89%E5%AD%A6%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86%EF%BC%88%E4%B8%80%EF%BC%89/" class="md-footer__link md-footer__link--next" aria-label="下一页: 第2讲 波动光学基本原理（一）">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                下一页
+              </span>
+              <div class="md-ellipsis">
+                第2讲 波动光学基本原理（一）
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.sections", "navigation.expand", "navigation.top", "navigation.footer", "toc.follow", "search.highlight", "search.share"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

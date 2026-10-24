@@ -1,0 +1,4985 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="大学课程个人学习讲义，按学期和课程组织，支持网页端直接阅读">
+      
+      
+      
+        <link rel="canonical" href="https://yunbianmailang.github.io/university-course-materials/%E5%9F%BA%E7%A1%80%E7%89%A9%E7%90%86%E5%AD%A62/%E7%AC%AC2%E8%AE%B2_%E6%B3%A2%E5%8A%A8%E5%85%89%E5%AD%A6%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86%EF%BC%88%E4%B8%80%EF%BC%89/">
+      
+      
+        <link rel="prev" href="../%E7%AC%AC1%E8%AE%B2_%E5%87%A0%E4%BD%95%E5%85%89%E5%AD%A6%E7%AE%80%E4%BB%8B/">
+      
+      
+        <link rel="next" href="../%E7%AC%AC3%E8%AE%B2_%E5%85%89%E7%9A%84%E5%B9%B2%E6%B6%89%E4%B8%8E%E6%97%B6%E7%A9%BA%E7%9B%B8%E5%B9%B2%E6%80%A7/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>第2讲 波动光学基本原理（一） - 大学课程学习资料</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/custom.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#第2讲-波动光学基本原理一" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../.." title="大学课程学习资料" class="md-header__button md-logo" aria-label="大学课程学习资料" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            大学课程学习资料
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              第2讲 波动光学基本原理（一）
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="indigo"  aria-label="切换到深色模式"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="切换到深色模式" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="indigo"  aria-label="切换到浅色模式"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="切换到浅色模式" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="分享" aria-label="分享" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/yunbianmailang/university-course-materials" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    大学课程学习资料
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="大学课程学习资料" class="md-nav__button md-logo" aria-label="大学课程学习资料" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    大学课程学习资料
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/yunbianmailang/university-course-materials" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    大学课程学习资料
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    首页
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    复变函数与数理方程
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    复变函数与数理方程
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0%E4%B8%8E%E6%95%B0%E7%90%86%E6%96%B9%E7%A8%8B/%E8%AF%BE%E7%A8%8B%E8%AF%B4%E6%98%8E/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    课程说明
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0%E4%B8%8E%E6%95%B0%E7%90%86%E6%96%B9%E7%A8%8B/%E7%AC%AC1%E8%AE%B2_%E5%A4%8D%E6%95%B0%E5%87%A0%E4%BD%95%E6%A8%A1%E7%9A%84%E6%9E%81%E5%80%BC%E4%B8%8E%E6%8C%87%E6%95%B0%E6%98%A0%E5%B0%84/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第1讲 复数几何模的极值与指数映射
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0%E4%B8%8E%E6%95%B0%E7%90%86%E6%96%B9%E7%A8%8B/%E7%AC%AC2%E8%AE%B2_%E5%A4%8D%E5%B9%82%E8%A7%A3%E6%9E%90%E6%80%A7%E4%B8%8E%E5%A4%8D%E5%B9%B3%E9%9D%A2%E6%98%A0%E5%B0%84/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第2讲 复幂解析性与复平面映射
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0%E4%B8%8E%E6%95%B0%E7%90%86%E6%96%B9%E7%A8%8B/%E7%AC%AC3%E8%AE%B2_%E5%A4%8D%E7%A7%AF%E5%88%86%E6%9F%AF%E8%A5%BF%E5%85%AC%E5%BC%8F%E4%B8%8E%E8%A7%A3%E6%9E%90%E5%87%BD%E6%95%B0%E7%9A%84%E6%95%B4%E4%BD%93%E6%80%A7%E8%B4%A8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第3讲 复积分柯西公式与解析函数的整体性质
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0%E4%B8%8E%E6%95%B0%E7%90%86%E6%96%B9%E7%A8%8B/%E7%AC%AC4%E8%AE%B2_%E5%B9%82%E7%BA%A7%E6%95%B0%E6%94%B6%E6%95%9B%E4%B8%8E%E6%B3%B0%E5%8B%92%E6%B4%9B%E6%9C%97%E5%B1%95%E5%BC%80/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第4讲 幂级数收敛与泰勒洛朗展开
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0%E4%B8%8E%E6%95%B0%E7%90%86%E6%96%B9%E7%A8%8B/%E7%AC%AC5%E8%AE%B2_%E9%9B%B6%E7%82%B9%E5%A5%87%E7%82%B9%E4%B8%8E%E7%95%99%E6%95%B0%E7%A7%AF%E5%88%86/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第5讲 零点奇点与留数积分
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    信号与系统
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    信号与系统
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%B3%BB%E7%BB%9F/%E8%AF%BE%E7%A8%8B%E8%AF%B4%E6%98%8E/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    课程说明
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%B3%BB%E7%BB%9F/%E7%AC%AC1%E8%AE%B2_%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF%E4%B8%8E%E5%9F%BA%E6%9C%AC%E8%AF%AD%E8%A8%80/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第1讲 学习路线与基本语言
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%B3%BB%E7%BB%9F/%E7%AC%AC2%E8%AE%B2_%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B%E7%BB%8F%E5%85%B8%E6%B3%95%E4%B8%8E%E5%93%8D%E5%BA%94%E5%88%86%E8%A7%A3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第2讲 微分方程经典法与响应分解
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%B3%BB%E7%BB%9F/%E7%AC%AC3%E8%AE%B2_%E5%82%85%E9%87%8C%E5%8F%B6%E7%BA%A7%E6%95%B0%E4%B8%8E%E9%A2%91%E8%B0%B1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第3讲 傅里叶级数与频谱
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%B3%BB%E7%BB%9F/%E7%AC%AC4%E8%AE%B2_%E5%82%85%E9%87%8C%E5%8F%B6%E5%8F%98%E6%8D%A2%E4%B8%8E%E5%85%B8%E5%9E%8B%E4%BF%A1%E5%8F%B7%E9%A2%91%E8%B0%B1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第4讲 傅里叶变换与典型信号频谱
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%B3%BB%E7%BB%9F/%E7%AC%AC5%E8%AE%B2_%E5%85%B8%E5%9E%8B%E5%8F%98%E6%8D%A2%E5%AF%B9%E4%B8%8E%E6%8A%BD%E6%A0%B7%E5%AE%9A%E7%90%86/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第5讲 典型变换对与抽样定理
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%B3%BB%E7%BB%9F/%E7%AC%AC6%E8%AE%B2_%E6%8B%89%E6%99%AE%E6%8B%89%E6%96%AF%E5%8F%98%E6%8D%A2%E7%9A%84%E6%80%A7%E8%B4%A8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第6讲 拉普拉斯变换的性质
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%B3%BB%E7%BB%9F/%E7%AC%AC7%E8%AE%B2_%E6%8B%89%E6%99%AE%E6%8B%89%E6%96%AF%E9%80%86%E5%8F%98%E6%8D%A2%E4%B8%8E%20s%20%E5%9F%9F%E6%A8%A1%E5%9E%8B/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第7讲 拉普拉斯逆变换与 s 域模型
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%B3%BB%E7%BB%9F/%E7%AC%AC8%E8%AE%B2_%E9%A2%91%E7%8E%87%E5%93%8D%E5%BA%94%E4%B8%8E%E7%A8%B3%E5%AE%9A%E6%80%A7/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第8讲 频率响应与稳定性
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    基础物理学2（光学）
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    基础物理学2（光学）
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E8%AF%BE%E7%A8%8B%E8%AF%B4%E6%98%8E/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    课程说明
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC1%E8%AE%B2_%E5%87%A0%E4%BD%95%E5%85%89%E5%AD%A6%E7%AE%80%E4%BB%8B/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第1讲 几何光学简介
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第2讲 波动光学基本原理（一）
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第2讲 波动光学基本原理（一）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#本讲知识地图" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        本讲知识地图
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="本讲知识地图">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#本讲解决什么问题" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        本讲解决什么问题
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#三条贯穿全讲的关系" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三条贯穿全讲的关系
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#阅读导航" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        阅读导航
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#与第一讲的联系" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        与第一讲的联系
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#定态光波与复振幅" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        定态光波与复振幅
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="定态光波与复振幅">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#定态不等于静止" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        定态不等于静止
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#固定本课程的符号约定" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        固定本课程的符号约定
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#由复振幅得到光强" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        由复振幅得到光强
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#平面波与波矢" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        平面波与波矢
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="平面波与波矢">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#识别平面波的两个条件" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        识别平面波的两个条件
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#课堂例题-211-从相位反推方向和波长" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        课堂例题 2.1.1 从相位反推方向和波长
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#球面波的发散-会聚与强度" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        球面波的发散 会聚与强度
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="球面波的发散 会聚与强度">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#发散球面波" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        发散球面波
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#回答课件问题-向同一点会聚怎样写" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        回答课件问题 向同一点会聚怎样写
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#振幅为何按距离的倒数衰减" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        振幅为何按距离的倒数衰减
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#波前与倾斜平面波的共轭" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        波前与倾斜平面波的共轭
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="波前与倾斜平面波的共轭">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#本讲的波前是一个取样曲面" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        本讲的波前是一个取样曲面
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#课堂例题-221-写出倾斜入射波前" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        课堂例题 2.2.1 写出倾斜入射波前
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#课堂例题-222-共轭后为何是负倾角" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        课堂例题 2.2.2 共轭后为何是负倾角
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#轴上与轴外点源的波前共轭" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        轴上与轴外点源的波前共轭
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="轴上与轴外点源的波前共轭">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#课堂例题-223-先写距离再写波前" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        课堂例题 2.2.3 先写距离再写波前
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#课堂例题-224-共轭波的会聚位置" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        课堂例题 2.2.4 共轭波的会聚位置
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#判断会聚比记忆负号更可靠" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        判断会聚比记忆负号更可靠
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#轴上点源-从精确距离到傍轴式" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        轴上点源 从精确距离到傍轴式
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="轴上点源 从精确距离到傍轴式">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#关键推导-必须掌握" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        关键推导 必须掌握
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#傍轴条件与远场条件怎样区分" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        傍轴条件与远场条件怎样区分
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="傍轴条件与远场条件怎样区分">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#傍轴主要控制振幅的相对变化" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        傍轴主要控制振幅的相对变化
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#远场主要控制被丢掉的二次相位" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        远场主要控制被丢掉的二次相位
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#为什么光学中远场通常要求更严格" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么光学中远场通常要求更严格
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#解题时按目的选择" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        解题时按目的选择
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#课堂例题-225-两种距离差多少" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        课堂例题 2.2.5 两种距离差多少
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="课堂例题 2.2.5 两种距离差多少">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#题目判断与已知条件" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        题目判断与已知条件
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#傍轴-在平方量之间取-50-倍" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        傍轴 在平方量之间取 50 倍
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#远场-在长度量之间取-50-倍" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        远场 在长度量之间取 50 倍
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#与教材例题数据的区别" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        与教材例题数据的区别
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#轴外点源-三类相位项从哪里来" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        轴外点源 三类相位项从哪里来
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="轴外点源 三类相位项从哪里来">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#先固定物平面与场平面的坐标" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        先固定物平面与场平面的坐标
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#关键推导-必须掌握_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        关键推导 必须掌握
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#哪一项随什么坐标改变" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        哪一项随什么坐标改变
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#轴外点源-三种近似的对应关系" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        轴外点源 三种近似的对应关系
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="轴外点源 三种近似的对应关系">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#情形一-源点与场点都傍轴" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        情形一 源点与场点都傍轴
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#情形二-源点还满足远场条件" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        情形二 源点还满足远场条件
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#情形三-场点还满足远场条件" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        情形三 场点还满足远场条件
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#统一的理解方法" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        统一的理解方法
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#高斯光束-了解即可" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        高斯光束 了解即可
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="高斯光束 了解即可">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#光束最细处是光腰" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        光束最细处是光腰
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#高斯型到底修饰什么" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        “高斯型”到底修饰什么
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#本讲只保留三个物理图像" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        本讲只保留三个物理图像
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#由振幅叠加推导干涉强度" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        由振幅叠加推导干涉强度
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="由振幅叠加推导干涉强度">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#先叠加场-再求平均强度" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        先叠加场 再求平均强度
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#关键推导-必须掌握_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        关键推导 必须掌握
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#干涉是光强的重新分布" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        干涉是光强的重新分布
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#相干条件与普通光源" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        相干条件与普通光源
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="相干条件与普通光源">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#稳定干涉条纹需要什么" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        稳定干涉条纹需要什么
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#普通光源为什么难以直接相干" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        普通光源为什么难以直接相干
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#激光光源的物理入口" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        激光光源的物理入口
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#明暗条件与条纹对比度" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        明暗条件与条纹对比度
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="明暗条件与条纹对比度">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#明与暗来自相位差" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        明与暗来自相位差
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#对比度怎样量化条纹清晰程度" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        对比度怎样量化条纹清晰程度
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#怎样从普通光源获得相干光" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        怎样从普通光源获得相干光
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="怎样从普通光源获得相干光">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#核心方法-让两路来自同一波列" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        核心方法 让两路来自同一波列
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#分波面法" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        分波面法
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#分振幅法" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        分振幅法
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#同源仍需要满足光程与观测条件" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        同源仍需要满足光程与观测条件
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#两相干点源的干涉场" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        两相干点源的干涉场
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="两相干点源的干涉场">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#两条路程怎样进入相位差" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        两条路程怎样进入相位差
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#光程差与几何路程差要配套" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        光程差与几何路程差要配套
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#等初相位时的明暗位置" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        等初相位时的明暗位置
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#杨氏双缝-装置与相位差" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        杨氏双缝 装置与相位差
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="杨氏双缝 装置与相位差">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#从一个源构造两个相关的次级源" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        从一个源构造两个相关的次级源
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#先用几何得到符号" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        先用几何得到符号
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#杨氏双缝-复振幅推导" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        杨氏双缝 复振幅推导
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="杨氏双缝 复振幅推导">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#关键推导-必须掌握_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        关键推导 必须掌握
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#为什么共同的曲率相位可以消去" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么共同的曲率相位可以消去
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#与几何路线的核对" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        与几何路线的核对
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#条纹方向-间距与白光" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        条纹方向 间距与白光
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="条纹方向 间距与白光">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#强度沿哪一方向变化" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        强度沿哪一方向变化
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#从余弦平方的周期得到间距" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        从余弦平方的周期得到间距
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#白光为什么有白色中央纹和彩色侧纹" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        白光为什么有白色中央纹和彩色侧纹
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#两束平行光-空间频率与条纹方向" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        两束平行光 空间频率与条纹方向
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="两束平行光 空间频率与条纹方向">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#一次相位差产生平行直条纹" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        一次相位差产生平行直条纹
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#方向-周期和最短间距" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        方向 周期和最短间距
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#课堂例题-241-平行光干涉" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        课堂例题 2.4.1 平行光干涉
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="课堂例题 2.4.1 平行光干涉">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#题目判断与已知条件_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        题目判断与已知条件
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#第一步-由角度写横向分量" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第一步 由角度写横向分量
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#第二步-求条纹间距并判断方向" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第二步 求条纹间距并判断方向
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#第三步-计算对比度" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第三步 计算对比度
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#公式速查一-波场-波前与近似" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        公式速查一 波场 波前与近似
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="公式速查一 波场 波前与近似">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#复振幅与强度" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        复振幅与强度
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#平面波与球面波" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        平面波与球面波
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#轴上点源到接收平面" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        轴上点源到接收平面
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#轴外点源到接收平面" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        轴外点源到接收平面
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#波前共轭" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        波前共轭
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#公式速查二-相干叠加与条纹" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        公式速查二 相干叠加与条纹
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="公式速查二 相干叠加与条纹">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#两波叠加" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        两波叠加
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#对比度" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        对比度
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#两点源与杨氏双缝" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        两点源与杨氏双缝
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#两平面波的空间频率" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        两平面波的空间频率
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#本讲易错清单" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        本讲易错清单
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="本讲易错清单">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-混用两个时间因子约定" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1 混用两个时间因子约定
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-只用线性相位判断理想平面波" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2 只用线性相位判断理想平面波
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-把取样平面当作等相面" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3 把取样平面当作等相面
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-共轭时忘记传播半空间" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4 共轭时忘记传播半空间
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-把傍轴直接等同于远场" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5 把傍轴直接等同于远场
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-全宽当半径-或把平方比较读错" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6 全宽当半径 或把平方比较读错
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-直接把相干光强相加" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7 直接把相干光强相加
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-相消就一定没有光" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8 相消就一定没有光
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9-把条纹方向与变化方向混淆" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9 把条纹方向与变化方向混淆
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-把周期或振幅比用错" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10 把周期或振幅比用错
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#自测题" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        自测题
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="自测题">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#题-1-波前识别与共轭" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        题 1 波前识别与共轭
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#题-2-条件估算" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        题 2 条件估算
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#题-3-振幅与对比度" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        题 3 振幅与对比度
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#题-4-双缝与初相位" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        题 4 双缝与初相位
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#题-5-两维空间频率" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        题 5 两维空间频率
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#作答检查" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        作答检查
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#自测答案与解析" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        自测答案与解析
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="自测答案与解析">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#题-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        题 1
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#题-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        题 2
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#题-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        题 3
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#题-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        题 4
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#题-5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        题 5
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#课件校读与来源索引" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        课件校读与来源索引
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="课件校读与来源索引">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#对照课件时需要留意的四处笔误" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        对照课件时需要留意的四处笔误
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#三处容易误读的简略说法" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三处容易误读的简略说法
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#资料索引" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        资料索引
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC3%E8%AE%B2_%E5%85%89%E7%9A%84%E5%B9%B2%E6%B6%89%E4%B8%8E%E6%97%B6%E7%A9%BA%E7%9B%B8%E5%B9%B2%E6%80%A7/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第3讲 光的干涉与时空相干性
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC4%E8%AE%B2_%E5%85%89%E7%9A%84%E8%A1%8D%E5%B0%84%E4%B8%8E%E5%88%86%E8%BE%A8%E6%9C%AC%E9%A2%86/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第4讲 光的衍射与分辨本领
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC5%E8%AE%B2_%E8%A1%8D%E5%B0%84%E5%85%89%E6%A0%85%E4%B8%8E%E6%99%B6%E4%BD%93%E8%A1%8D%E5%B0%84/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第5讲 衍射光栅与晶体衍射
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC6%E8%AE%B2_%E5%81%8F%E6%8C%AF%E6%80%81%E4%B8%8E%E8%8F%B2%E6%B6%85%E8%80%B3%E5%85%AC%E5%BC%8F/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第6讲 偏振态与菲涅耳公式
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC7%E8%AE%B2_%E5%8F%8C%E6%8A%98%E5%B0%84%E4%B8%8E%E5%81%8F%E6%8C%AF%E5%85%89%E5%BA%94%E7%94%A8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第7讲 双折射与偏振光应用
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#本讲知识地图" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        本讲知识地图
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="本讲知识地图">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#本讲解决什么问题" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        本讲解决什么问题
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#三条贯穿全讲的关系" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三条贯穿全讲的关系
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#阅读导航" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        阅读导航
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#与第一讲的联系" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        与第一讲的联系
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#定态光波与复振幅" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        定态光波与复振幅
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="定态光波与复振幅">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#定态不等于静止" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        定态不等于静止
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#固定本课程的符号约定" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        固定本课程的符号约定
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#由复振幅得到光强" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        由复振幅得到光强
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#平面波与波矢" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        平面波与波矢
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="平面波与波矢">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#识别平面波的两个条件" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        识别平面波的两个条件
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#课堂例题-211-从相位反推方向和波长" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        课堂例题 2.1.1 从相位反推方向和波长
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#球面波的发散-会聚与强度" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        球面波的发散 会聚与强度
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="球面波的发散 会聚与强度">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#发散球面波" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        发散球面波
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#回答课件问题-向同一点会聚怎样写" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        回答课件问题 向同一点会聚怎样写
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#振幅为何按距离的倒数衰减" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        振幅为何按距离的倒数衰减
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#波前与倾斜平面波的共轭" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        波前与倾斜平面波的共轭
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="波前与倾斜平面波的共轭">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#本讲的波前是一个取样曲面" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        本讲的波前是一个取样曲面
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#课堂例题-221-写出倾斜入射波前" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        课堂例题 2.2.1 写出倾斜入射波前
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#课堂例题-222-共轭后为何是负倾角" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        课堂例题 2.2.2 共轭后为何是负倾角
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#轴上与轴外点源的波前共轭" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        轴上与轴外点源的波前共轭
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="轴上与轴外点源的波前共轭">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#课堂例题-223-先写距离再写波前" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        课堂例题 2.2.3 先写距离再写波前
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#课堂例题-224-共轭波的会聚位置" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        课堂例题 2.2.4 共轭波的会聚位置
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#判断会聚比记忆负号更可靠" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        判断会聚比记忆负号更可靠
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#轴上点源-从精确距离到傍轴式" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        轴上点源 从精确距离到傍轴式
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="轴上点源 从精确距离到傍轴式">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#关键推导-必须掌握" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        关键推导 必须掌握
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#傍轴条件与远场条件怎样区分" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        傍轴条件与远场条件怎样区分
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="傍轴条件与远场条件怎样区分">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#傍轴主要控制振幅的相对变化" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        傍轴主要控制振幅的相对变化
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#远场主要控制被丢掉的二次相位" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        远场主要控制被丢掉的二次相位
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#为什么光学中远场通常要求更严格" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么光学中远场通常要求更严格
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#解题时按目的选择" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        解题时按目的选择
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#课堂例题-225-两种距离差多少" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        课堂例题 2.2.5 两种距离差多少
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="课堂例题 2.2.5 两种距离差多少">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#题目判断与已知条件" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        题目判断与已知条件
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#傍轴-在平方量之间取-50-倍" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        傍轴 在平方量之间取 50 倍
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#远场-在长度量之间取-50-倍" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        远场 在长度量之间取 50 倍
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#与教材例题数据的区别" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        与教材例题数据的区别
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#轴外点源-三类相位项从哪里来" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        轴外点源 三类相位项从哪里来
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="轴外点源 三类相位项从哪里来">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#先固定物平面与场平面的坐标" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        先固定物平面与场平面的坐标
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#关键推导-必须掌握_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        关键推导 必须掌握
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#哪一项随什么坐标改变" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        哪一项随什么坐标改变
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#轴外点源-三种近似的对应关系" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        轴外点源 三种近似的对应关系
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="轴外点源 三种近似的对应关系">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#情形一-源点与场点都傍轴" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        情形一 源点与场点都傍轴
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#情形二-源点还满足远场条件" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        情形二 源点还满足远场条件
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#情形三-场点还满足远场条件" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        情形三 场点还满足远场条件
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#统一的理解方法" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        统一的理解方法
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#高斯光束-了解即可" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        高斯光束 了解即可
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="高斯光束 了解即可">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#光束最细处是光腰" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        光束最细处是光腰
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#高斯型到底修饰什么" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        “高斯型”到底修饰什么
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#本讲只保留三个物理图像" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        本讲只保留三个物理图像
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#由振幅叠加推导干涉强度" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        由振幅叠加推导干涉强度
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="由振幅叠加推导干涉强度">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#先叠加场-再求平均强度" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        先叠加场 再求平均强度
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#关键推导-必须掌握_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        关键推导 必须掌握
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#干涉是光强的重新分布" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        干涉是光强的重新分布
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#相干条件与普通光源" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        相干条件与普通光源
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="相干条件与普通光源">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#稳定干涉条纹需要什么" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        稳定干涉条纹需要什么
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#普通光源为什么难以直接相干" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        普通光源为什么难以直接相干
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#激光光源的物理入口" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        激光光源的物理入口
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#明暗条件与条纹对比度" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        明暗条件与条纹对比度
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="明暗条件与条纹对比度">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#明与暗来自相位差" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        明与暗来自相位差
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#对比度怎样量化条纹清晰程度" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        对比度怎样量化条纹清晰程度
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#怎样从普通光源获得相干光" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        怎样从普通光源获得相干光
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="怎样从普通光源获得相干光">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#核心方法-让两路来自同一波列" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        核心方法 让两路来自同一波列
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#分波面法" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        分波面法
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#分振幅法" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        分振幅法
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#同源仍需要满足光程与观测条件" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        同源仍需要满足光程与观测条件
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#两相干点源的干涉场" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        两相干点源的干涉场
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="两相干点源的干涉场">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#两条路程怎样进入相位差" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        两条路程怎样进入相位差
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#光程差与几何路程差要配套" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        光程差与几何路程差要配套
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#等初相位时的明暗位置" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        等初相位时的明暗位置
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#杨氏双缝-装置与相位差" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        杨氏双缝 装置与相位差
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="杨氏双缝 装置与相位差">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#从一个源构造两个相关的次级源" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        从一个源构造两个相关的次级源
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#先用几何得到符号" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        先用几何得到符号
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#杨氏双缝-复振幅推导" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        杨氏双缝 复振幅推导
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="杨氏双缝 复振幅推导">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#关键推导-必须掌握_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        关键推导 必须掌握
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#为什么共同的曲率相位可以消去" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么共同的曲率相位可以消去
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#与几何路线的核对" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        与几何路线的核对
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#条纹方向-间距与白光" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        条纹方向 间距与白光
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="条纹方向 间距与白光">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#强度沿哪一方向变化" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        强度沿哪一方向变化
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#从余弦平方的周期得到间距" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        从余弦平方的周期得到间距
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#白光为什么有白色中央纹和彩色侧纹" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        白光为什么有白色中央纹和彩色侧纹
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#两束平行光-空间频率与条纹方向" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        两束平行光 空间频率与条纹方向
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="两束平行光 空间频率与条纹方向">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#一次相位差产生平行直条纹" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        一次相位差产生平行直条纹
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#方向-周期和最短间距" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        方向 周期和最短间距
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#课堂例题-241-平行光干涉" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        课堂例题 2.4.1 平行光干涉
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="课堂例题 2.4.1 平行光干涉">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#题目判断与已知条件_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        题目判断与已知条件
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#第一步-由角度写横向分量" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第一步 由角度写横向分量
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#第二步-求条纹间距并判断方向" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第二步 求条纹间距并判断方向
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#第三步-计算对比度" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第三步 计算对比度
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#公式速查一-波场-波前与近似" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        公式速查一 波场 波前与近似
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="公式速查一 波场 波前与近似">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#复振幅与强度" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        复振幅与强度
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#平面波与球面波" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        平面波与球面波
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#轴上点源到接收平面" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        轴上点源到接收平面
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#轴外点源到接收平面" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        轴外点源到接收平面
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#波前共轭" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        波前共轭
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#公式速查二-相干叠加与条纹" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        公式速查二 相干叠加与条纹
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="公式速查二 相干叠加与条纹">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#两波叠加" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        两波叠加
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#对比度" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        对比度
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#两点源与杨氏双缝" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        两点源与杨氏双缝
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#两平面波的空间频率" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        两平面波的空间频率
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#本讲易错清单" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        本讲易错清单
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="本讲易错清单">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-混用两个时间因子约定" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1 混用两个时间因子约定
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-只用线性相位判断理想平面波" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2 只用线性相位判断理想平面波
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-把取样平面当作等相面" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3 把取样平面当作等相面
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-共轭时忘记传播半空间" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4 共轭时忘记传播半空间
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-把傍轴直接等同于远场" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5 把傍轴直接等同于远场
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-全宽当半径-或把平方比较读错" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6 全宽当半径 或把平方比较读错
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-直接把相干光强相加" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7 直接把相干光强相加
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-相消就一定没有光" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8 相消就一定没有光
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9-把条纹方向与变化方向混淆" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9 把条纹方向与变化方向混淆
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-把周期或振幅比用错" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10 把周期或振幅比用错
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#自测题" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        自测题
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="自测题">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#题-1-波前识别与共轭" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        题 1 波前识别与共轭
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#题-2-条件估算" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        题 2 条件估算
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#题-3-振幅与对比度" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        题 3 振幅与对比度
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#题-4-双缝与初相位" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        题 4 双缝与初相位
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#题-5-两维空间频率" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        题 5 两维空间频率
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#作答检查" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        作答检查
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#自测答案与解析" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        自测答案与解析
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="自测答案与解析">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#题-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        题 1
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#题-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        题 2
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#题-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        题 3
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#题-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        题 4
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#题-5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        题 5
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#课件校读与来源索引" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        课件校读与来源索引
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="课件校读与来源索引">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#对照课件时需要留意的四处笔误" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        对照课件时需要留意的四处笔误
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#三处容易误读的简略说法" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三处容易误读的简略说法
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#资料索引" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        资料索引
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="第2讲-波动光学基本原理一">第2讲 波动光学基本原理（一）<a class="headerlink" href="#第2讲-波动光学基本原理一" title="Permanent link">#</a></h1>
+<div class="admonition tip">
+<p class="admonition-title">本讲配套文件</p>
+<ul>
+<li><a href="../../%E6%96%87%E4%BB%B6/%E5%9F%BA%E7%A1%80%E7%89%A9%E7%90%86%E5%AD%A62_%E7%AC%AC2%E8%AE%B2_%E6%B3%A2%E5%8A%A8%E5%85%89%E5%AD%A6%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86%EF%BC%88%E4%B8%80%EF%BC%89_%E5%AD%A6%E4%B9%A0%E8%AE%B2%E4%B9%89.pdf">PDF 在线阅读（基础物理学2_第2讲_波动光学基本原理（一）_学习讲义.pdf）</a></li>
+<li><a href="../../%E6%96%87%E4%BB%B6/%E5%9F%BA%E7%A1%80%E7%89%A9%E7%90%86%E5%AD%A62_%E7%AC%AC2%E8%AE%B2_%E6%B3%A2%E5%8A%A8%E5%85%89%E5%AD%A6%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86%EF%BC%88%E4%B8%80%EF%BC%89_%E5%AD%A6%E4%B9%A0%E8%AE%B2%E4%B9%89.docx">Word 下载（基础物理学2_第2讲_波动光学基本原理（一）_学习讲义.docx）</a></li>
+<li><a href="../../%E6%96%87%E4%BB%B6/%E5%9F%BA%E7%A1%80%E7%89%A9%E7%90%86%E5%AD%A62_%E7%AC%AC2%E8%AE%B2_%E6%B3%A2%E5%8A%A8%E5%85%89%E5%AD%A6%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86%EF%BC%88%E4%B8%80%EF%BC%89_%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93.pdf">知识点总结 PDF（基础物理学2_第2讲_波动光学基本原理（一）_知识点总结.pdf）</a></li>
+<li><a href="../../%E6%96%87%E4%BB%B6/%E5%9F%BA%E7%A1%80%E7%89%A9%E7%90%86%E5%AD%A62_%E7%AC%AC2%E8%AE%B2_%E6%B3%A2%E5%8A%A8%E5%85%89%E5%AD%A6%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86%EF%BC%88%E4%B8%80%EF%BC%89_%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93.docx">知识点总结 Word（基础物理学2_第2讲_波动光学基本原理（一）_知识点总结.docx）</a></li>
+</ul>
+</div>
+<h2 id="本讲知识地图">本讲知识地图<a class="headerlink" href="#本讲知识地图" title="Permanent link">#</a></h2>
+<blockquote>
+<p><strong>资料范围</strong>：课件 PDF 第 1—45 页　教材第二章 §1—§4</p>
+</blockquote>
+<h3 id="本讲解决什么问题">本讲解决什么问题<a class="headerlink" href="#本讲解决什么问题" title="Permanent link">#</a></h3>
+<p><span class="pill pill-ppt">PPT重点</span>先用复振幅把光波的振幅和相位放进同一个数学对象，再研究某一平面上的波前分布，最后由两波的相位差得到可观察的干涉条纹。
+定态光波 → 复振幅 → 波前函数 → 傍轴与远场近似 → 相干叠加 → 两点源与两平面波干涉。</p>
+<h3 id="三条贯穿全讲的关系">三条贯穿全讲的关系<a class="headerlink" href="#三条贯穿全讲的关系" title="Permanent link">#</a></h3>
+<div class="arithmatex">\[U(P,t)=\operatorname{Re}[\tilde U(P)e^{-i\omega t}],\quad \tilde U(P)=A(P)e^{i\varphi(P)}\]</div>
+<div class="arithmatex">\[I=|\tilde U|^2,\quad I=I_1+I_2+2\sqrt{I_1I_2}\cos\delta\]</div>
+<div class="arithmatex">\[\Delta x'=\frac{D\lambda}{d},\quad f_x=\frac{\sin\theta_1-\sin\theta_2}{\lambda}\]</div>
+<p>第一式固定本课程的时间符号约定；第二组说明“先叠加振幅，再求强度”；第三组把相位的空间变化转化为条纹间距。公式均须和相应条件一起使用。</p>
+<h3 id="阅读导航">阅读导航<a class="headerlink" href="#阅读导航" title="Permanent link">#</a></h3>
+<p>第 3—7 页：定态波、复振幅、平面波与球面波，以及波前共轭。
+第 8—13 页：轴上与轴外点源，傍轴和远场近似，高斯光束简介。
+第 14—18 页：叠加、相干条件、光源、对比度与两点源干涉。
+第 19—23 页：杨氏双缝、两束平行光与课堂计算题。
+第 24—25 页：公式速查；第 26 页：易错清单；第 27—28 页：自测与答案；第 29 页：课件校读与来源索引。</p>
+<h3 id="与第一讲的联系">与第一讲的联系<a class="headerlink" href="#与第一讲的联系" title="Permanent link">#</a></h3>
+<p><span class="pill pill-und">理解补充</span>第一讲用光线和光程描述传播；本讲给光程配上相位，使“多条光路到同一点”成为可以计算的振幅叠加问题。明暗不是由光路是否存在决定，而是由到达波之间的相位关系决定。
+!本讲只覆盖课件中的 §2.1—§2.4。高斯光束按“介绍”处理；衍射和偏振的后续章节不在本讲展开。</p>
+<h2 id="定态光波与复振幅">定态光波与复振幅<a class="headerlink" href="#定态光波与复振幅" title="Permanent link">#</a></h2>
+<blockquote>
+<p><strong>资料范围</strong>：课件 PDF 第 2、5、9 页　教材印刷页 105—108</p>
+</blockquote>
+<h3 id="定态不等于静止">定态不等于静止<a class="headerlink" href="#定态不等于静止" title="Permanent link">#</a></h3>
+<p><span class="pill pill-ppt">PPT重点</span>定态波场中，各点做同频率的简谐振动；振幅及各点之间的相位关系形成稳定的空间分布。标量波写为</p>
+<div class="arithmatex">\[U(P,t)=A(P)\cos[\omega t-\varphi(P)]\]</div>
+<p>场点为 <span class="arithmatex">\(P\)</span>，<span class="arithmatex">\(A(P)\)</span> 为非负振幅，<span class="arithmatex">\(\omega\)</span> 为角频率。<span class="arithmatex">\(A(P)\)</span> 与 <span class="arithmatex">\(\varphi(P)\)</span> 不随时间变，但真实扰动仍随 <span class="arithmatex">\(t\)</span> 周期振荡。
+<span class="pill pill-src">教材补充</span>严格单色定态波是无限长波列的理想化。实际波列有限长，在波列持续时间远大于振动周期、且暂不研究相干性细节时，可以近似按定态波处理。</p>
+<h3 id="固定本课程的符号约定">固定本课程的符号约定<a class="headerlink" href="#固定本课程的符号约定" title="Permanent link">#</a></h3>
+<p><span class="pill pill-ppt">PPT重点</span>采用时间因子 <span class="arithmatex">\(e^{-i\omega t}\)</span>：</p>
+<div class="arithmatex">\[\tilde U(P,t)=A(P)e^{i\varphi(P)}e^{-i\omega t}=\tilde U(P)e^{-i\omega t}\]</div>
+<div class="arithmatex">\[\tilde U(P)=A(P)e^{i\varphi(P)},\quad U(P,t)=\operatorname{Re}[\tilde U(P)e^{-i\omega t}]\]</div>
+<p>复振幅的模给出振幅，辐角给出空间相位；省去共同时间因子，是为了集中研究空间分布，并非令时间为零。
+<span class="pill pill-src">教材补充</span>教材在此约定下把真实余弦中 <span class="arithmatex">\(t=0\)</span> 的初相位写成 <span class="arithmatex">\(-\varphi(P)\)</span>。读到“初相位”时，应检查它指余弦中的初相位还是复振幅的辐角。</p>
+<h3 id="由复振幅得到光强">由复振幅得到光强<a class="headerlink" href="#由复振幅得到光强" title="Permanent link">#</a></h3>
+<p><span class="pill pill-ppt">PPT重点</span>只比较同介质内相对强度时，采用归一化记法：</p>
+<div class="arithmatex">\[I(P)=A^2(P)=|\tilde U(P)|^2=\tilde U(P)\tilde U^*(P)\]</div>
+<p>星号表示复共轭。若 <span class="arithmatex">\(\tilde U=Ae^{i\varphi}\)</span>，则 <span class="arithmatex">\(\tilde U^*=Ae^{-i\varphi}\)</span>。相乘后相位消去，但相位在多波叠加时仍决定干涉。
+!物理光强的比例系数与场量和介质有关。本讲的 <span class="arithmatex">\(I=A^2\)</span> 已吸收该系数，不能直接把任意电场数值的平方当作国际单位制光强。</p>
+<h2 id="平面波与波矢">平面波与波矢<a class="headerlink" href="#平面波与波矢" title="Permanent link">#</a></h2>
+<blockquote>
+<p><strong>资料范围</strong>：课件 PDF 第 3、6、8 页　教材印刷页 106—108</p>
+</blockquote>
+<h3 id="识别平面波的两个条件">识别平面波的两个条件<a class="headerlink" href="#识别平面波的两个条件" title="Permanent link">#</a></h3>
+<p><span class="pill pill-ppt">PPT重点</span>均匀介质中的理想平面波，振幅为常数，空间相位为坐标的线性函数：</p>
+<div class="arithmatex">\[\tilde U(\vec r)=A\exp[i(\vec k\cdot\vec r+\varphi_0)]\]</div>
+<div class="arithmatex">\[\vec k=k_x\hat x+k_y\hat y+k_z\hat z,\quad k=|\vec k|=\frac{2\pi}{\lambda}\]</div>
+<p>这里 <span class="arithmatex">\(\lambda\)</span> 是介质中的波长。等相面 <span class="arithmatex">\(\vec k\cdot\vec r=\mathrm{constant}\)</span> 是以 <span class="arithmatex">\(\vec k\)</span> 为法线的平面；波沿 <span class="arithmatex">\(\vec k\)</span> 方向传播。</p>
+<p><img alt="第2讲 插图 wavefronts" loading="lazy" src="../%E6%8F%92%E5%9B%BE/%E7%AC%AC2%E8%AE%B2/wavefronts.png" />
+<em>图 1 平面波的等相面彼此平行；球面波的等相面以点源为中心。箭头表示传播方向。</em></p>
+<h3 id="课堂例题-211-从相位反推方向和波长">课堂例题 2.1.1 从相位反推方向和波长<a class="headerlink" href="#课堂例题-211-从相位反推方向和波长" title="Permanent link">#</a></h3>
+<p><span class="pill pill-ppt">PPT重点</span>已知 <span class="arithmatex">\(\varphi(P)=lx+my+nz+p\)</span>。在本题平面波模型下，对照线性相位系数，而不是对相位取模：</p>
+<div class="arithmatex">\[\vec k=l\hat x+m\hat y+n\hat z,\quad k=\sqrt{l^2+m^2+n^2}\]</div>
+<div class="arithmatex">\[\cos\alpha=\frac{l}{k},\quad\cos\beta=\frac{m}{k},\quad\cos\gamma=\frac{n}{k},\quad\lambda=\frac{2\pi}{k}\]</div>
+<p><span class="arithmatex">\(l,m,n\)</span> 的量纲为长度的倒数；本题的 <span class="arithmatex">\(n\)</span> 是相位系数，不是折射率。常数 <span class="arithmatex">\(p\)</span> 只改变整体相位，不改变传播方向和波长。
+<span class="pill pill-src">教材补充</span>给定频率和介质后，<span class="arithmatex">\(k\)</span> 已确定，三个波矢分量不能任意独立取值，必须满足 <span class="arithmatex">\(k_x^2+k_y^2+k_z^2=k^2\)</span>。
+!只见线性相位还应检查振幅是否均匀；振幅随横向变化时，不能直接称为无限均匀平面波。</p>
+<h2 id="球面波的发散-会聚与强度">球面波的发散 会聚与强度<a class="headerlink" href="#球面波的发散-会聚与强度" title="Permanent link">#</a></h2>
+<blockquote>
+<p><strong>资料范围</strong>：课件 PDF 第 4、7、9 页　教材印刷页 106—109</p>
+</blockquote>
+<h3 id="发散球面波">发散球面波<a class="headerlink" href="#发散球面波" title="Permanent link">#</a></h3>
+<p><span class="pill pill-ppt">PPT重点</span>点源位于 <span class="arithmatex">\(Q(x_0,y_0,z_0)\)</span>，场点 <span class="arithmatex">\(P(x,y,z)\)</span> 到源的距离为</p>
+<div class="arithmatex">\[r=\sqrt{(x-x_0)^2+(y-y_0)^2+(z-z_0)^2}\]</div>
+<div class="arithmatex">\[\tilde U(P)=\frac{a}{r}\exp[i(kr+\varphi_0)]\]</div>
+<p>取 <span class="arithmatex">\(a\)</span> 为实常量，源的相位单独写入 <span class="arithmatex">\(\varphi_0\)</span>。等相面是同心球面；实际振动为 <span class="arithmatex">\(a\cos(\omega t-kr-\varphi_0)/r\)</span>。
+<span class="pill pill-und">理解补充</span>沿同一相位点追踪，有 <span class="arithmatex">\(kr-\omega t=\mathrm{constant}\)</span>，所以 <span class="arithmatex">\(dr/dt=\omega/k&gt;0\)</span>，可直接判断它向外传播。</p>
+<h3 id="回答课件问题-向同一点会聚怎样写">回答课件问题 向同一点会聚怎样写<a class="headerlink" href="#回答课件问题-向同一点会聚怎样写" title="Permanent link">#</a></h3>
+<p><span class="pill pill-ppt">PPT重点 问题</span>保持时间因子 <span class="arithmatex">\(e^{-i\omega t}\)</span> 不变，改为负的径向空间相位：</p>
+<div class="arithmatex">\[\tilde U_{\mathrm{in}}(P)=\frac{a}{r}\exp[i(-kr+\varphi_c)]\]</div>
+<p>此时 <span class="arithmatex">\(-kr-\omega t=\mathrm{constant}\)</span>，故 <span class="arithmatex">\(dr/dt=-\omega/k\)</span>，表示朝球心会聚。<span class="arithmatex">\(\varphi_c\)</span> 是任意常相位。</p>
+<h3 id="振幅为何按距离的倒数衰减">振幅为何按距离的倒数衰减<a class="headerlink" href="#振幅为何按距离的倒数衰减" title="Permanent link">#</a></h3>
+<p><span class="pill pill-src">教材补充</span>在无吸收、各向同性且向各方向均匀辐射的模型中，穿过同心球面的总功率相同；球面积随 <span class="arithmatex">\(r^2\)</span> 增大，因此</p>
+<div class="arithmatex">\[I(r)\propto\frac{1}{r^2},\quad A(r)\propto\frac{1}{r}\]</div>
+<p>不要把“振幅减半”和“光强减半”混淆：距离加倍，振幅变为原来一半，光强变为原来四分之一。
+!点源理想式在 <span class="arithmatex">\(r=0\)</span> 处奇异；不应用它计算真实光源内部或会聚焦点处的无限光强。</p>
+<h2 id="波前与倾斜平面波的共轭">波前与倾斜平面波的共轭<a class="headerlink" href="#波前与倾斜平面波的共轭" title="Permanent link">#</a></h2>
+<blockquote>
+<p><strong>资料范围</strong>：课件 PDF 第 10—12 页　教材印刷页 109—110</p>
+</blockquote>
+<h3 id="本讲的波前是一个取样曲面">本讲的波前是一个取样曲面<a class="headerlink" href="#本讲的波前是一个取样曲面" title="Permanent link">#</a></h3>
+<p><span class="pill pill-ppt">PPT重点</span>通常“波前”指等相面；本讲按教材的较宽含义，也指记录介质、屏幕、透镜前后等选定曲面。波前函数是在该曲面上取出的复振幅分布。因此，<span class="arithmatex">\(z=0\)</span> 波前上不一定处处同相。</p>
+<h3 id="课堂例题-221-写出倾斜入射波前">课堂例题 2.2.1 写出倾斜入射波前<a class="headerlink" href="#课堂例题-221-写出倾斜入射波前" title="Permanent link">#</a></h3>
+<p><span class="pill pill-ppt">PPT重点</span>光沿 <span class="arithmatex">\(+z\)</span> 一侧传播，传播方向在 <span class="arithmatex">\(x-z\)</span> 平面内，与 <span class="arithmatex">\(z\)</span> 轴成有向角 <span class="arithmatex">\(\theta\)</span>，原点处空间相位为零：</p>
+<div class="arithmatex">\[k_x=k\sin\theta,\quad k_y=0,\quad k_z=k\cos\theta\]</div>
+<div class="arithmatex">\[\tilde U(x,y,z)=A\exp[ik(x\sin\theta+z\cos\theta)]\]</div>
+<p>令 <span class="arithmatex">\(z=0\)</span>，得到 <span class="arithmatex">\(\tilde U(x,y)=A\exp(ikx\sin\theta)\)</span>。倾角越大，沿 <span class="arithmatex">\(x\)</span> 的相位变化越快；与 <span class="arithmatex">\(y\)</span> 无关。</p>
+<p><img alt="第2讲 插图 conjugate_plane" loading="lazy" src="../%E6%8F%92%E5%9B%BE/%E7%AC%AC2%E8%AE%B2/conjugate_plane.png" />
+<em>图 2 在同向通过观察平面的约定下，波前共轭使横向波矢反号，倾角由正变负。</em></p>
+<h3 id="课堂例题-222-共轭后为何是负倾角">课堂例题 2.2.2 共轭后为何是负倾角<a class="headerlink" href="#课堂例题-222-共轭后为何是负倾角" title="Permanent link">#</a></h3>
+<p><span class="pill pill-ppt">PPT重点</span><span class="arithmatex">\(A\)</span> 为实振幅，波前共轭为</p>
+<div class="arithmatex">\[\tilde U^*(x,y)=A\exp(-ikx\sin\theta)=A\exp[ikx\sin(-\theta)]\]</div>
+<p><span class="pill pill-src">教材补充</span>教材脚注约定波从波前同一侧到来，即仍选 <span class="arithmatex">\(k_z&gt;0\)</span>，所以 <span class="arithmatex">\(k_x\)</span> 反号、<span class="arithmatex">\(k_z\)</span> 不变，得到 <span class="arithmatex">\(\theta'=-\theta\)</span>。
+!若共轭的是完整三维函数 <span class="arithmatex">\(\tilde U(x,y,z)\)</span>，则所有空间相位系数都反号，波矢成为 <span class="arithmatex">\(-\vec k\)</span>。这与只给定一个平面的共轭分布、再指定向前传播，是不同的问题。</p>
+<h2 id="轴上与轴外点源的波前共轭">轴上与轴外点源的波前共轭<a class="headerlink" href="#轴上与轴外点源的波前共轭" title="Permanent link">#</a></h2>
+<blockquote>
+<p><strong>资料范围</strong>：课件 PDF 第 13—14 页　教材印刷页 110—111</p>
+</blockquote>
+<h3 id="课堂例题-223-先写距离再写波前">课堂例题 2.2.3 先写距离再写波前<a class="headerlink" href="#课堂例题-223-先写距离再写波前" title="Permanent link">#</a></h3>
+<p><span class="pill pill-ppt">PPT重点</span>两个点源到观察平面 <span class="arithmatex">\(z=0\)</span> 的轴向距离均为 <span class="arithmatex">\(R&gt;0\)</span>，初相位取零。轴上点为 <span class="arithmatex">\((0,0,-R)\)</span>，轴外点为 <span class="arithmatex">\((x_1,y_1,-R)\)</span>。先定义</p>
+<div class="arithmatex">\[r=\sqrt{x^2+y^2+R^2},\quad r_1=\sqrt{(x-x_1)^2+(y-y_1)^2+R^2}\]</div>
+<p>代入发散球面波式，分别得到</p>
+<div class="arithmatex">\[\tilde U(x,y)=\frac{a}{r}e^{ikr},\quad\tilde U_1(x,y)=\frac{a}{r_1}e^{ikr_1}\]</div>
+<h3 id="课堂例题-224-共轭波的会聚位置">课堂例题 2.2.4 共轭波的会聚位置<a class="headerlink" href="#课堂例题-224-共轭波的会聚位置" title="Permanent link">#</a></h3>
+<p><span class="pill pill-ppt">PPT重点</span>对以上平面上的分布取共轭：</p>
+<div class="arithmatex">\[\tilde U^*(x,y)=\frac{a}{r}e^{-ikr},\quad\tilde U_1^*(x,y)=\frac{a}{r_1}e^{-ikr_1}\]</div>
+<p><img alt="第2讲 插图 conjugate_sphere" loading="lazy" src="../%E6%8F%92%E5%9B%BE/%E7%AC%AC2%E8%AE%B2/conjugate_sphere.png" />
+<em>图 3 取向右传播的共轭波，轴外发散点与会聚点关于观察平面镜像对称；横坐标保持不变。</em></p>
+<p><span class="pill pill-src">教材补充</span>继续采用“从波前同一侧传播”的约定，两束共轭波分别向 <span class="arithmatex">\((0,0,+R)\)</span> 和 <span class="arithmatex">\((x_1,y_1,+R)\)</span> 会聚。轴外情形只把纵坐标的符号变为正，不能把横向坐标也反号。</p>
+<h3 id="判断会聚比记忆负号更可靠">判断会聚比记忆负号更可靠<a class="headerlink" href="#判断会聚比记忆负号更可靠" title="Permanent link">#</a></h3>
+<p><span class="pill pill-und">理解补充</span>在观察平面右侧选取候选会聚点，求平面上各点到该点的距离；若波前相位是距离乘以 <span class="arithmatex">\(-k\)</span>，沿传播向焦点接近，距离减小，时间演化与会聚方向相符。
+!单个平面上的复振幅本身不能独自指定传播朝哪一侧。先声明传播半空间，再判断镜像会聚点，可避免把“波前共轭”误读成“必定沿原路返回”。</p>
+<h2 id="轴上点源-从精确距离到傍轴式">轴上点源 从精确距离到傍轴式<a class="headerlink" href="#轴上点源-从精确距离到傍轴式" title="Permanent link">#</a></h2>
+<blockquote>
+<p><strong>资料范围</strong>：课件 PDF 第 15—18 页　教材印刷页 111—113</p>
+</blockquote>
+<h3 id="关键推导-必须掌握">关键推导 必须掌握<a class="headerlink" href="#关键推导-必须掌握" title="Permanent link">#</a></h3>
+<p><span class="pill pill-ppt">PPT重点</span>点源放在原点，观察平面到源的轴向距离为 <span class="arithmatex">\(z&gt;0\)</span>。场点的横向距离为 <span class="arithmatex">\(\rho=\sqrt{x'^2+y'^2}\)</span>，则</p>
+<div class="arithmatex">\[r=\sqrt{z^2+\rho^2},\quad\tilde U(x',y')=\frac{a}{r}e^{ikr}\]</div>
+<p><img alt="第2讲 插图 paraxial" loading="lazy" src="../%E6%8F%92%E5%9B%BE/%E7%AC%AC2%E8%AE%B2/paraxial.png" />
+<em>图 4 轴向距离为 z，横向观测半径为 ρ。小倾角约束几何形状，相位误差还须与波长比较。</em></p>
+<p>以 <span class="arithmatex">\(\rho^2/z^2\)</span> 为小量，对平方根展开：</p>
+<div class="arithmatex">\[r=z\sqrt{1+\frac{\rho^2}{z^2}}=z+\frac{\rho^2}{2z}-\frac{\rho^4}{8z^3}+\cdots\]</div>
+<p>若先保留二次项，得到</p>
+<div class="arithmatex">\[\tilde U\approx\frac{a}{z(1+\rho^2/(2z^2))}\exp[ik(z+\frac{\rho^2}{2z})]\]</div>
+<p><span class="pill pill-ppt">PPT重点</span>振幅分母的相对变化很小时，可令振幅约为 <span class="arithmatex">\(a/z\)</span>，但保留相位中的二次项：</p>
+<div class="arithmatex">\[\tilde U(x',y')\approx\frac{a}{z}e^{ikz}\exp[\frac{ik}{2z}(x'^2+y'^2)]\]</div>
+<p><span class="pill pill-und">理解补充</span>这一步的振幅误差相对量级为 <span class="arithmatex">\(\rho^2/(2z^2)\)</span>；相位截断误差量级为 <span class="arithmatex">\(k\rho^4/(8z^3)\)</span>。高精度计算还应保证后者远小于允许的相位误差，例如远小于 1 弧度。
+!不要在同一步里把振幅和相位的二次项一并删除。相位前有很大的波数 <span class="arithmatex">\(k\)</span>，几何上很小的路程差也可能对应明显相位差。</p>
+<h2 id="傍轴条件与远场条件怎样区分">傍轴条件与远场条件怎样区分<a class="headerlink" href="#傍轴条件与远场条件怎样区分" title="Permanent link">#</a></h2>
+<blockquote>
+<p><strong>资料范围</strong>：课件 PDF 第 17—18 页　教材印刷页 112—113</p>
+</blockquote>
+<h3 id="傍轴主要控制振幅的相对变化">傍轴主要控制振幅的相对变化<a class="headerlink" href="#傍轴主要控制振幅的相对变化" title="Permanent link">#</a></h3>
+<p><span class="pill pill-ppt">PPT重点</span>轴上点源的傍轴条件为</p>
+<div class="arithmatex">\[\frac{\rho^2}{z^2}\ll1\quad\mathrm{or}\quad z^2\gg\rho^2\]</div>
+<p>几何上等价于观测方向与轴的夹角很小。结果是观察平面内振幅近似为常数；波前上仍可有二次相位，因此仍能保留球面波的曲率信息。</p>
+<h3 id="远场主要控制被丢掉的二次相位">远场主要控制被丢掉的二次相位<a class="headerlink" href="#远场主要控制被丢掉的二次相位" title="Permanent link">#</a></h3>
+<p><span class="pill pill-ppt">PPT重点</span>进一步把平面中心与边缘的二次相位差也忽略，按课件的量级标准要求</p>
+<div class="arithmatex">\[\frac{k\rho^2}{2z}\ll\pi\quad\Rightarrow\quad z\gg\frac{\rho^2}{\lambda}\]</div>
+<p>傍轴与远场同时满足时，得到观察范围内近似正入射的平面波：</p>
+<div class="arithmatex">\[\tilde U(x',y')\approx\frac{a}{z}e^{ikz}\]</div>
+<p>这里“远场”总是相对于指定的横向范围和波长而言。距离不变时，扩大观测范围会破坏远场条件；只说“离得很远”不够。</p>
+<h3 id="为什么光学中远场通常要求更严格">为什么光学中远场通常要求更严格<a class="headerlink" href="#为什么光学中远场通常要求更严格" title="Permanent link">#</a></h3>
+<p><span class="pill pill-src">教材补充</span>比较两个长度尺度 <span class="arithmatex">\(\rho\)</span> 与 <span class="arithmatex">\(\rho^2/\lambda\)</span>，其比值为 <span class="arithmatex">\(\rho/\lambda\)</span>。实验中的横向范围通常远大于光波长，所以远场距离常远大于傍轴距离。
+<span class="pill pill-und">理解补充</span>不是所有波、所有尺度下都能说远场必然包含傍轴；若 <span class="arithmatex">\(\rho\)</span> 与 <span class="arithmatex">\(\lambda\)</span> 的大小关系不同，应分别检查两个无量纲量。</p>
+<h3 id="解题时按目的选择">解题时按目的选择<a class="headerlink" href="#解题时按目的选择" title="Permanent link">#</a></h3>
+<p>只需近似振幅均匀 → 先检查傍轴；需要把球面波在整个观察范围上看成平面波 → 还要检查二次相位；计算相干叠加 → 优先检查相位近似是否可靠。
+!课件的“远小于 π”是量级判据，不是固定误差容限。若题目指定相位误差上限，应直接用该上限检验 <span class="arithmatex">\(k\rho^2/(2z)\)</span>。</p>
+<h2 id="课堂例题-225-两种距离差多少">课堂例题 2.2.5 两种距离差多少<a class="headerlink" href="#课堂例题-225-两种距离差多少" title="Permanent link">#</a></h2>
+<blockquote>
+<p><strong>资料范围</strong>：课件 PDF 第 19 页　教材同类例题见印刷页 113</p>
+</blockquote>
+<h3 id="题目判断与已知条件">题目判断与已知条件<a class="headerlink" href="#题目判断与已知条件" title="Permanent link">#</a></h3>
+<p><span class="pill pill-ppt">PPT重点</span>单色点源波长 <span class="arithmatex">\(\lambda=0.500\,\mu\mathrm m\)</span>，横向观测范围的全宽为 <span class="arithmatex">\(2\rho=1.00\,\mathrm{mm}\)</span>。估算傍轴距离与远场距离。按课件约定，以不等式两侧相差 50 倍为估算标准。
+第一步先把全宽换成半径：</p>
+<div class="arithmatex">\[\rho=0.500\,\mathrm{mm}=0.500\times10^{-3}\,\mathrm m\]</div>
+<h3 id="傍轴-在平方量之间取-50-倍">傍轴 在平方量之间取 50 倍<a class="headerlink" href="#傍轴-在平方量之间取-50-倍" title="Permanent link">#</a></h3>
+<p>条件写成 <span class="arithmatex">\(z^2\gg\rho^2\)</span>，按约定令 <span class="arithmatex">\(z_1^2=50\rho^2\)</span>，故</p>
+<div class="arithmatex">\[z_1=\sqrt{50}\rho\approx3.54\,\mathrm{mm}\]</div>
+<p>这里是 <span class="arithmatex">\(\sqrt{50}\)</span> 倍横向半径，不是 <span class="arithmatex">\(50\)</span> 倍半径。数值只表示本题所选的量级标准，不是傍轴区的严格边界。</p>
+<h3 id="远场-在长度量之间取-50-倍">远场 在长度量之间取 50 倍<a class="headerlink" href="#远场-在长度量之间取-50-倍" title="Permanent link">#</a></h3>
+<p>条件写成 <span class="arithmatex">\(z\gg\rho^2/\lambda\)</span>，令</p>
+<div class="arithmatex">\[z_2=50\frac{\rho^2}{\lambda}=50\frac{(0.500\times10^{-3})^2}{0.500\times10^{-6}}\,\mathrm m=25.0\,\mathrm m\]</div>
+<p><span class="pill pill-und">理解补充</span>在 <span class="arithmatex">\(z_1\)</span> 处，振幅相对变化仅约 <span class="arithmatex">\(1\%\)</span>，但边缘二次相位约为 <span class="arithmatex">\(444\)</span> 弧度，离“相位近似常数”仍很远。在 <span class="arithmatex">\(z_2\)</span> 处，二次相位降到 <span class="arithmatex">\(\pi/50\approx0.0628\)</span> 弧度。</p>
+<h3 id="与教材例题数据的区别">与教材例题数据的区别<a class="headerlink" href="#与教材例题数据的区别" title="Permanent link">#</a></h3>
+<p><span class="pill pill-src">教材补充</span>教材同类例题取横向尺度 <span class="arithmatex">\(\rho\sim1\,\mathrm{mm}\)</span>，得到约 <span class="arithmatex">\(7\,\mathrm{mm}\)</span> 与 <span class="arithmatex">\(100\,\mathrm m\)</span>。本讲课件给的是全宽 <span class="arithmatex">\(2\rho=1\,\mathrm{mm}\)</span>，所以本题应采用上面的 <span class="arithmatex">\(3.54\,\mathrm{mm}\)</span> 与 <span class="arithmatex">\(25\,\mathrm m\)</span>。
+!先确认题目给的是“半径”还是“全宽”。远场尺度与半径平方成正比，半径误差两倍会使距离误差达到四倍。</p>
+<h2 id="轴外点源-三类相位项从哪里来">轴外点源 三类相位项从哪里来<a class="headerlink" href="#轴外点源-三类相位项从哪里来" title="Permanent link">#</a></h2>
+<blockquote>
+<p><strong>资料范围</strong>：课件 PDF 第 20—22 页　教材印刷页 113—114</p>
+</blockquote>
+<h3 id="先固定物平面与场平面的坐标">先固定物平面与场平面的坐标<a class="headerlink" href="#先固定物平面与场平面的坐标" title="Permanent link">#</a></h3>
+<p><span class="pill pill-ppt">PPT重点</span>物点为 <span class="arithmatex">\(Q(x,y,0)\)</span>，场点为 <span class="arithmatex">\(P(x',y',z)\)</span>，两平面平行且相距 <span class="arithmatex">\(z&gt;0\)</span>。这里未加撇的量是源的位置，加撇的量是接收位置。</p>
+<div class="arithmatex">\[r=\sqrt{z^2+(x'-x)^2+(y'-y)^2}\]</div>
+<div class="arithmatex">\[r_0=\sqrt{z^2+x'^2+y'^2},\quad r_0'=\sqrt{z^2+x^2+y^2}\]</div>
+<p><span class="arithmatex">\(r\)</span> 是物点到场点的距离；<span class="arithmatex">\(r_0\)</span> 是物平面中心到场点的距离；<span class="arithmatex">\(r_0'\)</span> 是物点到接收面中心的距离。</p>
+<h3 id="关键推导-必须掌握_1">关键推导 必须掌握<a class="headerlink" href="#关键推导-必须掌握_1" title="Permanent link">#</a></h3>
+<p><span class="pill pill-ppt">PPT重点</span>源与场均满足傍轴条件时，将 <span class="arithmatex">\(r\)</span> 展开并整理：</p>
+<div class="arithmatex">\[r\approx z+\frac{x'^2+y'^2}{2z}+\frac{x^2+y^2}{2z}-\frac{xx'+yy'}{z}\]</div>
+<p>平方差展开产生三部分：场点平方项、源点平方项、源场交叉项。最后一项的负号来自 <span class="arithmatex">\((x'-x)^2\)</span> 中的 <span class="arithmatex">\(-2xx'\)</span>。
+把振幅近似为 <span class="arithmatex">\(a/z\)</span>，将三类相位分开写：</p>
+<div class="arithmatex">\[\tilde U\approx\frac{a}{z}e^{ikz}\exp[\frac{ik(x'^2+y'^2)}{2z}]\exp[\frac{ik(x^2+y^2)}{2z}]\exp[-\frac{ik(xx'+yy')}{z}]\]</div>
+<p><span class="pill pill-und">理解补充</span>为避免只记一长串公式，可以把波前记成“共同传播相位 × 场点曲率 × 源点相位 × 源场耦合”。</p>
+<h3 id="哪一项随什么坐标改变">哪一项随什么坐标改变<a class="headerlink" href="#哪一项随什么坐标改变" title="Permanent link">#</a></h3>
+<p>固定一个点源时，<span class="arithmatex">\(x,y\)</span> 为常数；源点平方项对整个接收面只是共同相位。场点平方项决定曲率；交叉项对场点是线性的，决定轴外点源造成的倾斜。
+<span class="pill pill-src">教材补充</span>在需要叠加多个源点的波时，源点平方项随源点改变，不能因为它对一个固定点源是常数就一律删除。
+!二次距离展开用于复振幅时，还需控制遗漏的高阶相位；仅验证横向距离远小于 <span class="arithmatex">\(z\)</span>，不足以保证任意精度的相位计算。</p>
+<h2 id="轴外点源-三种近似的对应关系">轴外点源 三种近似的对应关系<a class="headerlink" href="#轴外点源-三种近似的对应关系" title="Permanent link">#</a></h2>
+<blockquote>
+<p><strong>资料范围</strong>：课件 PDF 第 22—23 页　教材印刷页 114—115</p>
+</blockquote>
+<h3 id="情形一-源点与场点都傍轴">情形一 源点与场点都傍轴<a class="headerlink" href="#情形一-源点与场点都傍轴" title="Permanent link">#</a></h3>
+<p><span class="pill pill-ppt">PPT重点</span>只作傍轴近似时，两组平方相位与交叉相位全部保留。可等价写成</p>
+<div class="arithmatex">\[\tilde U\approx\frac{a}{z}\exp[ik(r_0+\frac{x^2+y^2}{2z})]\exp[-\frac{ik(xx'+yy')}{z}]\]</div>
+<p>或把前一括号写成 <span class="arithmatex">\(r_0'+(x'^2+y'^2)/(2z)\)</span>。两种写法只是同一距离展开的重新分组。</p>
+<h3 id="情形二-源点还满足远场条件">情形二 源点还满足远场条件<a class="headerlink" href="#情形二-源点还满足远场条件" title="Permanent link">#</a></h3>
+<p><span class="pill pill-ppt">PPT重点</span>在双方傍轴基础上，若 <span class="arithmatex">\((x^2+y^2)/\lambda\ll z\)</span>，可忽略源点平方相位：</p>
+<div class="arithmatex">\[\tilde U\approx\frac{a}{z}e^{ikr_0}\exp[-\frac{ik(xx'+yy')}{z}]\]</div>
+<p>仍保留随接收位置改变的 <span class="arithmatex">\(r_0\)</span>，因此场点平方相位通常还在。不能据此就说接收面上一定是平面波。</p>
+<h3 id="情形三-场点还满足远场条件">情形三 场点还满足远场条件<a class="headerlink" href="#情形三-场点还满足远场条件" title="Permanent link">#</a></h3>
+<p><span class="pill pill-ppt">PPT重点</span>在双方傍轴基础上，若 <span class="arithmatex">\((x'^2+y'^2)/\lambda\ll z\)</span>，可忽略场点平方相位：</p>
+<div class="arithmatex">\[\tilde U\approx\frac{a}{z}e^{ikr_0'}\exp[-\frac{ik(xx'+yy')}{z}]\]</div>
+<p>对固定源点，<span class="arithmatex">\(r_0'\)</span> 是常数，剩下随场点变化的只有线性相位。比较平面波式可读出</p>
+<div class="arithmatex">\[k_x\approx-\frac{kx}{z},\quad k_y\approx-\frac{ky}{z}\]</div>
+<p><span class="pill pill-src">教材补充</span>方向正是由轴外源点指向接收面中心的方向：源点在正 <span class="arithmatex">\(x\)</span> 侧，光线朝中心传播时横向分量为负。</p>
+<h3 id="统一的理解方法">统一的理解方法<a class="headerlink" href="#统一的理解方法" title="Permanent link">#</a></h3>
+<p>问“哪个点满足远场”时，就检查哪一组平方相位允许略去；源场交叉项承担位置与方向的联系，不要随意删掉。
+!“对某个场点是常相位”和“对所有源点也是同一个相位”不等价。只有真正共同的单位模因子，才可在求同一合成场的强度时整体消去。</p>
+<h2 id="高斯光束-了解即可">高斯光束 了解即可<a class="headerlink" href="#高斯光束-了解即可" title="Permanent link">#</a></h2>
+<blockquote>
+<p><strong>资料范围</strong>：课件 PDF 第 24 页　教材印刷页 116</p>
+</blockquote>
+<h3 id="光束最细处是光腰">光束最细处是光腰<a class="headerlink" href="#光束最细处是光腰" title="Permanent link">#</a></h3>
+<p><span class="pill pill-ppt">PPT重点 介绍</span>激光器谐振腔内及其输出光束常用高斯光束描述。它既不是处处等幅的理想平面波，也不是以同一个点为中心的普通球面波。</p>
+<p><img alt="第2讲 插图 gaussian" loading="lazy" src="../%E6%8F%92%E5%9B%BE/%E7%AC%AC2%E8%AE%B2/gaussian.png" />
+<em>图 5 高斯光束的包络与局部波面示意。光腰最细，腰部波面近似平面；离开光腰后波面逐渐弯曲。</em></p>
+<p>光腰附近光束最细。傍轴范围内，同相面近似球面，但不同位置波面的球心一般不重合；在远场范围，课件将其描述为以光腰附近为光锥中心的球面波型传播。</p>
+<h3 id="高斯型到底修饰什么">“高斯型”到底修饰什么<a class="headerlink" href="#高斯型到底修饰什么" title="Permanent link">#</a></h3>
+<p><span class="pill pill-src">教材补充</span>教材用复振幅的指数二次形式描述光束。横向振幅按高斯函数衰减，典型形式为</p>
+<div class="arithmatex">\[A(\rho,z)\propto\exp[-\frac{\rho^2}{w^2(z)}],\quad\rho^2=x^2+y^2\]</div>
+<p>其中 <span class="arithmatex">\(w(z)\)</span> 描述光束的横向尺度；在 <span class="arithmatex">\(\rho=w\)</span> 处，振幅为轴上值的 <span class="arithmatex">\(1/e\)</span>，光强为轴上值的 <span class="arithmatex">\(1/e^2\)</span>。
+<span class="pill pill-und">理解补充</span>横向相位本身通常含二次项，其相位因子是“虚指数中的二次函数”。不要把课件中的简略说法读成“相位角也按实高斯曲线衰减”。</p>
+<h3 id="本讲只保留三个物理图像">本讲只保留三个物理图像<a class="headerlink" href="#本讲只保留三个物理图像" title="Permanent link">#</a></h3>
+<p>振幅：中间强、两侧弱。宽度：沿传播变化，光腰处最小。波面：腰部较平，远离光腰逐渐呈球面特征。
+!本讲不要求推导光束传播参数。判断一道题是否能直接用无限平面波或理想点源球面波，应先看给出的振幅分布和相位结构。</p>
+<h2 id="由振幅叠加推导干涉强度">由振幅叠加推导干涉强度<a class="headerlink" href="#由振幅叠加推导干涉强度" title="Permanent link">#</a></h2>
+<blockquote>
+<p><strong>资料范围</strong>：课件 PDF 第 25—27 页　教材印刷页 118—120</p>
+</blockquote>
+<h3 id="先叠加场-再求平均强度">先叠加场 再求平均强度<a class="headerlink" href="#先叠加场-再求平均强度" title="Permanent link">#</a></h3>
+<p><span class="pill pill-ppt">PPT重点</span>线性介质中，各波引起的扰动按标量或矢量相加。对于同频、同振动方向的两列波，共同时间因子可提出，得到</p>
+<div class="arithmatex">\[\tilde U=\tilde U_1+\tilde U_2=A_1e^{i\varphi_1}+A_2e^{i\varphi_2}\]</div>
+<p>线性是对场的响应和传播而言；光强是场的二次量，一般不满足简单相加。</p>
+<h3 id="关键推导-必须掌握_2">关键推导 必须掌握<a class="headerlink" href="#关键推导-必须掌握_2" title="Permanent link">#</a></h3>
+<p><span class="pill pill-ppt">PPT重点</span>令 <span class="arithmatex">\(\delta=\varphi_1-\varphi_2\)</span>，展开模平方：</p>
+<div class="arithmatex">\[I=(\tilde U_1+\tilde U_2)(\tilde U_1^*+\tilde U_2^*)\]</div>
+<div class="arithmatex">\[I=A_1^2+A_2^2+A_1A_2(e^{i\delta}+e^{-i\delta})\]</div>
+<p>利用 <span class="arithmatex">\(e^{i\delta}+e^{-i\delta}=2\cos\delta\)</span>，得到</p>
+<div class="arithmatex">\[I=I_1+I_2+2\sqrt{I_1I_2}\cos\delta\]</div>
+<p><img alt="第2讲 插图 phasor" loading="lazy" src="../%E6%8F%92%E5%9B%BE/%E7%AC%AC2%E8%AE%B2/phasor.png" />
+<em>图 6 复平面内先作相量矢量和，再取合相量模的平方。相位差改变合振幅，进而改变光强。</em></p>
+<h3 id="干涉是光强的重新分布">干涉是光强的重新分布<a class="headerlink" href="#干涉是光强的重新分布" title="Permanent link">#</a></h3>
+<p><span class="pill pill-ppt">PPT重点</span>交叉项 <span class="arithmatex">\(2\sqrt{I_1I_2}\cos\delta\)</span> 为干涉项。它可以为正，也可以为负，使部分位置更亮、部分位置更暗。
+<span class="pill pill-und">理解补充</span>“独立传播”指各波在给定线性介质中的传播不因另一波而改变；“存在干涉”指合成场的强度含交叉项，二者并不矛盾。
+!本页先假设振幅和相位差稳定。若相位随时间变化，探测器记录的量还要对干涉项作时间平均。</p>
+<h2 id="相干条件与普通光源">相干条件与普通光源<a class="headerlink" href="#相干条件与普通光源" title="Permanent link">#</a></h2>
+<blockquote>
+<p><strong>资料范围</strong>：课件 PDF 第 27—30 页　教材印刷页 120—122</p>
+</blockquote>
+<h3 id="稳定干涉条纹需要什么">稳定干涉条纹需要什么<a class="headerlink" href="#稳定干涉条纹需要什么" title="Permanent link">#</a></h3>
+<p><span class="pill pill-ppt">PPT重点</span>本讲讨论稳定可观测的干涉场：两波频率相同，有相互平行的振动分量，并且相位差在观测时间内足够稳定。
+若振幅近似稳定而相位差变化，探测到的强度为</p>
+<div class="arithmatex">\[I=I_1+I_2+2\sqrt{I_1I_2}\langle\cos\delta(t)\rangle_T\]</div>
+<p>相位差稳定时可保留余弦项；相位差快速、无规则变化且平均抵消时，<span class="arithmatex">\(\langle\cos\delta\rangle_T=0\)</span>，得到非相干叠加 <span class="arithmatex">\(I=I_1+I_2\)</span>。
+<span class="pill pill-src">教材补充</span>振动方向正交时，矢量内积的交叉项为零；若只有部分分量平行，则只有相应分量产生干涉。因此“同频”还不够。</p>
+<h3 id="普通光源为什么难以直接相干">普通光源为什么难以直接相干<a class="headerlink" href="#普通光源为什么难以直接相干" title="Permanent link">#</a></h3>
+<p><span class="pill pill-ppt">PPT重点</span>普通光源以自发辐射为主，不同原子以及同一原子不同次发出的波列，起始时刻、初相位和振动方向等通常没有固定联系。</p>
+<div class="arithmatex">\[\nu=\frac{E_2-E_1}{h},\quad L=c\tau\]</div>
+<p>课件取波列持续时间量级 <span class="arithmatex">\(\tau\sim10^{-8}\,\mathrm s\)</span>，对应真空波列长度量级 <span class="arithmatex">\(L\sim3\,\mathrm m\)</span>。这是所用微观发光模型的量级，不是所有实际光源都具有同一相干长度。</p>
+<h3 id="激光光源的物理入口">激光光源的物理入口<a class="headerlink" href="#激光光源的物理入口" title="Permanent link">#</a></h3>
+<p><span class="pill pill-ppt">PPT重点</span>受激辐射使新增辐射与诱发辐射具有相关的频率、方向、相位和振动方向；激光通常单色性和相干性较好。本讲用它解释为什么容易获得稳定干涉。
+<span class="pill pill-und">理解补充</span>“频率不同就看不到干涉”在本讲指稳定条纹及通常时间平均的情境。不同频率会引入随时间变化的交叉项；能否探测到它，还取决于频差和探测器响应时间。
+!判断相干性，应比较相位变化与实际观测时间。不能把“瞬时叠加发生”和“长时间曝光留下清晰条纹”当成同一件事。</p>
+<h2 id="明暗条件与条纹对比度">明暗条件与条纹对比度<a class="headerlink" href="#明暗条件与条纹对比度" title="Permanent link">#</a></h2>
+<blockquote>
+<p><strong>资料范围</strong>：课件 PDF 第 31—32 页　教材印刷页 122</p>
+</blockquote>
+<h3 id="明与暗来自相位差">明与暗来自相位差<a class="headerlink" href="#明与暗来自相位差" title="Permanent link">#</a></h3>
+<p><span class="pill pill-ppt">PPT重点</span>完全相干、振动方向相同且各束强度在局部近似不变时，令整数级次为 <span class="arithmatex">\(m\)</span>：</p>
+<div class="arithmatex">\[\delta=2m\pi:\quad I_{\max}=(A_1+A_2)^2\]</div>
+<div class="arithmatex">\[\delta=(2m+1)\pi:\quad I_{\min}=(A_1-A_2)^2\]</div>
+<p>暗纹不一定全黑；只有 <span class="arithmatex">\(A_1=A_2\)</span> 时，最小强度才为零。奇数倍 <span class="arithmatex">\(\pi\)</span> 才是相消条件，不能遗漏系数 2。</p>
+<h3 id="对比度怎样量化条纹清晰程度">对比度怎样量化条纹清晰程度<a class="headerlink" href="#对比度怎样量化条纹清晰程度" title="Permanent link">#</a></h3>
+<p><span class="pill pill-ppt">PPT重点</span>沿用课件符号 <span class="arithmatex">\(\gamma\)</span>，定义条纹衬比度（对比度）：</p>
+<div class="arithmatex">\[\gamma=\frac{I_{\max}-I_{\min}}{I_{\max}+I_{\min}}=\frac{2A_1A_2}{A_1^2+A_2^2}=\frac{2\sqrt{I_1I_2}}{I_1+I_2}\]</div>
+<div class="arithmatex">\[I=I_0(1+\gamma\cos\delta),\quad I_0=I_1+I_2\]</div>
+<p><img alt="第2讲 插图 contrast" loading="lazy" src="../%E6%8F%92%E5%9B%BE/%E7%AC%AC2%E8%AE%B2/contrast.png" />
+<em>图 7 在相同平均光强下，等振幅的暗纹可到零；振幅比为 1∶2 时，对比度为 0.8，暗纹仍有光。</em></p>
+<p><span class="pill pill-src">教材补充</span>相干条件保证可以出现干涉，并不保证条纹显著。在上述理想条件下，两束振幅越接近，对比度越高；任一束远强于另一束，条纹会变浅。
+!这里由振幅比得到的 <span class="arithmatex">\(\gamma\)</span> 公式以完全相干、同振动方向为前提。相位波动、偏振不匹配和背景光也会降低实测对比度，不能全部归因于强度不等。</p>
+<h2 id="怎样从普通光源获得相干光">怎样从普通光源获得相干光<a class="headerlink" href="#怎样从普通光源获得相干光" title="Permanent link">#</a></h2>
+<blockquote>
+<p><strong>资料范围</strong>：课件 PDF 第 33、36 页　教材印刷页 121、126—127</p>
+</blockquote>
+<h3 id="核心方法-让两路来自同一波列">核心方法 让两路来自同一波列<a class="headerlink" href="#核心方法-让两路来自同一波列" title="Permanent link">#</a></h3>
+<p><span class="pill pill-ppt">PPT重点</span>两个独立普通光源的相位通常没有稳定联系。实验中常把同一束光分为两路，使两路保留相关的相位变化，再让它们在观察点重叠。</p>
+<p><img alt="第2讲 插图 splitting" loading="lazy" src="../%E6%8F%92%E5%9B%BE/%E7%AC%AC2%E8%AE%B2/splitting.png" />
+<em>图 8 分波面法在同一波面取出两部分；分振幅法使同一入射波分成透射和反射等两路。图为原理示意。</em></p>
+<h3 id="分波面法">分波面法<a class="headerlink" href="#分波面法" title="Permanent link">#</a></h3>
+<p><span class="pill pill-ppt">PPT重点</span>在同一波面上取出两部分，使其成为次级光源。杨氏双缝就是本讲的典型例子：同一源照亮两缝，缝后的光在屏幕上叠加。</p>
+<h3 id="分振幅法">分振幅法<a class="headerlink" href="#分振幅法" title="Permanent link">#</a></h3>
+<p><span class="pill pill-ppt">PPT重点</span>通过部分反射、部分透射等过程把同一入射波分为两路。两路振幅可以不同，但保留可比较的相位关系。本讲只掌握取得相干光的原理，不展开薄膜干涉计算。</p>
+<h3 id="同源仍需要满足光程与观测条件">同源仍需要满足光程与观测条件<a class="headerlink" href="#同源仍需要满足光程与观测条件" title="Permanent link">#</a></h3>
+<p><span class="pill pill-und">理解补充</span>若两路传播时间相差太大，到达观察点的可能已不是同一相关波列的两部分，条纹会减弱。因此“出自同一源”是构造方法，不能代替对相干条件的检查。
+<span class="pill pill-src">教材补充</span>教材在杨氏实验中把共有的源相位相减消去，说明两次级源的相位差可稳定。实际理解时还应保留两路延迟足够接近、装置稳定的前提。
+!明暗条纹由两路的相位差决定。共同改变两路相位不会移动条纹；只改变一路的相位会使条纹整体平移。</p>
+<h2 id="两相干点源的干涉场">两相干点源的干涉场<a class="headerlink" href="#两相干点源的干涉场" title="Permanent link">#</a></h2>
+<blockquote>
+<p><strong>资料范围</strong>：课件 PDF 第 34—35 页　教材印刷页 124—125</p>
+</blockquote>
+<h3 id="两条路程怎样进入相位差">两条路程怎样进入相位差<a class="headerlink" href="#两条路程怎样进入相位差" title="Permanent link">#</a></h3>
+<p><span class="pill pill-ppt">PPT重点</span>两点源 <span class="arithmatex">\(Q_1,Q_2\)</span> 到场点 <span class="arithmatex">\(P\)</span> 的距离为 <span class="arithmatex">\(r_1,r_2\)</span>，同介质波数为 <span class="arithmatex">\(k\)</span>，则</p>
+<div class="arithmatex">\[\varphi_1=kr_1+\varphi_{10},\quad\varphi_2=kr_2+\varphi_{20}\]</div>
+<div class="arithmatex">\[\delta=\varphi_1-\varphi_2=\frac{2\pi}{\lambda}(r_1-r_2)+\delta_0,\quad\delta_0=\varphi_{10}-\varphi_{20}\]</div>
+<p>各束强度还随传播距离变化。若源强相同，且观测距离远大于两源间距，可在局部取 <span class="arithmatex">\(A_1\approx A_2=A\)</span>，于是</p>
+<div class="arithmatex">\[I=2A^2(1+\cos\delta)=4A^2\cos^2\frac{\delta}{2}\]</div>
+<h3 id="光程差与几何路程差要配套">光程差与几何路程差要配套<a class="headerlink" href="#光程差与几何路程差要配套" title="Permanent link">#</a></h3>
+<p><span class="pill pill-und">理解补充</span>本页 <span class="arithmatex">\(\lambda\)</span> 是介质波长，所以使用几何路程差 <span class="arithmatex">\(r_1-r_2\)</span>。若改用真空波长 <span class="arithmatex">\(\lambda_0\)</span>，应使用光程差：</p>
+<div class="arithmatex">\[\Delta L=n(r_1-r_2),\quad\delta=\frac{2\pi\Delta L}{\lambda_0}+\delta_0\]</div>
+<p>课件把 <span class="arithmatex">\(r_1-r_2\)</span> 简记为 <span class="arithmatex">\(\Delta L\)</span>；使用时须确认它在该公式中表示哪种路程，避免多乘或少乘一个折射率。</p>
+<h3 id="等初相位时的明暗位置">等初相位时的明暗位置<a class="headerlink" href="#等初相位时的明暗位置" title="Permanent link">#</a></h3>
+<p><span class="pill pill-ppt">PPT重点</span>仅当 <span class="arithmatex">\(\delta_0=0\)</span> 时，明暗条件可直接写成</p>
+<div class="arithmatex">\[r_1-r_2=m\lambda\quad(\mathrm{bright})\]</div>
+<div class="arithmatex">\[r_1-r_2=(m+\frac{1}{2})\lambda\quad(\mathrm{dark})\]</div>
+<p><span class="pill pill-src">教材补充</span>两焦点到空间点的距离差为常数，对应回转双曲面；距离差为零的中间面是垂直平分面。与屏幕相交后，才得到所观察到的条纹。
+!一般屏上的条纹并非严格直线、严格等距。后面的杨氏等距直条纹来自特定观察几何下的傍轴近似。</p>
+<h2 id="杨氏双缝-装置与相位差">杨氏双缝 装置与相位差<a class="headerlink" href="#杨氏双缝-装置与相位差" title="Permanent link">#</a></h2>
+<blockquote>
+<p><strong>资料范围</strong>：课件 PDF 第 36—37 页　教材印刷页 125—127</p>
+</blockquote>
+<h3 id="从一个源构造两个相关的次级源">从一个源构造两个相关的次级源<a class="headerlink" href="#从一个源构造两个相关的次级源" title="Permanent link">#</a></h3>
+<p><span class="pill pill-ppt">PPT重点</span>普通单色源经窄缝 <span class="arithmatex">\(S\)</span> 照亮两缝 <span class="arithmatex">\(S_1,S_2\)</span>，再在接收屏上形成条纹。实际三缝互相平行；双孔实验可用来理解同一几何模型。</p>
+<p><img alt="第2讲 插图 young" loading="lazy" src="../%E6%8F%92%E5%9B%BE/%E7%AC%AC2%E8%AE%B2/young.png" />
+<em>图 9 坐标沿课件：双缝沿 x 方向分开，接收屏位于 z=D。源、两路传播和观察点共同决定相位差。</em></p>
+<p>设 <span class="arithmatex">\(S\)</span> 到两缝的距离为 <span class="arithmatex">\(R_1,R_2\)</span>，课件的同源简化模型给出</p>
+<div class="arithmatex">\[\varphi_{10}=\varphi_0(t)+kR_1,\quad\varphi_{20}=\varphi_0(t)+kR_2\]</div>
+<p>相减时共同源相位消去，得 <span class="arithmatex">\(\delta_0=k(R_1-R_2)\)</span>。对称照明时 <span class="arithmatex">\(R_1=R_2\)</span>，两缝等初相位。</p>
+<h3 id="先用几何得到符号">先用几何得到符号<a class="headerlink" href="#先用几何得到符号" title="Permanent link">#</a></h3>
+<p><span class="pill pill-ppt">PPT重点</span>取 <span class="arithmatex">\(S_1=(d/2,0,0)\)</span>、<span class="arithmatex">\(S_2=(-d/2,0,0)\)</span>，屏幕点为 <span class="arithmatex">\(P(x',y',D)\)</span>。在傍轴条件下：</p>
+<div class="arithmatex">\[r_1\approx D+\frac{(x'-d/2)^2+y'^2}{2D},\quad r_2\approx D+\frac{(x'+d/2)^2+y'^2}{2D}\]</div>
+<div class="arithmatex">\[r_1-r_2\approx-\frac{dx'}{D},\quad\delta\approx\delta_0-\frac{kdx'}{D}\]</div>
+<p><span class="pill pill-und">理解补充</span>正 <span class="arithmatex">\(x'\)</span> 一侧更靠近上面的 <span class="arithmatex">\(S_1\)</span>，所以 <span class="arithmatex">\(r_1&lt;r_2\)</span>，负号可由图直接检查。等初相位时余弦为偶函数，强度不受整体正负号影响；讨论条纹移动时，符号必须保持一致。
+!对称双缝题应先写两缝坐标，再按同一顺序相减。不要把几何路程差与初相位差分开时用了相反顺序。</p>
+<h2 id="杨氏双缝-复振幅推导">杨氏双缝 复振幅推导<a class="headerlink" href="#杨氏双缝-复振幅推导" title="Permanent link">#</a></h2>
+<blockquote>
+<p><strong>资料范围</strong>：课件 PDF 第 37—38 页　教材印刷页 127</p>
+</blockquote>
+<h3 id="关键推导-必须掌握_3">关键推导 必须掌握<a class="headerlink" href="#关键推导-必须掌握_3" title="Permanent link">#</a></h3>
+<p><span class="pill pill-ppt">PPT重点</span>在对称照明、相同振幅以及傍轴近似下，取 <span class="arithmatex">\(A=a/D\)</span>，先把两束共有的相位记为</p>
+<div class="arithmatex">\[\Phi=k[D+\frac{d^2/4+x'^2+y'^2}{2D}]\]</div>
+<p>两缝的波前分别为</p>
+<div class="arithmatex">\[\tilde U_1=Ae^{i\Phi}e^{-ikdx'/(2D)},\quad\tilde U_2=Ae^{i\Phi}e^{ikdx'/(2D)}\]</div>
+<p>用 <span class="arithmatex">\(e^{-iq}+e^{iq}=2\cos q\)</span> 相加：</p>
+<div class="arithmatex">\[\tilde U=2Ae^{i\Phi}\cos\frac{kdx'}{2D}\]</div>
+<p>然后取模平方，得到本讲核心结论：</p>
+<div class="arithmatex">\[I(x',y')=4A^2\cos^2\frac{kdx'}{2D}=4A^2\cos^2\frac{\pi dx'}{\lambda D}\]</div>
+<p>这里 <span class="arithmatex">\(A^2\)</span> 是单独打开一缝时在局部观察区产生的光强；双缝明纹极大值是它的四倍。</p>
+<h3 id="为什么共同的曲率相位可以消去">为什么共同的曲率相位可以消去<a class="headerlink" href="#为什么共同的曲率相位可以消去" title="Permanent link">#</a></h3>
+<p><span class="pill pill-und">理解补充</span><span class="arithmatex">\(e^{i\Phi}\)</span> 的模为 1，所以它在求强度时与其共轭相消。它包含 <span class="arithmatex">\(x'^2+y'^2\)</span>，并不需要事先把它假定为常相位。
+这说明：即使两束波各自仍带有球面曲率，只要该部分相位完全相同，就不会进入二者的相位差。</p>
+<h3 id="与几何路线的核对">与几何路线的核对<a class="headerlink" href="#与几何路线的核对" title="Permanent link">#</a></h3>
+<p>将前页 <span class="arithmatex">\(\delta=-kdx'/D\)</span> 代入等强度公式 <span class="arithmatex">\(I=4A^2\cos^2(\delta/2)\)</span>，得到完全相同的结果。几何路程法适合快速定位条纹，复振幅法解释了哪些相位为何能被消去。
+!推导只在使用的观察范围内近似成立。这里不把单缝宽度导致的衍射包络加入公式，它属于后续衍射内容。</p>
+<h2 id="条纹方向-间距与白光">条纹方向 间距与白光<a class="headerlink" href="#条纹方向-间距与白光" title="Permanent link">#</a></h2>
+<blockquote>
+<p><strong>资料范围</strong>：课件 PDF 第 39—41 页　教材印刷页 128—129</p>
+</blockquote>
+<h3 id="强度沿哪一方向变化">强度沿哪一方向变化<a class="headerlink" href="#强度沿哪一方向变化" title="Permanent link">#</a></h3>
+<p><span class="pill pill-ppt">PPT重点</span>杨氏式只依赖 <span class="arithmatex">\(x'\)</span>，与 <span class="arithmatex">\(y'\)</span> 无关，因此同一条纹满足 <span class="arithmatex">\(x'=\mathrm{constant}\)</span>，沿 <span class="arithmatex">\(y'\)</span> 轴延伸。强度沿 <span class="arithmatex">\(x'\)</span> 方向周期变化。</p>
+<p><img alt="第2讲 插图 young_stripes" loading="lazy" src="../%E6%8F%92%E5%9B%BE/%E7%AC%AC2%E8%AE%B2/young_stripes.png" />
+<em>图 10 屏幕正视图：沿 x′ 移动会跨过明暗条纹，沿 y′ 移动保持在同一条纹上。条纹与双缝连线垂直。</em></p>
+<h3 id="从余弦平方的周期得到间距">从余弦平方的周期得到间距<a class="headerlink" href="#从余弦平方的周期得到间距" title="Permanent link">#</a></h3>
+<p><span class="pill pill-ppt">PPT重点</span><span class="arithmatex">\(\cos^2q\)</span> 的周期是 <span class="arithmatex">\(\pi\)</span>，相邻同类条纹的间距满足</p>
+<div class="arithmatex">\[\frac{kd}{2D}\Delta x'=\pi,\quad\Delta x'=\frac{D\lambda}{d}\]</div>
+<p>等初相位时，明纹位置 <span class="arithmatex">\(x'_m=mD\lambda/d\)</span>；相邻明纹与暗纹之间的距离只有 <span class="arithmatex">\(\Delta x'/2\)</span>。
+双缝对屏幕中心张角 <span class="arithmatex">\(\Delta\theta\approx d/D\)</span>，所以</p>
+<div class="arithmatex">\[\Delta x'\approx\frac{\lambda}{\Delta\theta}\]</div>
+<p>缝距增大，条纹变密；屏距或波长增大，条纹变疏。增大屏距同时会降低照度，实际观察还受亮度限制。</p>
+<h3 id="白光为什么有白色中央纹和彩色侧纹">白光为什么有白色中央纹和彩色侧纹<a class="headerlink" href="#白光为什么有白色中央纹和彩色侧纹" title="Permanent link">#</a></h3>
+<p><span class="pill pill-ppt">PPT重点</span>零总光程差处，各波长的中央明纹重合，呈白色。两侧同级明纹位置随波长增大而离中心更远，因此分出颜色；高阶不同波长的条纹逐渐重叠。
+<span class="pill pill-und">理解补充</span>课件图片中从较低级次开始出现重叠；具体重叠程度取决于光谱范围和分辨条件，不宜把“第二级”当作所有白光装置的固定阈值。
+!本页已按强度表达式校正课件的方向表述：条纹平行 <span class="arithmatex">\(y'\)</span>，强度沿 <span class="arithmatex">\(x'\)</span> 变化。两句话必须区分。</p>
+<h2 id="两束平行光-空间频率与条纹方向">两束平行光 空间频率与条纹方向<a class="headerlink" href="#两束平行光-空间频率与条纹方向" title="Permanent link">#</a></h2>
+<blockquote>
+<p><strong>资料范围</strong>：课件 PDF 第 42—44 页　教材印刷页 128—129</p>
+</blockquote>
+<h3 id="一次相位差产生平行直条纹">一次相位差产生平行直条纹<a class="headerlink" href="#一次相位差产生平行直条纹" title="Permanent link">#</a></h3>
+<p><span class="pill pill-ppt">PPT重点</span>两同频相干平面波照射 <span class="arithmatex">\(z=0\)</span> 平面，方向余弦分别为 <span class="arithmatex">\((\cos\alpha_j,\cos\beta_j,\cos\gamma_j)\)</span>。固定同一相位差顺序：</p>
+<div class="arithmatex">\[\delta=\varphi_1-\varphi_2=\Delta k_x x+\Delta k_y y+\delta_0\]</div>
+<div class="arithmatex">\[\Delta k_x=k(\cos\alpha_1-\cos\alpha_2),\quad\Delta k_y=k(\cos\beta_1-\cos\beta_2)\]</div>
+<p>定义带符号的空间频率分量</p>
+<div class="arithmatex">\[f_x=\frac{\Delta k_x}{2\pi},\quad f_y=\frac{\Delta k_y}{2\pi}\]</div>
+<p>则 <span class="arithmatex">\(\delta=2\pi(f_xx+f_yy)+\delta_0\)</span>，强度为 <span class="arithmatex">\(I=I_0(1+\gamma\cos\delta)\)</span>。空间频率的单位是每单位长度的周期数，与时间频率不同。</p>
+<p><img alt="第2讲 插图 spatial" loading="lazy" src="../%E6%8F%92%E5%9B%BE/%E7%AC%AC2%E8%AE%B2/spatial.png" />
+<em>图 11 条纹平行于等相位差线，空间频率矢量垂直于条纹。沿坐标轴测得的周期与最短条纹间距通常不同。</em></p>
+<h3 id="方向-周期和最短间距">方向 周期和最短间距<a class="headerlink" href="#方向-周期和最短间距" title="Permanent link">#</a></h3>
+<p><span class="pill pill-und">理解补充</span>等相位差线为 <span class="arithmatex">\(f_xx+f_yy=\mathrm{constant}\)</span>，法向量为 <span class="arithmatex">\((f_x,f_y)\)</span>。若分量非零，沿坐标轴测得的正周期为</p>
+<div class="arithmatex">\[\Delta x=\frac{1}{|f_x|},\quad\Delta y=\frac{1}{|f_y|},\quad\Lambda=\frac{1}{\sqrt{f_x^2+f_y^2}}\]</div>
+<p><span class="arithmatex">\(\Lambda\)</span> 是沿法线量出的最短条纹间距。若 <span class="arithmatex">\(f_y=0\)</span>，沿 <span class="arithmatex">\(y\)</span> 不出现周期变化，可记 <span class="arithmatex">\(\Delta y=\infty\)</span>；这表示条纹平行 <span class="arithmatex">\(y\)</span>。
+!方向余弦之差可以有正负，频率分量可带符号；几何距离应取正值。若两个横向波矢完全相同，则此平面上强度均匀，没有空间明暗条纹。</p>
+<h2 id="课堂例题-241-平行光干涉">课堂例题 2.4.1 平行光干涉<a class="headerlink" href="#课堂例题-241-平行光干涉" title="Permanent link">#</a></h2>
+<blockquote>
+<p><strong>资料范围</strong>：课件 PDF 第 45 页　教材对应方法见印刷页 129</p>
+</blockquote>
+<h3 id="题目判断与已知条件_1">题目判断与已知条件<a class="headerlink" href="#题目判断与已知条件_1" title="Permanent link">#</a></h3>
+<p><span class="pill pill-ppt">PPT重点</span>波长 <span class="arithmatex">\(\lambda=0.600\,\mu\mathrm m\)</span>，两束相干平行光均在 <span class="arithmatex">\(x-z\)</span> 平面内传播，与 <span class="arithmatex">\(z\)</span> 轴的有向夹角为 <span class="arithmatex">\(\theta_1=15^\circ\)</span>、<span class="arithmatex">\(\theta_2=-30^\circ\)</span>，振幅比 <span class="arithmatex">\(A_1:A_2=1:2\)</span>。求 <span class="arithmatex">\(z=0\)</span> 平面上条纹的空间频率。
+模型：两个平面波的横向波矢之差。选取传播方向在 <span class="arithmatex">\(+z\)</span> 半空间，不必使用小角近似。</p>
+<h3 id="第一步-由角度写横向分量">第一步 由角度写横向分量<a class="headerlink" href="#第一步-由角度写横向分量" title="Permanent link">#</a></h3>
+<div class="arithmatex">\[k_{x1}=k\sin15^\circ,\quad k_{x2}=k\sin(-30^\circ),\quad k_{y1}=k_{y2}=0\]</div>
+<p>于是</p>
+<div class="arithmatex">\[f_x=\frac{\sin15^\circ-\sin(-30^\circ)}{0.600\,\mu\mathrm m}\approx1.26470\,\mu\mathrm m^{-1}\]</div>
+<div class="arithmatex">\[f_x\approx1265\,\mathrm{mm}^{-1},\quad f_y=0\]</div>
+<h3 id="第二步-求条纹间距并判断方向">第二步 求条纹间距并判断方向<a class="headerlink" href="#第二步-求条纹间距并判断方向" title="Permanent link">#</a></h3>
+<div class="arithmatex">\[\Delta x=\frac{1}{|f_x|}\approx0.7907\,\mu\mathrm m,\quad\Delta y=\infty\]</div>
+<p>条纹平行 <span class="arithmatex">\(y\)</span> 轴，沿 <span class="arithmatex">\(x\)</span> 方向变化。每毫米约有 1265 个周期；这不是每秒振动的频率。</p>
+<h3 id="第三步-计算对比度">第三步 计算对比度<a class="headerlink" href="#第三步-计算对比度" title="Permanent link">#</a></h3>
+<p>在课件默认同振动方向、完全相干的条件下：</p>
+<div class="arithmatex">\[\gamma=\frac{2(A_1/A_2)}{1+(A_1/A_2)^2}=\frac{2(1/2)}{1+(1/2)^2}=0.8\]</div>
+<p>若令 <span class="arithmatex">\(A_1=A\)</span>、<span class="arithmatex">\(A_2=2A\)</span>，则 <span class="arithmatex">\(I_{\max}=9A^2\)</span>、<span class="arithmatex">\(I_{\min}=A^2\)</span>。较暗的条纹不为零。
+!振幅比 <span class="arithmatex">\(1:2\)</span> 对应强度比 <span class="arithmatex">\(1:4\)</span>。先保留角度的正负号，再作差；本题 15° 与 −30° 不能都当成正角处理。</p>
+<h2 id="公式速查一-波场-波前与近似">公式速查一 波场 波前与近似<a class="headerlink" href="#公式速查一-波场-波前与近似" title="Permanent link">#</a></h2>
+<blockquote>
+<p><strong>资料范围</strong>：使用前确认时间符号、传播半空间与观察范围</p>
+</blockquote>
+<h3 id="复振幅与强度">复振幅与强度<a class="headerlink" href="#复振幅与强度" title="Permanent link">#</a></h3>
+<div class="arithmatex">\[U=\operatorname{Re}[\tilde Ue^{-i\omega t}],\quad\tilde U=Ae^{i\varphi},\quad I=\tilde U\tilde U^*=A^2\]</div>
+<p>强度式采用同介质内归一化相对强度。空间相位与实际余弦中的初相位符号相反。</p>
+<h3 id="平面波与球面波">平面波与球面波<a class="headerlink" href="#平面波与球面波" title="Permanent link">#</a></h3>
+<div class="arithmatex">\[\tilde U_{\mathrm{plane}}=Ae^{i(\vec k\cdot\vec r+\varphi_0)},\quad k=\frac{2\pi}{\lambda}\]</div>
+<p>振幅常数、相位线性；线性相位系数给出波矢分量。</p>
+<div class="arithmatex">\[\tilde U_{\mathrm{out}}=\frac{a}{r}e^{i(kr+\varphi_0)},\quad\tilde U_{\mathrm{in}}=\frac{a}{r}e^{i(-kr+\varphi_c)}\]</div>
+<p><span class="arithmatex">\(r\)</span> 分别从发散点或会聚点量起；符号判断依赖共同时间因子 <span class="arithmatex">\(e^{-i\omega t}\)</span>。</p>
+<h3 id="轴上点源到接收平面">轴上点源到接收平面<a class="headerlink" href="#轴上点源到接收平面" title="Permanent link">#</a></h3>
+<div class="arithmatex">\[r=\sqrt{z^2+\rho^2}\approx z+\frac{\rho^2}{2z},\quad\rho^2=x'^2+y'^2\]</div>
+<div class="arithmatex">\[\tilde U\approx\frac{a}{z}e^{ikz}e^{ik\rho^2/(2z)}\]</div>
+<p>傍轴条件 <span class="arithmatex">\(\rho^2/z^2\ll1\)</span> 使振幅近似均匀；还须确认忽略的四次相位足够小。进一步满足 <span class="arithmatex">\(z\gg\rho^2/\lambda\)</span> 时，可在指定范围内忽略二次相位。</p>
+<h3 id="轴外点源到接收平面">轴外点源到接收平面<a class="headerlink" href="#轴外点源到接收平面" title="Permanent link">#</a></h3>
+<div class="arithmatex">\[r\approx z+\frac{x'^2+y'^2}{2z}+\frac{x^2+y^2}{2z}-\frac{xx'+yy'}{z}\]</div>
+<div class="arithmatex">\[\tilde U\approx\frac{a}{z}e^{ikr}\]</div>
+<p>此处后一式中的 <span class="arithmatex">\(r\)</span> 取上一行的二次近似距离。源点远场删源点平方相位；场点远场删场点平方相位；交叉项刻画位置与方向的关联。</p>
+<h3 id="波前共轭">波前共轭<a class="headerlink" href="#波前共轭" title="Permanent link">#</a></h3>
+<div class="arithmatex">\[Ae^{i\varphi(x,y)}\to Ae^{-i\varphi(x,y)}\]</div>
+<p>同侧向前传播时，倾斜平面波的横向波矢反号；点源的发散波前变为向镜像点会聚的波前。完整三维共轭则对应整个波矢反号。</p>
+<h2 id="公式速查二-相干叠加与条纹">公式速查二 相干叠加与条纹<a class="headerlink" href="#公式速查二-相干叠加与条纹" title="Permanent link">#</a></h2>
+<blockquote>
+<p><strong>资料范围</strong>：条纹公式默认同频、相位差稳定，且取可相干的同向振动分量</p>
+</blockquote>
+<h3 id="两波叠加">两波叠加<a class="headerlink" href="#两波叠加" title="Permanent link">#</a></h3>
+<div class="arithmatex">\[\tilde U=\tilde U_1+\tilde U_2,\quad I=I_1+I_2+2\sqrt{I_1I_2}\cos\delta\]</div>
+<div class="arithmatex">\[\delta=\varphi_1-\varphi_2,\quad I_{\max,\min}=(\sqrt{I_1}\pm\sqrt{I_2})^2\]</div>
+<p>明：<span class="arithmatex">\(\delta=2m\pi\)</span>；暗：<span class="arithmatex">\(\delta=(2m+1)\pi\)</span>。非相干时间平均时，干涉项消失。</p>
+<h3 id="对比度">对比度<a class="headerlink" href="#对比度" title="Permanent link">#</a></h3>
+<div class="arithmatex">\[\gamma=\frac{I_{\max}-I_{\min}}{I_{\max}+I_{\min}}=\frac{2\sqrt{I_1I_2}}{I_1+I_2},\quad I_0=I_1+I_2\]</div>
+<div class="arithmatex">\[I=I_0(1+\gamma\cos\delta)\]</div>
+<p>对比度的后一个表达式要求完全相干、同振动方向。等振幅时 <span class="arithmatex">\(\gamma=1\)</span>；不等振幅的暗纹通常不黑。</p>
+<h3 id="两点源与杨氏双缝">两点源与杨氏双缝<a class="headerlink" href="#两点源与杨氏双缝" title="Permanent link">#</a></h3>
+<div class="arithmatex">\[\delta=\frac{2\pi}{\lambda}(r_1-r_2)+\delta_0\]</div>
+<div class="arithmatex">\[r_1-r_2\approx-\frac{dx'}{D},\quad I=4A^2\cos^2\frac{\pi dx'}{\lambda D},\quad\Delta x'=\frac{D\lambda}{d}\]</div>
+<p>采用课件坐标 <span class="arithmatex">\(S_1\)</span> 在正 <span class="arithmatex">\(x\)</span> 侧；强度的余弦平方式要求等初相位、等强度与傍轴近似。条纹沿 <span class="arithmatex">\(y'\)</span>，明暗相邻距离为半个条纹周期。</p>
+<h3 id="两平面波的空间频率">两平面波的空间频率<a class="headerlink" href="#两平面波的空间频率" title="Permanent link">#</a></h3>
+<div class="arithmatex">\[f_x=\frac{\cos\alpha_1-\cos\alpha_2}{\lambda},\quad f_y=\frac{\cos\beta_1-\cos\beta_2}{\lambda}\]</div>
+<div class="arithmatex">\[\delta=2\pi(f_xx+f_yy)+\delta_0,\quad\Lambda=\frac{1}{\sqrt{f_x^2+f_y^2}}\]</div>
+<p>两波均在 <span class="arithmatex">\(x-z\)</span> 面内时，<span class="arithmatex">\(f_x=(\sin\theta_1-\sin\theta_2)/\lambda\)</span>，<span class="arithmatex">\(f_y=0\)</span>。相位梯度方向垂直条纹；几何周期取绝对值。
+!做题顺序：选符号与坐标 → 写各路复振幅或相位 → 按固定顺序求差 → 检查相干及近似条件 → 求强度、位置、间距或对比度。</p>
+<h2 id="本讲易错清单">本讲易错清单<a class="headerlink" href="#本讲易错清单" title="Permanent link">#</a></h2>
+<blockquote>
+<p><strong>资料范围</strong>：对照公式与几何逐项检查</p>
+</blockquote>
+<h3 id="1-混用两个时间因子约定">1 混用两个时间因子约定<a class="headerlink" href="#1-混用两个时间因子约定" title="Permanent link">#</a></h3>
+<p>本课程用 <span class="arithmatex">\(e^{-i\omega t}\)</span>，向外传播的径向空间因子为 <span class="arithmatex">\(e^{+ikr}\)</span>。若只改一个符号，会把传播方向判断反。</p>
+<h3 id="2-只用线性相位判断理想平面波">2 只用线性相位判断理想平面波<a class="headerlink" href="#2-只用线性相位判断理想平面波" title="Permanent link">#</a></h3>
+<p>还应确认振幅为常数。相位控制波面，振幅控制强弱，二者共同定义完整波场。</p>
+<h3 id="3-把取样平面当作等相面">3 把取样平面当作等相面<a class="headerlink" href="#3-把取样平面当作等相面" title="Permanent link">#</a></h3>
+<p>本讲“波前”允许是指定平面。倾斜平面波在 <span class="arithmatex">\(z=0\)</span> 上相位通常随 <span class="arithmatex">\(x\)</span> 变化。</p>
+<h3 id="4-共轭时忘记传播半空间">4 共轭时忘记传播半空间<a class="headerlink" href="#4-共轭时忘记传播半空间" title="Permanent link">#</a></h3>
+<p>波前共轭并选向前传播，与完整三维场共轭不同。会聚点的镜像判断依赖教材的同侧入射约定。</p>
+<h3 id="5-把傍轴直接等同于远场">5 把傍轴直接等同于远场<a class="headerlink" href="#5-把傍轴直接等同于远场" title="Permanent link">#</a></h3>
+<p>傍轴近似后仍有二次相位。相位误差要与 1 弧度或题设容限比较，不能只看距离相对误差。</p>
+<h3 id="6-全宽当半径-或把平方比较读错">6 全宽当半径 或把平方比较读错<a class="headerlink" href="#6-全宽当半径-或把平方比较读错" title="Permanent link">#</a></h3>
+<p>例 2.2.5 给出 <span class="arithmatex">\(2\rho=1\,\mathrm{mm}\)</span>；<span class="arithmatex">\(z^2=50\rho^2\)</span> 对应 <span class="arithmatex">\(z=\sqrt{50}\rho\)</span>，不是 <span class="arithmatex">\(50\rho\)</span>。</p>
+<h3 id="7-直接把相干光强相加">7 直接把相干光强相加<a class="headerlink" href="#7-直接把相干光强相加" title="Permanent link">#</a></h3>
+<p>应先叠加复振幅，再取模平方；正交振动分量或非相干时间平均才可直接作相应强度相加。</p>
+<h3 id="8-相消就一定没有光">8 相消就一定没有光<a class="headerlink" href="#8-相消就一定没有光" title="Permanent link">#</a></h3>
+<p>相位差为奇数倍 <span class="arithmatex">\(\pi\)</span> 时达到最小值；只有两束相关振幅相等，最小值才为零。</p>
+<h3 id="9-把条纹方向与变化方向混淆">9 把条纹方向与变化方向混淆<a class="headerlink" href="#9-把条纹方向与变化方向混淆" title="Permanent link">#</a></h3>
+<p>若 <span class="arithmatex">\(I\)</span> 只随 <span class="arithmatex">\(x'\)</span> 变，条纹沿 <span class="arithmatex">\(y'\)</span>；空间频率矢量是条纹的法向量。</p>
+<h3 id="10-把周期或振幅比用错">10 把周期或振幅比用错<a class="headerlink" href="#10-把周期或振幅比用错" title="Permanent link">#</a></h3>
+<p>相邻明暗只隔半周期。振幅比 <span class="arithmatex">\(1:2\)</span> 对应强度比 <span class="arithmatex">\(1:4\)</span>；求空间频率后，注意把每微米正确换成每毫米。</p>
+<h2 id="自测题">自测题<a class="headerlink" href="#自测题" title="Permanent link">#</a></h2>
+<blockquote>
+<p><strong>资料范围</strong>：以下为理解补充题　建议先独立作答，再翻页核对</p>
+</blockquote>
+<h3 id="题-1-波前识别与共轭">题 1 波前识别与共轭<a class="headerlink" href="#题-1-波前识别与共轭" title="Permanent link">#</a></h3>
+<p>在时间因子 <span class="arithmatex">\(e^{-i\omega t}\)</span> 下，某波在 <span class="arithmatex">\(z=0\)</span> 面的复振幅为 <span class="arithmatex">\(A\exp(i\sqrt{3}kx/2)\)</span>，<span class="arithmatex">\(A\)</span> 为常量。已知它是向 <span class="arithmatex">\(+z\)</span> 传播的平面波，求与 <span class="arithmatex">\(z\)</span> 轴的倾角及 <span class="arithmatex">\(k_z\)</span>。取该平面函数的共轭后，若仍向 <span class="arithmatex">\(+z\)</span> 传播，方向如何改变？若改为完整三维场共轭，又会怎样？</p>
+<h3 id="题-2-条件估算">题 2 条件估算<a class="headerlink" href="#题-2-条件估算" title="Permanent link">#</a></h3>
+<p>点源波长 <span class="arithmatex">\(\lambda=0.500\,\mu\mathrm m\)</span>，观察半径 <span class="arithmatex">\(\rho=0.500\,\mathrm{mm}\)</span>，轴向距离 <span class="arithmatex">\(z=0.100\,\mathrm m\)</span>。分别算 <span class="arithmatex">\(\rho^2/z^2\)</span> 和二次相位 <span class="arithmatex">\(k\rho^2/(2z)\)</span>；判断能否把振幅看作常数，以及能否忽略相位曲率。</p>
+<h3 id="题-3-振幅与对比度">题 3 振幅与对比度<a class="headerlink" href="#题-3-振幅与对比度" title="Permanent link">#</a></h3>
+<p>两束同频、同振动方向的完全相干光，单独照射时的相对强度分别为 1 和 9。求最大强度、最小强度、对比度，以及相位差为 <span class="arithmatex">\(\pi/2\)</span> 时的强度。若只把其中一束强度调节到与另一束相等，对比度如何变化？</p>
+<h3 id="题-4-双缝与初相位">题 4 双缝与初相位<a class="headerlink" href="#题-4-双缝与初相位" title="Permanent link">#</a></h3>
+<p>双缝间距 <span class="arithmatex">\(d=0.500\,\mathrm{mm}\)</span>，屏距 <span class="arithmatex">\(D=2.00\,\mathrm m\)</span>，波长 <span class="arithmatex">\(\lambda=0.600\,\mu\mathrm m\)</span>，满足傍轴与相干条件。求条纹间距和相邻明暗间距。按本讲 <span class="arithmatex">\(\delta=\delta_0-kdx'/D\)</span> 的约定，若将 <span class="arithmatex">\(\delta_0\)</span> 从 0 增加到 <span class="arithmatex">\(\pi/2\)</span>，原中央明纹向哪侧移动，移动多少？</p>
+<h3 id="题-5-两维空间频率">题 5 两维空间频率<a class="headerlink" href="#题-5-两维空间频率" title="Permanent link">#</a></h3>
+<p>某平面上的强度分布为 <span class="arithmatex">\(I=I_0[1+0.8\cos2\pi(3x+4y)]\)</span>，其中 <span class="arithmatex">\(x,y\)</span> 均以毫米为单位。求两个空间频率分量、沿两坐标轴的周期、最短条纹间距以及条纹斜率。若完全相干且无背景，求可能的振幅比。</p>
+<h3 id="作答检查">作答检查<a class="headerlink" href="#作答检查" title="Permanent link">#</a></h3>
+<p>每题至少写出一个成立条件。涉及方向的题目先画坐标，再由相位差或波矢判断；不要用“有一个负号所以向左”代替几何分析。
+!第 2 题检验“振幅近似常数”和“相位近似常数”是否能区分；第 5 题检验轴向周期与条纹最短距离是否能区分。</p>
+<h2 id="自测答案与解析">自测答案与解析<a class="headerlink" href="#自测答案与解析" title="Permanent link">#</a></h2>
+<blockquote>
+<p><strong>资料范围</strong>：自测解析为理解补充　所有相位符号沿用本讲约定</p>
+</blockquote>
+<h3 id="题-1">题 1<a class="headerlink" href="#题-1" title="Permanent link">#</a></h3>
+<p>由 <span class="arithmatex">\(k_x/k=\sqrt3/2\)</span> 得 <span class="arithmatex">\(\theta=60^\circ\)</span>，且 <span class="arithmatex">\(k_z=k/2&gt;0\)</span>。平面函数共轭并保持向前传播时，<span class="arithmatex">\(k_x\)</span> 反号、<span class="arithmatex">\(k_z\)</span> 不变，倾角成为 <span class="arithmatex">\(-60^\circ\)</span>；完整三维共轭时 <span class="arithmatex">\(\vec k\)</span> 整体反号，改为反向传播。</p>
+<h3 id="题-2">题 2<a class="headerlink" href="#题-2" title="Permanent link">#</a></h3>
+<div class="arithmatex">\[\frac{\rho^2}{z^2}=2.50\times10^{-5},\quad\frac{k\rho^2}{2z}=\frac{\pi\rho^2}{\lambda z}=5\pi\]</div>
+<p>振幅相对变化很小，可近似为常数；二次相位并不小，不能在整个观测圆面上删去相位曲率。此例中四次截断相位约为 <span class="arithmatex">\(9.82\times10^{-5}\)</span> 弧度，保留二次相位的近似则很好。</p>
+<h3 id="题-3">题 3<a class="headerlink" href="#题-3" title="Permanent link">#</a></h3>
+<p>振幅比为 <span class="arithmatex">\(1:3\)</span>。<span class="arithmatex">\(I_{\max}=(1+3)^2=16\)</span>，<span class="arithmatex">\(I_{\min}=(1-3)^2=4\)</span>，所以 <span class="arithmatex">\(\gamma=(16-4)/(16+4)=0.6\)</span>。当 <span class="arithmatex">\(\delta=\pi/2\)</span> 时干涉项为零，<span class="arithmatex">\(I=10\)</span>。理想条件保持不变、两束调到等强度后，<span class="arithmatex">\(\gamma=1\)</span>。</p>
+<h3 id="题-4">题 4<a class="headerlink" href="#题-4" title="Permanent link">#</a></h3>
+<div class="arithmatex">\[\Delta x'=\frac{D\lambda}{d}=2.40\,\mathrm{mm},\quad\frac{\Delta x'}{2}=1.20\,\mathrm{mm}\]</div>
+<p>追踪原来的零相位差明纹，始终令 <span class="arithmatex">\(\delta=0\)</span>，得</p>
+<div class="arithmatex">\[x'_0=\frac{D\delta_0}{kd}=\frac{\Delta x'}{2\pi}\delta_0\]</div>
+<p>因此向正 <span class="arithmatex">\(x'\)</span> 侧平移 <span class="arithmatex">\(\Delta x'/4=0.600\,\mathrm{mm}\)</span>。所有条纹间距不变。</p>
+<h3 id="题-5">题 5<a class="headerlink" href="#题-5" title="Permanent link">#</a></h3>
+<p><span class="arithmatex">\(f_x=3\,\mathrm{mm}^{-1}\)</span>、<span class="arithmatex">\(f_y=4\,\mathrm{mm}^{-1}\)</span>。沿轴周期分别为 <span class="arithmatex">\(1/3\,\mathrm{mm}\)</span> 与 <span class="arithmatex">\(1/4\,\mathrm{mm}\)</span>；最短间距为 <span class="arithmatex">\(1/\sqrt{3^2+4^2}=0.200\,\mathrm{mm}\)</span>。条纹满足 <span class="arithmatex">\(3x+4y=\mathrm{constant}\)</span>，斜率为 <span class="arithmatex">\(-3/4\)</span>。
+令振幅比为 <span class="arithmatex">\(q&gt;0\)</span>，有 <span class="arithmatex">\(0.8=2q/(1+q^2)\)</span>，解得 <span class="arithmatex">\(q=1/2\)</span> 或 <span class="arithmatex">\(q=2\)</span>。交换两束标签不改变对比度。</p>
+<h2 id="课件校读与来源索引">课件校读与来源索引<a class="headerlink" href="#课件校读与来源索引" title="Permanent link">#</a></h2>
+<blockquote>
+<p><strong>资料范围</strong>：保留课程主线，并用公式、几何及教材相互核对</p>
+</blockquote>
+<h3 id="对照课件时需要留意的四处笔误">对照课件时需要留意的四处笔误<a class="headerlink" href="#对照课件时需要留意的四处笔误" title="Permanent link">#</a></h3>
+<p><span class="pill pill-und">理解补充 校读</span>PDF 第 27 页的干涉项在一处写成两次 <span class="arithmatex">\(I_1\)</span>，应为 <span class="arithmatex">\(2\sqrt{I_1I_2}\langle\cos\delta\rangle_T\)</span>；由前页模平方展开即可核对。
+PDF 第 31 页相消相位应为奇数倍 <span class="arithmatex">\(\pi\)</span>，即 <span class="arithmatex">\((2m+1)\pi\)</span>，不能把所有整数倍都列为相消。教材印刷页 122 的条件可作核对。
+PDF 第 36 页两次级源初相位相减的一处下标重复，正确应为 <span class="arithmatex">\(\varphi_{10}-\varphi_{20}=k(R_1-R_2)\)</span>。
+PDF 第 39 页由 <span class="arithmatex">\(I(x',y')\)</span> 与 <span class="arithmatex">\(y'\)</span> 无关，应推出条纹平行 <span class="arithmatex">\(y'\)</span>，不是平行 <span class="arithmatex">\(x'\)</span>。本书印刷页 128 也有同类方向表述笔误，应以强度函数及等强度线几何为准。</p>
+<h3 id="三处容易误读的简略说法">三处容易误读的简略说法<a class="headerlink" href="#三处容易误读的简略说法" title="Permanent link">#</a></h3>
+<p>例 2.2.5 的 <span class="arithmatex">\(3.54\,\mathrm{mm}\)</span> 来自 <span class="arithmatex">\(\sqrt{50}\rho\)</span>，原课件图页中的根号存在，文字提取可能漏掉；本讲按图页核对后保留。
+共轭波的负倾角和镜像会聚位置，都采用教材印刷页 110 脚注的“从波前同一侧传播”约定；本讲明确写出此前提。
+高斯光束的横向振幅是高斯型，相位因子含横向二次项。课件对“高斯型”的简写按教材公式结构加以解释，本讲不展开其传播推导。</p>
+<h3 id="资料索引">资料索引<a class="headerlink" href="#资料索引" title="Permanent link">#</a></h3>
+<p>教师课件：《2 26秋基物2 光学.第2章 波动光学基本原理(部分) part1》，共 45 个 PDF 页面，内页原幻灯片编号不连续，末页标 47。正文引用统一使用 PDF 页序。
+教材：赵凯华、钟锡华《光学（重排本）》，北京大学出版社，2017。主要对应第二章 §1 印刷页 105—108；§2 印刷页 109—116；§3 印刷页 118—122；§4 印刷页 124—129。
+本地教材扫描件在所用正文范围内，PDF 页序等于印刷页码加 13。正文中的来源标签区分课件内容、教材补充和为理解而作的解释；重绘示意图及自测题为理解补充。
+!复习时优先使用第 24—25 页速查公式，但遇到共轭、近似和条纹方向问题，应返回对应正文检查约定和成立条件。</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="页脚" >
+        
+          
+          <a href="../%E7%AC%AC1%E8%AE%B2_%E5%87%A0%E4%BD%95%E5%85%89%E5%AD%A6%E7%AE%80%E4%BB%8B/" class="md-footer__link md-footer__link--prev" aria-label="上一页: 第1讲 几何光学简介">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                上一页
+              </span>
+              <div class="md-ellipsis">
+                第1讲 几何光学简介
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../%E7%AC%AC3%E8%AE%B2_%E5%85%89%E7%9A%84%E5%B9%B2%E6%B6%89%E4%B8%8E%E6%97%B6%E7%A9%BA%E7%9B%B8%E5%B9%B2%E6%80%A7/" class="md-footer__link md-footer__link--next" aria-label="下一页: 第3讲 光的干涉与时空相干性">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                下一页
+              </span>
+              <div class="md-ellipsis">
+                第3讲 光的干涉与时空相干性
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.sections", "navigation.expand", "navigation.top", "navigation.footer", "toc.follow", "search.highlight", "search.share"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

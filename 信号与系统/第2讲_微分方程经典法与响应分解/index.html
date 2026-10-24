@@ -1,0 +1,2889 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="大学课程个人学习讲义，按学期和课程组织，支持网页端直接阅读">
+      
+      
+      
+        <link rel="canonical" href="https://yunbianmailang.github.io/university-course-materials/%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%B3%BB%E7%BB%9F/%E7%AC%AC2%E8%AE%B2_%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B%E7%BB%8F%E5%85%B8%E6%B3%95%E4%B8%8E%E5%93%8D%E5%BA%94%E5%88%86%E8%A7%A3/">
+      
+      
+        <link rel="prev" href="../%E7%AC%AC1%E8%AE%B2_%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF%E4%B8%8E%E5%9F%BA%E6%9C%AC%E8%AF%AD%E8%A8%80/">
+      
+      
+        <link rel="next" href="../%E7%AC%AC3%E8%AE%B2_%E5%82%85%E9%87%8C%E5%8F%B6%E7%BA%A7%E6%95%B0%E4%B8%8E%E9%A2%91%E8%B0%B1/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>第2讲 微分方程经典法与响应分解 - 大学课程学习资料</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/custom.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#第2讲-微分方程经典法与响应分解" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../.." title="大学课程学习资料" class="md-header__button md-logo" aria-label="大学课程学习资料" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            大学课程学习资料
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              第2讲 微分方程经典法与响应分解
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="indigo"  aria-label="切换到深色模式"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="切换到深色模式" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="indigo"  aria-label="切换到浅色模式"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="切换到浅色模式" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="分享" aria-label="分享" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/yunbianmailang/university-course-materials" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    大学课程学习资料
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="大学课程学习资料" class="md-nav__button md-logo" aria-label="大学课程学习资料" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    大学课程学习资料
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/yunbianmailang/university-course-materials" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    大学课程学习资料
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    首页
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    复变函数与数理方程
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    复变函数与数理方程
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0%E4%B8%8E%E6%95%B0%E7%90%86%E6%96%B9%E7%A8%8B/%E8%AF%BE%E7%A8%8B%E8%AF%B4%E6%98%8E/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    课程说明
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0%E4%B8%8E%E6%95%B0%E7%90%86%E6%96%B9%E7%A8%8B/%E7%AC%AC1%E8%AE%B2_%E5%A4%8D%E6%95%B0%E5%87%A0%E4%BD%95%E6%A8%A1%E7%9A%84%E6%9E%81%E5%80%BC%E4%B8%8E%E6%8C%87%E6%95%B0%E6%98%A0%E5%B0%84/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第1讲 复数几何模的极值与指数映射
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0%E4%B8%8E%E6%95%B0%E7%90%86%E6%96%B9%E7%A8%8B/%E7%AC%AC2%E8%AE%B2_%E5%A4%8D%E5%B9%82%E8%A7%A3%E6%9E%90%E6%80%A7%E4%B8%8E%E5%A4%8D%E5%B9%B3%E9%9D%A2%E6%98%A0%E5%B0%84/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第2讲 复幂解析性与复平面映射
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0%E4%B8%8E%E6%95%B0%E7%90%86%E6%96%B9%E7%A8%8B/%E7%AC%AC3%E8%AE%B2_%E5%A4%8D%E7%A7%AF%E5%88%86%E6%9F%AF%E8%A5%BF%E5%85%AC%E5%BC%8F%E4%B8%8E%E8%A7%A3%E6%9E%90%E5%87%BD%E6%95%B0%E7%9A%84%E6%95%B4%E4%BD%93%E6%80%A7%E8%B4%A8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第3讲 复积分柯西公式与解析函数的整体性质
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0%E4%B8%8E%E6%95%B0%E7%90%86%E6%96%B9%E7%A8%8B/%E7%AC%AC4%E8%AE%B2_%E5%B9%82%E7%BA%A7%E6%95%B0%E6%94%B6%E6%95%9B%E4%B8%8E%E6%B3%B0%E5%8B%92%E6%B4%9B%E6%9C%97%E5%B1%95%E5%BC%80/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第4讲 幂级数收敛与泰勒洛朗展开
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0%E4%B8%8E%E6%95%B0%E7%90%86%E6%96%B9%E7%A8%8B/%E7%AC%AC5%E8%AE%B2_%E9%9B%B6%E7%82%B9%E5%A5%87%E7%82%B9%E4%B8%8E%E7%95%99%E6%95%B0%E7%A7%AF%E5%88%86/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第5讲 零点奇点与留数积分
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    信号与系统
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    信号与系统
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E8%AF%BE%E7%A8%8B%E8%AF%B4%E6%98%8E/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    课程说明
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC1%E8%AE%B2_%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF%E4%B8%8E%E5%9F%BA%E6%9C%AC%E8%AF%AD%E8%A8%80/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第1讲 学习路线与基本语言
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第2讲 微分方程经典法与响应分解
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第2讲 微分方程经典法与响应分解
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#01-本讲路线与必要记号" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        01 本讲路线与必要记号
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="01 本讲路线与必要记号">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#读公式前先分清对象" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        读公式前先分清对象
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#02-从电路到微分方程" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        02 从电路到微分方程
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="02 从电路到微分方程">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#课件第-6-页电路的完整消元" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        课件第 6 页电路的完整消元
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#03-经典解法为何分成三步" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        03 经典解法为何分成三步
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="03 经典解法为何分成三步">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#第一步-求齐次通解" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第一步 求齐次通解
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#第二步-找一个特解" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第二步 找一个特解
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#第三步-用初始条件定系数" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第三步 用初始条件定系数
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#04-课件二阶多项式例题全解" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        04 课件二阶多项式例题全解
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#05-起始状态与零点跳变" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        05 起始状态与零点跳变
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="05 起始状态与零点跳变">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#补充推导-用奇异项匹配跳变量" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        补充推导 用奇异项匹配跳变量
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#补充应用-课件电路的换接过程" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        补充应用 课件电路的换接过程
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#06-三种响应分解不能混为一谈" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        06 三种响应分解不能混为一谈
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="06 三种响应分解不能混为一谈">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#课件一阶例题-两套分解算到底" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        课件一阶例题 两套分解算到底
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#07-非零初始状态下怎样理解线性" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        07 非零初始状态下怎样理解线性
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#08-冲激响应和阶跃响应" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        08 冲激响应和阶跃响应
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="08 冲激响应和阶跃响应">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#两种典型响应如何互相求得" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        两种典型响应如何互相求得
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#09-时域法求冲激响应" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        09 时域法求冲激响应
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-冲激响应什么时候自带冲激" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10 冲激响应什么时候自带冲激
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10 冲激响应什么时候自带冲激">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#补充例题-等阶时如何计算" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        补充例题 等阶时如何计算
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-从冲激分解推到卷积" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11 从冲激分解推到卷积
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-图解卷积与积分限" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12 图解卷积与积分限
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13-课件-rl-电路的两道卷积题" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13 课件 RL 电路的两道卷积题
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="13 课件 RL 电路的两道卷积题">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#先求冲激响应-再求阶跃响应" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        先求冲激响应 再求阶跃响应
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#输入在两秒后截断" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        输入在两秒后截断
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14-矩形与有限斜坡的完整分段计算" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14 矩形与有限斜坡的完整分段计算
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#15-卷积代数性质与系统连接" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        15 卷积代数性质与系统连接
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="15 卷积代数性质与系统连接">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#交换律与分配律" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        交换律与分配律
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#结合律来自二重积分换序" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        结合律来自二重积分换序
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#16-冲激卷积与微积分性质" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        16 冲激卷积与微积分性质
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="16 冲激卷积与微积分性质">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#卷积时间平移的补充规则" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        卷积时间平移的补充规则
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#17-用一次微分换一次积分来简化" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        17 用一次微分换一次积分来简化
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="17 用一次微分换一次积分来简化">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#课件第-50-页-矩形与斜坡" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        课件第 50 页 矩形与斜坡
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#课件第-52-页-正负矩形" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        课件第 52 页 正负矩形
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#课件第-53-页-不能遗漏的积分常数" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        课件第 53 页 不能遗漏的积分常数
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#18-用冲激响应判断因果性" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        18 用冲激响应判断因果性
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#19-用冲激响应判断-bibo-稳定性" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        19 用冲激响应判断 BIBO 稳定性
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="19 用冲激响应判断 BIBO 稳定性">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#普通函数核的充分性与必要性" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        普通函数核的充分性与必要性
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#含冲激时怎样使用判据" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        含冲激时怎样使用判据
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#课件积分器与补充比较" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        课件积分器与补充比较
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20-课件核对与作业记录" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        20 课件核对与作业记录
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="20 课件核对与作业记录">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#资料中的课程要求" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        资料中的课程要求
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#21-闭卷自测" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        21 闭卷自测
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#22-自测详解与复习检查" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        22 自测详解与复习检查
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="22 自测详解与复习检查">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-至-4-建模-初值与重复根" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1 至 4 建模 初值与重复根
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-至-7-响应分解与冲激" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5 至 7 响应分解与冲激
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-至-11-卷积计算" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8 至 11 卷积计算
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-至-14-条件与系统性质" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12 至 14 条件与系统性质
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#完成自学后的最后检查" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        完成自学后的最后检查
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC3%E8%AE%B2_%E5%82%85%E9%87%8C%E5%8F%B6%E7%BA%A7%E6%95%B0%E4%B8%8E%E9%A2%91%E8%B0%B1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第3讲 傅里叶级数与频谱
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC4%E8%AE%B2_%E5%82%85%E9%87%8C%E5%8F%B6%E5%8F%98%E6%8D%A2%E4%B8%8E%E5%85%B8%E5%9E%8B%E4%BF%A1%E5%8F%B7%E9%A2%91%E8%B0%B1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第4讲 傅里叶变换与典型信号频谱
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC5%E8%AE%B2_%E5%85%B8%E5%9E%8B%E5%8F%98%E6%8D%A2%E5%AF%B9%E4%B8%8E%E6%8A%BD%E6%A0%B7%E5%AE%9A%E7%90%86/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第5讲 典型变换对与抽样定理
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC6%E8%AE%B2_%E6%8B%89%E6%99%AE%E6%8B%89%E6%96%AF%E5%8F%98%E6%8D%A2%E7%9A%84%E6%80%A7%E8%B4%A8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第6讲 拉普拉斯变换的性质
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC7%E8%AE%B2_%E6%8B%89%E6%99%AE%E6%8B%89%E6%96%AF%E9%80%86%E5%8F%98%E6%8D%A2%E4%B8%8E%20s%20%E5%9F%9F%E6%A8%A1%E5%9E%8B/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第7讲 拉普拉斯逆变换与 s 域模型
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC8%E8%AE%B2_%E9%A2%91%E7%8E%87%E5%93%8D%E5%BA%94%E4%B8%8E%E7%A8%B3%E5%AE%9A%E6%80%A7/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第8讲 频率响应与稳定性
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    基础物理学2（光学）
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    基础物理学2（光学）
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%9F%BA%E7%A1%80%E7%89%A9%E7%90%86%E5%AD%A62/%E8%AF%BE%E7%A8%8B%E8%AF%B4%E6%98%8E/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    课程说明
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%9F%BA%E7%A1%80%E7%89%A9%E7%90%86%E5%AD%A62/%E7%AC%AC1%E8%AE%B2_%E5%87%A0%E4%BD%95%E5%85%89%E5%AD%A6%E7%AE%80%E4%BB%8B/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第1讲 几何光学简介
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%9F%BA%E7%A1%80%E7%89%A9%E7%90%86%E5%AD%A62/%E7%AC%AC2%E8%AE%B2_%E6%B3%A2%E5%8A%A8%E5%85%89%E5%AD%A6%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86%EF%BC%88%E4%B8%80%EF%BC%89/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第2讲 波动光学基本原理（一）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%9F%BA%E7%A1%80%E7%89%A9%E7%90%86%E5%AD%A62/%E7%AC%AC3%E8%AE%B2_%E5%85%89%E7%9A%84%E5%B9%B2%E6%B6%89%E4%B8%8E%E6%97%B6%E7%A9%BA%E7%9B%B8%E5%B9%B2%E6%80%A7/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第3讲 光的干涉与时空相干性
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%9F%BA%E7%A1%80%E7%89%A9%E7%90%86%E5%AD%A62/%E7%AC%AC4%E8%AE%B2_%E5%85%89%E7%9A%84%E8%A1%8D%E5%B0%84%E4%B8%8E%E5%88%86%E8%BE%A8%E6%9C%AC%E9%A2%86/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第4讲 光的衍射与分辨本领
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%9F%BA%E7%A1%80%E7%89%A9%E7%90%86%E5%AD%A62/%E7%AC%AC5%E8%AE%B2_%E8%A1%8D%E5%B0%84%E5%85%89%E6%A0%85%E4%B8%8E%E6%99%B6%E4%BD%93%E8%A1%8D%E5%B0%84/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第5讲 衍射光栅与晶体衍射
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%9F%BA%E7%A1%80%E7%89%A9%E7%90%86%E5%AD%A62/%E7%AC%AC6%E8%AE%B2_%E5%81%8F%E6%8C%AF%E6%80%81%E4%B8%8E%E8%8F%B2%E6%B6%85%E8%80%B3%E5%85%AC%E5%BC%8F/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第6讲 偏振态与菲涅耳公式
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%9F%BA%E7%A1%80%E7%89%A9%E7%90%86%E5%AD%A62/%E7%AC%AC7%E8%AE%B2_%E5%8F%8C%E6%8A%98%E5%B0%84%E4%B8%8E%E5%81%8F%E6%8C%AF%E5%85%89%E5%BA%94%E7%94%A8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第7讲 双折射与偏振光应用
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#01-本讲路线与必要记号" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        01 本讲路线与必要记号
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="01 本讲路线与必要记号">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#读公式前先分清对象" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        读公式前先分清对象
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#02-从电路到微分方程" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        02 从电路到微分方程
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="02 从电路到微分方程">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#课件第-6-页电路的完整消元" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        课件第 6 页电路的完整消元
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#03-经典解法为何分成三步" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        03 经典解法为何分成三步
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="03 经典解法为何分成三步">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#第一步-求齐次通解" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第一步 求齐次通解
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#第二步-找一个特解" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第二步 找一个特解
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#第三步-用初始条件定系数" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第三步 用初始条件定系数
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#04-课件二阶多项式例题全解" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        04 课件二阶多项式例题全解
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#05-起始状态与零点跳变" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        05 起始状态与零点跳变
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="05 起始状态与零点跳变">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#补充推导-用奇异项匹配跳变量" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        补充推导 用奇异项匹配跳变量
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#补充应用-课件电路的换接过程" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        补充应用 课件电路的换接过程
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#06-三种响应分解不能混为一谈" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        06 三种响应分解不能混为一谈
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="06 三种响应分解不能混为一谈">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#课件一阶例题-两套分解算到底" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        课件一阶例题 两套分解算到底
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#07-非零初始状态下怎样理解线性" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        07 非零初始状态下怎样理解线性
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#08-冲激响应和阶跃响应" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        08 冲激响应和阶跃响应
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="08 冲激响应和阶跃响应">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#两种典型响应如何互相求得" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        两种典型响应如何互相求得
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#09-时域法求冲激响应" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        09 时域法求冲激响应
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-冲激响应什么时候自带冲激" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10 冲激响应什么时候自带冲激
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10 冲激响应什么时候自带冲激">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#补充例题-等阶时如何计算" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        补充例题 等阶时如何计算
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-从冲激分解推到卷积" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11 从冲激分解推到卷积
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-图解卷积与积分限" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12 图解卷积与积分限
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13-课件-rl-电路的两道卷积题" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13 课件 RL 电路的两道卷积题
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="13 课件 RL 电路的两道卷积题">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#先求冲激响应-再求阶跃响应" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        先求冲激响应 再求阶跃响应
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#输入在两秒后截断" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        输入在两秒后截断
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14-矩形与有限斜坡的完整分段计算" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14 矩形与有限斜坡的完整分段计算
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#15-卷积代数性质与系统连接" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        15 卷积代数性质与系统连接
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="15 卷积代数性质与系统连接">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#交换律与分配律" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        交换律与分配律
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#结合律来自二重积分换序" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        结合律来自二重积分换序
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#16-冲激卷积与微积分性质" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        16 冲激卷积与微积分性质
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="16 冲激卷积与微积分性质">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#卷积时间平移的补充规则" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        卷积时间平移的补充规则
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#17-用一次微分换一次积分来简化" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        17 用一次微分换一次积分来简化
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="17 用一次微分换一次积分来简化">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#课件第-50-页-矩形与斜坡" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        课件第 50 页 矩形与斜坡
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#课件第-52-页-正负矩形" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        课件第 52 页 正负矩形
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#课件第-53-页-不能遗漏的积分常数" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        课件第 53 页 不能遗漏的积分常数
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#18-用冲激响应判断因果性" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        18 用冲激响应判断因果性
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#19-用冲激响应判断-bibo-稳定性" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        19 用冲激响应判断 BIBO 稳定性
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="19 用冲激响应判断 BIBO 稳定性">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#普通函数核的充分性与必要性" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        普通函数核的充分性与必要性
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#含冲激时怎样使用判据" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        含冲激时怎样使用判据
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#课件积分器与补充比较" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        课件积分器与补充比较
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20-课件核对与作业记录" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        20 课件核对与作业记录
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="20 课件核对与作业记录">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#资料中的课程要求" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        资料中的课程要求
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#21-闭卷自测" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        21 闭卷自测
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#22-自测详解与复习检查" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        22 自测详解与复习检查
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="22 自测详解与复习检查">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-至-4-建模-初值与重复根" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1 至 4 建模 初值与重复根
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-至-7-响应分解与冲激" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5 至 7 响应分解与冲激
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-至-11-卷积计算" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8 至 11 卷积计算
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-至-14-条件与系统性质" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12 至 14 条件与系统性质
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#完成自学后的最后检查" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        完成自学后的最后检查
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="第2讲-微分方程经典法与响应分解">第2讲 微分方程经典法与响应分解<a class="headerlink" href="#第2讲-微分方程经典法与响应分解" title="Permanent link">#</a></h1>
+<div class="admonition tip">
+<p class="admonition-title">本讲配套文件</p>
+<ul>
+<li><a href="../../%E6%96%87%E4%BB%B6/%E7%AC%AC%E4%BA%8C%E8%8A%82%E8%AF%BE%20%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%B3%BB%E7%BB%9F%E8%87%AA%E5%AD%A6%E7%AC%94%E8%AE%B0.docx">Word 下载（第二节课 信号与系统自学笔记.docx）</a></li>
+</ul>
+</div>
+<h2 id="01-本讲路线与必要记号">01 本讲路线与必要记号<a class="headerlink" href="#01-本讲路线与必要记号" title="Permanent link">#</a></h2>
+<p>资料内容：课件第 3—4、57—58 页。本讲从系统微分方程出发，先求一个给定输入的响应，再用冲激响应统一计算任意输入下的零状态响应。重点是概念、卷积计算及条件检查。
+学习路线：先读第 02—07 节的建模、初值与响应分解，再读第 08—10 节的冲激响应，最后学习第 11—19 节的卷积及系统性质。第 20 节集中核对课件易误读处，第 21—22 节供闭卷自测与订正。</p>
+<h3 id="读公式前先分清对象">读公式前先分清对象<a class="headerlink" href="#读公式前先分清对象" title="Permanent link">#</a></h3>
+<p>输入记为 <span class="arithmatex">\(e(t)\)</span>，响应记为 <span class="arithmatex">\(r(t)\)</span>；某些课件页用 <span class="arithmatex">\(x(t),y(t)\)</span>，只表示换了名字。<span class="arithmatex">\(\mathrm e^{at}\)</span> 中的底数是自然常数，和输入符号 <span class="arithmatex">\(e(t)\)</span> 不同。<span class="arithmatex">\(u(t)\)</span> 为单位阶跃，<span class="arithmatex">\(\delta(t)\)</span> 为单位冲激；冲激的箭头标强度即面积，不标实际峰高。
+本讲 <span class="arithmatex">\(r(0^-),r(0^+)\)</span> 分别表示零点左、右极限，不是相隔一个微小但非零的时间。<span class="arithmatex">\(r^{(k)}\)</span> 表示第 <span class="arithmatex">\(k\)</span> 阶导数，星号 <span class="arithmatex">\(*\)</span> 表示卷积，不是逐点乘法。积分中的 <span class="arithmatex">\(\tau\)</span> 是哑变量，<span class="arithmatex">\(t\)</span> 是要求响应的时刻，积分时把 <span class="arithmatex">\(t\)</span> 固定。
+补充讲解：后文微分方程的普通函数解通常写在 <span class="arithmatex">\(t&gt;0\)</span> 上。把它乘 <span class="arithmatex">\(u(t)\)</span> 延拓到全轴后，求导可能多出冲激；不能把“只在正半轴成立的方程”直接当成全轴分布方程。阶跃单点值可按 <span class="arithmatex">\(u(0)=1/2\)</span> 约定，普通卷积积分不受单个端点取值影响。
+先修知识：一元积分、分段函数、指数导数、二元一次方程，以及 <span class="arithmatex">\(u'=\delta\)</span>。正文会补齐待定系数、跳变匹配和卷积换元的必要步骤；拉普拉斯变换只作为后续课程预告，不作为本讲解题前提。</p>
+<h2 id="02-从电路到微分方程">02 从电路到微分方程<a class="headerlink" href="#02-从电路到微分方程" title="Permanent link">#</a></h2>
+<p>资料内容：课件第 5—6 页。建模先列元件关系与连接约束，再消去内部变量。输入输出方程不能替代初始储能信息。</p>
+<div class="arithmatex">\[v_R=Ri_R,\qquad i_C=C\frac{dv_C}{dt},\qquad v_L=L\frac{di_L}{dt}.\]</div>
+<p>这里采用关联参考方向：电流流入元件电压的正端。电阻、电容、电感的参数分别为 <span class="arithmatex">\(R,C,L\)</span>。基尔霍夫电流定律给节点电流守恒，电压定律给闭合回路电压和为零。</p>
+<h3 id="课件第-6-页电路的完整消元">课件第 6 页电路的完整消元<a class="headerlink" href="#课件第-6-页电路的完整消元" title="Permanent link">#</a></h3>
+<p>课件电路由串联电阻 <span class="arithmatex">\(R_1=1\,\Omega\)</span> 接并联网络构成；一支为电容 <span class="arithmatex">\(C=1\,\mathrm F\)</span>，另一支为电感 <span class="arithmatex">\(L=1/4\,\mathrm H\)</span> 串联电阻 <span class="arithmatex">\(R_2=3/2\,\Omega\)</span>。输入是电源电压，输出 <span class="arithmatex">\(i\)</span> 为流过串联电阻的总电流。用 <span class="arithmatex">\(v\)</span> 表示并联网络电压，<span class="arithmatex">\(i_L\)</span> 表示电感支路电流。</p>
+<p><img alt="第2讲 插图 circuit" loading="lazy" src="../%E6%8F%92%E5%9B%BE/%E7%AC%AC2%E8%AE%B2/circuit.png" />
+<em>图 1 第 6 页电路的等效连接重绘 输入电源统一记为 e(t)</em></p>
+<p>由输入回路、节点和电感支路依次得</p>
+<div class="arithmatex">\[e=i+v,\qquad i=v'+i_L,\qquad v=\frac14 i_L'+\frac32i_L.\]</div>
+<p>目标是只保留 <span class="arithmatex">\(i,e\)</span>。由第一式 <span class="arithmatex">\(v=e-i\)</span>，第二式给 <span class="arithmatex">\(i_L=i-e'+i'\)</span>；再求导，得到 <span class="arithmatex">\(i_L'=i'-e''+i''\)</span>。代回第三式：</p>
+<div class="arithmatex">\[e-i=\frac14(i'-e''+i'')+\frac32(i-e'+i').\]</div>
+<p>两边乘四，先合并同类项，再把所有响应项移到左侧：</p>
+<div class="arithmatex">\[4e-4i=i''+7i'+6i-e''-6e',\]</div>
+<div class="arithmatex">\[i''+7i'+10i=e''+6e'+4e.\]</div>
+<p>这就是课件结论的来源。二阶对应两项独立储能状态；较自然的状态选择是电容电压与电感电流，而不是直接把总电流及其导数当作接入前后都不变的量。
+易错提醒：输入导数不能因“电源接入后是常数”而在零点一并删去。若电源有阶跃，<span class="arithmatex">\(e'\)</span> 含冲激，<span class="arithmatex">\(e''\)</span> 含冲激偶；它们控制瞬时跳变。仅在 <span class="arithmatex">\(t&gt;0\)</span> 的常值区间，输入的这些导数才为零。</p>
+<h2 id="03-经典解法为何分成三步">03 经典解法为何分成三步<a class="headerlink" href="#03-经典解法为何分成三步" title="Permanent link">#</a></h2>
+<p>资料内容：课件第 7—11、13 页。本节补足公式来源和课件表格的适用条件。
+考虑线性常系数方程</p>
+<div class="arithmatex">\[C_0r^{(n)}+C_1r^{(n-1)}+\cdots+C_nr=F(t),\qquad C_0\ne0.\]</div>
+<p><span class="arithmatex">\(F(t)\)</span> 是把输入及输入导数组合后得到的完整右端。若已找到一个特解 <span class="arithmatex">\(r_p\)</span>，任意其他解与它之差满足齐次方程；反过来，齐次解加此特解必满足原方程。所以通解由“齐次通解加一个特解”组成。</p>
+<h3 id="第一步-求齐次通解">第一步 求齐次通解<a class="headerlink" href="#第一步-求齐次通解" title="Permanent link">#</a></h3>
+<p>令右端为零，试代 <span class="arithmatex">\(r=\mathrm e^{at}\)</span>。因为每求一次导数只乘一个 <span class="arithmatex">\(a\)</span>，消去不为零的指数因子后得到</p>
+<div class="arithmatex">\[P(a)=C_0a^n+C_1a^{n-1}+\cdots+C_n=0.\]</div>
+<p>若特征根互异，齐次通解为 <span class="arithmatex">\(r_h=\sum_{k=1}^n A_k\mathrm e^{a_kt}\)</span>。根由系统参数决定，系数则要用初始条件确定。
+补充讲解：根 <span class="arithmatex">\(a\)</span> 若有重数 <span class="arithmatex">\(q\)</span>，对应项必须写成 <span class="arithmatex">\((A_0+A_1t+\cdots+A_{q-1}t^{q-1})\mathrm e^{at}\)</span>。例如 <span class="arithmatex">\((D-a)(t\mathrm e^{at})=\mathrm e^{at}\)</span>，再作用一次便为零，其中 <span class="arithmatex">\(D=d/dt\)</span>。这说明重复根为什么需要乘时间幂。
+实系数方程的共轭复根 <span class="arithmatex">\(\alpha\pm j\beta\)</span> 可合写为 <span class="arithmatex">\(\mathrm e^{\alpha t}(A\cos\beta t+B\sin\beta t)\)</span>。因此固有响应既可能衰减或增长，也可能振荡；不是所有齐次项都会随时间消失。</p>
+<h3 id="第二步-找一个特解">第二步 找一个特解<a class="headerlink" href="#第二步-找一个特解" title="Permanent link">#</a></h3>
+<p>多项式右端一般试同次多项式，常数右端试常数，指数右端试同指数，正弦或余弦右端通常同时试正弦和余弦。要代回完整右端比较系数，不能只凭名称填结果。
+补充条件：设右端为 <span class="arithmatex">\(K\mathrm e^{bt}\)</span>，则 <span class="arithmatex">\(P(D)(B\mathrm e^{bt})=BP(b)\mathrm e^{bt}\)</span>。只有 <span class="arithmatex">\(P(b)\ne0\)</span> 时才可取 <span class="arithmatex">\(B=K/P(b)\)</span>。若 <span class="arithmatex">\(b\)</span> 是 <span class="arithmatex">\(q\)</span> 重根，试解要额外乘 <span class="arithmatex">\(t^q\)</span>；多项式与正弦类也遵循同样的重复根规则。
+补充例题：<span class="arithmatex">\(r'+r=\mathrm e^{-t}\)</span>。试 <span class="arithmatex">\(B\mathrm e^{-t}\)</span> 会被左侧算子消掉，无法产生右端。改试 <span class="arithmatex">\(r_p=Bt\mathrm e^{-t}\)</span>，则 <span class="arithmatex">\(r_p'+r_p=B\mathrm e^{-t}\)</span>，所以 <span class="arithmatex">\(B=1\)</span>。这是课件简表不能不加条件使用的原因。</p>
+<h3 id="第三步-用初始条件定系数">第三步 用初始条件定系数<a class="headerlink" href="#第三步-用初始条件定系数" title="Permanent link">#</a></h3>
+<p>对标准的 <span class="arithmatex">\(n\)</span> 阶初值问题，需要同一个有限时刻的 <span class="arithmatex">\(r,r',\ldots,r^{(n-1)}\)</span> 共 <span class="arithmatex">\(n\)</span> 个独立条件。右端足够规则、最高阶系数不为零时，条件确定唯一解。本讲通常在 <span class="arithmatex">\(0^+\)</span> 定系数；若只给 <span class="arithmatex">\(0^-\)</span>，先处理零点跳变。
+自检：最后至少检查三件事：代回微分方程、代入所有初值、核对长期趋势。不能只检查其中一个时刻。</p>
+<h2 id="04-课件二阶多项式例题全解">04 课件二阶多项式例题全解<a class="headerlink" href="#04-课件二阶多项式例题全解" title="Permanent link">#</a></h2>
+<p>资料内容：课件第 12 页。要求解</p>
+<div class="arithmatex">\[r''+3r'+2r=t^2+t,\qquad r(0)=1,\quad r'(0)=0.\]</div>
+<p>目标与策略：这是二阶线性常系数初值问题。先得到两个指数齐次项，再试二次多项式特解，最后用两个初值解出两个常数。
+特征方程 <span class="arithmatex">\(a^2+3a+2=(a+1)(a+2)=0\)</span>，所以 <span class="arithmatex">\(r_h=A_1\mathrm e^{-2t}+A_2\mathrm e^{-t}\)</span>。右端是二次多项式，且零不是特征根，试 <span class="arithmatex">\(r_p=B_1t^2+B_2t+B_3\)</span>。</p>
+<div class="arithmatex">\[r_p'=2B_1t+B_2,\qquad r_p''=2B_1.\]</div>
+<p>代回并按时间幂排列：</p>
+<div class="arithmatex">\[2B_1t^2+(6B_1+2B_2)t+(2B_1+3B_2+2B_3)=t^2+t.\]</div>
+<p>逐项比较得到 <span class="arithmatex">\(2B_1=1\)</span>、<span class="arithmatex">\(6B_1+2B_2=1\)</span>、<span class="arithmatex">\(2B_1+3B_2+2B_3=0\)</span>，依次解得 <span class="arithmatex">\(B_1=1/2,B_2=-1,B_3=1\)</span>。</p>
+<div class="arithmatex">\[r=A_1\mathrm e^{-2t}+A_2\mathrm e^{-t}+\frac12t^2-t+1.\]</div>
+<p>代入两个初值：<span class="arithmatex">\(A_1+A_2+1=1\)</span>，<span class="arithmatex">\(-2A_1-A_2-1=0\)</span>。第一式给 <span class="arithmatex">\(A_2=-A_1\)</span>，代入第二式得 <span class="arithmatex">\(A_1=-1,A_2=1\)</span>。故</p>
+<div class="arithmatex">\[r(t)=-\mathrm e^{-2t}+\mathrm e^{-t}+\frac12t^2-t+1.\]</div>
+<p>自检：零点函数值为一，导数为 <span class="arithmatex">\(2-1-1=0\)</span>。指数部分被齐次算子消掉；多项式部分代回得到 <span class="arithmatex">\(t^2+t\)</span>。随时间增长，多项式特解占主导，不能因为特征根为负就断言对无界输入的输出必然有界。</p>
+<h2 id="05-起始状态与零点跳变">05 起始状态与零点跳变<a class="headerlink" href="#05-起始状态与零点跳变" title="Permanent link">#</a></h2>
+<p>资料内容：课件第 10、14、18、22 页。本节补充从左极限推到右极限的实际方法。
+状态是给定未来输入后足以确定未来演化的最少独立数据。对电路，电容电压、电感电流常是状态；输出未必就是状态。无冲激电流时电容电压连续，无冲激电压时电感电流连续，这是元件积分关系的结论，并非对任何输出都成立。</p>
+<div class="arithmatex">\[v_C(0^+)-v_C(0^-)=\frac1C\int_{0^-}^{0^+}i_C(t)\,dt,\]</div>
+<div class="arithmatex">\[i_L(0^+)-i_L(0^-)=\frac1L\int_{0^-}^{0^+}v_L(t)\,dt.\]</div>
+<p>有限幅值信号在缩到零宽度的区间上积分趋零；冲激却保留有限面积，因此可以引起跳变。理想模型中的“瞬间作用”按广义函数理解，不要求冲激具有通常的有限能量。</p>
+<h3 id="补充推导-用奇异项匹配跳变量">补充推导 用奇异项匹配跳变量<a class="headerlink" href="#补充推导-用奇异项匹配跳变量" title="Permanent link">#</a></h3>
+<p>记 <span class="arithmatex">\([r]=r(0^+)-r(0^-)\)</span>。若 <span class="arithmatex">\(r\)</span> 在零点两侧分段光滑，且自身没有冲激，则广义导数中 <span class="arithmatex">\(r'\)</span> 含 <span class="arithmatex">\([r]\delta\)</span>，<span class="arithmatex">\(r''\)</span> 含 <span class="arithmatex">\([r]\delta'+[r']\delta\)</span>。普通光滑部分分别是两侧常规导数。
+对于 <span class="arithmatex">\(r''+a r'+b r=q\delta'+p\delta+F_{\mathrm{reg}}\)</span>，右端常规部分局部可积，比较独立的冲激偶与冲激系数：</p>
+<div class="arithmatex">\[[r]=q,\qquad [r']+a[r]=p.\]</div>
+<p>因此 <span class="arithmatex">\(r(0^+)=r(0^-)+q\)</span>，<span class="arithmatex">\(r'(0^+)=r'(0^-)+p-aq\)</span>。这一步只给零点连接条件；随后仍需解正半轴上的普通微分方程。
+补充例题：<span class="arithmatex">\(r'+3r=e'+2e\)</span>，输入 <span class="arithmatex">\(e=u\)</span>，零点前状态为零。右端是 <span class="arithmatex">\(\delta+2u\)</span>，比较冲激得 <span class="arithmatex">\(r(0^+)=1\)</span>。正半轴满足 <span class="arithmatex">\(r'+3r=2\)</span>，所以 <span class="arithmatex">\(r=2/3+A\mathrm e^{-3t}\)</span>，由右极限得 <span class="arithmatex">\(A=1/3\)</span>。</p>
+<div class="arithmatex">\[r(t)=\left(\frac23+\frac13\mathrm e^{-3t}\right)u(t).\]</div>
+<p>易错提醒：零状态要求接入前状态为零，不要求 <span class="arithmatex">\(r(0^+)=0\)</span>。输入的瞬时作用可能让右极限不为零；先把右极限强行设零，会漏掉冲激产生的作用。</p>
+<h3 id="补充应用-课件电路的换接过程">补充应用 课件电路的换接过程<a class="headerlink" href="#补充应用-课件电路的换接过程" title="Permanent link">#</a></h3>
+<p>仅作明确假设下的拓展：设图 1 电源此前长时间为两伏，在零时刻改为四伏。课件未给出完整换接时序，本段不把该假设当作课堂原题条件。
+直流稳态下电容开路、电感短路，因此 <span class="arithmatex">\(i_L(0^-)=2/(1+3/2)=4/5\)</span>，<span class="arithmatex">\(v(0^-)=6/5\)</span>。有限电源阶跃下这两个状态连续；但总电流满足 <span class="arithmatex">\(i=e-v\)</span>，故 <span class="arithmatex">\(i(0^+)=4-6/5=14/5\)</span>，较左极限增加二。
+又由 <span class="arithmatex">\(v'=i-i_L\)</span> 得 <span class="arithmatex">\(v'(0^+)=2\)</span>，正半轴 <span class="arithmatex">\(e'=0\)</span>，所以 <span class="arithmatex">\(i'(0^+)=-2\)</span>。正半轴方程为 <span class="arithmatex">\(i''+7i'+10i=16\)</span>，得到</p>
+<div class="arithmatex">\[i=\frac85+A\mathrm e^{-2t}+B\mathrm e^{-5t},\qquad A+B=\frac65,\quad -2A-5B=-2.\]</div>
+<p>解得 <span class="arithmatex">\(A=4/3,B=-2/15\)</span>。这说明状态可以连续，而带直接输入通路的输出仍发生跳变。</p>
+<h2 id="06-三种响应分解不能混为一谈">06 三种响应分解不能混为一谈<a class="headerlink" href="#06-三种响应分解不能混为一谈" title="Permanent link">#</a></h2>
+<p>资料内容：课件第 15—20、22 页。分解不是换一套名称，而是换了区分依据。
+自由响应与强迫响应按方程形式分：自由响应是齐次解，强迫响应是选定的特解。零输入与零状态按起因分：前者由原有状态产生，后者由外加输入产生。瞬态与稳态按长期行为分：通常把衰减项归入瞬态，把长期保留的部分归入稳态；只有满足相应条件时这种划分才合适。
+对线性系统，保持相同的模型与起始时刻，分别求“输入为零但保留原状态”和“原状态为零但保留输入”，再相加：</p>
+<div class="arithmatex">\[r=r_{zi}+r_{zs}.\]</div>
+<p>两部分叠加满足原方程与原状态；由初值问题唯一性，这个和就是全响应。零状态响应一般既含特解，也含为满足起始条件而产生的齐次项，所以它不等于强迫响应。</p>
+<h3 id="课件一阶例题-两套分解算到底">课件一阶例题 两套分解算到底<a class="headerlink" href="#课件一阶例题-两套分解算到底" title="Permanent link">#</a></h3>
+<p>已知 <span class="arithmatex">\(r'+3r=3u(t)\)</span>，<span class="arithmatex">\(r(0^-)=3/2\)</span>。右端没有冲激，若输出有跳变，左侧导数就会多出冲激，因此 <span class="arithmatex">\(r(0^+)=3/2\)</span>。正半轴试常数特解一，通解为 <span class="arithmatex">\(A\mathrm e^{-3t}+1\)</span>，初值得 <span class="arithmatex">\(A=1/2\)</span>。</p>
+<div class="arithmatex">\[r(t)=\frac12\mathrm e^{-3t}+1,\qquad t\ge0.\]</div>
+<p>按形式：自由响应为 <span class="arithmatex">\((1/2)\mathrm e^{-3t}\)</span>，强迫响应为一。按起因：把输入置零，得 <span class="arithmatex">\(r_{zi}=(3/2)\mathrm e^{-3t}\)</span>；把起始状态置零，得 <span class="arithmatex">\(r_{zs}=1-\mathrm e^{-3t}\)</span>。两项相加才恢复全响应。</p>
+<div class="arithmatex">\[\frac12\mathrm e^{-3t}+1=\frac32\mathrm e^{-3t}+\left(1-\mathrm e^{-3t}\right).\]</div>
+<p>本例瞬态为 <span class="arithmatex">\((1/2)\mathrm e^{-3t}\)</span>，稳态为一，恰与自由、强迫分解一致；不能推广为所有系统都如此。例如正特征根对应增长齐次项，纯虚根对应不衰减振荡，均不能叫衰减瞬态。</p>
+<p><img alt="第2讲 插图 responses" loading="lazy" src="../%E6%8F%92%E5%9B%BE/%E7%AC%AC2%E8%AE%B2/responses.png" />
+<em>图 2 第 18—20 页响应分解重绘 全响应等于两条起因分量之和</em></p>
+<p>易错提醒：给零输入响应乘 <span class="arithmatex">\(u(t)\)</span> 只是标记从零时刻起观察。如果对该延拓求广义导数，会出现编码初始状态的冲激；不能由此否定它在正半轴满足齐次方程。</p>
+<h2 id="07-非零初始状态下怎样理解线性">07 非零初始状态下怎样理解线性<a class="headerlink" href="#07-非零初始状态下怎样理解线性" title="Permanent link">#</a></h2>
+<p>资料内容：课件第 20—22 页。线性需要说清“哪些量一起缩放”。
+以课件时间常数 <span class="arithmatex">\(RC=1/2\)</span> 的电容电压系统为例，方程为 <span class="arithmatex">\(r'+2r=2e\)</span>。对于初值 <span class="arithmatex">\(c\)</span> 和单位阶跃输入，解为 <span class="arithmatex">\(r=c\mathrm e^{-2t}+1-\mathrm e^{-2t}\)</span>，这里公式在 <span class="arithmatex">\(t\ge0\)</span> 使用。
+零状态映射对输入线性：输入变为 <span class="arithmatex">\(5u\)</span>，响应变为 <span class="arithmatex">\(5(1-\mathrm e^{-2t})\)</span>。零输入映射对初始状态线性：初值从二变十，响应从 <span class="arithmatex">\(2\mathrm e^{-2t}\)</span> 变为 <span class="arithmatex">\(10\mathrm e^{-2t}\)</span>。
+若初值始终固定为二，只把输入放大五倍，则</p>
+<div class="arithmatex">\[r_1=1-\mathrm e^{-2t}+2\mathrm e^{-2t},\]</div>
+<div class="arithmatex">\[r_2=5(1-\mathrm e^{-2t})+2\mathrm e^{-2t}\ne5r_1.\]</div>
+<p>原因是原有储能没有随输入放大。用 <span class="arithmatex">\(\mathcal R(e,c)\)</span> 表示同时接受输入和初值的映射，正确的联合线性是</p>
+<div class="arithmatex">\[\mathcal R(ae_1+be_2,ac_1+bc_2)=a\mathcal R(e_1,c_1)+b\mathcal R(e_2,c_2).\]</div>
+<p>补充讲解：固定非零初值后，仅把输入视作自变量的映射一般是仿射的，即“线性部分加固定偏置”。这不妨碍其状态方程本身是线性方程，也不妨碍使用零状态 LTI 卷积法。</p>
+<h2 id="08-冲激响应和阶跃响应">08 冲激响应和阶跃响应<a class="headerlink" href="#08-冲激响应和阶跃响应" title="Permanent link">#</a></h2>
+<p>资料内容：课件第 23—28、57 页。冲激响应 <span class="arithmatex">\(h(t)\)</span> 是单位冲激输入下的零状态响应；阶跃响应 <span class="arithmatex">\(g(t)\)</span> 是单位阶跃输入下的零状态响应。两者的定义都包含零状态条件。</p>
+<div class="arithmatex">\[\delta(t)\longrightarrow h(t),\qquad u(t)\longrightarrow g(t).\]</div>
+<p>对 LTI 零状态映射，已知冲激响应就知道时域输入输出关系。对某个非零初始状态的全响应，还需要另外知道初始状态或零输入响应，不能只用 <span class="arithmatex">\(h\)</span> 代替。</p>
+<h3 id="两种典型响应如何互相求得">两种典型响应如何互相求得<a class="headerlink" href="#两种典型响应如何互相求得" title="Permanent link">#</a></h3>
+<p>在卷积存在、积分可交换或相应广义函数运算有定义的条件下，<span class="arithmatex">\(u\)</span> 是 <span class="arithmatex">\(\delta\)</span> 从负无穷起的累积，因此</p>
+<div class="arithmatex">\[g(t)=(h*u)(t)=\int_{-\infty}^{t}h(\tau)\,d\tau,\qquad h=g'.\]</div>
+<p>因果系统若 <span class="arithmatex">\(h\)</span> 为普通函数，可在 <span class="arithmatex">\(t&gt;0\)</span> 把下限写成零；含原点冲激时要连同其强度计入，最稳妥是保留从负无穷积分或使用分布关系。
+补充例题：若 <span class="arithmatex">\(g(t)=(1-\mathrm e^{-at})u(t)\)</span>，<span class="arithmatex">\(a&gt;0\)</span>，括号内在原点为零，故 <span class="arithmatex">\(h(t)=a\mathrm e^{-at}u(t)\)</span>，没有额外冲激。若 <span class="arithmatex">\(g(t)=u(t)+2(1-\mathrm e^{-t})u(t)\)</span>，跳变量为一，便有 <span class="arithmatex">\(h(t)=\delta(t)+2\mathrm e^{-t}u(t)\)</span>。
+易错提醒：阶跃响应有跳变时，不能只对正半轴函数求导。跳变对应的冲激正是系统直接通路的表现。</p>
+<h2 id="09-时域法求冲激响应">09 时域法求冲激响应<a class="headerlink" href="#09-时域法求冲激响应" title="Permanent link">#</a></h2>
+<p>资料内容：课件第 29—32 页。本节以奇异项匹配补全课件计算。
+给定系统 <span class="arithmatex">\(r''+4r'+3r=e'+2e\)</span>，求因果零状态冲激响应。输入置为 <span class="arithmatex">\(\delta\)</span>，方程变成</p>
+<div class="arithmatex">\[h''+4h'+3h=\delta'+2\delta.\]</div>
+<p>在 <span class="arithmatex">\(t&gt;0\)</span> 右端为零，特征根为负一、负三。由于输入导数阶数低于输出阶数，可先设普通因果响应 <span class="arithmatex">\(h=q(t)u(t)\)</span>，其中 <span class="arithmatex">\(q=A\mathrm e^{-t}+B\mathrm e^{-3t}\)</span>。</p>
+<div class="arithmatex">\[h'=q'u+q(0)\delta,\]</div>
+<div class="arithmatex">\[h''=q''u+q'(0)\delta+q(0)\delta'.\]</div>
+<p>代入后普通项因齐次方程而消失，剩余</p>
+<div class="arithmatex">\[q(0)\delta'+[q'(0)+4q(0)]\delta=\delta'+2\delta.\]</div>
+<p>于是 <span class="arithmatex">\(q(0)=1\)</span>，<span class="arithmatex">\(q'(0)=-2\)</span>。写成系数方程：<span class="arithmatex">\(A+B=1\)</span>，<span class="arithmatex">\(-A-3B=-2\)</span>；解得 <span class="arithmatex">\(A=B=1/2\)</span>。</p>
+<div class="arithmatex">\[h(t)=\frac12(\mathrm e^{-t}+\mathrm e^{-3t})u(t).\]</div>
+<p>自检：导数的冲激偶系数为一，冲激系数为 <span class="arithmatex">\(-2+4=2\)</span>；其余常规项为零，正好恢复原方程。正半轴它具有自由响应形式，但起因仍是输入冲激，故属于零状态响应。
+顺便由积分求阶跃响应：</p>
+<div class="arithmatex">\[g(t)=\left[\frac12(1-\mathrm e^{-t})+\frac16(1-\mathrm e^{-3t})\right]u(t).\]</div>
+<p>其原点连续、终值为 <span class="arithmatex">\(2/3\)</span>；对恒定单位输入，稳态方程 <span class="arithmatex">\(3r=2\)</span> 给同样结果。无需先学变换域法就可验证。</p>
+<h2 id="10-冲激响应什么时候自带冲激">10 冲激响应什么时候自带冲激<a class="headerlink" href="#10-冲激响应什么时候自带冲激" title="Permanent link">#</a></h2>
+<p>资料内容：课件第 29、32 页。本节对一般式补全零阶冲激项，并区分阶数与实际系数。
+记 <span class="arithmatex">\(P(D)r=Q(D)e\)</span>，有效最高阶为 <span class="arithmatex">\(n,m\)</span>，首项系数分别是 <span class="arithmatex">\(C_0,E_0\)</span> 且均非零。零状态冲激响应满足 <span class="arithmatex">\(P(D)h=Q(D)\delta\)</span>。
+若 <span class="arithmatex">\(h\)</span> 中最高奇异项为 <span class="arithmatex">\(d_k\delta^{(k)}\)</span>，左端最高奇异阶为 <span class="arithmatex">\(n+k\)</span>，右端为 <span class="arithmatex">\(m\)</span>；最高阶系数平衡给 <span class="arithmatex">\(k=m-n\)</span> 与 <span class="arithmatex">\(d_k=E_0/C_0\)</span>。这解释了为什么要先比较阶数，再试齐次函数。
+当 <span class="arithmatex">\(m&lt;n\)</span>，响应不含独立的冲激及其导数，但可能是有跳变的普通函数。当 <span class="arithmatex">\(m=n\)</span>，含 <span class="arithmatex">\((E_0/C_0)\delta\)</span>。当 <span class="arithmatex">\(m&gt;n\)</span>，最高到 <span class="arithmatex">\(\delta^{(m-n)}\)</span>，低阶系数可能为零，不能说每一阶必然出现。
+对因果有限阶常系数模型，适当的一般形式为</p>
+<div class="arithmatex">\[h(t)=q(t)u(t)+\sum_{k=0}^{m-n}d_k\delta^{(k)}(t),\qquad m\ge n.\]</div>
+<p><span class="arithmatex">\(q\)</span> 按齐次根写出，重根须有时间幂；<span class="arithmatex">\(m&lt;n\)</span> 时删去整个奇异项和。课件第 32 页的求和从一开始会漏掉 <span class="arithmatex">\(\delta\)</span> 本身，本笔记明确从零开始。</p>
+<h3 id="补充例题-等阶时如何计算">补充例题 等阶时如何计算<a class="headerlink" href="#补充例题-等阶时如何计算" title="Permanent link">#</a></h3>
+<p>系统 <span class="arithmatex">\(r'+2r=e'+3e\)</span>。代入冲激，设 <span class="arithmatex">\(h=d\delta+Au\)</span> 形式还不够精确，正半轴常规部分应为 <span class="arithmatex">\(A\mathrm e^{-2t}u\)</span>。计算得到</p>
+<div class="arithmatex">\[h'+2h=d\delta'+(A+2d)\delta.\]</div>
+<p>匹配 <span class="arithmatex">\(\delta'+3\delta\)</span>，得 <span class="arithmatex">\(d=1,A=1\)</span>，所以 <span class="arithmatex">\(h=\delta+\mathrm e^{-2t}u\)</span>。任意允许输入的零状态响应包含一项直接复制的 <span class="arithmatex">\(e(t)\)</span>，再加指数核的卷积。
+易错提醒：课件“冲激在瞬间储存能量”的说法是储能系统的物理直觉。纯增益系统也有冲激响应，但没有储能元件；一般数学模型应以定义和分布方程为准。</p>
+<h2 id="11-从冲激分解推到卷积">11 从冲激分解推到卷积<a class="headerlink" href="#11-从冲激分解推到卷积" title="Permanent link">#</a></h2>
+<p>资料内容：课件第 24—28、34 页。卷积的权重来自输入窄条的面积，不是凭空规定的运算。
+把时间划成宽度 <span class="arithmatex">\(\Delta&gt;0\)</span> 的小区间，定义单位面积窄脉冲 <span class="arithmatex">\(p_\Delta(t)=[u(t)-u(t-\Delta)]/\Delta\)</span>。在连续点附近，用左端值近似信号：</p>
+<div class="arithmatex">\[e_\Delta(t)=\sum_{k=-\infty}^{\infty}e(k\Delta)\Delta p_\Delta(t-k\Delta).\]</div>
+<p>每条的高度为 <span class="arithmatex">\(e(k\Delta)\)</span>，面积为 <span class="arithmatex">\(e(k\Delta)\Delta\)</span>。令网格变细，在合适的收敛意义下，矩形近似变成冲激分解：</p>
+<div class="arithmatex">\[e(t)=\int_{-\infty}^{\infty}e(\tau)\delta(t-\tau)\,d\tau.\]</div>
+<p>连续点可直接由抽样性质验证；跳变点按所采用的几乎处处或分布意义处理，不能据此确定任意指定的单点值。
+时不变性把延时冲激的响应变成 <span class="arithmatex">\(h(t-\tau)\)</span>；齐次性保留权重 <span class="arithmatex">\(e(\tau)\)</span>；可叠加性把各份响应相加。当系统作用可以与极限、积分交换且结果存在时，得到</p>
+<div class="arithmatex">\[r_{zs}(t)=\int_{-\infty}^{\infty}e(\tau)h(t-\tau)\,d\tau=(e*h)(t).\]</div>
+<p>补充条件：普通函数计算中，要保证积分存在；例如 <span class="arithmatex">\(h\)</span> 绝对可积且输入有界可保证每个时刻绝对收敛。有限时间支持且分段连续的两个信号也很容易保证。一般分布不能任意卷积，不能把“线性”当作无条件交换无限求和与算子的许可。
+因果输入与因果系统同时成立时，非零乘积要求 <span class="arithmatex">\(\tau\ge0\)</span> 且 <span class="arithmatex">\(t-\tau\ge0\)</span>，故 <span class="arithmatex">\(t&gt;0\)</span> 时</p>
+<div class="arithmatex">\[r_{zs}(t)=\int_0^t e(\tau)h(t-\tau)\,d\tau.\]</div>
+<p>若初始状态非零，全响应要再加 <span class="arithmatex">\(r_{zi}\)</span>。若只保证系统因果而输入在负时间不为零，下限通常仍是负无穷。</p>
+<h2 id="12-图解卷积与积分限">12 图解卷积与积分限<a class="headerlink" href="#12-图解卷积与积分限" title="Permanent link">#</a></h2>
+<p>资料内容：课件第 35—36、41 页。图解的关键不是记四个字，而是在积分变量轴上找到同时非零的区间。
+固定一个 <span class="arithmatex">\(t\)</span>，将 <span class="arithmatex">\(h(\tau)\)</span> 反褶为 <span class="arithmatex">\(h(-\tau)\)</span>，再整体向右平移 <span class="arithmatex">\(t\)</span> 得 <span class="arithmatex">\(h(t-\tau)\)</span>；若 <span class="arithmatex">\(t&lt;0\)</span> 则实际向左移。把它与固定的 <span class="arithmatex">\(e(\tau)\)</span> 相乘，对 <span class="arithmatex">\(\tau\)</span> 积分，得到的是这个时刻的一个数。让 <span class="arithmatex">\(t\)</span> 变化，才画出整条响应曲线。
+设两个输入分别只在 <span class="arithmatex">\([A,B]\)</span> 和 <span class="arithmatex">\([C,D]\)</span> 上非零。因为 <span class="arithmatex">\(C\le t-\tau\le D\)</span> 等价于 <span class="arithmatex">\(t-D\le\tau\le t-C\)</span>，有效区间是</p>
+<div class="arithmatex">\[L(t)=\max(A,t-D),\qquad U(t)=\min(B,t-C).\]</div>
+<p>当 <span class="arithmatex">\(L&lt;U\)</span> 时在两限之间积分，否则普通函数的重叠面积为零。两端点开始或停止相遇给出区间之外必为零的范围 <span class="arithmatex">\(t&lt;A+C\)</span> 或 <span class="arithmatex">\(t&gt;B+D\)</span>；积分限切换候选点是四个端点和 <span class="arithmatex">\(A+C,A+D,B+C,B+D\)</span>，需排序后分别讨论。
+补充条件：<span class="arithmatex">\([A+C,B+D]\)</span> 是卷积可能出现的包络区间，不代表区间内处处非零。正负面积会相消；若输入内部另有分段点，还要继续切分积分。</p>
+<p><img alt="第2讲 插图 overlap" loading="lazy" src="../%E6%8F%92%E5%9B%BE/%E7%AC%AC2%E8%AE%B2/overlap.png" />
+<em>图 3 矩形与有限斜坡的移动重叠 对应课件第 42 页例题</em></p>
+<p>易错提醒：<span class="arithmatex">\(t\)</span> 是平移参数，不能把积分变量写回 <span class="arithmatex">\(t\)</span> 后再混着积分。结果的分段区间是关于 <span class="arithmatex">\(t\)</span> 的，积分上下限是关于 <span class="arithmatex">\(\tau\)</span> 的，两者必须分开写。</p>
+<h2 id="13-课件-rl-电路的两道卷积题">13 课件 RL 电路的两道卷积题<a class="headerlink" href="#13-课件-rl-电路的两道卷积题" title="Permanent link">#</a></h2>
+<p>资料内容：课件第 37—40 页。电路为电阻一欧姆、电感一亨利串联，输入电压为 <span class="arithmatex">\(e\)</span>，输出为电流 <span class="arithmatex">\(i\)</span>，取零初始电流。</p>
+<h3 id="先求冲激响应-再求阶跃响应">先求冲激响应 再求阶跃响应<a class="headerlink" href="#先求冲激响应-再求阶跃响应" title="Permanent link">#</a></h3>
+<p>由电压定律 <span class="arithmatex">\(Li'+Ri=e\)</span>。输入置为 <span class="arithmatex">\(\delta\)</span>，零点积分得 <span class="arithmatex">\(Lh(0^+)=1\)</span>；正半轴解 <span class="arithmatex">\(Lh'+Rh=0\)</span>，所以一般参数下</p>
+<div class="arithmatex">\[h(t)=\frac1L\mathrm e^{-(R/L)t}u(t),\qquad L&gt;0.\]</div>
+<p>课件数值给 <span class="arithmatex">\(h=\mathrm e^{-t}u\)</span>。输入 <span class="arithmatex">\(e=u\)</span> 时，两因果支持的交集为 <span class="arithmatex">\(0&lt;\tau&lt;t\)</span>，在 <span class="arithmatex">\(t&gt;0\)</span> 上</p>
+<div class="arithmatex">\[i(t)=\int_0^t\mathrm e^{-(t-\tau)}d\tau=\mathrm e^{-t}\int_0^t\mathrm e^\tau d\tau=1-\mathrm e^{-t}.\]</div>
+<p>全轴写作 <span class="arithmatex">\(i=(1-\mathrm e^{-t})u\)</span>。初始电流为零，稳态电流为一，均符合电路。课件第 37 页最后一式的指数符号与前面的积分不一致，正确结果保留负指数。</p>
+<h3 id="输入在两秒后截断">输入在两秒后截断<a class="headerlink" href="#输入在两秒后截断" title="Permanent link">#</a></h3>
+<p>已知 <span class="arithmatex">\(e(t)=\mathrm e^{-t/2}[u(t)-u(t-2)]\)</span>。输入支持在零到二，核要求 <span class="arithmatex">\(\tau\le t\)</span>，所以积分限为 <span class="arithmatex">\(0\)</span> 到 <span class="arithmatex">\(\min(t,2)\)</span>，前提是 <span class="arithmatex">\(t&gt;0\)</span>。
+当 <span class="arithmatex">\(0&lt;t&lt;2\)</span>：</p>
+<div class="arithmatex">\[i(t)=\mathrm e^{-t}\int_0^t\mathrm e^{\tau/2}d\tau=2(\mathrm e^{-t/2}-\mathrm e^{-t}).\]</div>
+<p>当 <span class="arithmatex">\(t\ge2\)</span>，输入已停止，积分上限固定为二：</p>
+<div class="arithmatex">\[i(t)=\mathrm e^{-t}\int_0^2\mathrm e^{\tau/2}d\tau=2(\mathrm e-1)\mathrm e^{-t}.\]</div>
+<div class="arithmatex">\[i(t)=\begin{cases}0,&amp;t&lt;0,\\2(\mathrm e^{-t/2}-\mathrm e^{-t}),&amp;0\le t\le2,\\2(\mathrm e-1)\mathrm e^{-t},&amp;t&gt;2.\end{cases}\]</div>
+<p>两段在二时刻都等于 <span class="arithmatex">\(2(\mathrm e^{-1}-\mathrm e^{-2})\)</span>，电流连续。输入停止不代表输出立刻变零，电感储能继续释放。补充自检：中段导数为 <span class="arithmatex">\(-\mathrm e^{-t/2}+2\mathrm e^{-t}\)</span>，峰值时刻 <span class="arithmatex">\(t=2\ln2\)</span>，峰值为 <span class="arithmatex">\(1/2\)</span>。</p>
+<p><img alt="第2讲 插图 truncated" loading="lazy" src="../%E6%8F%92%E5%9B%BE/%E7%AC%AC2%E8%AE%B2/truncated.png" />
+<em>图 4 第 39—40 页截断指数输入与电流响应重绘 标出关断与峰值</em></p>
+<p>补充易错点：<span class="arithmatex">\(\mathrm e^{-t/2}u(t-2)=\mathrm e^{-1}\mathrm e^{-(t-2)/2}u(t-2)\)</span>，不是单位幅值的原信号纯延时；用时移性质时必须保留系数 <span class="arithmatex">\(\mathrm e^{-1}\)</span>。</p>
+<h2 id="14-矩形与有限斜坡的完整分段计算">14 矩形与有限斜坡的完整分段计算<a class="headerlink" href="#14-矩形与有限斜坡的完整分段计算" title="Permanent link">#</a></h2>
+<p>资料内容：课件第 42 页。设 <span class="arithmatex">\(f_1(t)=1\)</span> 在 <span class="arithmatex">\(-1&lt;t&lt;1\)</span>，区间外为零；<span class="arithmatex">\(f_2(t)=t/2\)</span> 在 <span class="arithmatex">\(0&lt;t&lt;3\)</span>，区间外为零。端点值不影响本题卷积。
+计算 <span class="arithmatex">\(v=f_1*f_2\)</span>。固定 <span class="arithmatex">\(f_1(\tau)\)</span>，移动 <span class="arithmatex">\(f_2(t-\tau)\)</span>，乘积在交集中等于 <span class="arithmatex">\((t-\tau)/2\)</span>。下限为 <span class="arithmatex">\(\max(-1,t-3)\)</span>，上限为 <span class="arithmatex">\(\min(1,t)\)</span>。四个切换点依次是负一、一、二、四。
+当 <span class="arithmatex">\(-1&lt;t&lt;1\)</span>，上下限分别为负一和 <span class="arithmatex">\(t\)</span>，所以</p>
+<div class="arithmatex">\[v(t)=\int_{-1}^{t}\frac{t-\tau}{2}d\tau=\left[\frac{t\tau}{2}-\frac{\tau^2}{4}\right]_{-1}^{t}=\frac{(t+1)^2}{4}.\]</div>
+<p>当 <span class="arithmatex">\(1\le t\le2\)</span>，整段矩形都处于移动斜坡内：</p>
+<div class="arithmatex">\[v(t)=\int_{-1}^{1}\frac{t-\tau}{2}d\tau=t.\]</div>
+<p>其中奇函数 <span class="arithmatex">\(\tau\)</span> 在对称区间积分为零。最后，当 <span class="arithmatex">\(2&lt;t&lt;4\)</span>，下限变为 <span class="arithmatex">\(t-3\)</span>，上限仍为一：</p>
+<div class="arithmatex">\[v(t)=\left[\frac{t\tau}{2}-\frac{\tau^2}{4}\right]_{t-3}^{1}=\frac{-t^2+2t+8}{4}.\]</div>
+<div class="arithmatex">\[v(t)=\begin{cases}0,&amp;t&lt;-1,\\(t+1)^2/4,&amp;-1\le t\le1,\\t,&amp;1&lt;t\le2,\\(-t^2+2t+8)/4,&amp;2&lt;t\le4,\\0,&amp;t&gt;4.\end{cases}\]</div>
+<p>检查：接缝函数值依次为零、一、二、零，连续且非负。两个原信号面积分别为二、<span class="arithmatex">\(9/4\)</span>，卷积总面积应为 <span class="arithmatex">\(9/2\)</span>；对三段分别积分得 <span class="arithmatex">\(2/3,3/2,7/3\)</span>，总和确为 <span class="arithmatex">\(9/2\)</span>。</p>
+<p><img alt="第2讲 插图 rampconv" loading="lazy" src="../%E6%8F%92%E5%9B%BE/%E7%AC%AC2%E8%AE%B2/rampconv.png" />
+<em>图 5 第 42 页输入与卷积结果重绘 分段点与解析式一一对应</em></p>
+<h2 id="15-卷积代数性质与系统连接">15 卷积代数性质与系统连接<a class="headerlink" href="#15-卷积代数性质与系统连接" title="Permanent link">#</a></h2>
+<p>资料内容：课件第 43—47 页。以下等式要求相关卷积存在；涉及二重积分交换时，绝对可积是一种方便而充分的条件。</p>
+<h3 id="交换律与分配律">交换律与分配律<a class="headerlink" href="#交换律与分配律" title="Permanent link">#</a></h3>
+<p>在定义中令 <span class="arithmatex">\(v=t-\tau\)</span>，则 <span class="arithmatex">\(d\tau=-dv\)</span>；上下限由负无穷到正无穷变成相反方向。交换积分限消去负号，得到</p>
+<div class="arithmatex">\[\int_{-\infty}^{\infty}f(\tau)h(t-\tau)d\tau=\int_{-\infty}^{\infty}h(v)f(t-v)dv.\]</div>
+<p>因此 <span class="arithmatex">\(f*h=h*f\)</span>。图解时可以选择更容易移动的波形。系统语境中交换输入和核保持的是卷积数值，不能由此断言两个实际器件的物理意义相同。
+积分对被积函数线性，故 <span class="arithmatex">\(f*(ah_1+bh_2)=a(f*h_1)+b(f*h_2)\)</span>。并联系统若输入相同、输出直接相加，则总冲激响应是 <span class="arithmatex">\(h_1+h_2\)</span>。</p>
+<h3 id="结合律来自二重积分换序">结合律来自二重积分换序<a class="headerlink" href="#结合律来自二重积分换序" title="Permanent link">#</a></h3>
+<p>把内层卷积展开：</p>
+<div class="arithmatex">\[((f*h_1)*h_2)(t)=\int_{-\infty}^{\infty}\int_{-\infty}^{\infty}f(\tau)h_1(v-\tau)h_2(t-v)d\tau\,dv.\]</div>
+<p>换序后，对内层取 <span class="arithmatex">\(s=v-\tau\)</span>，得到 <span class="arithmatex">\(\int h_1(s)h_2(t-\tau-s)ds=(h_1*h_2)(t-\tau)\)</span>。再对外层积分，即 <span class="arithmatex">\(f*(h_1*h_2)\)</span>。</p>
+<p><img alt="第2讲 插图 blocks" loading="lazy" src="../%E6%8F%92%E5%9B%BE/%E7%AC%AC2%E8%AE%B2/blocks.png" />
+<em>图 6 第 44—47 页并联与级联结构重绘 所有分支均取零状态 LTI</em></p>
+<p>级联总核为 <span class="arithmatex">\(h_1*h_2\)</span>；交换律说明理想零状态 LTI 级联的外部输入输出可交换次序。实际电路互接若产生负载效应，原子系统模型会改变，不能无条件套用。
+补充例题：两个相同核 <span class="arithmatex">\(\mathrm e^{-t}u(t)\)</span> 级联，得到 <span class="arithmatex">\(h(t)=\int_0^t\mathrm e^{-\tau}\mathrm e^{-(t-\tau)}d\tau=t\mathrm e^{-t}u(t)\)</span>。而并联相加得到 <span class="arithmatex">\(2\mathrm e^{-t}u(t)\)</span>，二者明显不同。
+补充性质：绝对可积时，卷积总面积等于两者面积之积，来源是对 <span class="arithmatex">\(t\)</span> 再积分后换序，并令 <span class="arithmatex">\(v=t-\tau\)</span>。它可用于检查结果，但只检查总面积不能代替分段计算。</p>
+<h2 id="16-冲激卷积与微积分性质">16 冲激卷积与微积分性质<a class="headerlink" href="#16-冲激卷积与微积分性质" title="Permanent link">#</a></h2>
+<p>资料内容：课件第 48—51 页。此处冲激是卷积单位元，阶跃是从负无穷开始的积分核。</p>
+<div class="arithmatex">\[f*\delta=f,\qquad f*\delta(t-a)=f(t-a).\]</div>
+<p>第二式可由抽样直接算出：<span class="arithmatex">\(\delta(t-a-\tau)\)</span> 把 <span class="arithmatex">\(\tau\)</span> 取成 <span class="arithmatex">\(t-a\)</span>。它与逐点乘积 <span class="arithmatex">\(f(t)\delta(t-a)=f(a)\delta(t-a)\)</span> 是完全不同的运算。
+若允许对卷积积分求导，则</p>
+<div class="arithmatex">\[\frac{d}{dt}(f*h)=f*h'=f'*h.\]</div>
+<p>第一等号把对 <span class="arithmatex">\(t\)</span> 的导数放到移动核上，第二等号可由交换律得到。普通函数的一组充分条件是 <span class="arithmatex">\(f\)</span> 绝对可积、<span class="arithmatex">\(h\)</span> 连续可微且导数有界，此时被积导数可由可积函数控制；广义函数版本需相关卷积有定义。
+因此 <span class="arithmatex">\(f*\delta'=f'\)</span>，更一般地 <span class="arithmatex">\(f*\delta^{(k)}=f^{(k)}\)</span>。注意导数传递这里没有额外负号：若用对积分变量的抽样公式计算，<span class="arithmatex">\(f(t-s)\)</span> 对 <span class="arithmatex">\(s\)</span> 的导数本身已有一个负号，两负相消。</p>
+<div class="arithmatex">\[f*u=\int_{-\infty}^{t}f(\tau)d\tau.\]</div>
+<p>因为 <span class="arithmatex">\(u(t-\tau)\)</span> 只保留 <span class="arithmatex">\(\tau&lt;t\)</span>。定义 <span class="arithmatex">\(If(t)=\int_{-\infty}^{t}f(v)dv\)</span>，在可换序条件下</p>
+<div class="arithmatex">\[I(f*h)=f*(Ih)=(If)*h.\]</div>
+<p>补充讲解：课件用负阶导数记重积分时，必须约定每一次积分都从负无穷开始且积分存在，不能把任意不定积分常数也带入卷积。后文写 <span class="arithmatex">\(I\)</span> 可避免把积分与倒数混淆。</p>
+<h3 id="卷积时间平移的补充规则">卷积时间平移的补充规则<a class="headerlink" href="#卷积时间平移的补充规则" title="Permanent link">#</a></h3>
+<p>令 <span class="arithmatex">\(\sigma=\tau-a\)</span>，即可推出 <span class="arithmatex">\(f(t-a)*h(t-b)=(f*h)(t-a-b)\)</span>。两个延时相加。特别是 <span class="arithmatex">\(\delta(t-a)*\delta(t-b)=\delta(t-a-b)\)</span>，可以看成两个理想延时器级联。</p>
+<h2 id="17-用一次微分换一次积分来简化">17 用一次微分换一次积分来简化<a class="headerlink" href="#17-用一次微分换一次积分来简化" title="Permanent link">#</a></h2>
+<p>资料内容：课件第 36、50、52—53 页。阶梯函数微分后成为有限个冲激，常比直接反褶容易算，但必须保留积分的起点条件。</p>
+<h3 id="课件第-50-页-矩形与斜坡">课件第 50 页 矩形与斜坡<a class="headerlink" href="#课件第-50-页-矩形与斜坡" title="Permanent link">#</a></h3>
+<p>由图读出 <span class="arithmatex">\(e(t)=u(t+1/2)-u(t-1)\)</span>，<span class="arithmatex">\(h(t)=(t/2)[u(t)-u(t-2)]\)</span>。二者均在足够负的时间为零。矩形微分为 <span class="arithmatex">\(e'=\delta(t+1/2)-\delta(t-1)\)</span>。
+先计算核的累积 <span class="arithmatex">\(H=Ih\)</span>：零点前为零，零到二时积分得 <span class="arithmatex">\(t^2/4\)</span>，二之后累计面积固定为一。于是</p>
+<div class="arithmatex">\[H(t)=\begin{cases}0,&amp;t&lt;0,\\t^2/4,&amp;0\le t\le2,\\1,&amp;t&gt;2.\end{cases}\]</div>
+<p>由 <span class="arithmatex">\(e=I(e')\)</span> 和卷积结合律，可得 <span class="arithmatex">\(r=e'*H\)</span>；再用冲激时移性质，</p>
+<div class="arithmatex">\[r(t)=H(t+1/2)-H(t-1).\]</div>
+<p>根据两项各自跨过零与二的时刻，分界点为 <span class="arithmatex">\(-1/2,1,3/2,3\)</span>，逐段写出</p>
+<div class="arithmatex">\[r(t)=\begin{cases}0,&amp;t&lt;-1/2,\\(t+1/2)^2/4,&amp;-1/2\le t\le1,\\3t/4-3/16,&amp;1&lt;t\le3/2,\\1-(t-1)^2/4,&amp;3/2&lt;t\le3,\\0,&amp;t&gt;3.\end{cases}\]</div>
+<p>中间段由两个平方相减而来：<span class="arithmatex">\([(t+1/2)^2-(t-1)^2]/4=3t/4-3/16\)</span>。检查 <span class="arithmatex">\(r(1)=9/16\)</span>，<span class="arithmatex">\(r(3/2)=15/16\)</span>，与第 36、50 页标注一致。</p>
+<p><img alt="第2讲 插图 shortcut" loading="lazy" src="../%E6%8F%92%E5%9B%BE/%E7%AC%AC2%E8%AE%B2/shortcut.png" />
+<em>图 7 第 50 页微分积分法重绘 累积函数的两个平移之差</em></p>
+<h3 id="课件第-52-页-正负矩形">课件第 52 页 正负矩形<a class="headerlink" href="#课件第-52-页-正负矩形" title="Permanent link">#</a></h3>
+<p>图中 <span class="arithmatex">\(f=u-2u(t-1)+u(t-2)\)</span>，<span class="arithmatex">\(h=u-u(t-1)\)</span>。先把 <span class="arithmatex">\(f\)</span> 积分成三角形 <span class="arithmatex">\(F=If\)</span>：在零到一为 <span class="arithmatex">\(t\)</span>，一到二为 <span class="arithmatex">\(2-t\)</span>，其他区间为零。又 <span class="arithmatex">\(h'=\delta-\delta(t-1)\)</span>，所以 <span class="arithmatex">\(v=F*h'=F(t)-F(t-1)\)</span>。</p>
+<div class="arithmatex">\[v(t)=\begin{cases}0,&amp;t&lt;0,\\t,&amp;0\le t\le1,\\3-2t,&amp;1&lt;t\le2,\\t-3,&amp;2&lt;t\le3,\\0,&amp;t&gt;3.\end{cases}\]</div>
+<p>中段是 <span class="arithmatex">\((2-t)-(t-1)\)</span>；末段是 <span class="arithmatex">\(0-[2-(t-1)]\)</span>，所以末段为负。原信号 <span class="arithmatex">\(f\)</span> 总面积为零，因此输出正负面积抵消，这提供另一条自检。</p>
+<p><img alt="第2讲 插图 signed" loading="lazy" src="../%E6%8F%92%E5%9B%BE/%E7%AC%AC2%E8%AE%B2/signed.png" />
+<em>图 8 第 52 页正负矩形卷积重绘 虚线标出零交叉时刻</em></p>
+<h3 id="课件第-53-页-不能遗漏的积分常数">课件第 53 页 不能遗漏的积分常数<a class="headerlink" href="#课件第-53-页-不能遗漏的积分常数" title="Permanent link">#</a></h3>
+<p>直接计算 <span class="arithmatex">\(\operatorname{sgn}*\delta=\operatorname{sgn}\)</span>。但 <span class="arithmatex">\(\operatorname{sgn}'=2\delta\)</span>，若机械替换成 <span class="arithmatex">\(\operatorname{sgn}'*(I\delta)\)</span>，得到的是 <span class="arithmatex">\(2\delta*u=2u\)</span>，比正确答案多一。
+根源是 <span class="arithmatex">\(I(\operatorname{sgn}')=2u\ne\operatorname{sgn}\)</span>，原函数在负无穷处的值为负一，微分已丢掉这个常数。使用 <span class="arithmatex">\(f*h=f'*(Ih)\)</span> 前，必须检查 <span class="arithmatex">\(f=I(f')\)</span> 及相应卷积存在；不能凭“微分积分相互抵消”省略条件。</p>
+<h2 id="18-用冲激响应判断因果性">18 用冲激响应判断因果性<a class="headerlink" href="#18-用冲激响应判断因果性" title="Permanent link">#</a></h2>
+<p>资料内容：课件第 54 页。这里讨论由卷积描述的 LTI 零状态输入输出映射。
+若 <span class="arithmatex">\(h(t)=0\)</span> 对所有负时间成立，则在 <span class="arithmatex">\(r(t)=\int e(\tau)h(t-\tau)d\tau\)</span> 中，非零核要求 <span class="arithmatex">\(\tau\le t\)</span>。输出只依赖当前及过去输入，故系统因果。
+反过来，因果零状态系统在原点才接入冲激，不可能提前响应；因此其冲激响应必须在负时间为零。这给出充要条件</p>
+<div class="arithmatex">\[\text{LTI 因果}\ \Longleftrightarrow\ h(t)=0\quad(t&lt;0).\]</div>
+<p>对含冲激的情况，“负时间为零”按分布的支撑位置理解。<span class="arithmatex">\(h=\delta(t-a)\)</span> 对应 <span class="arithmatex">\(r(t)=e(t-a)\)</span>：<span class="arithmatex">\(a&gt;0\)</span> 为延时，<span class="arithmatex">\(a=0\)</span> 为直接传递，均因果；<span class="arithmatex">\(a&lt;0\)</span> 需要未来输入，非因果。
+易错提醒：只测试一个因果输入没有产生提前输出，不能代替系统因果性的普遍判断。也不能把“输出在负时间为零”当作所有输入下的因果定义；输入可能在负时间已经存在。</p>
+<h2 id="19-用冲激响应判断-bibo-稳定性">19 用冲激响应判断 BIBO 稳定性<a class="headerlink" href="#19-用冲激响应判断-bibo-稳定性" title="Permanent link">#</a></h2>
+<p>资料内容：课件第 55—56 页。稳定的意思是每个有界输入都产生有界输出，不要求输出趋向零，也不等于系统因果。</p>
+<h3 id="普通函数核的充分性与必要性">普通函数核的充分性与必要性<a class="headerlink" href="#普通函数核的充分性与必要性" title="Permanent link">#</a></h3>
+<p>对普通可测卷积核，在通常允许任意有界输入的定义下，BIBO 稳定的判据是绝对可积：</p>
+<div class="arithmatex">\[\int_{-\infty}^{\infty}|h(\tau)|d\tau&lt;\infty.\]</div>
+<p>充分性：若 <span class="arithmatex">\(|e(t)|\le B\)</span>，全轴卷积的三角不等式给</p>
+<div class="arithmatex">\[|r(t)|\le\int_{-\infty}^{\infty}|h(\tau)||e(t-\tau)|d\tau\le B\int_{-\infty}^{\infty}|h(\tau)|d\tau.\]</div>
+<p>右侧与 <span class="arithmatex">\(t\)</span> 无关，是统一有限界。不能把带正负抵消的普通积分 <span class="arithmatex">\(\int h\)</span> 当成这个判据。
+补充必要性说明：实核取有界输入 <span class="arithmatex">\(e(s)=\operatorname{sgn}[h(-s)]\)</span>，则在零时刻被积乘积为 <span class="arithmatex">\(|h(\tau)|\)</span>。若绝对积分发散，零时刻卷积就不可能给有限输出，因此不能在全部有界输入上稳定。复核可取 <span class="arithmatex">\(e(s)=\overline{h(-s)}/|h(-s)|\)</span>，核为零处令输入为零，使相位同样抵消。</p>
+<h3 id="含冲激时怎样使用判据">含冲激时怎样使用判据<a class="headerlink" href="#含冲激时怎样使用判据" title="Permanent link">#</a></h3>
+<p>纯时移 <span class="arithmatex">\(h=\delta(t-a)\)</span> 不是普通可积函数，但它的输入输出关系直接给 <span class="arithmatex">\(|r(t)|=|e(t-a)|\le B\)</span>，故稳定。对于 <span class="arithmatex">\(h=d\delta+h_0\)</span> 且 <span class="arithmatex">\(h_0\)</span> 绝对可积，有 <span class="arithmatex">\(|r|\le(|d|+\int|h_0|)B\)</span>。严格推广使用有限总变差测度，不能把 <span class="arithmatex">\(|\delta|\)</span> 当普通函数硬算。
+补充反例：<span class="arithmatex">\(h=\delta'\)</span> 是微分器。输入 <span class="arithmatex">\(e(t)=\sin(t^2)\)</span> 有界，输出 <span class="arithmatex">\(2t\cos(t^2)\)</span> 无界，因此不稳定。冲激导数和冲激本身不能一概而论。</p>
+<h3 id="课件积分器与补充比较">课件积分器与补充比较<a class="headerlink" href="#课件积分器与补充比较" title="Permanent link">#</a></h3>
+<p>积分器 <span class="arithmatex">\(h=u\)</span> 不绝对可积。取有界输入 <span class="arithmatex">\(e=u\)</span>，得 <span class="arithmatex">\(r(t)=tu(t)\)</span> 无界，直接证伪稳定性；选阶跃而不选全轴常数，还能避免从负无穷积分一开始就发散。
+稳定且因果的例子为 <span class="arithmatex">\(h=\mathrm e^{-at}u\)</span>，<span class="arithmatex">\(a&gt;0\)</span>，其绝对积分为 <span class="arithmatex">\(1/a\)</span>。稳定但非因果的例子为 <span class="arithmatex">\(h=\mathrm e^t u(-t)\)</span>，绝对积分为一但在负时间非零。因果但不稳定的积分器说明两种性质互不推出。
+补充条件：对适当约分后的有限阶因果有理模型，所有实际出现的普通响应模式指数实部为负，且没有冲激导数项，可保证 BIBO 稳定。仅凭某个原始方程的特征根判断还可能涉及消去的模式；输入输出稳定与内部状态稳定不应混称。</p>
+<h2 id="20-课件核对与作业记录">20 课件核对与作业记录<a class="headerlink" href="#20-课件核对与作业记录" title="Permanent link">#</a></h2>
+<p>本节区分原资料记录和为自学补上的严谨条件。正文页码均指第二节课文件中的 PDF 页码，共 59 页。
+第 8 页特解表：属于非重复根的基本试探形式；遇到激励指数与特征根重合，应乘时间幂，见第 03 节。
+第 22 页零输入响应“不跳变”：对常规无冲激自主状态演化可以这样理解；输出有直接输入通路时，不宜把任意输出的接入前值等同于零输入分量的初值。状态、输出及左右极限的区别见第 05—07 节。
+第 25 页窄条描述：区间应写作 <span class="arithmatex">\(\tau&lt;t&lt;\tau+\Delta\)</span>，窄条趋于冲激还需除以宽度，并保留面积权重 <span class="arithmatex">\(\Delta\)</span>。零状态响应的卷积推导见第 11 节。
+第 29 页一般方程：次高阶项的系数应按序区分，正文统一写 <span class="arithmatex">\(C_0,C_1,\ldots\)</span> 与 <span class="arithmatex">\(E_0,E_1,\ldots\)</span>。第 32 页奇异项求和须允许零阶项，见第 10 节；低阶冲激导数系数可能为零。
+第 37 页最后一式：由积分与电路均得 <span class="arithmatex">\((1-\mathrm e^{-t})u(t)\)</span>，正指数是笔误。第 38 页 <span class="arithmatex">\(h(t-\tau)\)</span> 单独的支持为 <span class="arithmatex">\(\tau\le t\)</span>，再与单位阶跃输入相乘，实际有效区间为 <span class="arithmatex">\(0\le\tau\le t\)</span>。
+第 41 页“卷积结果区间”：首先用于判断支撑之外为零，不能保证内部处处非零。第 48—53 页微积分性质须检查积分起点、常数与换序条件；正负矩形例题需补上负时间为零的一段。
+第 55 页稳定性估计：一般卷积写全轴积分更稳妥；因果核形式也可写成 <span class="arithmatex">\(\int_0^\infty h(\tau)e(t-\tau)d\tau\)</span>。只有额外限制输入为因果时，才可进一步把上限收为当前时刻。</p>
+<h3 id="资料中的课程要求">资料中的课程要求<a class="headerlink" href="#资料中的课程要求" title="Permanent link">#</a></h3>
+<p>课件第 57 页强调：重点掌握冲激与阶跃响应概念、卷积定义及性质、卷积计算；时域求典型响应有助于理解物理过程，后续拉氏变换方法会更简洁。
+第 58 页作业：2-4、2-6；2-7、2-8 选做；2-12、2-13 的第 1 与第 5 小题；2-18；2-19 的 b 小题。老师对 2-18 的更正为 <span class="arithmatex">\(e(t)=2\mathrm e^{-3t}u(t)\)</span>。预习第 3.1—3.3 节。
+这些是课件原列题号。本次文件未包含对应作业题面，且第一节课已发现课件指定教材与本地教材版本不一致，因此本笔记不根据旧版题号猜写答案。后面的自测是明确标出的补充练习。</p>
+<h2 id="21-闭卷自测">21 闭卷自测<a class="headerlink" href="#21-闭卷自测" title="Permanent link">#</a></h2>
+<p>以下均为补充练习。先写思路与条件，再计算；卷积题必须列有效积分限，系统判断题必须给依据或反例。需要零状态时已在题目中说明。
+1．对第 02 节电路，从 <span class="arithmatex">\(e=i+v\)</span>、<span class="arithmatex">\(i=v'+i_L\)</span> 和 <span class="arithmatex">\(v=i_L'/4+3i_L/2\)</span> 重新消元，写出输入输出方程。解释为何电容电压连续不保证总电流连续。
+2．求 <span class="arithmatex">\(r''+3r'+2r=1\)</span>，<span class="arithmatex">\(r(0^+)=r'(0^+)=0\)</span> 的正半轴解，写全待定系数过程。
+3．求 <span class="arithmatex">\(r'+2r=\mathrm e^{-2t}\)</span>、<span class="arithmatex">\(r(0)=0\)</span>。说明为什么不能试 <span class="arithmatex">\(B\mathrm e^{-2t}\)</span>。
+4．零状态系统 <span class="arithmatex">\(r'+2r=e'+e\)</span>，输入 <span class="arithmatex">\(e=u\)</span>。求右极限与响应，解释“零状态”为什么不等于右极限为零。
+5．系统 <span class="arithmatex">\(r'+3r=3u\)</span>，起始值 <span class="arithmatex">\(r(0^-)=2\)</span>。分别求自由、强迫、零输入、零状态与全响应。
+6．因果零状态系统 <span class="arithmatex">\(r''+3r'+2r=e\)</span> 的冲激响应是什么？再求阶跃响应，检查初始值与终值。
+7．对系统 <span class="arithmatex">\(r'+r=e'+2e\)</span> 求冲激响应，指出哪个部分属于直接通路。
+8．计算 <span class="arithmatex">\(\mathrm e^{-2t}u(t)*\mathrm e^{-3t}u(t)\)</span>。若两个指数率都为二，答案如何变化？
+9．计算 <span class="arithmatex">\([u(t)-u(t-2)]*[u(t)-u(t-1)]\)</span>，写各段积分限、结果和输出峰值。
+10．设 <span class="arithmatex">\(h=\mathrm e^{-t}u\)</span>，输入为 <span class="arithmatex">\(u(t-1)-u(t-3)\)</span>，零状态输出是什么？检查两个切换点的连续性。
+11．用第 17 节正负矩形的累积函数，独立重做其卷积，解释为什么会出现负输出。
+12．解释为什么 <span class="arithmatex">\(\operatorname{sgn}*\delta\)</span> 不能直接换成 <span class="arithmatex">\(\operatorname{sgn}'*u\)</span>。给出两者相差的量。
+13．分别判断 <span class="arithmatex">\(h_1=\delta(t+1)\)</span>、<span class="arithmatex">\(h_2=u(t)\)</span>、<span class="arithmatex">\(h_3=\mathrm e^{-2t}u(t)\)</span>、<span class="arithmatex">\(h_4=\delta'(t)\)</span> 对应系统的因果性与 BIBO 稳定性。
+14．两个零状态 LTI 系统的核分别为 <span class="arithmatex">\(\mathrm e^{-t}u\)</span> 与 <span class="arithmatex">\(\mathrm e^{-2t}u\)</span>。求并联相加与级联的总核，并说明级联可交换次序的前提。</p>
+<h2 id="22-自测详解与复习检查">22 自测详解与复习检查<a class="headerlink" href="#22-自测详解与复习检查" title="Permanent link">#</a></h2>
+<h3 id="1-至-4-建模-初值与重复根">1 至 4 建模 初值与重复根<a class="headerlink" href="#1-至-4-建模-初值与重复根" title="Permanent link">#</a></h3>
+<p>1．由 <span class="arithmatex">\(v=e-i\)</span>，<span class="arithmatex">\(i_L=i-e'+i'\)</span>，<span class="arithmatex">\(i_L'=i'-e''+i''\)</span>，代入支路式并乘四，得 <span class="arithmatex">\(4e-4i=i''+7i'+6i-e''-6e'\)</span>，移项即 <span class="arithmatex">\(i''+7i'+10i=e''+6e'+4e\)</span>。总电流是 <span class="arithmatex">\(e-v\)</span>，即使 <span class="arithmatex">\(v\)</span> 连续，电源阶跃也可使它跳变。
+2．特征根为负一、负二，常数特解为 <span class="arithmatex">\(1/2\)</span>。写 <span class="arithmatex">\(r=A\mathrm e^{-t}+B\mathrm e^{-2t}+1/2\)</span>。初值给 <span class="arithmatex">\(A+B=-1/2\)</span>、<span class="arithmatex">\(-A-2B=0\)</span>，所以 <span class="arithmatex">\(B=1/2,A=-1\)</span>。</p>
+<div class="arithmatex">\[r(t)=\frac12-\mathrm e^{-t}+\frac12\mathrm e^{-2t},\qquad t\ge0.\]</div>
+<p>代回时指数项被消掉，常数项贡献一；零点函数与导数均为零。
+3．负二就是特征根，普通指数试解被算子消掉。改试 <span class="arithmatex">\(Bt\mathrm e^{-2t}\)</span>，左端为 <span class="arithmatex">\(B\mathrm e^{-2t}\)</span>，故 <span class="arithmatex">\(B=1\)</span>。完整解为 <span class="arithmatex">\((A+t)\mathrm e^{-2t}\)</span>，初值令 <span class="arithmatex">\(A=0\)</span>。
+4．零点右端含 <span class="arithmatex">\(\delta\)</span>，匹配得 <span class="arithmatex">\([r]=1\)</span>；接入前为零，所以 <span class="arithmatex">\(r(0^+)=1\)</span>。正半轴 <span class="arithmatex">\(r'+2r=1\)</span>，通解 <span class="arithmatex">\(1/2+A\mathrm e^{-2t}\)</span>，初值得 <span class="arithmatex">\(A=1/2\)</span>，全轴结果为 <span class="arithmatex">\((1+\mathrm e^{-2t})u(t)/2\)</span>。冲激由输入导数产生，在接入时改变了状态。</p>
+<h3 id="5-至-7-响应分解与冲激">5 至 7 响应分解与冲激<a class="headerlink" href="#5-至-7-响应分解与冲激" title="Permanent link">#</a></h3>
+<p>5．右端无冲激，输出连续。全响应 <span class="arithmatex">\(r=1+\mathrm e^{-3t}\)</span>，自由为 <span class="arithmatex">\(\mathrm e^{-3t}\)</span>，强迫为一；零输入为 <span class="arithmatex">\(2\mathrm e^{-3t}\)</span>，零状态为 <span class="arithmatex">\(1-\mathrm e^{-3t}\)</span>，两者相加验证全响应。以上常规表达式取 <span class="arithmatex">\(t\ge0\)</span>。
+6．设 <span class="arithmatex">\(h=q u\)</span>，<span class="arithmatex">\(q=A\mathrm e^{-t}+B\mathrm e^{-2t}\)</span>。方程奇异项为 <span class="arithmatex">\(q(0)\delta'+[q'(0)+3q(0)]\delta=\delta\)</span>，故 <span class="arithmatex">\(q(0)=0,q'(0)=1\)</span>。于是 <span class="arithmatex">\(A+B=0\)</span>、<span class="arithmatex">\(-A-2B=1\)</span>，得到 <span class="arithmatex">\(A=1,B=-1\)</span>。</p>
+<div class="arithmatex">\[h=(\mathrm e^{-t}-\mathrm e^{-2t})u(t),\qquad g=\left[\frac12-\mathrm e^{-t}+\frac12\mathrm e^{-2t}\right]u(t).\]</div>
+<p>冲激响应原点连续为零，右导数为一。阶跃响应原点为零、终值为 <span class="arithmatex">\(1/2\)</span>，也等于稳态方程 <span class="arithmatex">\(2r=1\)</span> 的解。
+7．设 <span class="arithmatex">\(h=d\delta+A\mathrm e^{-t}u\)</span>，则 <span class="arithmatex">\(h'+h=d\delta'+(A+d)\delta\)</span>。匹配 <span class="arithmatex">\(\delta'+2\delta\)</span> 得 <span class="arithmatex">\(d=A=1\)</span>；结果为 <span class="arithmatex">\(\delta+\mathrm e^{-t}u\)</span>，前一项是直接通路，卷积后复制输入。</p>
+<h3 id="8-至-11-卷积计算">8 至 11 卷积计算<a class="headerlink" href="#8-至-11-卷积计算" title="Permanent link">#</a></h3>
+<p>8．负时间无重叠；正时间为 <span class="arithmatex">\(\int_0^t\mathrm e^{-2\tau}\mathrm e^{-3(t-\tau)}d\tau=\mathrm e^{-3t}(\mathrm e^t-1)\)</span>。故结果 <span class="arithmatex">\((\mathrm e^{-2t}-\mathrm e^{-3t})u\)</span>。两指数率相同时，被积函数不再依赖积分变量，结果为 <span class="arithmatex">\(t\mathrm e^{-2t}u\)</span>。
+9．固定宽二的矩形，移动宽一的矩形，有效限为 <span class="arithmatex">\(\max(0,t-1)\)</span> 与 <span class="arithmatex">\(\min(2,t)\)</span>。乘积高度为一，因此结果就是重叠长度。</p>
+<div class="arithmatex">\[v(t)=\begin{cases}0,&amp;t&lt;0,\\t,&amp;0\le t\le1,\\1,&amp;1&lt;t\le2,\\3-t,&amp;2&lt;t\le3,\\0,&amp;t&gt;3.\end{cases}\]</div>
+<p>前三个非零区间的积分限依次为 <span class="arithmatex">\([0,t]\)</span>、<span class="arithmatex">\([t-1,t]\)</span>、<span class="arithmatex">\([t-1,2]\)</span>。峰值为一，有一段平台；面积为二，与两个矩形面积之积一致。
+10．单位阶跃响应 <span class="arithmatex">\(g=(1-\mathrm e^{-t})u\)</span>，由线性与时移，输出为 <span class="arithmatex">\(g(t-1)-g(t-3)\)</span>。即一时刻前为零，一到三为 <span class="arithmatex">\(1-\mathrm e^{-(t-1)}\)</span>，三之后为 <span class="arithmatex">\(\mathrm e^{-(t-3)}-\mathrm e^{-(t-1)}\)</span>。在一时刻两边为零，三时刻两边为 <span class="arithmatex">\(1-\mathrm e^{-2}\)</span>，连续。
+11．<span class="arithmatex">\(F\)</span> 是先升后降的单位三角形，<span class="arithmatex">\(h'\)</span> 为两个相反冲激，因此 <span class="arithmatex">\(v=F(t)-F(t-1)\)</span>。零到一为 <span class="arithmatex">\(t\)</span>，一到二为 <span class="arithmatex">\((2-t)-(t-1)=3-2t\)</span>，二到三为 <span class="arithmatex">\(0-(3-t)=t-3\)</span>，其他为零。后期只有被减去的延时三角形，故输出为负。</p>
+<h3 id="12-至-14-条件与系统性质">12 至 14 条件与系统性质<a class="headerlink" href="#12-至-14-条件与系统性质" title="Permanent link">#</a></h3>
+<p>12．直接结果为 <span class="arithmatex">\(\operatorname{sgn}=2u-1\)</span>，替换结果为 <span class="arithmatex">\(2u\)</span>，后者比前者多一。因为从负无穷积分导数只能恢复原函数减去其负无穷处常数，且此处常数为负一。
+13．<span class="arithmatex">\(h_1\)</span> 是提前一单位，非因果但稳定，输出为 <span class="arithmatex">\(e(t+1)\)</span>；<span class="arithmatex">\(h_2\)</span> 是因果积分器但不稳定，用有界阶跃得到无界斜坡；<span class="arithmatex">\(h_3\)</span> 因果且稳定，绝对积分为 <span class="arithmatex">\(1/2\)</span>；<span class="arithmatex">\(h_4\)</span> 支撑仅在原点，所以作为分布系统因果，但微分会把有界的 <span class="arithmatex">\(\sin(t^2)\)</span> 变成无界输出，故非 BIBO 稳定。
+14．并联相加为 <span class="arithmatex">\((\mathrm e^{-t}+\mathrm e^{-2t})u\)</span>。级联在正时间为 <span class="arithmatex">\(\mathrm e^{-2t}\int_0^t\mathrm e^\tau d\tau\)</span>，故总核 <span class="arithmatex">\((\mathrm e^{-t}-\mathrm e^{-2t})u\)</span>。可交换次序要求每个模块按固定的零状态 LTI 输入输出模型连接，且相关卷积存在；不能忽略模块互接改变实际参数的情况。</p>
+<h3 id="完成自学后的最后检查">完成自学后的最后检查<a class="headerlink" href="#完成自学后的最后检查" title="Permanent link">#</a></h3>
+<p>能否不看课件从电路消元到二阶方程；能否在代初值前判断有没有零点跳变；能否用同一道题解释自由与零输入响应的区别；能否由分段支持独立写出卷积积分限；能否说明“微分一个、积分另一个”所需的起点条件；能否分别用支持和绝对可积性判断因果与稳定。
+若建模出错，回查第 02、05 节；特解漏项回查第 03—04 节；响应分解混淆回查第 06—07 节；冲激系数出错回查第 08—10 节；分段或平移错回查第 12—14、17 节；误套性质回查第 15—16、18—20 节。</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="页脚" >
+        
+          
+          <a href="../%E7%AC%AC1%E8%AE%B2_%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF%E4%B8%8E%E5%9F%BA%E6%9C%AC%E8%AF%AD%E8%A8%80/" class="md-footer__link md-footer__link--prev" aria-label="上一页: 第1讲 学习路线与基本语言">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                上一页
+              </span>
+              <div class="md-ellipsis">
+                第1讲 学习路线与基本语言
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../%E7%AC%AC3%E8%AE%B2_%E5%82%85%E9%87%8C%E5%8F%B6%E7%BA%A7%E6%95%B0%E4%B8%8E%E9%A2%91%E8%B0%B1/" class="md-footer__link md-footer__link--next" aria-label="下一页: 第3讲 傅里叶级数与频谱">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                下一页
+              </span>
+              <div class="md-ellipsis">
+                第3讲 傅里叶级数与频谱
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.sections", "navigation.expand", "navigation.top", "navigation.footer", "toc.follow", "search.highlight", "search.share"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

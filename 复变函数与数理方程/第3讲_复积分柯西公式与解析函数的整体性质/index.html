@@ -1,0 +1,2558 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="大学课程个人学习讲义，按学期和课程组织，支持网页端直接阅读">
+      
+      
+      
+        <link rel="canonical" href="https://yunbianmailang.github.io/university-course-materials/%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0%E4%B8%8E%E6%95%B0%E7%90%86%E6%96%B9%E7%A8%8B/%E7%AC%AC3%E8%AE%B2_%E5%A4%8D%E7%A7%AF%E5%88%86%E6%9F%AF%E8%A5%BF%E5%85%AC%E5%BC%8F%E4%B8%8E%E8%A7%A3%E6%9E%90%E5%87%BD%E6%95%B0%E7%9A%84%E6%95%B4%E4%BD%93%E6%80%A7%E8%B4%A8/">
+      
+      
+        <link rel="prev" href="../%E7%AC%AC2%E8%AE%B2_%E5%A4%8D%E5%B9%82%E8%A7%A3%E6%9E%90%E6%80%A7%E4%B8%8E%E5%A4%8D%E5%B9%B3%E9%9D%A2%E6%98%A0%E5%B0%84/">
+      
+      
+        <link rel="next" href="../%E7%AC%AC4%E8%AE%B2_%E5%B9%82%E7%BA%A7%E6%95%B0%E6%94%B6%E6%95%9B%E4%B8%8E%E6%B3%B0%E5%8B%92%E6%B4%9B%E6%9C%97%E5%B1%95%E5%BC%80/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>第3讲 复积分柯西公式与解析函数的整体性质 - 大学课程学习资料</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/custom.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#第3讲-复积分柯西公式与解析函数的整体性质" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../.." title="大学课程学习资料" class="md-header__button md-logo" aria-label="大学课程学习资料" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            大学课程学习资料
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              第3讲 复积分柯西公式与解析函数的整体性质
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="indigo"  aria-label="切换到深色模式"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="切换到深色模式" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="indigo"  aria-label="切换到浅色模式"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="切换到浅色模式" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="分享" aria-label="分享" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/yunbianmailang/university-course-materials" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    大学课程学习资料
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="大学课程学习资料" class="md-nav__button md-logo" aria-label="大学课程学习资料" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    大学课程学习资料
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/yunbianmailang/university-course-materials" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    大学课程学习资料
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    首页
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    复变函数与数理方程
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    复变函数与数理方程
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E8%AF%BE%E7%A8%8B%E8%AF%B4%E6%98%8E/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    课程说明
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC1%E8%AE%B2_%E5%A4%8D%E6%95%B0%E5%87%A0%E4%BD%95%E6%A8%A1%E7%9A%84%E6%9E%81%E5%80%BC%E4%B8%8E%E6%8C%87%E6%95%B0%E6%98%A0%E5%B0%84/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第1讲 复数几何模的极值与指数映射
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC2%E8%AE%B2_%E5%A4%8D%E5%B9%82%E8%A7%A3%E6%9E%90%E6%80%A7%E4%B8%8E%E5%A4%8D%E5%B9%B3%E9%9D%A2%E6%98%A0%E5%B0%84/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第2讲 复幂解析性与复平面映射
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第3讲 复积分柯西公式与解析函数的整体性质
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第3讲 复积分柯西公式与解析函数的整体性质
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#第一层-课堂核心速览" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第一层 课堂核心速览
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="第一层 课堂核心速览">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#本节课的核心问题" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        本节课的核心问题
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#必要先修知识" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        必要先修知识
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#核心知识结构" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        核心知识结构
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#重要结论与条件" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        重要结论与条件
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#课堂听讲重点" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        课堂听讲重点
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#第二层-引导式学习正文" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第二层 引导式学习正文
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="第二层 引导式学习正文">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-复积分的定义方向与柯西积分定理" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1 复积分的定义、方向与柯西积分定理
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1 复积分的定义、方向与柯西积分定理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-参数化把复积分化成实积分" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1 参数化把复积分化成实积分
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-柯西积分定理的条件与课堂证明" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2 柯西积分定理的条件与课堂证明
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-基本圆周积分与柯西公式" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2 基本圆周积分与柯西公式
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2 基本圆周积分与柯西公式">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-为什么只有负一次幂留下积分" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 为什么只有负一次幂留下积分
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-从圆周读出函数值与导数" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 从圆周读出函数值与导数
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-课堂积分用幂次结构筛选一个系数" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3 课堂积分：用幂次结构筛选一个系数
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3 课堂积分：用幂次结构筛选一个系数">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-通用方法与第一道余弦题" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 通用方法与第一道余弦题
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-复合余弦先确定最低次数" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 复合余弦：先确定最低次数
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-复合正弦指标必须是正奇数倍" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3 复合正弦：指标必须是正奇数倍
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-柯西估计刘维尔定理与多项式增长" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4 柯西估计、刘维尔定理与多项式增长
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4 柯西估计、刘维尔定理与多项式增长">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-从积分公式估计导数" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 从积分公式估计导数
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-有界整函数必为常数" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 有界整函数必为常数
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-课堂命题增长上界决定多项式次数" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3 课堂命题：增长上界决定多项式次数
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-平均值最大模与调和函数的极值" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5 平均值、最大模与调和函数的极值
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5 平均值、最大模与调和函数的极值">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-圆心值是复函数值的平均" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 圆心值是复函数值的平均
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-最大模原理的结论与证明主线" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 最大模原理的结论与证明主线
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-调和函数的边界最大最小值" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3 调和函数的边界最大最小值
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#54-课堂实变量对照题" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.4 课堂实变量对照题
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-复合闭路外圈为何等于小圈之和" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6 复合闭路：外圈为何等于小圈之和
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-课堂综合积分与反演换元校正" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7 课堂综合积分与反演换元校正
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7 课堂综合积分与反演换元校正">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71-先找奇点再跟踪方向" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.1 先找奇点，再跟踪方向
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72-分开计算两小圈定位板书遗漏" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.2 分开计算两小圈，定位板书遗漏
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-代数基本定理无根假设怎样导出矛盾" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8 代数基本定理：无根假设怎样导出矛盾
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9-幂级数的引入与本讲的逻辑联系" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9 幂级数的引入与本讲的逻辑联系
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#第三层-详细参考与拓展" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第三层 详细参考与拓展
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="第三层 详细参考与拓展">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#参考一-柯西公式的小圆证明与高阶求导" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        参考一 柯西公式的小圆证明与高阶求导
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#参考二-最大模原理的等号与连通性" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        参考二 最大模原理的等号与连通性
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#参考三-调和函数的局部共轭与极值传播" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        参考三 调和函数的局部共轭与极值传播
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#参考四-从柯西公式得到泰勒展开" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        参考四 从柯西公式得到泰勒展开
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#课末核心知识回顾" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        课末核心知识回顾
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC4%E8%AE%B2_%E5%B9%82%E7%BA%A7%E6%95%B0%E6%94%B6%E6%95%9B%E4%B8%8E%E6%B3%B0%E5%8B%92%E6%B4%9B%E6%9C%97%E5%B1%95%E5%BC%80/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第4讲 幂级数收敛与泰勒洛朗展开
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC5%E8%AE%B2_%E9%9B%B6%E7%82%B9%E5%A5%87%E7%82%B9%E4%B8%8E%E7%95%99%E6%95%B0%E7%A7%AF%E5%88%86/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第5讲 零点奇点与留数积分
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    信号与系统
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    信号与系统
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%B3%BB%E7%BB%9F/%E8%AF%BE%E7%A8%8B%E8%AF%B4%E6%98%8E/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    课程说明
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%B3%BB%E7%BB%9F/%E7%AC%AC1%E8%AE%B2_%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF%E4%B8%8E%E5%9F%BA%E6%9C%AC%E8%AF%AD%E8%A8%80/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第1讲 学习路线与基本语言
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%B3%BB%E7%BB%9F/%E7%AC%AC2%E8%AE%B2_%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B%E7%BB%8F%E5%85%B8%E6%B3%95%E4%B8%8E%E5%93%8D%E5%BA%94%E5%88%86%E8%A7%A3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第2讲 微分方程经典法与响应分解
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%B3%BB%E7%BB%9F/%E7%AC%AC3%E8%AE%B2_%E5%82%85%E9%87%8C%E5%8F%B6%E7%BA%A7%E6%95%B0%E4%B8%8E%E9%A2%91%E8%B0%B1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第3讲 傅里叶级数与频谱
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%B3%BB%E7%BB%9F/%E7%AC%AC4%E8%AE%B2_%E5%82%85%E9%87%8C%E5%8F%B6%E5%8F%98%E6%8D%A2%E4%B8%8E%E5%85%B8%E5%9E%8B%E4%BF%A1%E5%8F%B7%E9%A2%91%E8%B0%B1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第4讲 傅里叶变换与典型信号频谱
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%B3%BB%E7%BB%9F/%E7%AC%AC5%E8%AE%B2_%E5%85%B8%E5%9E%8B%E5%8F%98%E6%8D%A2%E5%AF%B9%E4%B8%8E%E6%8A%BD%E6%A0%B7%E5%AE%9A%E7%90%86/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第5讲 典型变换对与抽样定理
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%B3%BB%E7%BB%9F/%E7%AC%AC6%E8%AE%B2_%E6%8B%89%E6%99%AE%E6%8B%89%E6%96%AF%E5%8F%98%E6%8D%A2%E7%9A%84%E6%80%A7%E8%B4%A8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第6讲 拉普拉斯变换的性质
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%B3%BB%E7%BB%9F/%E7%AC%AC7%E8%AE%B2_%E6%8B%89%E6%99%AE%E6%8B%89%E6%96%AF%E9%80%86%E5%8F%98%E6%8D%A2%E4%B8%8E%20s%20%E5%9F%9F%E6%A8%A1%E5%9E%8B/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第7讲 拉普拉斯逆变换与 s 域模型
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%B3%BB%E7%BB%9F/%E7%AC%AC8%E8%AE%B2_%E9%A2%91%E7%8E%87%E5%93%8D%E5%BA%94%E4%B8%8E%E7%A8%B3%E5%AE%9A%E6%80%A7/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第8讲 频率响应与稳定性
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    基础物理学2（光学）
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    基础物理学2（光学）
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%9F%BA%E7%A1%80%E7%89%A9%E7%90%86%E5%AD%A62/%E8%AF%BE%E7%A8%8B%E8%AF%B4%E6%98%8E/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    课程说明
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%9F%BA%E7%A1%80%E7%89%A9%E7%90%86%E5%AD%A62/%E7%AC%AC1%E8%AE%B2_%E5%87%A0%E4%BD%95%E5%85%89%E5%AD%A6%E7%AE%80%E4%BB%8B/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第1讲 几何光学简介
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%9F%BA%E7%A1%80%E7%89%A9%E7%90%86%E5%AD%A62/%E7%AC%AC2%E8%AE%B2_%E6%B3%A2%E5%8A%A8%E5%85%89%E5%AD%A6%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86%EF%BC%88%E4%B8%80%EF%BC%89/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第2讲 波动光学基本原理（一）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%9F%BA%E7%A1%80%E7%89%A9%E7%90%86%E5%AD%A62/%E7%AC%AC3%E8%AE%B2_%E5%85%89%E7%9A%84%E5%B9%B2%E6%B6%89%E4%B8%8E%E6%97%B6%E7%A9%BA%E7%9B%B8%E5%B9%B2%E6%80%A7/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第3讲 光的干涉与时空相干性
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%9F%BA%E7%A1%80%E7%89%A9%E7%90%86%E5%AD%A62/%E7%AC%AC4%E8%AE%B2_%E5%85%89%E7%9A%84%E8%A1%8D%E5%B0%84%E4%B8%8E%E5%88%86%E8%BE%A8%E6%9C%AC%E9%A2%86/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第4讲 光的衍射与分辨本领
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%9F%BA%E7%A1%80%E7%89%A9%E7%90%86%E5%AD%A62/%E7%AC%AC5%E8%AE%B2_%E8%A1%8D%E5%B0%84%E5%85%89%E6%A0%85%E4%B8%8E%E6%99%B6%E4%BD%93%E8%A1%8D%E5%B0%84/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第5讲 衍射光栅与晶体衍射
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%9F%BA%E7%A1%80%E7%89%A9%E7%90%86%E5%AD%A62/%E7%AC%AC6%E8%AE%B2_%E5%81%8F%E6%8C%AF%E6%80%81%E4%B8%8E%E8%8F%B2%E6%B6%85%E8%80%B3%E5%85%AC%E5%BC%8F/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第6讲 偏振态与菲涅耳公式
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%9F%BA%E7%A1%80%E7%89%A9%E7%90%86%E5%AD%A62/%E7%AC%AC7%E8%AE%B2_%E5%8F%8C%E6%8A%98%E5%B0%84%E4%B8%8E%E5%81%8F%E6%8C%AF%E5%85%89%E5%BA%94%E7%94%A8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第7讲 双折射与偏振光应用
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#第一层-课堂核心速览" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第一层 课堂核心速览
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="第一层 课堂核心速览">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#本节课的核心问题" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        本节课的核心问题
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#必要先修知识" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        必要先修知识
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#核心知识结构" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        核心知识结构
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#重要结论与条件" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        重要结论与条件
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#课堂听讲重点" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        课堂听讲重点
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#第二层-引导式学习正文" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第二层 引导式学习正文
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="第二层 引导式学习正文">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-复积分的定义方向与柯西积分定理" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1 复积分的定义、方向与柯西积分定理
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1 复积分的定义、方向与柯西积分定理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-参数化把复积分化成实积分" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1 参数化把复积分化成实积分
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-柯西积分定理的条件与课堂证明" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2 柯西积分定理的条件与课堂证明
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-基本圆周积分与柯西公式" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2 基本圆周积分与柯西公式
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2 基本圆周积分与柯西公式">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-为什么只有负一次幂留下积分" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 为什么只有负一次幂留下积分
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-从圆周读出函数值与导数" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 从圆周读出函数值与导数
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-课堂积分用幂次结构筛选一个系数" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3 课堂积分：用幂次结构筛选一个系数
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3 课堂积分：用幂次结构筛选一个系数">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-通用方法与第一道余弦题" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 通用方法与第一道余弦题
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-复合余弦先确定最低次数" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 复合余弦：先确定最低次数
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-复合正弦指标必须是正奇数倍" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3 复合正弦：指标必须是正奇数倍
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-柯西估计刘维尔定理与多项式增长" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4 柯西估计、刘维尔定理与多项式增长
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4 柯西估计、刘维尔定理与多项式增长">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-从积分公式估计导数" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 从积分公式估计导数
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-有界整函数必为常数" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 有界整函数必为常数
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-课堂命题增长上界决定多项式次数" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3 课堂命题：增长上界决定多项式次数
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-平均值最大模与调和函数的极值" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5 平均值、最大模与调和函数的极值
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5 平均值、最大模与调和函数的极值">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-圆心值是复函数值的平均" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 圆心值是复函数值的平均
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-最大模原理的结论与证明主线" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 最大模原理的结论与证明主线
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-调和函数的边界最大最小值" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3 调和函数的边界最大最小值
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#54-课堂实变量对照题" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.4 课堂实变量对照题
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-复合闭路外圈为何等于小圈之和" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6 复合闭路：外圈为何等于小圈之和
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-课堂综合积分与反演换元校正" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7 课堂综合积分与反演换元校正
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7 课堂综合积分与反演换元校正">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71-先找奇点再跟踪方向" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.1 先找奇点，再跟踪方向
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72-分开计算两小圈定位板书遗漏" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.2 分开计算两小圈，定位板书遗漏
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-代数基本定理无根假设怎样导出矛盾" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8 代数基本定理：无根假设怎样导出矛盾
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9-幂级数的引入与本讲的逻辑联系" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9 幂级数的引入与本讲的逻辑联系
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#第三层-详细参考与拓展" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第三层 详细参考与拓展
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="第三层 详细参考与拓展">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#参考一-柯西公式的小圆证明与高阶求导" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        参考一 柯西公式的小圆证明与高阶求导
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#参考二-最大模原理的等号与连通性" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        参考二 最大模原理的等号与连通性
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#参考三-调和函数的局部共轭与极值传播" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        参考三 调和函数的局部共轭与极值传播
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#参考四-从柯西公式得到泰勒展开" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        参考四 从柯西公式得到泰勒展开
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#课末核心知识回顾" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        课末核心知识回顾
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="第3讲-复积分柯西公式与解析函数的整体性质">第3讲 复积分柯西公式与解析函数的整体性质<a class="headerlink" href="#第3讲-复积分柯西公式与解析函数的整体性质" title="Permanent link">#</a></h1>
+<div class="admonition tip">
+<p class="admonition-title">本讲配套文件</p>
+<ul>
+<li><a href="../../%E6%96%87%E4%BB%B6/%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0%E4%B8%8E%E6%95%B0%E7%90%86%E6%96%B9%E7%A8%8B_%E7%AC%AC3%E8%AE%B2_%E5%A4%8D%E7%A7%AF%E5%88%86%E6%9F%AF%E8%A5%BF%E5%85%AC%E5%BC%8F%E4%B8%8E%E8%A7%A3%E6%9E%90%E5%87%BD%E6%95%B0%E7%9A%84%E6%95%B4%E4%BD%93%E6%80%A7%E8%B4%A8_%E5%AD%A6%E4%B9%A0%E8%AE%B2%E4%B9%89.pdf">PDF 在线阅读（复变函数与数理方程_第3讲_复积分柯西公式与解析函数的整体性质_学习讲义.pdf）</a></li>
+<li><a href="../../%E6%96%87%E4%BB%B6/%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0%E4%B8%8E%E6%95%B0%E7%90%86%E6%96%B9%E7%A8%8B_%E7%AC%AC3%E8%AE%B2_%E5%A4%8D%E7%A7%AF%E5%88%86%E6%9F%AF%E8%A5%BF%E5%85%AC%E5%BC%8F%E4%B8%8E%E8%A7%A3%E6%9E%90%E5%87%BD%E6%95%B0%E7%9A%84%E6%95%B4%E4%BD%93%E6%80%A7%E8%B4%A8_%E5%AD%A6%E4%B9%A0%E8%AE%B2%E4%B9%89.docx">Word 下载（复变函数与数理方程_第3讲_复积分柯西公式与解析函数的整体性质_学习讲义.docx）</a></li>
+</ul>
+</div>
+<h2 id="第一层-课堂核心速览">第一层 课堂核心速览<a class="headerlink" href="#第一层-课堂核心速览" title="Permanent link">#</a></h2>
+<h3 id="本节课的核心问题">本节课的核心问题<a class="headerlink" href="#本节课的核心问题" title="Permanent link">#</a></h3>
+<p>复积分为什么由路径及其方向共同决定？解析性怎样把闭路积分化为函数值、导数与一个幂级数系数，又怎样限制函数的增长和极值？本讲由积分进入解析函数的整体性质，末尾引入幂级数。</p>
+<h3 id="必要先修知识">必要先修知识<a class="headerlink" href="#必要先修知识" title="Permanent link">#</a></h3>
+<p>① 复数模与欧拉公式，用于参数化圆周。② 实曲线积分与格林公式，用于理解柯西定理。③ 柯西—黎曼方程与解析区域。④ 指数、正弦、余弦的级数，以及连续函数在闭有界集上取得最值。</p>
+<h3 id="核心知识结构">核心知识结构<a class="headerlink" href="#核心知识结构" title="Permanent link">#</a></h3>
+<p>有向曲线与复积分 → 柯西积分定理 → 柯西公式及高阶导数公式。
+基本圆周积分只保留负一次幂 → 展开与系数筛选 → 课堂三角函数积分。
+导数估计 → 刘维尔定理与多项式增长；平均值 → 最大模与调和函数极值。
+复合闭路与反演换元 → 综合积分；刘维尔定理 → 代数基本定理。</p>
+<h3 id="重要结论与条件">重要结论与条件<a class="headerlink" href="#重要结论与条件" title="Permanent link">#</a></h3>
+<div class="admonition abstract">
+<p class="admonition-title">必须掌握</p>
+<p>以下圆周均取逆时针一圈；函数须在所需闭圆盘附近解析，半径不得越出解析区域。</p>
+<div class="arithmatex">\[f^{(n)}(a)=\frac{n!}{2\pi i}\oint_C\frac{f(z)}{(z-a)^{n+1}}\,dz,\qquad |f^{(n)}(a)|\le\frac{n!M_a(r)}{r^n}.\]</div>
+<p>有界整函数必为常数；非恒定解析函数的模不能在区域内部取得局部最大值。</p>
+</div>
+<h3 id="课堂听讲重点">课堂听讲重点<a class="headerlink" href="#课堂听讲重点" title="Permanent link">#</a></h3>
+<p>每次套公式先检查路径方向、求值点与奇点位置。系数筛选须核对起始指标；反演须同时处理半径、微分负号与方向变化。理解“令半径趋于无穷”为什么要求整函数，以及最大模结论为何不能直接用于一般实函数。
+@break</p>
+<h2 id="第二层-引导式学习正文">第二层 引导式学习正文<a class="headerlink" href="#第二层-引导式学习正文" title="Permanent link">#</a></h2>
+<p>@contents</p>
+<h3 id="1-复积分的定义方向与柯西积分定理">1 复积分的定义、方向与柯西积分定理<a class="headerlink" href="#1-复积分的定义方向与柯西积分定理" title="Permanent link">#</a></h3>
+<h4 id="11-参数化把复积分化成实积分">1.1 参数化把复积分化成实积分<a class="headerlink" href="#11-参数化把复积分化成实积分" title="Permanent link">#</a></h4>
+<p>复积分沿一条有方向的曲线累加函数值。设曲线为 <span class="arithmatex">\(z(t)=x(t)+iy(t)\)</span>，<span class="arithmatex">\(a\le t\le b\)</span>。光滑曲线要求 <span class="arithmatex">\(x,y\)</span> 连续可微，且内部 <span class="arithmatex">\(z'(t)\ne0\)</span>；允许有限个连接点时称分段光滑。方向由参数递增决定，反向曲线记为 <span class="arithmatex">\(-C\)</span>。</p>
+<div class="admonition abstract">
+<p class="admonition-title">核心结论</p>
+<p>将参数区间分割为 <span class="arithmatex">\(a=t_0&lt;\cdots&lt;t_N=b\)</span>，取 <span class="arithmatex">\(\tau_j\in[t_{j-1},t_j]\)</span>、<span class="arithmatex">\(\Delta z_j=z(t_j)-z(t_{j-1})\)</span>。对曲线上连续的 <span class="arithmatex">\(f\)</span>，</p>
+<div class="arithmatex">\[\int_C f(z)\,dz=\lim_{\max_j(t_j-t_{j-1})\to0}\sum_{j=1}^{N}f(z(\tau_j))\Delta z_j=\int_a^b f(z(t))z'(t)\,dt. \tag{1}\]</div>
+<p>取极限的是参数分割的最大长度，避免仅以端点弦长判断曲线是否被充分细分。复值实积分按实部、虚部分别计算。</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">条件提醒</p>
+<p><span class="arithmatex">\(dz=z'(t)dt\)</span> 含方向，弧长元 <span class="arithmatex">\(|dz|=|z'(t)|dt\)</span> 非负。反向积分变号：<span class="arithmatex">\(\int_{-C}f\,dz=-\int_Cf\,dz\)</span>。闭曲线用 <span class="arithmatex">\(\oint\)</span>；简单闭曲线的正向是逆时针，沿曲线走时内部区域在左侧。</p>
+</div>
+<p><img alt="第3讲 插图 orientation" loading="lazy" src="../%E6%8F%92%E5%9B%BE/%E7%AC%AC3%E8%AE%B2/orientation.svg" /></p>
+<p>若曲线上 <span class="arithmatex">\(|f|\le M\)</span>，曲线长为 <span class="arithmatex">\(L\)</span>，则三角不等式给出</p>
+<div class="arithmatex">\[\left|\int_Cf(z)\,dz\right|\le\int_C|f(z)|\,|dz|\le ML. \tag{2}\]</div>
+<p>这条估计在证明柯西公式和导数估计时都会用到。</p>
+<h4 id="12-柯西积分定理的条件与课堂证明">1.2 柯西积分定理的条件与课堂证明<a class="headerlink" href="#12-柯西积分定理的条件与课堂证明" title="Permanent link">#</a></h4>
+<div class="admonition abstract">
+<p class="admonition-title">核心结论</p>
+<p>设 <span class="arithmatex">\(C\)</span> 为分段光滑简单闭曲线，内部为 <span class="arithmatex">\(D\)</span>；若 <span class="arithmatex">\(f\)</span> 在包含 <span class="arithmatex">\(D\cup C\)</span> 的开集内解析，则</p>
+<div class="arithmatex">\[\oint_C f(z)\,dz=0. \tag{3}\]</div>
+<p>更一般地，单连通域内的解析函数沿域内闭曲线积分为零。“单连通”排除了曲线围住定义域中的孔洞。</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">证明思路</p>
+<p>把复积分拆成两个实曲线积分，再由格林公式将它们化为面积积分。柯西—黎曼方程使两个面积积分的被积函数均为零。
+写 <span class="arithmatex">\(f=u+iv\)</span>、<span class="arithmatex">\(dz=dx+i\,dy\)</span>，相乘得到</p>
+<div class="arithmatex">\[\oint_Cf\,dz=\oint_C(u\,dx-v\,dy)+i\oint_C(v\,dx+u\,dy).\]</div>
+<p>在 <span class="arithmatex">\(u,v\)</span> 一阶偏导连续且区域满足格林公式条件时，</p>
+<div class="arithmatex">\[\oint_Cf\,dz=\iint_D(-v_x-u_y)\,dx\,dy+i\iint_D(u_x-v_y)\,dx\,dy=0.\]</div>
+<p>最后一步用到 <span class="arithmatex">\(u_x=v_y\)</span>、<span class="arithmatex">\(u_y=-v_x\)</span>。</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">条件提醒</p>
+<p>这一格林公式证明使用了偏导连续性；不预先要求导数连续的完整柯西—古萨定理通常以三角形细分法证明，本讲不将两者混为同一证明。函数只在曲线上光滑仍不够，例如 <span class="arithmatex">\(1/z\)</span> 在单位圆内部有原点奇点，不能套式（3）。反过来，积分为零也不能推出内部解析，<span class="arithmatex">\(1/z^2\)</span> 就是反例。</p>
+</div>
+<h3 id="2-基本圆周积分与柯西公式">2 基本圆周积分与柯西公式<a class="headerlink" href="#2-基本圆周积分与柯西公式" title="Permanent link">#</a></h3>
+<h4 id="21-为什么只有负一次幂留下积分">2.1 为什么只有负一次幂留下积分<a class="headerlink" href="#21-为什么只有负一次幂留下积分" title="Permanent link">#</a></h4>
+<p>设 <span class="arithmatex">\(r&gt;0\)</span>，<span class="arithmatex">\(n\in\mathbb Z\)</span>。对正向圆周 <span class="arithmatex">\(|z-z_0|=r\)</span>，令 <span class="arithmatex">\(z=z_0+re^{i\theta}\)</span>、<span class="arithmatex">\(0\le\theta\le2\pi\)</span>，于是</p>
+<div class="arithmatex">\[I_n=\oint_{|z-z_0|=r}\frac{dz}{(z-z_0)^n}=ir^{1-n}\int_0^{2\pi}e^{i(1-n)\theta}\,d\theta.\]</div>
+<p>若 <span class="arithmatex">\(n=1\)</span>，积分中指数为零，得到 <span class="arithmatex">\(2\pi i\)</span>；若 <span class="arithmatex">\(n\ne1\)</span>，指数频率是非零整数，积分的两个端点值相等而相消。因此</p>
+<div class="arithmatex">\[I_1=2\pi i,\qquad I_n=0\quad(n\in\mathbb Z,\ n\ne1). \tag{4}\]</div>
+<p>结果与半径无关，反向时变号。若被积函数写成 <span class="arithmatex">\((z-z_0)^k\)</span>，特殊指数相应是 <span class="arithmatex">\(k=-1\)</span>。</p>
+<h4 id="22-从圆周读出函数值与导数">2.2 从圆周读出函数值与导数<a class="headerlink" href="#22-从圆周读出函数值与导数" title="Permanent link">#</a></h4>
+<div class="admonition abstract">
+<p class="admonition-title">核心结论</p>
+<p>设 <span class="arithmatex">\(C\)</span> 为正向分段光滑简单闭曲线，<span class="arithmatex">\(f\)</span> 在包含 <span class="arithmatex">\(C\)</span> 及其内部的开集内解析，<span class="arithmatex">\(a\)</span> 在内部。则对整数 <span class="arithmatex">\(n\ge0\)</span>，</p>
+<div class="arithmatex">\[f(a)=\frac1{2\pi i}\oint_C\frac{f(\zeta)}{\zeta-a}\,d\zeta,\]</div>
+<div class="arithmatex">\[f^{(n)}(a)=\frac{n!}{2\pi i}\oint_C\frac{f(\zeta)}{(\zeta-a)^{n+1}}\,d\zeta. \tag{5}\]</div>
+<p><span class="arithmatex">\(\zeta\)</span> 是沿路径变化的积分变量，<span class="arithmatex">\(a\)</span> 是固定求值点。高阶公式中，导数阶数为 <span class="arithmatex">\(n\)</span>，分母次数为 <span class="arithmatex">\(n+1\)</span>，因子为 <span class="arithmatex">\(n!\)</span>。</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">证明思路</p>
+<p>函数值公式把外圈缩到 <span class="arithmatex">\(a\)</span> 附近的小圆，再将 <span class="arithmatex">\(f(\zeta)\)</span> 拆成 <span class="arithmatex">\(f(a)\)</span> 与趋零的差；高阶公式对积分核求导。小圆余项的估计与求导依据集中放在参考一。
+课堂也用幂级数核对式（5）：把 <span class="arithmatex">\(f\)</span> 在 <span class="arithmatex">\(a\)</span> 处展开并逐项积分，式（4）只留下第 <span class="arithmatex">\(n\)</span> 次项。若正在用柯西公式证明泰勒展开，这只能作为事后核对，不能反过来作为独立证明。</p>
+</div>
+<h3 id="3-课堂积分用幂次结构筛选一个系数">3 课堂积分：用幂次结构筛选一个系数<a class="headerlink" href="#3-课堂积分用幂次结构筛选一个系数" title="Permanent link">#</a></h3>
+<h4 id="31-通用方法与第一道余弦题">3.1 通用方法与第一道余弦题<a class="headerlink" href="#31-通用方法与第一道余弦题" title="Permanent link">#</a></h4>
+<p>若 <span class="arithmatex">\(F(z)=\sum_{j=0}^{\infty}a_jz^j\)</span> 在包含闭单位圆的圆盘内解析，对正整数 <span class="arithmatex">\(n\)</span>，</p>
+<div class="arithmatex">\[\oint_{|z|=1}\frac{F(z)}{z^n}\,dz=2\pi i\,a_{n-1}=\frac{2\pi i}{(n-1)!}F^{(n-1)}(0). \tag{6}\]</div>
+<div class="admonition info">
+<p class="admonition-title">证明思路</p>
+<p>先展开分子，再找除以 <span class="arithmatex">\(z^n\)</span> 后成为 <span class="arithmatex">\(z^{-1}\)</span> 的唯一一项。看到高次分母，不必直接求高阶导数；复合函数的幂次结构常能更快确定答案。
+课堂例题：求正向单位圆上的 <span class="arithmatex">\(J_n=\oint(1-\cos z)/z^n\,dz\)</span>，<span class="arithmatex">\(n\in\mathbb Z\)</span>。分子展开为</p>
+<div class="arithmatex">\[1-\cos z=\sum_{m=1}^{\infty}\frac{(-1)^{m+1}z^{2m}}{(2m)!}.\]</div>
+<p>负一次项要求 <span class="arithmatex">\(2m-n=-1\)</span>，即 <span class="arithmatex">\(n=2m+1\)</span> 且 <span class="arithmatex">\(m\ge1\)</span>，所以</p>
+<div class="arithmatex">\[J_{2m+1}=\frac{2\pi i(-1)^{m+1}}{(2m)!}\quad(m=1,2,\ldots).\]</div>
+<p>其余整数 <span class="arithmatex">\(n\)</span> 的积分均为零。检查前两项 <span class="arithmatex">\(z^2/2-z^4/24\)</span>，得到 <span class="arithmatex">\(J_3=\pi i\)</span>、<span class="arithmatex">\(J_5=-\pi i/12\)</span>。</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">条件提醒</p>
+<p>求和从 <span class="arithmatex">\(m=1\)</span> 开始，故 <span class="arithmatex">\(J_1=0\)</span>，不能把“奇数指标非零”扩展到一。在单位圆上每项的模由 <span class="arithmatex">\(1/(2m)!\)</span> 控制，上界的和收敛，因而可逐项积分。</p>
+</div>
+<h4 id="32-复合余弦先确定最低次数">3.2 复合余弦：先确定最低次数<a class="headerlink" href="#32-复合余弦先确定最低次数" title="Permanent link">#</a></h4>
+<p>课堂例题：求 <span class="arithmatex">\(A_n=\oint_{|z|=1}[1-\cos(4z^5)]/z^n\,dz\)</span>，路径正向，<span class="arithmatex">\(n\in\mathbb Z\)</span>。把 <span class="arithmatex">\(4z^5\)</span> 整体代入余弦级数：</p>
+<div class="arithmatex">\[1-\cos(4z^5)=\sum_{m=1}^{\infty}\frac{(-1)^{m+1}4^{2m}z^{10m}}{(2m)!}.\]</div>
+<p>负一次项要求 <span class="arithmatex">\(10m-n=-1\)</span>。因此仅 <span class="arithmatex">\(n=10m+1\)</span>、<span class="arithmatex">\(m\ge1\)</span> 时非零，且</p>
+<div class="arithmatex">\[A_{10m+1}=\frac{2\pi i(-1)^{m+1}4^{2m}}{(2m)!}.\]</div>
+<p>分子从 <span class="arithmatex">\(8z^{10}-(32/3)z^{20}\)</span> 开始，可核对 <span class="arithmatex">\(A_{11}=16\pi i\)</span>、<span class="arithmatex">\(A_{21}=-(64/3)\pi i\)</span>，而 <span class="arithmatex">\(A_1=0\)</span>。单位圆上的各项由可求和的 <span class="arithmatex">\(4^{2m}/(2m)!\)</span> 控制，换序合法。</p>
+<h4 id="33-复合正弦指标必须是正奇数倍">3.3 复合正弦：指标必须是正奇数倍<a class="headerlink" href="#33-复合正弦指标必须是正奇数倍" title="Permanent link">#</a></h4>
+<p>课堂例题：固定正整数 <span class="arithmatex">\(k\)</span>，求正向单位圆上的 <span class="arithmatex">\(B_{n,k}=\oint\sin(z^k)/z^n\,dz\)</span>，<span class="arithmatex">\(n\in\mathbb Z\)</span>。</p>
+<div class="arithmatex">\[\sin(z^k)=\sum_{j=0}^{\infty}\frac{(-1)^jz^{k(2j+1)}}{(2j+1)!}.\]</div>
+<p>非零条件为 <span class="arithmatex">\(n-1=k(2j+1)\)</span>、<span class="arithmatex">\(j\ge0\)</span>，即 <span class="arithmatex">\((n-1)/k\)</span> 必须是正奇数。满足时</p>
+<div class="arithmatex">\[B_{k(2j+1)+1,k}=\frac{2\pi i(-1)^j}{(2j+1)!};\]</div>
+<p>其余整数 <span class="arithmatex">\(n\)</span> 均为零。例如 <span class="arithmatex">\(k=2\)</span> 时，非零指标为 <span class="arithmatex">\(3,7,11,\ldots\)</span>，前两项给 <span class="arithmatex">\(B_{3,2}=2\pi i\)</span>、<span class="arithmatex">\(B_{7,2}=-\pi i/3\)</span>。</p>
+<div class="admonition warning">
+<p class="admonition-title">条件提醒</p>
+<p><span class="arithmatex">\(\sin(z^k)\)</span> 与 <span class="arithmatex">\((\sin z)^k\)</span> 不同。匹配出的指标必须是规定范围内的整数；不满足时积分为零，不取“最接近”的整数。</p>
+</div>
+<h3 id="4-柯西估计刘维尔定理与多项式增长">4 柯西估计、刘维尔定理与多项式增长<a class="headerlink" href="#4-柯西估计刘维尔定理与多项式增长" title="Permanent link">#</a></h3>
+<h4 id="41-从积分公式估计导数">4.1 从积分公式估计导数<a class="headerlink" href="#41-从积分公式估计导数" title="Permanent link">#</a></h4>
+<p>记 <span class="arithmatex">\(M_a(r)=\max_{|z-a|=r}|f(z)|\)</span>，其中闭圆盘附近 <span class="arithmatex">\(f\)</span> 解析。对式（5）取模，并用圆长 <span class="arithmatex">\(2\pi r\)</span>：</p>
+<div class="arithmatex">\[|f^{(n)}(a)|\le\frac{n!}{2\pi}\oint_{|z-a|=r}\frac{|f(z)|}{r^{n+1}}\,|dz|\le\frac{n!M_a(r)}{r^n}. \tag{7}\]</div>
+<div class="admonition info">
+<p class="admonition-title">理解提示</p>
+<p>分母提供 <span class="arithmatex">\(r^{n+1}\)</span>，圆长抵消一个 <span class="arithmatex">\(r\)</span>，因此最后是 <span class="arithmatex">\(r^n\)</span>。增长越慢，允许放大的积分圆越能压低高阶导数。</p>
+</div>
+<h4 id="42-有界整函数必为常数">4.2 有界整函数必为常数<a class="headerlink" href="#42-有界整函数必为常数" title="Permanent link">#</a></h4>
+<div class="admonition abstract">
+<p class="admonition-title">刘维尔定理</p>
+<p>若 <span class="arithmatex">\(f\)</span> 在整个复平面解析，且存在与 <span class="arithmatex">\(z\)</span> 无关的常数 <span class="arithmatex">\(M\)</span> 使 <span class="arithmatex">\(|f(z)|\le M\)</span>，则 <span class="arithmatex">\(f\)</span> 为常数。
+证明：任取中心 <span class="arithmatex">\(a\)</span>，由式（7）的一阶情形，有 <span class="arithmatex">\(|f'(a)|\le M/r\)</span>。整函数允许任取 <span class="arithmatex">\(r&gt;0\)</span>，令 <span class="arithmatex">\(r\to\infty\)</span> 得 <span class="arithmatex">\(f'(a)=0\)</span>。因 <span class="arithmatex">\(a\)</span> 任意，导数处处为零，故沿连接两点的线段积分可知函数值处处相同。</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">条件提醒</p>
+<p>仅在实轴上有界不够，例如 <span class="arithmatex">\(\sin z\)</span> 沿虚轴为 <span class="arithmatex">\(i\sinh y\)</span>，模无界；仅在部分区域有界也不够，例如 <span class="arithmatex">\(1/z\)</span> 在 <span class="arithmatex">\(|z|&gt;1\)</span> 上有界，但不是整函数。</p>
+</div>
+<h4 id="43-课堂命题增长上界决定多项式次数">4.3 课堂命题：增长上界决定多项式次数<a class="headerlink" href="#43-课堂命题增长上界决定多项式次数" title="Permanent link">#</a></h4>
+<p>设 <span class="arithmatex">\(N\ge0\)</span> 为整数，<span class="arithmatex">\(f\)</span> 为整函数，且对全部 <span class="arithmatex">\(z\)</span> 有</p>
+<div class="arithmatex">\[|f(z)|\le M\sum_{k=0}^{N}|z|^k.\]</div>
+<p>则 <span class="arithmatex">\(f\)</span> 是次数不超过 <span class="arithmatex">\(N\)</span> 的多项式。先固定任意正整数 <span class="arithmatex">\(j\)</span>，在原点用柯西估计：</p>
+<div class="arithmatex">\[|f^{(N+j)}(0)|\le M(N+j)!\sum_{k=0}^{N}r^{k-N-j}\to0\quad(r\to\infty).\]</div>
+<p>每个指数均小于零，故 <span class="arithmatex">\(f^{(N+j)}(0)=0\)</span>。对每个固定 <span class="arithmatex">\(j\ge1\)</span> 都成立，于是泰勒展开只剩</p>
+<div class="arithmatex">\[f(z)=\sum_{k=0}^{N}\frac{f^{(k)}(0)}{k!}z^k.\]</div>
+<p>这是“次数至多 <span class="arithmatex">\(N\)</span>”，并不保证最高次项非零。若仅在充分大的 <span class="arithmatex">\(|z|\)</span> 上有 <span class="arithmatex">\(C(1+|z|^N)\)</span> 型上界，同样选足够大的圆即可；函数只在有限圆盘解析时，则不能令 <span class="arithmatex">\(r\to\infty\)</span>。</p>
+<h3 id="5-平均值最大模与调和函数的极值">5 平均值、最大模与调和函数的极值<a class="headerlink" href="#5-平均值最大模与调和函数的极值" title="Permanent link">#</a></h3>
+<h4 id="51-圆心值是复函数值的平均">5.1 圆心值是复函数值的平均<a class="headerlink" href="#51-圆心值是复函数值的平均" title="Permanent link">#</a></h4>
+<p>在柯西公式中令 <span class="arithmatex">\(\zeta=a+re^{i\theta}\)</span>，分母与 <span class="arithmatex">\(d\zeta\)</span> 中的因子相消，得到</p>
+<div class="arithmatex">\[f(a)=\frac1{2\pi}\int_0^{2\pi}f(a+re^{i\theta})\,d\theta. \tag{8}\]</div>
+<div class="admonition warning">
+<p class="admonition-title">条件提醒</p>
+<p>闭圆盘必须位于解析区域内。式（8）平均的是复数值，一般只有 <span class="arithmatex">\(|f(a)|\le(2\pi)^{-1}\int_0^{2\pi}|f(a+re^{i\theta})|d\theta\)</span>，不能把两边直接换成模后仍写等号。</p>
+</div>
+<h4 id="52-最大模原理的结论与证明主线">5.2 最大模原理的结论与证明主线<a class="headerlink" href="#52-最大模原理的结论与证明主线" title="Permanent link">#</a></h4>
+<div class="admonition abstract">
+<p class="admonition-title">核心结论</p>
+<p>非恒定解析函数的模，在连通解析区域内部不能取得局部最大值。若区域有界，函数在闭区域连续，则最大模可在边界取得。</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">证明思路</p>
+<p>若圆心的模已不小于附近所有值，把圆心值旋转到正实轴。圆周上所有值的实部均不超过它，而实部的平均又必须等于它；连续性迫使每一点都达到等号。结合模的上界，虚部也只能为零，因而小圆盘内恒定，再由解析性推广到连通域。完整等号与延拓论证见参考二。
+常函数的内部与边界都可取最大模。解析函数的模可以在内部取最小值，例如 <span class="arithmatex">\(f(z)=z\)</span> 在原点取零；因此不要把最大模结论直接改成无条件的最小模结论。</p>
+</div>
+<h4 id="53-调和函数的边界最大最小值">5.3 调和函数的边界最大最小值<a class="headerlink" href="#53-调和函数的边界最大最小值" title="Permanent link">#</a></h4>
+<p>实值 <span class="arithmatex">\(C^2\)</span> 函数满足 <span class="arithmatex">\(\Delta u=u_{xx}+u_{yy}=0\)</span> 时称调和。若 <span class="arithmatex">\(f=u+iv\)</span> 解析，由柯西—黎曼方程得</p>
+<div class="arithmatex">\[u_{xx}+u_{yy}=v_{yx}-v_{xy}=0,\]</div>
+<p>所以解析函数的实部、虚部都是调和函数。</p>
+<div class="admonition abstract">
+<p class="admonition-title">核心结论</p>
+<p>调和函数在有界连通域内调和、闭区域连续时，最大值与最小值均可在边界取得；非恒定调和函数在内部不能有局部极大或极小值。
+课堂证明用指数函数连接两个原理：若 <span class="arithmatex">\(u=\operatorname{Re}f\)</span>，令 <span class="arithmatex">\(g=e^f\)</span>，则 <span class="arithmatex">\(|g|=e^u\)</span>。<span class="arithmatex">\(u\)</span> 的局部最大值成为 <span class="arithmatex">\(|g|\)</span> 的局部最大值，故 <span class="arithmatex">\(g\)</span> 为常数；由 <span class="arithmatex">\(g'=f'e^f\)</span> 且 <span class="arithmatex">\(e^f\ne0\)</span>，得到 <span class="arithmatex">\(f'=0\)</span>。对 <span class="arithmatex">\(e^{-f}\)</span> 同理处理最小值。</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">条件提醒</p>
+<p>一般多连通域上的调和函数未必有全局单值共轭函数。上述证明先在小圆盘构造局部共轭，再沿连通域传播；必要细节见参考三。<span class="arithmatex">\(|f|\)</span> 通常不是调和函数，不能混用两个原理。</p>
+</div>
+<h4 id="54-课堂实变量对照题">5.4 课堂实变量对照题<a class="headerlink" href="#54-课堂实变量对照题" title="Permanent link">#</a></h4>
+<p>求 <span class="arithmatex">\(q=x^2-xy+y^2\)</span> 在 <span class="arithmatex">\(x^2+y^2\le r^2\)</span> 上的最值，<span class="arithmatex">\(r&gt;0\)</span>。它有 <span class="arithmatex">\(\Delta q=4\)</span>，不适用调和函数极值原理，直接用极坐标：</p>
+<div class="arithmatex">\[q=\rho^2(1-\tfrac12\sin2\theta),\qquad 0\le\rho\le r.\]</div>
+<p>括号位于 <span class="arithmatex">\([1/2,3/2]\)</span>，所以最小值为零，仅原点取得；最大值为 <span class="arithmatex">\(3r^2/2\)</span>，需同时 <span class="arithmatex">\(\rho=r\)</span>、<span class="arithmatex">\(\sin2\theta=-1\)</span>。故最大值点为 <span class="arithmatex">\((r/\sqrt2,-r/\sqrt2)\)</span> 与 <span class="arithmatex">\((-r/\sqrt2,r/\sqrt2)\)</span>。这道题提醒：一般实函数可在内部取极值，边界结论必须有相应结构作为前提。</p>
+<h3 id="6-复合闭路外圈为何等于小圈之和">6 复合闭路：外圈为何等于小圈之和<a class="headerlink" href="#6-复合闭路外圈为何等于小圈之和" title="Permanent link">#</a></h3>
+<div class="admonition abstract">
+<p class="admonition-title">核心结论</p>
+<p>设正向简单闭曲线 <span class="arithmatex">\(C\)</span> 内有互不相交的小闭曲线 <span class="arithmatex">\(C_1,\ldots,C_m\)</span>，各小圈均单独取逆时针，内部互不重叠。若 <span class="arithmatex">\(f\)</span> 在挖去这些内部后剩余闭区域的一个邻域内解析，则</p>
+<div class="arithmatex">\[\oint_C f(z)\,dz=\sum_{k=1}^{m}\oint_{C_k}f(z)\,dz. \tag{9}\]</div>
+<p>孔洞内可以有奇点，但剩余区域及边界不能再遗漏奇点。</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">证明思路</p>
+<p>用不相交的切口连接内外边界。切开后的区域边界包括外圈、反向内圈，以及切口的两侧；切口两侧同路反向，积分相消。对切开区域用柯西定理，剩下</p>
+<div class="arithmatex">\[0=\oint_Cf\,dz-\sum_{k=1}^{m}\oint_{C_k}f\,dz,\]</div>
+<p>移项即得式（9）。可将切口看作宽度趋零的细通道，连续性保证两侧积分在极限中相消。</p>
+</div>
+<p><img alt="第3讲 插图 holes" loading="lazy" src="../%E6%8F%92%E5%9B%BE/%E7%AC%AC3%E8%AE%B2/holes.svg" /></p>
+<div class="admonition warning">
+<p class="admonition-title">方向提醒</p>
+<p>作为挖孔区域的正向边界，外圈逆时针、内圈顺时针；写成“外圈等于各小圈之和”时，右侧小圈都改成逆时针。路径可在无奇点的区域内变形，但不能穿过奇点，也不能改变包围了哪些奇点。</p>
+</div>
+<h3 id="7-课堂综合积分与反演换元校正">7 课堂综合积分与反演换元校正<a class="headerlink" href="#7-课堂综合积分与反演换元校正" title="Permanent link">#</a></h3>
+<h4 id="71-先找奇点再跟踪方向">7.1 先找奇点，再跟踪方向<a class="headerlink" href="#71-先找奇点再跟踪方向" title="Permanent link">#</a></h4>
+<p>课堂题目是对 <span class="arithmatex">\(r&gt;1\)</span> 计算正向圆周上的</p>
+<div class="arithmatex">\[K_r=\oint_{|z|=r}\frac{e^{1/z}}{1+z}\,dz.\]</div>
+<p>被积函数在 <span class="arithmatex">\(0,-1\)</span> 以外解析，两点都在圆内。板书将两处小圈贡献相加写成 <span class="arithmatex">\(2\pi i+2\pi i/e\)</span>；原点小圈的反演半径判断有误，正确结果是 <span class="arithmatex">\(K_r=2\pi i\)</span>。下面给出可独立核查的推导。
+令 <span class="arithmatex">\(t=1/z\)</span>，则 <span class="arithmatex">\(dz=-dt/t^2\)</span>，且</p>
+<div class="arithmatex">\[\frac{e^{1/z}}{1+z}\,dz=-\frac{e^t}{t(t+1)}\,dt.\]</div>
+<p>若 <span class="arithmatex">\(z=re^{i\theta}\)</span> 逆时针转动，则 <span class="arithmatex">\(t=r^{-1}e^{-i\theta}\)</span> 顺时针转动。把新路径改回逆时针，方向负号与微分负号相消：</p>
+<div class="arithmatex">\[K_r=\oint_{|t|=1/r}^{+}\frac{e^t}{t(t+1)}\,dt.\]</div>
+<p>因 <span class="arithmatex">\(1/r&lt;1\)</span>，<span class="arithmatex">\(t=-1\)</span> 位于新圆外，<span class="arithmatex">\(G(t)=e^t/(t+1)\)</span> 在新圆内外邻域解析。柯西公式给出</p>
+<div class="arithmatex">\[K_r=2\pi iG(0)=2\pi i. \tag{10}\]</div>
+<p><img alt="第3讲 插图 inversion" loading="lazy" src="../%E6%8F%92%E5%9B%BE/%E7%AC%AC3%E8%AE%B2/inversion.svg" /></p>
+<h4 id="72-分开计算两小圈定位板书遗漏">7.2 分开计算两小圈，定位板书遗漏<a class="headerlink" href="#72-分开计算两小圈定位板书遗漏" title="Permanent link">#</a></h4>
+<p>在原点周围取正向小圆 <span class="arithmatex">\(C_0:|z|=\varepsilon\)</span>，<span class="arithmatex">\(0&lt;\varepsilon&lt;1\)</span>；再在 <span class="arithmatex">\(-1\)</span> 周围取不与它相交的小圆 <span class="arithmatex">\(C_{-1}\)</span>。复合闭路定理给出 <span class="arithmatex">\(K_r=K_0+K_{-1}\)</span>。
+负一附近直接用柯西公式：</p>
+<div class="arithmatex">\[K_{-1}=2\pi i e^{-1}.\]</div>
+<p>原点小圆反演后的半径是 <span class="arithmatex">\(1/\varepsilon&gt;1\)</span>，所以新圆同时围住 <span class="arithmatex">\(0,-1\)</span>。整理方向后再分式分解：</p>
+<div class="arithmatex">\[K_0=\oint_{|t|=1/\varepsilon}^{+}\left(\frac{e^t}{t}-\frac{e^t}{t+1}\right)dt=2\pi i(1-e^{-1}).\]</div>
+<p>二者相加仍是 <span class="arithmatex">\(2\pi i\)</span>。板书遗漏的是原点小圈反演后 <span class="arithmatex">\(t=-1\)</span> 对第二项的贡献。这里不能把“小圆”在反演后仍当作小圆。</p>
+<div class="admonition warning">
+<p class="admonition-title">条件提醒</p>
+<p>若原题改为 <span class="arithmatex">\(0&lt;r&lt;1\)</span>，只围住原点，积分便是 <span class="arithmatex">\(2\pi i(1-e^{-1})\)</span>；<span class="arithmatex">\(r=1\)</span> 时路径穿过 <span class="arithmatex">\(-1\)</span>，通常的曲线积分不适用。半径范围是题意的一部分。</p>
+</div>
+<h3 id="8-代数基本定理无根假设怎样导出矛盾">8 代数基本定理：无根假设怎样导出矛盾<a class="headerlink" href="#8-代数基本定理无根假设怎样导出矛盾" title="Permanent link">#</a></h3>
+<div class="admonition abstract">
+<p class="admonition-title">核心结论</p>
+<p>任意次数 <span class="arithmatex">\(n\ge1\)</span> 的复多项式都有复根；按重数计共有 <span class="arithmatex">\(n\)</span> 个根，可完全分解为一次因子的乘积。</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">证明思路</p>
+<p>假设多项式无根，则倒数为整函数。最高次项控制圆外，紧致性控制圆内，使倒数全平面有界；刘维尔定理将它变成常数，与它在远处趋零却处处非零矛盾。
+设 <span class="arithmatex">\(P(z)=a_nz^n+\cdots+a_0\)</span>，<span class="arithmatex">\(a_n\ne0\)</span>。提出最高次项：</p>
+<div class="arithmatex">\[P(z)=a_nz^n(1+\frac{a_{n-1}}{a_nz}+\cdots+\frac{a_0}{a_nz^n}).\]</div>
+<p>括号内除一以外的有限项之和，在所有方向上随 <span class="arithmatex">\(|z|\to\infty\)</span> 一致趋零。取充分大 <span class="arithmatex">\(R\)</span>，使其模不超过 <span class="arithmatex">\(1/2\)</span>，反三角不等式给出</p>
+<div class="arithmatex">\[|P(z)|\ge\frac{|a_n|}{2}|z|^n\quad(|z|\ge R).\]</div>
+<p>若 <span class="arithmatex">\(P\)</span> 无根，则 <span class="arithmatex">\(F=1/P\)</span> 为整函数。圆外 <span class="arithmatex">\(|F(z)|\le2/(|a_n||z|^n)\to0\)</span>；圆内 <span class="arithmatex">\(|P|\)</span> 连续且不为零，在闭圆盘取得正最小值 <span class="arithmatex">\(m\)</span>，故 <span class="arithmatex">\(|F|\le1/m\)</span>。两部分上界合并，得到 <span class="arithmatex">\(F\)</span> 全平面有界。
+刘维尔定理推出 <span class="arithmatex">\(F\)</span> 为常数，再由远处极限为零，得 <span class="arithmatex">\(F\equiv0\)</span>，与 <span class="arithmatex">\(1/P\)</span> 处处非零矛盾。因此 <span class="arithmatex">\(P\)</span> 至少有一根 <span class="arithmatex">\(\alpha_1\)</span>。
+多项式除法给 <span class="arithmatex">\(P(z)=(z-\alpha_1)Q_{n-1}(z)\)</span>。对非恒定商重复根存在性，次数每次降低一，最终得到</p>
+<div class="arithmatex">\[P(z)=a_n\prod_{j=1}^{n}(z-\alpha_j). \tag{11}\]</div>
+<p>重复出现的因子数就是对应根的重数；分解已经说明按重数恰有 <span class="arithmatex">\(n\)</span> 根。</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">条件提醒</p>
+<p>应写 <span class="arithmatex">\(|P(z)|\to\infty\)</span>，不能把复数值按实数大小比较。圆外趋零不自动给出全平面有界，圆内的连续性、紧致性与无根假设缺一不可。</p>
+</div>
+<h3 id="9-幂级数的引入与本讲的逻辑联系">9 幂级数的引入与本讲的逻辑联系<a class="headerlink" href="#9-幂级数的引入与本讲的逻辑联系" title="Permanent link">#</a></h3>
+<p>课堂末尾进入幂级数：以 <span class="arithmatex">\(z_0\)</span> 为中心的级数形如</p>
+<div class="arithmatex">\[\sum_{n=0}^{\infty}c_n(z-z_0)^n.\]</div>
+<p>系数固定，收敛点由 <span class="arithmatex">\(z\)</span> 决定，不能像有限多项式一样默认处处有意义。课堂例子包括</p>
+<div class="arithmatex">\[e^z=\sum_{n=0}^{\infty}\frac{z^n}{n!},\qquad \cos z=\sum_{n=0}^{\infty}\frac{(-1)^nz^{2n}}{(2n)!},\]</div>
+<div class="arithmatex">\[\sin z=\sum_{n=0}^{\infty}\frac{(-1)^nz^{2n+1}}{(2n+1)!}.\]</div>
+<p>它们对所有复数收敛，并在每个固定闭圆盘上一致收敛。例如指数项的相邻绝对值之比为 <span class="arithmatex">\(|z|/(n+1)\to0\)</span>，闭圆盘上再用半径对应的数值级数统一控制。</p>
+<div class="admonition info">
+<p class="admonition-title">逻辑衔接</p>
+<p>本讲使用的解析函数展开可由“柯西定理 → 柯西公式与高阶导数 → 几何级数展开积分核 → 泰勒定理”建立，参考四给出关键换序步骤。不能只凭“有任意阶导数”就断言等于泰勒级数；复解析性提供了更强的保证。</p>
+</div>
+<h2 id="第三层-详细参考与拓展">第三层 详细参考与拓展<a class="headerlink" href="#第三层-详细参考与拓展" title="Permanent link">#</a></h2>
+<h3 id="参考一-柯西公式的小圆证明与高阶求导">参考一 柯西公式的小圆证明与高阶求导<a class="headerlink" href="#参考一-柯西公式的小圆证明与高阶求导" title="Permanent link">#</a></h3>
+<div class="admonition abstract">
+<p class="admonition-title">重点</p>
+<p>目标是说明大曲线积分为何只留下中心函数值。取 <span class="arithmatex">\(a\)</span> 附近的正向小圆 <span class="arithmatex">\(C_\varepsilon\)</span>，使它位于 <span class="arithmatex">\(C\)</span> 内部。<span class="arithmatex">\(f(\zeta)/(\zeta-a)\)</span> 在两圈之间解析，复合闭路定理将大圈积分化为小圈积分。</p>
+<div class="arithmatex">\[\oint_{C_\varepsilon}\frac{f(\zeta)}{\zeta-a}\,d\zeta=2\pi i f(a)+\oint_{C_\varepsilon}\frac{f(\zeta)-f(a)}{\zeta-a}\,d\zeta.\]</div>
+<p>由式（2），后一项的模不超过</p>
+<div class="arithmatex">\[2\pi\max_{|\zeta-a|=\varepsilon}|f(\zeta)-f(a)|\to0\quad(\varepsilon\to0).\]</div>
+<p>外圈积分不随小圆半径改变，因而等于 <span class="arithmatex">\(2\pi if(a)\)</span>。
+高阶公式从参数 <span class="arithmatex">\(a\)</span> 的求导得到。在远离 <span class="arithmatex">\(C\)</span> 的一个小闭圆盘内，<span class="arithmatex">\(|\zeta-a|\)</span> 有统一正下界，核的差商一致趋向 <span class="arithmatex">\(1/(\zeta-a)^2\)</span>，可交换极限与积分。反复求导时</p>
+<div class="arithmatex">\[\frac{d^n}{da^n}\frac1{\zeta-a}=\frac{n!}{(\zeta-a)^{n+1}},\]</div>
+<p>即得到式（5），并证明解析函数存在任意阶导数。</p>
+</div>
+<h3 id="参考二-最大模原理的等号与连通性">参考二 最大模原理的等号与连通性<a class="headerlink" href="#参考二-最大模原理的等号与连通性" title="Permanent link">#</a></h3>
+<div class="admonition info">
+<p class="admonition-title">重点</p>
+<p>设 <span class="arithmatex">\(a\)</span> 是内部局部最大模点，附近 <span class="arithmatex">\(|f(z)|\le|f(a)|=M\)</span>。若 <span class="arithmatex">\(M=0\)</span>，附近直接恒零；若 <span class="arithmatex">\(M&gt;0\)</span>，写 <span class="arithmatex">\(f(a)=Me^{i\alpha}\)</span>，令 <span class="arithmatex">\(g=e^{-i\alpha}f\)</span>，则 <span class="arithmatex">\(g(a)=M\)</span>、<span class="arithmatex">\(|g|\le M\)</span>。
+对任意充分小的圆，平均值公式取实部给</p>
+<div class="arithmatex">\[M=\frac1{2\pi}\int_0^{2\pi}\operatorname{Re}g(a+re^{i\theta})\,d\theta.\]</div>
+<p>每个被平均的实数都不超过 <span class="arithmatex">\(M\)</span>。若一点严格小于 <span class="arithmatex">\(M\)</span>，连续性使一段圆弧也严格小于 <span class="arithmatex">\(M\)</span>，平均就严格小于 <span class="arithmatex">\(M\)</span>，矛盾。因此圆周上 <span class="arithmatex">\(\operatorname{Re}g=M\)</span>。又由 <span class="arithmatex">\(|g|\le M\)</span>，若 <span class="arithmatex">\(g=M+ib\)</span>，便有 <span class="arithmatex">\(M^2+b^2\le M^2\)</span>，所以 <span class="arithmatex">\(b=0\)</span>。半径可任取，故小圆盘内 <span class="arithmatex">\(f\)</span> 为常数。
+从局部到全域用解析函数的唯一性：若解析函数不局部恒零，泰勒展开有首个非零项，可写成 <span class="arithmatex">\((z-a)^m[a_m+O(z-a)]\)</span>，其中 <span class="arithmatex">\(a_m\ne0\)</span>，故附近零点孤立。于是对 <span class="arithmatex">\(h=f-f(a)\)</span>，局部恒零点组成的集合非空且开；若这些点趋向域内一点，该点附近不可能是孤立零点，因而也局部恒零，集合又相对闭。连通性使它等于整个域。
+有界闭区域上的连续函数取得最大值；若最大点在内部，刚证明的结论使函数恒定。因此非恒定时最大模只能在边界。此处“有界、闭区域连续”保证最大值存在，“内部解析、连通”排除内部最大模点。</p>
+</div>
+<h3 id="参考三-调和函数的局部共轭与极值传播">参考三 调和函数的局部共轭与极值传播<a class="headerlink" href="#参考三-调和函数的局部共轭与极值传播" title="Permanent link">#</a></h3>
+<div class="admonition info">
+<p class="admonition-title">理解即可</p>
+<p>多连通域上不必存在全局共轭，但任一内点都有足够小的圆盘包含于域内。在该圆盘中考虑微分形式 <span class="arithmatex">\(-u_y\,dx+u_x\,dy\)</span>。其相容条件为</p>
+<div class="arithmatex">\[(-u_y)_y=(u_x)_x,\]</div>
+<p>恰好等价于 <span class="arithmatex">\(u_{xx}+u_{yy}=0\)</span>。圆盘单连通，格林公式保证该形式的积分与路径无关，所以可定义 <span class="arithmatex">\(v\)</span>，满足 <span class="arithmatex">\(v_x=-u_y\)</span>、<span class="arithmatex">\(v_y=u_x\)</span>，从而 <span class="arithmatex">\(u+iv\)</span> 解析。
+指数证明于是可在每个小圆盘内使用。若 <span class="arithmatex">\(u\)</span> 有内部局部极值，则先在一个小圆盘恒定。以相交的小圆盘沿域内路径覆盖；在相邻圆盘的重叠开集中 <span class="arithmatex">\(u\)</span> 已为常数，相应解析函数的导数在开集为零，由参考二的唯一性论证，它在整个相邻圆盘为零。因此常值逐盘传播到整个连通域。这补全了不依赖全局共轭函数的证明。</p>
+</div>
+<h3 id="参考四-从柯西公式得到泰勒展开">参考四 从柯西公式得到泰勒展开<a class="headerlink" href="#参考四-从柯西公式得到泰勒展开" title="Permanent link">#</a></h3>
+<div class="admonition info">
+<p class="admonition-title">理解即可</p>
+<p>设 <span class="arithmatex">\(f\)</span> 在包含闭圆盘 <span class="arithmatex">\(|\zeta-a|\le R\)</span> 的开集内解析。对 <span class="arithmatex">\(|z-a|\le\rho&lt;R\)</span>，在圆周 <span class="arithmatex">\(|\zeta-a|=R\)</span> 上有</p>
+<div class="arithmatex">\[\frac1{\zeta-z}=\frac1{\zeta-a}\sum_{n=0}^{\infty}\left(\frac{z-a}{\zeta-a}\right)^n.\]</div>
+<p>比值的模统一不超过 <span class="arithmatex">\(\rho/R&lt;1\)</span>，所以级数在圆周上一致收敛。代入柯西公式并逐项积分：</p>
+<div class="arithmatex">\[f(z)=\sum_{n=0}^{\infty}c_n(z-a)^n,\qquad c_n=\frac1{2\pi i}\oint_{|\zeta-a|=R}\frac{f(\zeta)}{(\zeta-a)^{n+1}}\,d\zeta.\]</div>
+<p>由高阶公式，<span class="arithmatex">\(c_n=f^{(n)}(a)/n!\)</span>；由 <span class="arithmatex">\(|c_n|\le M_a(R)/R^n\)</span>，截断尾项满足</p>
+<div class="arithmatex">\[\left|f(z)-\sum_{n=0}^{N}c_n(z-a)^n\right|\le M_a(R)\frac{(\rho/R)^{N+1}}{1-\rho/R}\to0.\]</div>
+<p>因此展开等于函数，而不只是形式上写出的级数。整函数允许任取 <span class="arithmatex">\(R\)</span>，便覆盖所有有限点。</p>
+</div>
+<h2 id="课末核心知识回顾">课末核心知识回顾<a class="headerlink" href="#课末核心知识回顾" title="Permanent link">#</a></h2>
+<p>复积分先参数化并确定方向；<span class="arithmatex">\(dz\)</span> 含方向，<span class="arithmatex">\(|dz|\)</span> 是弧长。柯西定理要求相关区域无奇点，单有闭路积分为零不能反推解析。
+基本圆周积分只保留负一次幂。柯西公式把积分转为内部函数值或导数；课堂三角函数题则利用幂次结构直接筛选 <span class="arithmatex">\(z^{n-1}\)</span> 的系数，并检查求和起点。
+柯西估计通过圆周上界限制导数。整函数允许放大半径，因此有界推出常数，多项式增长推出有限次数。
+平均值公式平均复数值；等号的刚性产生最大模原理。调和函数的最大、最小值均受边界控制，须与一般实函数及解析函数的模区分。
+复合闭路中外边界逆时针、孔洞边界顺时针；改写为外圈等于小圈和后，小圈统一逆时针。反演 <span class="arithmatex">\(t=1/z\)</span> 使半径取倒数、方向翻转，微分另有负号。
+代数基本定理把无根假设化为有界整函数的矛盾。幂级数随后将系统研究展开与收敛；本讲通过柯西公式说明解析性为何能保证泰勒展开。</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="页脚" >
+        
+          
+          <a href="../%E7%AC%AC2%E8%AE%B2_%E5%A4%8D%E5%B9%82%E8%A7%A3%E6%9E%90%E6%80%A7%E4%B8%8E%E5%A4%8D%E5%B9%B3%E9%9D%A2%E6%98%A0%E5%B0%84/" class="md-footer__link md-footer__link--prev" aria-label="上一页: 第2讲 复幂解析性与复平面映射">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                上一页
+              </span>
+              <div class="md-ellipsis">
+                第2讲 复幂解析性与复平面映射
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../%E7%AC%AC4%E8%AE%B2_%E5%B9%82%E7%BA%A7%E6%95%B0%E6%94%B6%E6%95%9B%E4%B8%8E%E6%B3%B0%E5%8B%92%E6%B4%9B%E6%9C%97%E5%B1%95%E5%BC%80/" class="md-footer__link md-footer__link--next" aria-label="下一页: 第4讲 幂级数收敛与泰勒洛朗展开">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                下一页
+              </span>
+              <div class="md-ellipsis">
+                第4讲 幂级数收敛与泰勒洛朗展开
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.sections", "navigation.expand", "navigation.top", "navigation.footer", "toc.follow", "search.highlight", "search.share"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

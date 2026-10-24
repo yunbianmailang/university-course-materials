@@ -1,0 +1,2639 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="大学课程个人学习讲义，按学期和课程组织，支持网页端直接阅读">
+      
+      
+      
+        <link rel="canonical" href="https://yunbianmailang.github.io/university-course-materials/%E5%9F%BA%E7%A1%80%E7%89%A9%E7%90%86%E5%AD%A62/%E7%AC%AC7%E8%AE%B2_%E5%8F%8C%E6%8A%98%E5%B0%84%E4%B8%8E%E5%81%8F%E6%8C%AF%E5%85%89%E5%BA%94%E7%94%A8/">
+      
+      
+        <link rel="prev" href="../%E7%AC%AC6%E8%AE%B2_%E5%81%8F%E6%8C%AF%E6%80%81%E4%B8%8E%E8%8F%B2%E6%B6%85%E8%80%B3%E5%85%AC%E5%BC%8F/">
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>第7讲 双折射与偏振光应用 - 大学课程学习资料</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/custom.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#第7讲-双折射与偏振光应用" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../.." title="大学课程学习资料" class="md-header__button md-logo" aria-label="大学课程学习资料" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            大学课程学习资料
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              第7讲 双折射与偏振光应用
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="indigo"  aria-label="切换到深色模式"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="切换到深色模式" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="indigo"  aria-label="切换到浅色模式"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="切换到浅色模式" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="分享" aria-label="分享" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/yunbianmailang/university-course-materials" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    大学课程学习资料
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="大学课程学习资料" class="md-nav__button md-logo" aria-label="大学课程学习资料" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    大学课程学习资料
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/yunbianmailang/university-course-materials" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    大学课程学习资料
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    首页
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    复变函数与数理方程
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    复变函数与数理方程
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0%E4%B8%8E%E6%95%B0%E7%90%86%E6%96%B9%E7%A8%8B/%E8%AF%BE%E7%A8%8B%E8%AF%B4%E6%98%8E/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    课程说明
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0%E4%B8%8E%E6%95%B0%E7%90%86%E6%96%B9%E7%A8%8B/%E7%AC%AC1%E8%AE%B2_%E5%A4%8D%E6%95%B0%E5%87%A0%E4%BD%95%E6%A8%A1%E7%9A%84%E6%9E%81%E5%80%BC%E4%B8%8E%E6%8C%87%E6%95%B0%E6%98%A0%E5%B0%84/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第1讲 复数几何模的极值与指数映射
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0%E4%B8%8E%E6%95%B0%E7%90%86%E6%96%B9%E7%A8%8B/%E7%AC%AC2%E8%AE%B2_%E5%A4%8D%E5%B9%82%E8%A7%A3%E6%9E%90%E6%80%A7%E4%B8%8E%E5%A4%8D%E5%B9%B3%E9%9D%A2%E6%98%A0%E5%B0%84/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第2讲 复幂解析性与复平面映射
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0%E4%B8%8E%E6%95%B0%E7%90%86%E6%96%B9%E7%A8%8B/%E7%AC%AC3%E8%AE%B2_%E5%A4%8D%E7%A7%AF%E5%88%86%E6%9F%AF%E8%A5%BF%E5%85%AC%E5%BC%8F%E4%B8%8E%E8%A7%A3%E6%9E%90%E5%87%BD%E6%95%B0%E7%9A%84%E6%95%B4%E4%BD%93%E6%80%A7%E8%B4%A8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第3讲 复积分柯西公式与解析函数的整体性质
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0%E4%B8%8E%E6%95%B0%E7%90%86%E6%96%B9%E7%A8%8B/%E7%AC%AC4%E8%AE%B2_%E5%B9%82%E7%BA%A7%E6%95%B0%E6%94%B6%E6%95%9B%E4%B8%8E%E6%B3%B0%E5%8B%92%E6%B4%9B%E6%9C%97%E5%B1%95%E5%BC%80/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第4讲 幂级数收敛与泰勒洛朗展开
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0%E4%B8%8E%E6%95%B0%E7%90%86%E6%96%B9%E7%A8%8B/%E7%AC%AC5%E8%AE%B2_%E9%9B%B6%E7%82%B9%E5%A5%87%E7%82%B9%E4%B8%8E%E7%95%99%E6%95%B0%E7%A7%AF%E5%88%86/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第5讲 零点奇点与留数积分
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    信号与系统
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    信号与系统
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%B3%BB%E7%BB%9F/%E8%AF%BE%E7%A8%8B%E8%AF%B4%E6%98%8E/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    课程说明
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%B3%BB%E7%BB%9F/%E7%AC%AC1%E8%AE%B2_%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF%E4%B8%8E%E5%9F%BA%E6%9C%AC%E8%AF%AD%E8%A8%80/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第1讲 学习路线与基本语言
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%B3%BB%E7%BB%9F/%E7%AC%AC2%E8%AE%B2_%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B%E7%BB%8F%E5%85%B8%E6%B3%95%E4%B8%8E%E5%93%8D%E5%BA%94%E5%88%86%E8%A7%A3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第2讲 微分方程经典法与响应分解
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%B3%BB%E7%BB%9F/%E7%AC%AC3%E8%AE%B2_%E5%82%85%E9%87%8C%E5%8F%B6%E7%BA%A7%E6%95%B0%E4%B8%8E%E9%A2%91%E8%B0%B1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第3讲 傅里叶级数与频谱
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%B3%BB%E7%BB%9F/%E7%AC%AC4%E8%AE%B2_%E5%82%85%E9%87%8C%E5%8F%B6%E5%8F%98%E6%8D%A2%E4%B8%8E%E5%85%B8%E5%9E%8B%E4%BF%A1%E5%8F%B7%E9%A2%91%E8%B0%B1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第4讲 傅里叶变换与典型信号频谱
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%B3%BB%E7%BB%9F/%E7%AC%AC5%E8%AE%B2_%E5%85%B8%E5%9E%8B%E5%8F%98%E6%8D%A2%E5%AF%B9%E4%B8%8E%E6%8A%BD%E6%A0%B7%E5%AE%9A%E7%90%86/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第5讲 典型变换对与抽样定理
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%B3%BB%E7%BB%9F/%E7%AC%AC6%E8%AE%B2_%E6%8B%89%E6%99%AE%E6%8B%89%E6%96%AF%E5%8F%98%E6%8D%A2%E7%9A%84%E6%80%A7%E8%B4%A8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第6讲 拉普拉斯变换的性质
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%B3%BB%E7%BB%9F/%E7%AC%AC7%E8%AE%B2_%E6%8B%89%E6%99%AE%E6%8B%89%E6%96%AF%E9%80%86%E5%8F%98%E6%8D%A2%E4%B8%8E%20s%20%E5%9F%9F%E6%A8%A1%E5%9E%8B/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第7讲 拉普拉斯逆变换与 s 域模型
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%B3%BB%E7%BB%9F/%E7%AC%AC8%E8%AE%B2_%E9%A2%91%E7%8E%87%E5%93%8D%E5%BA%94%E4%B8%8E%E7%A8%B3%E5%AE%9A%E6%80%A7/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第8讲 频率响应与稳定性
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    基础物理学2（光学）
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    基础物理学2（光学）
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E8%AF%BE%E7%A8%8B%E8%AF%B4%E6%98%8E/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    课程说明
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC1%E8%AE%B2_%E5%87%A0%E4%BD%95%E5%85%89%E5%AD%A6%E7%AE%80%E4%BB%8B/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第1讲 几何光学简介
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC2%E8%AE%B2_%E6%B3%A2%E5%8A%A8%E5%85%89%E5%AD%A6%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86%EF%BC%88%E4%B8%80%EF%BC%89/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第2讲 波动光学基本原理（一）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC3%E8%AE%B2_%E5%85%89%E7%9A%84%E5%B9%B2%E6%B6%89%E4%B8%8E%E6%97%B6%E7%A9%BA%E7%9B%B8%E5%B9%B2%E6%80%A7/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第3讲 光的干涉与时空相干性
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC4%E8%AE%B2_%E5%85%89%E7%9A%84%E8%A1%8D%E5%B0%84%E4%B8%8E%E5%88%86%E8%BE%A8%E6%9C%AC%E9%A2%86/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第4讲 光的衍射与分辨本领
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC5%E8%AE%B2_%E8%A1%8D%E5%B0%84%E5%85%89%E6%A0%85%E4%B8%8E%E6%99%B6%E4%BD%93%E8%A1%8D%E5%B0%84/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第5讲 衍射光栅与晶体衍射
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC6%E8%AE%B2_%E5%81%8F%E6%8C%AF%E6%80%81%E4%B8%8E%E8%8F%B2%E6%B6%85%E8%80%B3%E5%85%AC%E5%BC%8F/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第6讲 偏振态与菲涅耳公式
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第7讲 双折射与偏振光应用
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第7讲 双折射与偏振光应用
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-双折射与单轴晶体" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1 双折射与单轴晶体
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1 双折射与单轴晶体">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-一束入射光对应两种传播模式" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1 一束入射光对应两种传播模式
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-光轴-主平面与主截面" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2 光轴 主平面与主截面
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-主折射率与正负晶体" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.3 主折射率与正负晶体
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-惠更斯作图与非常光走离" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2 惠更斯作图与非常光走离
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2 惠更斯作图与非常光走离">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-先画波面-再找光线" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 先画波面 再找光线
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-法线速度与射线速度" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 法线速度与射线速度
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-波法面-射线面与方向关系" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3 波法面 射线面与方向关系
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-课堂例题-adp-晶片的走离与光程差" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4 课堂例题 ADP 晶片的走离与光程差
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-双折射偏振棱镜" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3 双折射偏振棱镜
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-波片控制相位与偏振态" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4 波片控制相位与偏振态
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4 波片控制相位与偏振态">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-波片的快慢轴和相位约定" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 波片的快慢轴和相位约定
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-四分之一波片-半波片与全波片" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 四分之一波片 半波片与全波片
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-四分之一波片的状态变换" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3 四分之一波片的状态变换
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#44-半波片使线偏振关于本征轴镜像" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.4 半波片使线偏振关于本征轴镜像
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-用波片与偏振片检偏" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5 用波片与偏振片检偏
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5 用波片与偏振片检偏">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-先转检偏片-再加入四分之一波片" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 先转检偏片 再加入四分之一波片
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-课堂思考-两种部分偏振怎样区分" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 课堂思考 两种部分偏振怎样区分
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-偏振光干涉" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6 偏振光干涉
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6 偏振光干涉">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-起偏-晶片延迟与共同投影" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1 起偏 晶片延迟与共同投影
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62-正交与平行偏振片的光强" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.2 正交与平行偏振片的光强
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63-均匀亮暗-色偏振与等厚条纹" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.3 均匀亮暗 色偏振与等厚条纹
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-人工双折射与电光调制" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7 人工双折射与电光调制
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7 人工双折射与电光调制">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71-应力双折射与光弹效应" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.1 应力双折射与光弹效应
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72-克尔效应与横向电场" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.2 克尔效应与横向电场
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#73-泡克尔斯效应与线性电光开关" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.3 泡克尔斯效应与线性电光开关
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-自然旋光与法拉第旋光" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8 自然旋光与法拉第旋光
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8 自然旋光与法拉第旋光">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81-沿光轴传播也可能发生旋光" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1 沿光轴传播也可能发生旋光
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82-菲涅耳解释-旋转角等于圆分量相差的一半" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2 菲涅耳解释 旋转角等于圆分量相差的一半
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#83-法拉第效应与往返差异" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.3 法拉第效应与往返差异
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-公式速查" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9 公式速查
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="9 公式速查">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#晶体传播与波片" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        晶体传播与波片
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#偏振光干涉与外场效应" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        偏振光干涉与外场效应
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-易错点与资料定位" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10 易错点与资料定位
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10 易错点与资料定位">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#易错清单" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        易错清单
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#资料定位" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        资料定位
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-自测题" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11 自测题
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-自测答案" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12 自测答案
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="12 自测答案">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#第-1-题-相折射率与走离" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第 1 题 相折射率与走离
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#第-2-题-厚度-偏振态与旋向" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第 2 题 厚度 偏振态与旋向
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#第-3-题-区分椭圆分量与线分量" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第 3 题 区分椭圆分量与线分量
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#第-4-题-先起偏-再算相差" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第 4 题 先起偏 再算相差
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#第-5-题-电光的非线性与磁光的往返" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第 5 题 电光的非线性与磁光的往返
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-双折射与单轴晶体" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1 双折射与单轴晶体
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1 双折射与单轴晶体">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-一束入射光对应两种传播模式" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1 一束入射光对应两种传播模式
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-光轴-主平面与主截面" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2 光轴 主平面与主截面
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-主折射率与正负晶体" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.3 主折射率与正负晶体
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-惠更斯作图与非常光走离" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2 惠更斯作图与非常光走离
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2 惠更斯作图与非常光走离">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-先画波面-再找光线" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 先画波面 再找光线
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-法线速度与射线速度" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 法线速度与射线速度
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-波法面-射线面与方向关系" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3 波法面 射线面与方向关系
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-课堂例题-adp-晶片的走离与光程差" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4 课堂例题 ADP 晶片的走离与光程差
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-双折射偏振棱镜" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3 双折射偏振棱镜
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-波片控制相位与偏振态" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4 波片控制相位与偏振态
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4 波片控制相位与偏振态">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-波片的快慢轴和相位约定" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 波片的快慢轴和相位约定
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-四分之一波片-半波片与全波片" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 四分之一波片 半波片与全波片
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-四分之一波片的状态变换" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3 四分之一波片的状态变换
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#44-半波片使线偏振关于本征轴镜像" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.4 半波片使线偏振关于本征轴镜像
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-用波片与偏振片检偏" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5 用波片与偏振片检偏
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5 用波片与偏振片检偏">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-先转检偏片-再加入四分之一波片" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 先转检偏片 再加入四分之一波片
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-课堂思考-两种部分偏振怎样区分" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 课堂思考 两种部分偏振怎样区分
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-偏振光干涉" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6 偏振光干涉
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6 偏振光干涉">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-起偏-晶片延迟与共同投影" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1 起偏 晶片延迟与共同投影
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62-正交与平行偏振片的光强" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.2 正交与平行偏振片的光强
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63-均匀亮暗-色偏振与等厚条纹" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.3 均匀亮暗 色偏振与等厚条纹
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-人工双折射与电光调制" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7 人工双折射与电光调制
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7 人工双折射与电光调制">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71-应力双折射与光弹效应" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.1 应力双折射与光弹效应
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72-克尔效应与横向电场" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.2 克尔效应与横向电场
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#73-泡克尔斯效应与线性电光开关" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.3 泡克尔斯效应与线性电光开关
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-自然旋光与法拉第旋光" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8 自然旋光与法拉第旋光
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8 自然旋光与法拉第旋光">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81-沿光轴传播也可能发生旋光" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1 沿光轴传播也可能发生旋光
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82-菲涅耳解释-旋转角等于圆分量相差的一半" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2 菲涅耳解释 旋转角等于圆分量相差的一半
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#83-法拉第效应与往返差异" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.3 法拉第效应与往返差异
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-公式速查" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9 公式速查
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="9 公式速查">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#晶体传播与波片" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        晶体传播与波片
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#偏振光干涉与外场效应" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        偏振光干涉与外场效应
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-易错点与资料定位" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10 易错点与资料定位
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10 易错点与资料定位">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#易错清单" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        易错清单
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#资料定位" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        资料定位
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-自测题" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11 自测题
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-自测答案" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12 自测答案
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="12 自测答案">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#第-1-题-相折射率与走离" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第 1 题 相折射率与走离
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#第-2-题-厚度-偏振态与旋向" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第 2 题 厚度 偏振态与旋向
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#第-3-题-区分椭圆分量与线分量" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第 3 题 区分椭圆分量与线分量
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#第-4-题-先起偏-再算相差" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第 4 题 先起偏 再算相差
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#第-5-题-电光的非线性与磁光的往返" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第 5 题 电光的非线性与磁光的往返
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="第7讲-双折射与偏振光应用">第7讲 双折射与偏振光应用<a class="headerlink" href="#第7讲-双折射与偏振光应用" title="Permanent link">#</a></h1>
+<div class="admonition tip">
+<p class="admonition-title">本讲配套文件</p>
+<ul>
+<li><a href="../../%E6%96%87%E4%BB%B6/%E5%9F%BA%E7%A1%80%E7%89%A9%E7%90%86%E5%AD%A62_%E7%AC%AC7%E8%AE%B2_%E5%8F%8C%E6%8A%98%E5%B0%84%E4%B8%8E%E5%81%8F%E6%8C%AF%E5%85%89%E5%BA%94%E7%94%A8_%E5%AD%A6%E4%B9%A0%E8%AE%B2%E4%B9%89.pdf">PDF 在线阅读（基础物理学2_第7讲_双折射与偏振光应用_学习讲义.pdf）</a></li>
+<li><a href="../../%E6%96%87%E4%BB%B6/%E5%9F%BA%E7%A1%80%E7%89%A9%E7%90%86%E5%AD%A62_%E7%AC%AC7%E8%AE%B2_%E5%8F%8C%E6%8A%98%E5%B0%84%E4%B8%8E%E5%81%8F%E6%8C%AF%E5%85%89%E5%BA%94%E7%94%A8_%E5%AD%A6%E4%B9%A0%E8%AE%B2%E4%B9%89.docx">Word 下载（基础物理学2_第7讲_双折射与偏振光应用_学习讲义.docx）</a></li>
+</ul>
+</div>
+<h2 id="1-双折射与单轴晶体">1 双折射与单轴晶体<a class="headerlink" href="#1-双折射与单轴晶体" title="Permanent link">#</a></h2>
+<blockquote>
+<p><strong>资料范围</strong>：课件 PDF 2–8 页；教材第七章 §1.1–1.2，印刷 378–381 页。以透明单轴晶体为主要模型。</p>
+</blockquote>
+<h3 id="11-一束入射光对应两种传播模式">1.1 一束入射光对应两种传播模式<a class="headerlink" href="#11-一束入射光对应两种传播模式" title="Permanent link">#</a></h3>
+<p><span class="pill pill-ppt">PPT重点</span>各向异性介质对不同振动方向的响应不同，通常出现寻常光（<span class="arithmatex">\(o\)</span> 光）与非常光（<span class="arithmatex">\(e\)</span> 光）。两种模式各为线偏振光；若其中一种未被激发，或两束方向重合，未必看见两条分开的光线。
+寻常光的折射率 <span class="arithmatex">\(n_o\)</span> 不随传播方向改变，光线遵守 <span class="arithmatex">\(n_1\sin i=n_o\sin r_o\)</span>。非常光的速度随方向改变，其能量传播方向一般不能用一个固定折射率代入光线的折射定律，且可能偏出入射面。
+<span class="pill pill-und">理解补充</span>边界上仍须满足相位匹配；“<span class="arithmatex">\(e\)</span> 光不遵守通常的光线折射定律”不等于波的折射没有规律。后面要区分波面法线与光线方向。</p>
+<h3 id="12-光轴-主平面与主截面">1.2 光轴 主平面与主截面<a class="headerlink" href="#12-光轴-主平面与主截面" title="Permanent link">#</a></h3>
+<p><span class="pill pill-ppt">PPT重点</span>光轴是使两种线双折射模式不再有速度差的特殊方向，并非晶体内唯一一根直线。单轴晶体有一个这样的轴方向，如方解石、石英；双轴晶体有两个，如云母。本讲主要讨论单轴晶体。
+主平面由某一路光的传播方向与光轴构成；<span class="arithmatex">\(o\)</span> 光的电矢量垂直自身主平面，<span class="arithmatex">\(e\)</span> 光的电矢量在自身主平面内。主截面则由晶体表面法线与光轴构成；入射面由入射光线与表面法线构成。三个概念的参照对象不同。
+<span class="pill pill-ppt">PPT重点</span>主截面与入射面重合时，两条折射光线也在这个平面内，它同时是两路光的主平面，因而两路振动方向互相垂直。
+课堂思考  当主截面与入射面不重合：<span class="arithmatex">\(o\)</span> 光仍在入射面内，但该面通常不是其主平面；<span class="arithmatex">\(e\)</span> 光可能偏出入射面，其主平面要用自身光线与光轴确定。因此不能笼统断言两束不同方向光的电矢量总互相垂直。
+方解石双像演示中，以入射方向为轴转动晶体，<span class="arithmatex">\(e\)</span> 光像可绕 <span class="arithmatex">\(o\)</span> 光像转动；再转检偏片，两像分别消光。主平面重合时，两个消光方向相差 <span class="arithmatex">\(90^\circ\)</span>。</p>
+<h3 id="13-主折射率与正负晶体">1.3 主折射率与正负晶体<a class="headerlink" href="#13-主折射率与正负晶体" title="Permanent link">#</a></h3>
+<p><span class="pill pill-ppt">PPT重点</span>设 <span class="arithmatex">\(v_o\)</span> 为 <span class="arithmatex">\(o\)</span> 光速度，<span class="arithmatex">\(v_e\)</span> 为 <span class="arithmatex">\(e\)</span> 光垂直光轴传播时的速度，定义两个主折射率</p>
+<div class="arithmatex">\[n_o=\frac{c}{v_o},\qquad n_e=\frac{c}{v_e}.\]</div>
+<p>这里 <span class="arithmatex">\(n_e\)</span> 专指主值，不是任意方向非常光的折射率。沿光轴时两模式折射率均为 <span class="arithmatex">\(n_o\)</span>；垂直光轴时，非常光折射率才取 <span class="arithmatex">\(n_e\)</span>。
+正晶体：<span class="arithmatex">\(n_e&gt;n_o\)</span>，故 <span class="arithmatex">\(v_e&lt;v_o\)</span>，如石英、冰。负晶体：<span class="arithmatex">\(n_e&lt;n_o\)</span>，故 <span class="arithmatex">\(v_e&gt;v_o\)</span>，如方解石。不要用非常光“总比寻常光快”来记忆。
+<span class="pill pill-ppt">PPT重点</span>点光源的 <span class="arithmatex">\(o\)</span> 子波面是球面，<span class="arithmatex">\(e\)</span> 子波面是以光轴为旋转对称轴的椭球面；两者在光轴方向相切。固定时间的波面反映沿各条射线传播到的位置。</p>
+<p><img alt="第7讲 插图 wave_surfaces" loading="lazy" src="../%E6%8F%92%E5%9B%BE/%E7%AC%AC7%E8%AE%B2/wave_surfaces.png" />
+<em>图 1 单轴晶体的子波面截面。图示为射线面随固定时间扩展的波面；正负由主折射率的大小关系定义。</em></p>
+<h2 id="2-惠更斯作图与非常光走离">2 惠更斯作图与非常光走离<a class="headerlink" href="#2-惠更斯作图与非常光走离" title="Permanent link">#</a></h2>
+<blockquote>
+<p><strong>资料范围</strong>：课件 PDF 9–17 页；教材第七章 §1.3–1.4，印刷 381–385 页。</p>
+</blockquote>
+<h3 id="21-先画波面-再找光线">2.1 先画波面 再找光线<a class="headerlink" href="#21-先画波面-再找光线" title="Permanent link">#</a></h3>
+<p><span class="pill pill-ppt">PPT重点</span>取同一入射波面上的两点：先到界面的 <span class="arithmatex">\(A\)</span> 点发出子波，另一路经过时间 <span class="arithmatex">\(t\)</span> 到达界面的 <span class="arithmatex">\(B'\)</span> 点。分别以 <span class="arithmatex">\(A\)</span> 为中心画半径 <span class="arithmatex">\(v_ot\)</span> 的 <span class="arithmatex">\(o\)</span> 子波截圆和相应 <span class="arithmatex">\(e\)</span> 子波椭圆，再由 <span class="arithmatex">\(B'\)</span> 作包络切线。切线代表折射波面，从 <span class="arithmatex">\(A\)</span> 指向切点的连线代表折射光线。
+<span class="pill pill-und">理解补充</span>圆的半径与切线垂直，椭圆的一般矢径却不垂直于切线；这正是非常光的光线可偏离波面法线的几何原因。实际三维问题使用球面、椭球面与切平面。
+课件的三个负晶体情形：① 光轴平行表面、正入射，两模式共线但速度不同；② 光轴平行表面且垂直入射面、斜入射，两模式分别以固定 <span class="arithmatex">\(n_o,n_e\)</span> 满足通常折射定律；③ 光轴斜置、正入射，<span class="arithmatex">\(o\)</span> 光沿法线，<span class="arithmatex">\(e\)</span> 光发生走离。</p>
+<p><img alt="第7讲 插图 huygens_cases" loading="lazy" src="../%E6%8F%92%E5%9B%BE/%E7%AC%AC7%E8%AE%B2/huygens_cases.png" />
+<em>图 2 两种正入射情形。是否看见两束光分开，取决于光轴取向；共线时仍可积累相位差。</em></p>
+<h3 id="22-法线速度与射线速度">2.2 法线速度与射线速度<a class="headerlink" href="#22-法线速度与射线速度" title="Permanent link">#</a></h3>
+<p><span class="pill pill-ppt">PPT重点</span>波面是同相面，波矢 <span class="arithmatex">\(\vec k\)</span> 指向波面法线。射线方向对应能量输运方向，在本讲忽略色散的模型中用射线速度 <span class="arithmatex">\(v_r\)</span> 描述。令同一时间内 <span class="arithmatex">\(ON=d\)</span>、<span class="arithmatex">\(OR=l\)</span>，二者夹角为走离角 <span class="arithmatex">\(\alpha\)</span>，则</p>
+<div class="arithmatex">\[v_N=\frac{d}{t},\qquad v_r=\frac{l}{t},\qquad v_N=v_r\cos\alpha.\]</div>
+<p><span class="arithmatex">\(o\)</span> 光的两方向一致；<span class="arithmatex">\(e\)</span> 光通常不一致。折射率应由相速度定义为 <span class="arithmatex">\(n(\theta)=c/v_N\)</span>，不能用 <span class="arithmatex">\(c/v_r\)</span> 替代。</p>
+<h3 id="23-波法面-射线面与方向关系">2.3 波法面 射线面与方向关系<a class="headerlink" href="#23-波法面-射线面与方向关系" title="Permanent link">#</a></h3>
+<p><span class="pill pill-ppt">PPT重点</span>以各方向法线速度矢量的端点作轨迹，得到波法面；以各方向射线速度矢量的端点作轨迹，得到射线面。两者都不是折射率曲面。波法面上矢径端点所作的垂面，与射线面相切。
+设 <span class="arithmatex">\(\theta\)</span> 是波面法线与光轴的夹角，<span class="arithmatex">\(\xi\)</span> 是射线与光轴的夹角，在图示同侧分支中 <span class="arithmatex">\(\alpha=\xi-\theta\)</span>。非常光满足</p>
+<div class="arithmatex">\[\frac{v_N^2}{c^2}=\frac{\cos^2\theta}{n_o^2}+\frac{\sin^2\theta}{n_e^2},\qquad \frac{c^2}{v_r^2}=n_o^2\cos^2\xi+n_e^2\sin^2\xi.\]</div>
+<p>因此</p>
+<div class="arithmatex">\[n(\theta)=\frac{n_on_e}{\sqrt{n_e^2\cos^2\theta+n_o^2\sin^2\theta}},\qquad \tan\xi=\frac{n_o^2}{n_e^2}\tan\theta.\]</div>
+<p><span class="pill pill-must">必须掌握</span>由射线面的切线求方向关系。以 <span class="arithmatex">\(z\)</span> 沿光轴，取无量纲坐标 <span class="arithmatex">\(z=(v_r/c)\cos\xi\)</span>、<span class="arithmatex">\(x=(v_r/c)\sin\xi\)</span>，截面方程与切线斜率为</p>
+<div class="arithmatex">\[n_o^2z^2+n_e^2x^2=1,\qquad \frac{\mathrm{d}x}{\mathrm{d}z}=-\frac{n_o^2z}{n_e^2x}=-\cot\theta.\]</div>
+<p>再用 <span class="arithmatex">\(z/x=\cot\xi\)</span>，即得 <span class="arithmatex">\(\cot\theta=(n_o^2/n_e^2)\cot\xi\)</span>。法线倾角由切线的垂线确定，不能把矢径当成法线。</p>
+<p><img alt="第7讲 插图 walkoff" loading="lazy" src="../%E6%8F%92%E5%9B%BE/%E7%AC%AC7%E8%AE%B2/walkoff.png" />
+<em>图 3 非常光射线面与其切线。射线指向切点，波面法线垂直切线；夹角即走离角。</em></p>
+<h3 id="24-课堂例题-adp-晶片的走离与光程差">2.4 课堂例题 ADP 晶片的走离与光程差<a class="headerlink" href="#24-课堂例题-adp-晶片的走离与光程差" title="Permanent link">#</a></h3>
+<p><span class="pill pill-ppt">PPT重点</span>课件 PDF 17 页：负晶体 ADP，<span class="arithmatex">\(n_o=1.5246\)</span>、<span class="arithmatex">\(n_e=1.4792\)</span>，光轴与表面成 <span class="arithmatex">\(45^\circ\)</span>，厚度 <span class="arithmatex">\(d=1.00\,\mathrm{cm}\)</span>，光正入射。求走离角和 <span class="arithmatex">\(e\)</span> 光相对 <span class="arithmatex">\(o\)</span> 光的光程差。
+思路：正入射固定了波面法线，因此 <span class="arithmatex">\(\theta=45^\circ\)</span>；先求射线方向，再用相折射率计算两平行表面之间的相位光程。</p>
+<div class="arithmatex">\[\xi=\arctan\left(\frac{n_o^2}{n_e^2}\tan45^\circ\right)\approx46.73^\circ,\qquad \alpha\approx1.73^\circ\approx1^\circ44'.\]</div>
+<div class="arithmatex">\[n(45^\circ)\approx1.50139,\qquad L_e-L_o=[n(45^\circ)-n_o]d\approx-0.02321\,\mathrm{cm}.\]</div>
+<p>负号表示非常光的相位光程更小。课件将 <span class="arithmatex">\(n(45^\circ)\)</span> 取四位小数后给出 <span class="arithmatex">\(-0.0232\,\mathrm{cm}\)</span>，与上式一致。
+<span class="pill pill-und">理解补充</span>这里比较的是同一出射波面上的相位；应使用 <span class="arithmatex">\(n(\theta)d\)</span>。非常光虽沿斜射线通过晶片，却不能把 <span class="arithmatex">\(n(\theta)\)</span> 再乘斜路程 <span class="arithmatex">\(l\)</span>。</p>
+<h2 id="3-双折射偏振棱镜">3 双折射偏振棱镜<a class="headerlink" href="#3-双折射偏振棱镜" title="Permanent link">#</a></h2>
+<blockquote>
+<p><strong>资料范围</strong>：课件 PDF 18–20 页；教材第七章 §2.1，印刷 391–392 页。掌握选光与分束原理。</p>
+</blockquote>
+<p><span class="pill pill-ppt">PPT重点</span>格兰汤姆孙棱镜利用方解石与加拿大树胶的折射率次序 <span class="arithmatex">\(n_o=1.65836&gt;n_g\approx1.55&gt;n_e=1.48641\)</span>。在适当入射角下，<span class="arithmatex">\(o\)</span> 光在胶层处全反射并被吸收，<span class="arithmatex">\(e\)</span> 光通过，输出高偏振度线偏振光。图示光轴取向使非常光使用主值 <span class="arithmatex">\(n_e\)</span>。
+尼科耳棱镜同样利用胶合面的选择性全反射；课件给出的 <span class="arithmatex">\(o\)</span> 光临界角为 <span class="arithmatex">\(i_c=\arcsin(n_g/n_o)\approx69^\circ\)</span>。其细长几何结构限制了可接受的入射角范围。
+沃拉斯顿棱镜由两块光轴互相垂直的晶体组成。第一块的 <span class="arithmatex">\(o\)</span> 光进入第二块成为 <span class="arithmatex">\(e\)</span> 光，第一块的 <span class="arithmatex">\(e\)</span> 光则成为 <span class="arithmatex">\(o\)</span> 光；两束在内部斜界面受到不同折射，最终输出方向分开的两束正交线偏振光。该器件保留两路，适合偏振分束。</p>
+<p><img alt="第7讲 插图 prisms" loading="lazy" src="../%E6%8F%92%E5%9B%BE/%E7%AC%AC7%E8%AE%B2/prisms.png" />
+<em>图 4 两类棱镜的功能比较。格兰汤姆孙选择一路；沃拉斯顿保留两路。光路为原理示意，不按器件尺寸绘制。</em></p>
+<h2 id="4-波片控制相位与偏振态">4 波片控制相位与偏振态<a class="headerlink" href="#4-波片控制相位与偏振态" title="Permanent link">#</a></h2>
+<blockquote>
+<p><strong>资料范围</strong>：课件 PDF 21–35 页；教材第七章 §2.2、§3.1–3.4，印刷 392–401 页。默认正入射，忽略反射与吸收。</p>
+</blockquote>
+<h3 id="41-波片的快慢轴和相位约定">4.1 波片的快慢轴和相位约定<a class="headerlink" href="#41-波片的快慢轴和相位约定" title="Permanent link">#</a></h3>
+<p><span class="pill pill-ppt">PPT重点</span>光轴平行表面的平行平面晶片，在正入射时使 <span class="arithmatex">\(o,e\)</span> 两模式共线传播；出射后它们重新叠加。取晶片光轴为横向 <span class="arithmatex">\(x=e\)</span> 轴，垂直它的横向方向为 <span class="arithmatex">\(y=o\)</span> 轴。线偏振与 <span class="arithmatex">\(x\)</span> 轴夹角为 <span class="arithmatex">\(\alpha\)</span>，则</p>
+<div class="arithmatex">\[A_e=A\cos\alpha,\qquad A_o=A\sin\alpha,\qquad L_e=n_ed,\quad L_o=n_od.\]</div>
+<p>折射率小的方向为快轴，折射率大的方向为慢轴。因此负晶体的光轴方向是快轴，正晶体的光轴方向是慢轴。
+<span class="pill pill-must">必须掌握</span>沿用第六讲的时间约定 <span class="arithmatex">\(\cos(\omega t-kz)\)</span>。设 <span class="arithmatex">\(k_0=2\pi/\lambda\)</span>，其中 <span class="arithmatex">\(\lambda\)</span> 是真空波长；在晶片前表面令 <span class="arithmatex">\(z=0\)</span>。先取 <span class="arithmatex">\(0\le\alpha\le\pi/2\)</span>，使两振幅非负；一般偏振的入射相角差单独记为 <span class="arithmatex">\(\delta_{\mathrm{in}}=\arg E_o-\arg E_e\)</span>。出射面有</p>
+<div class="arithmatex">\[E_e=A\cos\alpha\cos(\omega t-k_0n_ed),\]</div>
+<div class="arithmatex">\[E_o=A\sin\alpha\cos(\omega t+\delta_{\mathrm{in}}-k_0n_od).\]</div>
+<p>定义课件使用的有符号延迟差 <span class="arithmatex">\(\Gamma\)</span>，则实际合成所用的相角差为</p>
+<div class="arithmatex">\[\Gamma=\frac{2\pi}{\lambda}(n_o-n_e)d,\qquad \delta_{\mathrm{out}}=\delta_{\mathrm{in}}-\Gamma.\]</div>
+<p><span class="pill pill-und">理解补充</span>“<span class="arithmatex">\(o\)</span> 比 <span class="arithmatex">\(e\)</span> 多落后 <span class="arithmatex">\(\Gamma\)</span>”表示相角减少 <span class="arithmatex">\(\Gamma\)</span>。课件部分页面把延迟差与相角差都写成相位差；判断左右旋时必须回到上面两分量表达式。只算干涉光强时，<span class="arithmatex">\(\cos\Gamma\)</span> 对正负号不敏感。</p>
+<p><img alt="第7讲 插图 waveplate" loading="lazy" src="../%E6%8F%92%E5%9B%BE/%E7%AC%AC7%E8%AE%B2/waveplate.png" />
+<em>图 5 波片使两个本征方向积累不同相位。理想波片保留两个分量，偏振片则只保留透振方向的投影。</em></p>
+<h3 id="42-四分之一波片-半波片与全波片">4.2 四分之一波片 半波片与全波片<a class="headerlink" href="#42-四分之一波片-半波片与全波片" title="Permanent link">#</a></h3>
+<p><span class="pill pill-ppt">PPT重点</span>波片只对设计波长 <span class="arithmatex">\(\lambda_0\)</span> 具有标称相位延迟。最薄四分之一波片、半波片与一个全波延迟晶片的厚度分别为</p>
+<div class="arithmatex">\[d_{1/4}=\frac{\lambda_0}{4|n_o-n_e|},\qquad d_{1/2}=\frac{\lambda_0}{2|n_o-n_e|},\qquad d_1=\frac{\lambda_0}{|n_o-n_e|}.\]</div>
+<p>更一般地，四分之一波片要求 <span class="arithmatex">\(\Gamma\)</span> 模 <span class="arithmatex">\(2\pi\)</span> 等于 <span class="arithmatex">\(\pm\pi/2\)</span>；半波片要求等于 <span class="arithmatex">\(\pi\)</span>；全波片要求等于 <span class="arithmatex">\(0\)</span>。<span class="pill pill-src">教材补充</span>较厚的多级波片也可满足这些条件，但四分之一波片的 <span class="arithmatex">\(+\pi/2\)</span> 与 <span class="arithmatex">\(-\pi/2\)</span> 会产生相反旋向，不能互换（教材 393 页脚注）。
+<span class="pill pill-und">理解补充</span>若改变波长，<span class="arithmatex">\(n_o,n_e\)</span> 也可能随波长变化，应重算 <span class="arithmatex">\(\Gamma(\lambda)\)</span>。课件所列石英、方解石折射率表说明了这种色散；不能把一块波片在所有颜色下都当成四分之一波片。</p>
+<h3 id="43-四分之一波片的状态变换">4.3 四分之一波片的状态变换<a class="headerlink" href="#43-四分之一波片的状态变换" title="Permanent link">#</a></h3>
+<p><span class="pill pill-ppt">PPT重点</span>线偏振入射时，两个分量初始同相或反相。波片引入四分之一周期的相对延迟，输出轨迹满足</p>
+<div class="arithmatex">\[\frac{E_e^2}{A^2\cos^2\alpha}+\frac{E_o^2}{A^2\sin^2\alpha}=1.\]</div>
+<p>若 <span class="arithmatex">\(\alpha=0^\circ\)</span> 或 <span class="arithmatex">\(90^\circ\)</span>，只激发一个本征分量，输出仍是原方向的线偏振；若与两轴均成 <span class="arithmatex">\(45^\circ\)</span>，两振幅相等，输出为圆偏振；其余非退化角度输出椭圆偏振，椭圆主轴沿晶片两轴。
+圆偏振通过任意取向的理想四分之一波片都会变为线偏振。非圆椭圆偏振只有在其长、短轴分别对准波片两轴时才变为线偏振；其他取向仍为非圆椭圆偏振。
+<span class="pill pill-src">教材补充</span>本讲统一在接收端迎着来光观察旋向：按 <span class="arithmatex">\(E_x=A_x\cos\psi\)</span>、<span class="arithmatex">\(E_y=A_y\cos(\psi+\delta)\)</span>，<span class="arithmatex">\(0&lt;\delta&lt;\pi\)</span> 为右旋，<span class="arithmatex">\(-\pi&lt;\delta&lt;0\)</span> 为左旋（教材 395–397 页；先把相差化到此区间）。交换快慢轴或将输入线偏振从光轴一侧换到另一侧，旋向会反转。
+课堂分析  线偏振与两轴成 <span class="arithmatex">\(30^\circ\)</span> 时，四分之一波片输出椭圆的半轴比为 <span class="arithmatex">\(|A_o/A_e|=\tan30^\circ=1/\sqrt3\)</span>。若改为 <span class="arithmatex">\(45^\circ\)</span> 则成为圆；若沿光轴则保持线偏振。
+课堂分析  课件 PDF 33 页的右旋椭圆，若长轴与波片光轴平行或垂直，两分量原有 <span class="arithmatex">\(\pm\pi/2\)</span> 相差，经四分之一波片后变为 <span class="arithmatex">\(0\)</span> 或 <span class="arithmatex">\(\pi\)</span>，输出线偏振；轴未对准时仍为椭圆。应按“分解振幅 → 相角减去 <span class="arithmatex">\(\Gamma\)</span> → 合成轨迹”的顺序判断。</p>
+<h3 id="44-半波片使线偏振关于本征轴镜像">4.4 半波片使线偏振关于本征轴镜像<a class="headerlink" href="#44-半波片使线偏振关于本征轴镜像" title="Permanent link">#</a></h3>
+<p><span class="pill pill-must">必须掌握</span>半波片使两分量相对反相。去掉共同相位，输入振幅 <span class="arithmatex">\((A\cos\alpha,A\sin\alpha)\)</span> 变为 <span class="arithmatex">\((A\cos\alpha,-A\sin\alpha)\)</span>，仍为线偏振。
+若快轴在固定坐标中的方向为 <span class="arithmatex">\(\beta\)</span>，输入偏振方向为 <span class="arithmatex">\(\gamma\)</span>，则</p>
+<div class="arithmatex">\[\gamma_{\mathrm{out}}=2\beta-\gamma\quad(\operatorname{mod}\pi).\]</div>
+<p>所以课件所说“转过 <span class="arithmatex">\(2\alpha\)</span>”是偏振方向关于波片轴的反射，转角方向须结合几何判断；并非所有输入都固定向同一侧转动。圆偏振通过半波片旋向反转，椭圆偏振的旋向也反转。理想全波片则恢复原偏振态。</p>
+<p><img alt="第7讲 插图 transformations" loading="lazy" src="../%E6%8F%92%E5%9B%BE/%E7%AC%AC7%E8%AE%B2/transformations.png" />
+<em>图 6 四分之一波片与半波片的典型变换。图中波片两轴固定；线偏振方向按无向直线理解，角度相差 180° 等价。</em></p>
+<h2 id="5-用波片与偏振片检偏">5 用波片与偏振片检偏<a class="headerlink" href="#5-用波片与偏振片检偏" title="Permanent link">#</a></h2>
+<blockquote>
+<p><strong>资料范围</strong>：课件 PDF 30、36–38 页；教材第七章 §3.3–3.5，印刷 399–402 页。</p>
+</blockquote>
+<h3 id="51-先转检偏片-再加入四分之一波片">5.1 先转检偏片 再加入四分之一波片<a class="headerlink" href="#51-先转检偏片-再加入四分之一波片" title="Permanent link">#</a></h3>
+<p><span class="pill pill-ppt">PPT重点</span>仅转动一片检偏片：强度有变化且可完全消光，是线偏振；强度不变，可能是圆偏振、自然光或两者的混合；强度变化却不能消光，可能是椭圆偏振或部分偏振。后两种情况需要波片辅助。
+圆偏振与自然光：加入任意取向的理想四分之一波片，圆偏振变成线偏振，转检偏片可消光；自然光仍为自然光，输出强度不随检偏片转动而变。
+椭圆偏振与自然光加线偏振：先用检偏片找强度最大、最小方向，它们给出椭圆主轴或混合光中线偏振方向；把四分之一波片轴对准其中之一。完全椭圆偏振变为线偏振，可消光；含自然光的部分偏振仍留下非零背景，无法完全消光。</p>
+<p><img alt="第7讲 插图 analyzer" loading="lazy" src="../%E6%8F%92%E5%9B%BE/%E7%AC%AC7%E8%AE%B2/analyzer.png" />
+<em>图 7 检偏的基本步骤。先定位主轴，再插入波片；“不能消光”须在轴对准、器件理想的条件下解释。</em></p>
+<h3 id="52-课堂思考-两种部分偏振怎样区分">5.2 课堂思考 两种部分偏振怎样区分<a class="headerlink" href="#52-课堂思考-两种部分偏振怎样区分" title="Permanent link">#</a></h3>
+<p><span class="pill pill-ppt">PPT重点</span>题一：如何区分“自然光＋椭圆偏振”与“自然光＋线偏振”？题二：如何区分“自然光＋圆偏振”与自然光？以下混合均指彼此不相干的强度叠加。
+<span class="pill pill-und">理解补充</span>题一可比较加入对准主轴的四分之一波片前后，转检偏片得到的调制幅度 <span class="arithmatex">\(D=I_{\max}-I_{\min}\)</span>。设自然光强为 <span class="arithmatex">\(I_n\)</span>，椭圆两个主轴方向的分量强度为 <span class="arithmatex">\(I_a,I_b\)</span>，且 <span class="arithmatex">\(I_a\ge I_b&gt;0\)</span>，则</p>
+<div class="arithmatex">\[D_{\mathrm{before}}=I_a-I_b,\qquad D_{\mathrm{after}}=I_a+I_b.\]</div>
+<p>椭圆分量被变成线偏振后，调制幅度增大，但最小值仍为 <span class="arithmatex">\(I_n/2\)</span>。若原本就是自然光加线偏振，对准其方向的波片不改变该线偏振，调制幅度不变。
+题二中，原先转检偏片均不改变强度；加四分之一波片后，圆偏振分量变成线偏振，产生强度调制，自然光则仍无调制。若自然光与圆偏振均非零，仍不能完全消光。
+<span class="pill pill-und">理解补充</span>理想无损波片改变偏振态而不改变偏振度。完全偏振光经轴向合适的波片与检偏片能够消光；部分偏振含有无法用波片消除的自然光背景。实际实验须考虑器件消光比与噪声。</p>
+<h2 id="6-偏振光干涉">6 偏振光干涉<a class="headerlink" href="#6-偏振光干涉" title="Permanent link">#</a></h2>
+<blockquote>
+<p><strong>资料范围</strong>：课件 PDF 39–47 页；教材第七章 §4.1–4.3，印刷 405–408 页。默认两模式相干、空间重合。</p>
+</blockquote>
+<h3 id="61-起偏-晶片延迟与共同投影">6.1 起偏 晶片延迟与共同投影<a class="headerlink" href="#61-起偏-晶片延迟与共同投影" title="Permanent link">#</a></h3>
+<p><span class="pill pill-ppt">PPT重点</span>装置为起偏片 <span class="arithmatex">\(P_1\)</span>、晶片 <span class="arithmatex">\(C\)</span>、检偏片 <span class="arithmatex">\(P_2\)</span>，最后观察屏上光强。<span class="arithmatex">\(P_1\)</span> 使同一入射振动分解出的 <span class="arithmatex">\(o,e\)</span> 两分量具有确定相位关系；晶片积累相位差；<span class="arithmatex">\(P_2\)</span> 将它们投影到同一方向，才产生可见的干涉强弱。
+在 <span class="arithmatex">\(P_2\)</span> 前，两模式电矢量正交，探测器只记录强度和，不出现交叉干涉项。相干性本身不保证干涉：还须空间重合且投影方向相同。
+<span class="pill pill-must">必须掌握</span>为清楚保留投影正负，下面把角度相对 <span class="arithmatex">\(P_1\)</span> 方向定义：<span class="arithmatex">\(P_1\)</span> 水平，晶片 <span class="arithmatex">\(e\)</span> 轴与它成 <span class="arithmatex">\(\alpha\)</span>，<span class="arithmatex">\(P_2\)</span> 与它成 <span class="arithmatex">\(\beta\)</span>。设通过 <span class="arithmatex">\(P_1\)</span> 后光强为 <span class="arithmatex">\(I_1\)</span>，振幅为 <span class="arithmatex">\(A_1\)</span>；在检偏方向上的有符号振幅为</p>
+<div class="arithmatex">\[a_e=A_1\cos\alpha\cos(\beta-\alpha),\qquad a_o=-A_1\sin\alpha\sin(\beta-\alpha).\]</div>
+<p><span class="pill pill-und">理解补充</span>在两分量相位差为 <span class="arithmatex">\(\Gamma\)</span> 时，将强度单位统一，得到通用投影式</p>
+<div class="arithmatex">\[\frac{I}{I_1}=\cos^2\alpha\cos^2(\beta-\alpha)+\sin^2\alpha\sin^2(\beta-\alpha)\]</div>
+<div class="arithmatex">\[\quad-2\sin\alpha\cos\alpha\sin(\beta-\alpha)\cos(\beta-\alpha)\cos\Gamma.\]</div>
+<p>这里把投影符号直接保留在振幅中。若改用两个正振幅的大小描述，则异号对应附加相位 <span class="arithmatex">\(\pi\)</span>，同号对应附加相位 <span class="arithmatex">\(0\)</span>；这是投影几何，不是检偏片额外改变了材料光程。</p>
+<p><img alt="第7讲 插图 interference" loading="lazy" src="../%E6%8F%92%E5%9B%BE/%E7%AC%AC7%E8%AE%B2/interference.png" />
+<em>图 8 正交偏振片之间的晶片。检偏方向上的两个投影符号相反，因而相对多出 π；无晶片延迟时正好相消。</em></p>
+<h3 id="62-正交与平行偏振片的光强">6.2 正交与平行偏振片的光强<a class="headerlink" href="#62-正交与平行偏振片的光强" title="Permanent link">#</a></h3>
+<p><span class="pill pill-src">教材补充</span>教材 406–407 页把相位与投影关系写成强度式。按本笔记的有符号角度，当 <span class="arithmatex">\(P_1\perp P_2\)</span>，取 <span class="arithmatex">\(\beta=\pi/2\)</span>，两投影等大反向。总相差可按正振幅表示为 <span class="arithmatex">\(\Phi=\pi-\Gamma\)</span>，因此</p>
+<div class="arithmatex">\[I_{\perp}=I_1\sin^2(2\alpha)\sin^2\frac{\Gamma}{2}.\]</div>
+<p>当 <span class="arithmatex">\(P_1\parallel P_2\)</span>，取 <span class="arithmatex">\(\beta=0\)</span>，两投影同向，结果为</p>
+<div class="arithmatex">\[I_{\parallel}=I_1\left[1-\sin^2(2\alpha)\sin^2\frac{\Gamma}{2}\right],\qquad I_{\perp}+I_{\parallel}=I_1.\]</div>
+<p><span class="pill pill-und">理解补充</span><span class="arithmatex">\(I_1\)</span> 是经过第一片后的强度；若输入自然光强为 <span class="arithmatex">\(I_0\)</span>，应先令 <span class="arithmatex">\(I_1=I_0/2\)</span>。最后的互补关系是在仅改变第二片方向、其他条件相同的两次测量之间成立。
+正交时，<span class="arithmatex">\(\alpha=0^\circ\)</span> 或 <span class="arithmatex">\(90^\circ\)</span> 使晶片只承载一个模式，始终暗；<span class="arithmatex">\(\alpha=45^\circ\)</span> 时两个模式振幅相等，调制最强。只有两个模式均被激发，才能讨论随相差出现的明暗变化。
+在 <span class="arithmatex">\(\sin2\alpha\ne0\)</span> 时，正交配置的明暗条件为
+明：<span class="arithmatex">\(|\Gamma|=(2m+1)\pi\)</span>；暗：<span class="arithmatex">\(|\Gamma|=2m\pi\)</span>。相应厚度为</p>
+<div class="arithmatex">\[d_{\mathrm{bright}}=\frac{(2m+1)\lambda}{2|n_o-n_e|},\qquad d_{\mathrm{dark}}=\frac{m\lambda}{|n_o-n_e|}\quad(m=0,1,2,\cdots).\]</div>
+<p>对正负晶体都成立；平行配置则在同样延迟处明暗互换。</p>
+<h3 id="63-均匀亮暗-色偏振与等厚条纹">6.3 均匀亮暗 色偏振与等厚条纹<a class="headerlink" href="#63-均匀亮暗-色偏振与等厚条纹" title="Permanent link">#</a></h3>
+<p><span class="pill pill-ppt">PPT重点</span>均匀晶片加单色平行光时，各处厚度和相差相同，屏上亮度均匀，仍可通过转器件改变整体强度。这是空间上无条纹，不表示两分量没有发生干涉。
+白光由不同波长组成，各色各自按 <span class="arithmatex">\(\Gamma(\lambda)\)</span> 产生不同透射强度，合起来可呈色偏振。某一谱段被削弱时，剩余光色可近似呈其互补色；实际颜色取决于整个透射光谱，不能只凭一个波长判断。
+<span class="pill pill-und">理解补充</span>不能将“转任一器件，颜色都会变化”理解为没有例外。例如正交配置下只转晶片，理想公式中各波长共同乘上 <span class="arithmatex">\(\sin^2 2\alpha\)</span>，主要改变亮度，未必改变归一化光谱；是否变色须结合实际轴向与装置。
+晶片厚度随位置变化时，<span class="arithmatex">\(\Gamma\)</span> 也随位置变化，出现等厚条纹。对小楔角 <span class="arithmatex">\(\varepsilon\)</span> 的晶体劈尖，设 <span class="arithmatex">\(d(x)=d_0+x\varepsilon\)</span>，忽略折射率随位置变化，邻级同类条纹满足</p>
+<div class="arithmatex">\[\Delta d=\frac{\lambda}{|n_o-n_e|},\qquad \Delta x=\frac{\lambda}{|n_o-n_e|\varepsilon}.\]</div>
+<p>这与薄膜反射干涉的往返光程不同；此处是同一次透射中两种偏振模式的光程差，不能自行添因子 2。</p>
+<p><img alt="第7讲 插图 fringes" loading="lazy" src="../%E6%8F%92%E5%9B%BE/%E7%AC%AC7%E8%AE%B2/fringes.png" />
+<em>图 9 正交与平行输出的互补强度，以及晶体劈尖的等厚直条纹示意。实际白光条纹为彩色。</em></p>
+<h2 id="7-人工双折射与电光调制">7 人工双折射与电光调制<a class="headerlink" href="#7-人工双折射与电光调制" title="Permanent link">#</a></h2>
+<blockquote>
+<p><strong>资料范围</strong>：课件 PDF 48–56 页；教材第七章 §4.4–4.5，印刷 408–410 页。重点是外场如何调制光强。</p>
+</blockquote>
+<h3 id="71-应力双折射与光弹效应">7.1 应力双折射与光弹效应<a class="headerlink" href="#71-应力双折射与光弹效应" title="Permanent link">#</a></h3>
+<p><span class="pill pill-ppt">PPT重点</span>原先各向同性的透明玻璃或塑料，在应力作用下可变为各向异性。课件的一维受力模型在一定应力范围内写为</p>
+<div class="arithmatex">\[|n_o-n_e|=K\frac{F}{S},\qquad |\Gamma|=\frac{2\pi dK}{\lambda}\frac{F}{S}.\]</div>
+<p>其中 <span class="arithmatex">\(F/S\)</span> 为应力，<span class="arithmatex">\(K\)</span> 为材料应力光学系数，<span class="arithmatex">\(d\)</span> 为光在试样内的传播厚度。放在正交偏振片之间，主轴与起偏方向成 <span class="arithmatex">\(45^\circ\)</span> 时，输出为 <span class="arithmatex">\(I_\perp=I_1\sin^2(\Gamma/2)\)</span>。这里的 <span class="arithmatex">\(\Gamma\)</span> 只表示材料延迟；若用正振幅相干叠加，检偏投影的附加 <span class="arithmatex">\(\pi\)</span> 要另计一次。
+<span class="pill pill-und">理解补充</span>对一般二维应力场，双折射与主应力之差有关，不能把每个位置都简化成单一 <span class="arithmatex">\(F/S\)</span>。条纹反映应力造成的相差分布；结合材料标定和受力模型，才能进行定量应力分析。
+光测弹性仪据此检查透明材料内应力，或用透明模型研究工件、孔洞与矿井结构附近的应力分布。残余应力也能使退火不良的玻璃出现类似图样。</p>
+<h3 id="72-克尔效应与横向电场">7.2 克尔效应与横向电场<a class="headerlink" href="#72-克尔效应与横向电场" title="Permanent link">#</a></h3>
+<p><span class="pill pill-ppt">PPT重点</span>某些原先各向同性的液体在外电场作用下表现出单轴各向异性，光轴沿电场。课件以硝基苯克尔盒为例：光路长 <span class="arithmatex">\(l\)</span>，电极间距记为 <span class="arithmatex">\(h\)</span>，电压为 <span class="arithmatex">\(U\)</span>，近似匀强电场 <span class="arithmatex">\(E=U/h\)</span>，则</p>
+<div class="arithmatex">\[|n_o-n_e|=kE^2=k\frac{U^2}{h^2},\qquad |\Gamma|=\frac{2\pi lk}{\lambda}\frac{U^2}{h^2}.\]</div>
+<p>这里 <span class="arithmatex">\(k\)</span> 为课件定义的克尔常数，单位 <span class="arithmatex">\(\mathrm{m^2/V^2}\)</span>；有的教材把波长并入常数，不能直接混用数值。用 <span class="arithmatex">\(h\)</span> 区别电极间距与光程长 <span class="arithmatex">\(l\)</span>。
+无电压时正交偏振片消光；加电压后，若入射线偏振与诱导主轴成 <span class="arithmatex">\(45^\circ\)</span>，延迟转化为强度调制。半波电压对应第一次最大透射，满足</p>
+<div class="arithmatex">\[U_\pi=h\sqrt{\frac{\lambda}{2lk}},\qquad \frac{I}{I_1}=\sin^2\left(\frac{\pi}{2}\frac{U^2}{U_\pi^2}\right).\]</div>
+<p>课堂计算  课件 PDF 52 页给 <span class="arithmatex">\(k=1.44\times10^{-18}\,\mathrm{m^2/V^2}\)</span>，<span class="arithmatex">\(l=3.0\,\mathrm{cm}\)</span>，<span class="arithmatex">\(h=0.80\,\mathrm{cm}\)</span>，<span class="arithmatex">\(\lambda=600\,\mathrm{nm}\)</span>，代入得</p>
+<div class="arithmatex">\[U_\pi\approx2.11\times10^4\,\mathrm{V},\]</div>
+<p>即课件所写约 <span class="arithmatex">\(2\times10^4\,\mathrm{V}\)</span>。先统一为米，可避免把厘米平方带入导致的数量级错误。</p>
+<h3 id="73-泡克尔斯效应与线性电光开关">7.3 泡克尔斯效应与线性电光开关<a class="headerlink" href="#73-泡克尔斯效应与线性电光开关" title="Permanent link">#</a></h3>
+<p><span class="pill pill-ppt">PPT重点</span>课件的纵向电光装置使用 KDP、ADP 等晶体，光沿原光轴传播；无电压时该方向无线双折射，加电压后出现两个新的横向本征方向。课件所用几何和电光系数 <span class="arithmatex">\(r\)</span> 下</p>
+<div class="arithmatex">\[\Gamma=\frac{2\pi}{\lambda}n_o^3rU,\qquad U_\pi=\frac{\lambda}{2n_o^3|r|}.\]</div>
+<p>在诱导两轴与起偏方向成 <span class="arithmatex">\(45^\circ\)</span>、偏振片正交的条件下，<span class="arithmatex">\(I/I_1=\sin^2[\pi U/(2U_\pi)]\)</span>。相差正比于电压，称线性电光效应；相对地，克尔效应相差正比于电压平方。
+课堂计算  课件 PDF 54 页给 <span class="arithmatex">\(n_o=1.51\)</span>、<span class="arithmatex">\(r=10.6\times10^{-12}\,\mathrm{m/V}\)</span>、<span class="arithmatex">\(\lambda=546\,\mathrm{nm}\)</span>，得到</p>
+<div class="arithmatex">\[U_\pi\approx7.48\times10^3\,\mathrm{V}.\]</div>
+<p>课件给约 <span class="arithmatex">\(7.6\times10^3\,\mathrm{V}\)</span>；按所列数值直接计算应为约 <span class="arithmatex">\(7.5\,\mathrm{kV}\)</span>。本式适用于课件的纵向构型，其他切向与电极布置需要对应的有效电光系数。</p>
+<p><img alt="第7讲 插图 electro" loading="lazy" src="../%E6%8F%92%E5%9B%BE/%E7%AC%AC7%E8%AE%B2/electro.png" />
+<em>图 10 克尔盒与纵向泡克尔斯盒。前者区分光路长与电极间距；后者在该构型下厚度与电场中的厚度相消。</em></p>
+<p><span class="pill pill-ppt">PPT重点</span>电光装置通过“电压 → 双折射 → 相差 → 检偏后光强”实现快速光开关和调制，课件列举高速摄影、通信、测距与激光调 Q。电光响应快不等于整套仪器速度无限，驱动电路也参与实际开关过程。</p>
+<h2 id="8-自然旋光与法拉第旋光">8 自然旋光与法拉第旋光<a class="headerlink" href="#8-自然旋光与法拉第旋光" title="Permanent link">#</a></h2>
+<blockquote>
+<p><strong>资料范围</strong>：课件 PDF 57–68 页；教材第七章 §5.1–5.2、§5.4–5.5，印刷 414–418、420–423 页。</p>
+</blockquote>
+<h3 id="81-沿光轴传播也可能发生旋光">8.1 沿光轴传播也可能发生旋光<a class="headerlink" href="#81-沿光轴传播也可能发生旋光" title="Permanent link">#</a></h3>
+<p><span class="pill pill-ppt">PPT重点</span>方解石沿光轴传播时，两种线双折射模式速度相同，不改变入射线偏振方向；石英等旋光物质却能使偏振方向随传播距离旋转。旋光是偏振振动面的变化，光束本身不必弯曲。
+均匀物质中，旋转角满足 <span class="arithmatex">\(\varphi=a l\)</span>，其中 <span class="arithmatex">\(a\)</span> 是旋光率，依赖材料、波长等；溶液还依赖浓度。迎光看，逆时针记为左旋，顺时针记为右旋。同类物质可以具有互为镜像的两种旋光结构。
+<span class="pill pill-und">理解补充</span>“沿光轴无双折射”在前文指普通线双折射简并；旋光物质仍可能有左右圆偏振的折射率差，因此两结论不矛盾。</p>
+<h3 id="82-菲涅耳解释-旋转角等于圆分量相差的一半">8.2 菲涅耳解释 旋转角等于圆分量相差的一半<a class="headerlink" href="#82-菲涅耳解释-旋转角等于圆分量相差的一半" title="Permanent link">#</a></h3>
+<p><span class="pill pill-ppt">PPT重点</span>线偏振可分解为同频、等振幅、相干的左旋与右旋圆偏振。在旋光物质中，两圆模式折射率分别为 <span class="arithmatex">\(n_L,n_R\)</span>，传播长度 <span class="arithmatex">\(l\)</span> 后的相位落后量为</p>
+<div class="arithmatex">\[\Gamma_L=\frac{2\pi}{\lambda}n_Ll,\qquad \Gamma_R=\frac{2\pi}{\lambda}n_Rl.\]</div>
+<p><span class="pill pill-rec">建议理解</span>用迎光看时平面内的 <span class="arithmatex">\(x,y\)</span> 轴，令输入沿 <span class="arithmatex">\(x\)</span>。右旋圆分量写成 <span class="arithmatex">\((A/2)(\cos\psi_R,-\sin\psi_R)\)</span>，左旋写成 <span class="arithmatex">\((A/2)(\cos\psi_L,\sin\psi_L)\)</span>，其中 <span class="arithmatex">\(\psi_j=\omega t-\Gamma_j\)</span>。相加并用和差公式，得到</p>
+<div class="arithmatex">\[\vec E=A(\hat x\cos\varphi+\hat y\sin\varphi)\cos\left[\omega t-\frac{\Gamma_R+\Gamma_L}{2}\right],\]</div>
+<div class="arithmatex">\[\varphi=\frac{\Gamma_R-\Gamma_L}{2}=\frac{\pi l}{\lambda}(n_R-n_L),\qquad a=\frac{\pi}{\lambda}(n_R-n_L).\]</div>
+<p>两圆模式仍等振幅，因此合成光仍为线偏振，只是方向转过 <span class="arithmatex">\(\varphi\)</span>。本式以迎光看逆时针为正；<span class="arithmatex">\(n_R&gt;n_L\)</span> 对应左旋，反之右旋。若左右圆模式吸收不同，还可能改变椭圆率；本讲不展开。</p>
+<p><img alt="第7讲 插图 optical_rotation" loading="lazy" src="../%E6%8F%92%E5%9B%BE/%E7%AC%AC7%E8%AE%B2/optical_rotation.png" />
+<em>图 11 两圆偏振模式的相位落后量不同，使合成线偏振方向旋转。角度是两圆模式相差的一半。</em></p>
+<p><span class="pill pill-ppt">PPT重点</span>菲涅耳复合棱镜交替使用左右旋晶体，使两圆模式的角分离逐级增大；最终检验两束确为左右圆偏振，支持旋光的圆双折射解释。量糖术利用固定波长、温度下旋角随糖溶液长度和浓度变化的关系来测定浓度。</p>
+<h3 id="83-法拉第效应与往返差异">8.3 法拉第效应与往返差异<a class="headerlink" href="#83-法拉第效应与往返差异" title="Permanent link">#</a></h3>
+<p><span class="pill pill-ppt">PPT重点</span>线偏振光沿外加磁场方向通过介质时，振动面会旋转，称法拉第磁光效应。均匀纵向磁场下旋角大小为</p>
+<div class="arithmatex">\[\theta=VBl,\]</div>
+<p>其中 <span class="arithmatex">\(V\)</span> 为费尔德（Verdet）常量，依赖材料与波长，SI 单位为 <span class="arithmatex">\(\mathrm{rad/(T\cdot m)}\)</span>。正负方向还须指定磁场与观察方向，不能只凭 <span class="arithmatex">\(B\)</span> 的大小判左右旋。
+<span class="pill pill-must">必须掌握</span>比较往返光时，固定同一个实验室坐标观察两个横向偏振方向，并假定反射器只使光原路返回、不额外改变偏振态。自然旋光具有互易性，返回传播抵消去程的方向变化；法拉第旋光在磁场固定时具有非互易性，返回传播继续沿同一实验室方向转动，总旋角加倍。
+课件按各自迎光观察描述去程与回程，观察方向随光束反转，容易把“偏转相反”与“往返抵消”混为一谈。判断往返效果应换回同一坐标比较。</p>
+<p><img alt="第7讲 插图 faraday" loading="lazy" src="../%E6%8F%92%E5%9B%BE/%E7%AC%AC7%E8%AE%B2/faraday.png" />
+<em>图 12 同一实验室坐标下的往返偏振方向。自然旋光 0°→45°→0°；磁致旋光 0°→45°→90°，外加磁场保持不变。</em></p>
+<p>光隔离的原理  把法拉第介质的单程旋角调为 <span class="arithmatex">\(45^\circ\)</span>，界面反射光原路返回后累计转过 <span class="arithmatex">\(90^\circ\)</span>，被前方原透振方向的偏振片阻挡，从而减少反射光对前级的干扰。这个功能依赖磁致旋光的非互易性，普通自然旋光片不能替代。</p>
+<h2 id="9-公式速查">9 公式速查<a class="headerlink" href="#9-公式速查" title="Permanent link">#</a></h2>
+<p>@break</p>
+<h3 id="晶体传播与波片">晶体传播与波片<a class="headerlink" href="#晶体传播与波片" title="Permanent link">#</a></h3>
+<p>主折射率与非常光相折射率，<span class="arithmatex">\(\theta\)</span> 为波法线与光轴夹角：</p>
+<div class="arithmatex">\[n_o=\frac{c}{v_o},\quad n_e=\frac{c}{v_e},\quad n(\theta)=\frac{n_on_e}{\sqrt{n_e^2\cos^2\theta+n_o^2\sin^2\theta}}.\]</div>
+<p>射线方向与走离，<span class="arithmatex">\(\xi\)</span> 为光线与光轴夹角：</p>
+<div class="arithmatex">\[\tan\xi=\frac{n_o^2}{n_e^2}\tan\theta,\quad \alpha=\xi-\theta,\quad v_N=v_r\cos\alpha.\]</div>
+<p>正晶体 <span class="arithmatex">\(n_e&gt;n_o\)</span>；负晶体 <span class="arithmatex">\(n_e&lt;n_o\)</span>。沿光轴两模式均取 <span class="arithmatex">\(n_o\)</span>，垂直光轴时非常光取主值 <span class="arithmatex">\(n_e\)</span>。
+正入射、光轴平行表面的晶片，<span class="arithmatex">\(\lambda\)</span> 为真空波长：</p>
+<div class="arithmatex">\[\Gamma=\frac{2\pi}{\lambda}(n_o-n_e)d,\quad \delta_{\mathrm{out}}=\delta_{\mathrm{in}}-\Gamma\quad[\cos(\omega t-kz)].\]</div>
+<p>四分之一波片 <span class="arithmatex">\(\Gamma\equiv\pm\pi/2\)</span>；半波片 <span class="arithmatex">\(\Gamma\equiv\pi\)</span>；全波片 <span class="arithmatex">\(\Gamma\equiv0\)</span>（均模 <span class="arithmatex">\(2\pi\)</span>）。
+四分之一波片：线偏振与两轴成 <span class="arithmatex">\(45^\circ\)</span> 变圆；沿两轴不变；圆变线；椭圆主轴对准波片轴才变线。半波片：<span class="arithmatex">\(\gamma_{\mathrm{out}}=2\beta-\gamma\)</span>，角度模 <span class="arithmatex">\(\pi\)</span>。</p>
+<h3 id="偏振光干涉与外场效应">偏振光干涉与外场效应<a class="headerlink" href="#偏振光干涉与外场效应" title="Permanent link">#</a></h3>
+<p>起偏后强度 <span class="arithmatex">\(I_1\)</span>，晶片光轴与起偏方向夹角 <span class="arithmatex">\(\alpha\)</span>：</p>
+<div class="arithmatex">\[I_\perp=I_1\sin^2(2\alpha)\sin^2\frac{\Gamma}{2},\qquad I_\parallel=I_1-I_\perp.\]</div>
+<p>正交配置：非零激发时，<span class="arithmatex">\(|\Gamma|=(2m+1)\pi\)</span> 亮、<span class="arithmatex">\(|\Gamma|=2m\pi\)</span> 暗。自然光输入须先令 <span class="arithmatex">\(I_1=I_0/2\)</span>。
+克尔盒（电极距 <span class="arithmatex">\(h\)</span>、光路长 <span class="arithmatex">\(l\)</span>）与课件纵向泡克尔斯盒：</p>
+<div class="arithmatex">\[|\Gamma_K|=\frac{2\pi lkU^2}{\lambda h^2},\quad U_{\pi,K}=h\sqrt{\frac{\lambda}{2lk}},\quad U_{\pi,P}=\frac{\lambda}{2n_o^3|r|}.\]</div>
+<p>自然旋光与均匀纵向磁场中的法拉第旋光：</p>
+<div class="arithmatex">\[\varphi=\frac{\pi l}{\lambda}(n_R-n_L)=al,\qquad \theta=VBl.\]</div>
+<p>自然旋光往返抵消；法拉第旋光在磁场固定时往返加倍。旋向先注明观察方向，波片先注明相位符号。</p>
+<h2 id="10-易错点与资料定位">10 易错点与资料定位<a class="headerlink" href="#10-易错点与资料定位" title="Permanent link">#</a></h2>
+<p>@break</p>
+<h3 id="易错清单">易错清单<a class="headerlink" href="#易错清单" title="Permanent link">#</a></h3>
+<ol>
+<li>光轴是方向。两束方向未分开不代表不存在相位延迟；沿光轴简并也不排除另有旋光。</li>
+<li><span class="arithmatex">\(n_e\)</span> 是非常光垂直光轴传播时的主值；一般方向要用 <span class="arithmatex">\(n(\theta)\)</span>，其角度参照波面法线。</li>
+<li>主平面、主截面与入射面不同。两束不同方向光的电矢量正交有几何条件。</li>
+<li>惠更斯椭圆上的矢径是射线，切线的垂线才是波法线；非常光光程不能随意写成相折射率乘射线长。</li>
+<li>正晶体的光轴是慢轴，负晶体的光轴是快轴。延迟差 <span class="arithmatex">\(\Gamma\)</span> 与 cos 中相角差的改变量相反。</li>
+<li>四分之一波片不把所有线偏振都变圆；半波片的“二倍角”须相对本征轴作镜像判断。</li>
+<li>检偏投影异号等价于附加 <span class="arithmatex">\(\pi\)</span>。它只应计一次，不能同时留负振幅又再加一遍 <span class="arithmatex">\(\pi\)</span>。</li>
+<li>干涉式中的 <span class="arithmatex">\(I_1\)</span> 是第一偏振片之后的光强。晶体劈尖的两模式光程差不含薄膜反射的往返因子 2。</li>
+<li>克尔效应随 <span class="arithmatex">\(U^2\)</span>，泡克尔斯效应随 <span class="arithmatex">\(U\)</span>；光路长、电极间距和材料常数的定义应分别核对。</li>
+<li>左右旋名称依赖约定；比较往返偏振方向要固定坐标。法拉第旋光的返回效应不被去程抵消。</li>
+</ol>
+<h3 id="资料定位">资料定位<a class="headerlink" href="#资料定位" title="Permanent link">#</a></h3>
+<p>教师课件共 70 个 PDF 页面，页脚编号到 75，存在跳号。本笔记按 PDF 页序定位：双折射 2–20 页，波片与检偏 21–38 页，偏振光干涉和人工双折射 39–56 页，旋光 57–68 页；69–70 页为术语表。
+教材为赵凯华、钟锡华《光学（重排本）》第七章，具体位置已标于各主题开头。该扫描 PDF 的物理页序为印刷页加 13。<span class="pill pill-ppt">PPT重点</span>标课堂主线，<span class="pill pill-src">教材补充</span>标已核对的教材内容，<span class="pill pill-und">理解补充</span>标解释、条件澄清和自编练习。</p>
+<h2 id="11-自测题">11 自测题<a class="headerlink" href="#11-自测题" title="Permanent link">#</a></h2>
+<p>@break
+以下为<span class="pill pill-und">理解补充</span>自编练习。各题默认器件理想、单色光，忽略反射与吸收；答案见文末。先判断适用模型，再写相位约定，最后计算。
+1. 已知某负单轴晶体 <span class="arithmatex">\(n_o=1.60\)</span>、<span class="arithmatex">\(n_e=1.50\)</span>，光轴与平行表面法线成 <span class="arithmatex">\(45^\circ\)</span>，光正入射。求 <span class="arithmatex">\(n(45^\circ)\)</span>、射线倾角 <span class="arithmatex">\(\xi\)</span> 和走离角 <span class="arithmatex">\(\alpha\)</span>。若把光轴改为平行表面，会不会因两束共线而失去双折射？
+2. 设计波长 <span class="arithmatex">\(600\,\mathrm{nm}\)</span>，某负晶体 <span class="arithmatex">\(n_o-n_e=0.010\)</span>。求最薄四分之一、半波片厚度。按正文 <span class="arithmatex">\(x=e\)</span>、<span class="arithmatex">\(y=o\)</span> 坐标，输入线偏振方向从 <span class="arithmatex">\(+x\)</span> 向 <span class="arithmatex">\(+y\)</span> 转 <span class="arithmatex">\(30^\circ\)</span>，通过前者后偏振态、椭圆半轴比和旋向如何？使用正文的迎光观察与 cos 相位约定。
+3. 输入是“自然光＋某种完全偏振光”的不相干混合。单用检偏片得到 <span class="arithmatex">\(I_{\max}=7\)</span>、<span class="arithmatex">\(I_{\min}=3\)</span>；把四分之一波片对准先测出的极值方向后，得到新的 <span class="arithmatex">\(I_{\max}=9\)</span>、<span class="arithmatex">\(I_{\min}=1\)</span>。求自然光强、完全偏振部分强度及偏振度；它原先是线偏振还是椭圆偏振？
+4. 自然光强 <span class="arithmatex">\(I_0\)</span>，通过正交偏振片与中间晶片，晶片光轴与 <span class="arithmatex">\(P_1\)</span> 成 <span class="arithmatex">\(30^\circ\)</span>。波长 <span class="arithmatex">\(600\,\mathrm{nm}\)</span>，<span class="arithmatex">\(|n_o-n_e|=0.010\)</span>，厚度 <span class="arithmatex">\(15\,\mathrm{\mu m}\)</span>。求输出光强；若转第二片至平行，输出多少？若改为楔角 <span class="arithmatex">\(\varepsilon=1.0\times10^{-3}\)</span> 的劈尖，邻级同类条纹间距多少？
+5. 两个理想开关均以正交偏振片工作，诱导两轴与起偏方向成 <span class="arithmatex">\(45^\circ\)</span>。当 <span class="arithmatex">\(U=U_\pi/2\)</span> 时，分别求克尔盒与泡克尔斯盒的 <span class="arithmatex">\(I/I_1\)</span>。另有法拉第片 <span class="arithmatex">\(V=100\,\mathrm{rad/(T\cdot m)}\)</span>、<span class="arithmatex">\(l=2.0\,\mathrm{cm}\)</span>，要求单程转 <span class="arithmatex">\(45^\circ\)</span>，求磁场；界面反射光原路返回后的偏振方向相对起始方向转多少？</p>
+<h2 id="12-自测答案">12 自测答案<a class="headerlink" href="#12-自测答案" title="Permanent link">#</a></h2>
+<p>@break</p>
+<h3 id="第-1-题-相折射率与走离">第 1 题 相折射率与走离<a class="headerlink" href="#第-1-题-相折射率与走离" title="Permanent link">#</a></h3>
+<p>代入正文公式，得 <span class="arithmatex">\(n(45^\circ)\approx1.5476\)</span>，<span class="arithmatex">\(\xi\approx48.69^\circ\)</span>，<span class="arithmatex">\(\alpha\approx3.69^\circ\)</span>。由于是负晶体，图示分支的射线比波法线更偏离光轴。光轴平行表面时两束可共线，但速度不同，会积累相位差，仍有双折射。</p>
+<h3 id="第-2-题-厚度-偏振态与旋向">第 2 题 厚度 偏振态与旋向<a class="headerlink" href="#第-2-题-厚度-偏振态与旋向" title="Permanent link">#</a></h3>
+<div class="arithmatex">\[d_{1/4}=15\,\mathrm{\mu m},\qquad d_{1/2}=30\,\mathrm{\mu m}.\]</div>
+<p>负晶体 <span class="arithmatex">\(\Gamma=+\pi/2\)</span>，原线偏振 <span class="arithmatex">\(\delta_{\mathrm{in}}=0\)</span>，因此 <span class="arithmatex">\(\delta_{\mathrm{out}}=-\pi/2\)</span>。输出为主轴沿波片两轴的左旋椭圆偏振，短长半轴比为 <span class="arithmatex">\(\tan30^\circ=1/\sqrt3\)</span>。旋向判断对应入射电矢量在两正轴之间；若把入射偏振方向换到光轴另一侧，旋向反转。</p>
+<h3 id="第-3-题-区分椭圆分量与线分量">第 3 题 区分椭圆分量与线分量<a class="headerlink" href="#第-3-题-区分椭圆分量与线分量" title="Permanent link">#</a></h3>
+<p>插入合适波片后，完全偏振部分变成线偏振，最小值只来自自然光，因此 <span class="arithmatex">\(I_n=2\times1=2\)</span>，偏振部分 <span class="arithmatex">\(I_p=9-1=8\)</span>，总光强 <span class="arithmatex">\(I=10\)</span>，偏振度 <span class="arithmatex">\(P=8/10=0.80\)</span>。
+原检偏极值减去自然光背景 <span class="arithmatex">\(I_n/2=1\)</span>，得椭圆主轴分量强度 <span class="arithmatex">\(I_a=6\)</span>、<span class="arithmatex">\(I_b=2\)</span>。两者均非零，原完全偏振部分是非圆椭圆偏振，短长半轴比 <span class="arithmatex">\(\sqrt{I_b/I_a}=1/\sqrt3\)</span>。其调制幅度由 4 变 8；若原本是线偏振，对准轴的四分之一波片不会使调制幅度增加。</p>
+<h3 id="第-4-题-先起偏-再算相差">第 4 题 先起偏 再算相差<a class="headerlink" href="#第-4-题-先起偏-再算相差" title="Permanent link">#</a></h3>
+<div class="arithmatex">\[I_1=\frac{I_0}{2},\qquad |\Gamma|=\frac{2\pi}{600\,\mathrm{nm}}(0.010)(15\,\mathrm{\mu m})=\frac{\pi}{2}.\]</div>
+<div class="arithmatex">\[I_\perp=\frac{I_0}{2}\sin^2 60^\circ\sin^2\frac{\pi}{4}=\frac{3I_0}{16},\qquad I_\parallel=\frac{5I_0}{16}.\]</div>
+<p>二者相加为 <span class="arithmatex">\(I_0/2\)</span>。劈尖的邻级同类条纹间距为 <span class="arithmatex">\(\Delta x=\lambda/(|n_o-n_e|\varepsilon)=0.060\,\mathrm m=6.0\,\mathrm{cm}\)</span>。</p>
+<h3 id="第-5-题-电光的非线性与磁光的往返">第 5 题 电光的非线性与磁光的往返<a class="headerlink" href="#第-5-题-电光的非线性与磁光的往返" title="Permanent link">#</a></h3>
+<div class="arithmatex">\[\left(\frac{I}{I_1}\right)_K=\sin^2\frac{\pi}{8}\approx0.1464,\qquad \left(\frac{I}{I_1}\right)_P=\sin^2\frac{\pi}{4}=0.5000.\]</div>
+<p>克尔盒在半个半波电压时只有四分之一的半波相差；泡克尔斯盒则有一半的半波相差。</p>
+<div class="arithmatex">\[B=\frac{\pi/4}{Vl}=\frac{\pi/4}{100\times0.020}\,\mathrm T\approx0.393\,\mathrm T.\]</div>
+<p>磁场固定、理想反射原路返回时，总旋角为 <span class="arithmatex">\(90^\circ\)</span>，返回光与起始偏振正交，可被起始透振方向的偏振片阻挡。若换成自然旋光介质，则理想往返的净旋角为零。</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="页脚" >
+        
+          
+          <a href="../%E7%AC%AC6%E8%AE%B2_%E5%81%8F%E6%8C%AF%E6%80%81%E4%B8%8E%E8%8F%B2%E6%B6%85%E8%80%B3%E5%85%AC%E5%BC%8F/" class="md-footer__link md-footer__link--prev" aria-label="上一页: 第6讲 偏振态与菲涅耳公式">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                上一页
+              </span>
+              <div class="md-ellipsis">
+                第6讲 偏振态与菲涅耳公式
+              </div>
+            </div>
+          </a>
+        
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.sections", "navigation.expand", "navigation.top", "navigation.footer", "toc.follow", "search.highlight", "search.share"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

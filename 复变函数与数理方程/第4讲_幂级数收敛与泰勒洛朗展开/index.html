@@ -1,0 +1,2335 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="大学课程个人学习讲义，按学期和课程组织，支持网页端直接阅读">
+      
+      
+      
+        <link rel="canonical" href="https://yunbianmailang.github.io/university-course-materials/%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0%E4%B8%8E%E6%95%B0%E7%90%86%E6%96%B9%E7%A8%8B/%E7%AC%AC4%E8%AE%B2_%E5%B9%82%E7%BA%A7%E6%95%B0%E6%94%B6%E6%95%9B%E4%B8%8E%E6%B3%B0%E5%8B%92%E6%B4%9B%E6%9C%97%E5%B1%95%E5%BC%80/">
+      
+      
+        <link rel="prev" href="../%E7%AC%AC3%E8%AE%B2_%E5%A4%8D%E7%A7%AF%E5%88%86%E6%9F%AF%E8%A5%BF%E5%85%AC%E5%BC%8F%E4%B8%8E%E8%A7%A3%E6%9E%90%E5%87%BD%E6%95%B0%E7%9A%84%E6%95%B4%E4%BD%93%E6%80%A7%E8%B4%A8/">
+      
+      
+        <link rel="next" href="../%E7%AC%AC5%E8%AE%B2_%E9%9B%B6%E7%82%B9%E5%A5%87%E7%82%B9%E4%B8%8E%E7%95%99%E6%95%B0%E7%A7%AF%E5%88%86/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>第4讲 幂级数收敛与泰勒洛朗展开 - 大学课程学习资料</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/custom.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#第4讲-幂级数收敛与泰勒洛朗展开" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../.." title="大学课程学习资料" class="md-header__button md-logo" aria-label="大学课程学习资料" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            大学课程学习资料
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              第4讲 幂级数收敛与泰勒洛朗展开
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="indigo"  aria-label="切换到深色模式"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="切换到深色模式" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="indigo"  aria-label="切换到浅色模式"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="切换到浅色模式" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="分享" aria-label="分享" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/yunbianmailang/university-course-materials" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    大学课程学习资料
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="大学课程学习资料" class="md-nav__button md-logo" aria-label="大学课程学习资料" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    大学课程学习资料
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/yunbianmailang/university-course-materials" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    大学课程学习资料
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    首页
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    复变函数与数理方程
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    复变函数与数理方程
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E8%AF%BE%E7%A8%8B%E8%AF%B4%E6%98%8E/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    课程说明
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC1%E8%AE%B2_%E5%A4%8D%E6%95%B0%E5%87%A0%E4%BD%95%E6%A8%A1%E7%9A%84%E6%9E%81%E5%80%BC%E4%B8%8E%E6%8C%87%E6%95%B0%E6%98%A0%E5%B0%84/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第1讲 复数几何模的极值与指数映射
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC2%E8%AE%B2_%E5%A4%8D%E5%B9%82%E8%A7%A3%E6%9E%90%E6%80%A7%E4%B8%8E%E5%A4%8D%E5%B9%B3%E9%9D%A2%E6%98%A0%E5%B0%84/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第2讲 复幂解析性与复平面映射
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC3%E8%AE%B2_%E5%A4%8D%E7%A7%AF%E5%88%86%E6%9F%AF%E8%A5%BF%E5%85%AC%E5%BC%8F%E4%B8%8E%E8%A7%A3%E6%9E%90%E5%87%BD%E6%95%B0%E7%9A%84%E6%95%B4%E4%BD%93%E6%80%A7%E8%B4%A8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第3讲 复积分柯西公式与解析函数的整体性质
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第4讲 幂级数收敛与泰勒洛朗展开
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第4讲 幂级数收敛与泰勒洛朗展开
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#第一层-课堂核心速览" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第一层 课堂核心速览
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="第一层 课堂核心速览">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#本节课的核心问题" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        本节课的核心问题
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#必要先修知识" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        必要先修知识
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#核心知识结构" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        核心知识结构
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#重要结论与条件" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        重要结论与条件
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#课堂听讲重点" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        课堂听讲重点
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#第二层-引导式学习正文" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第二层 引导式学习正文
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="第二层 引导式学习正文">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-数项级数与幂级数的收敛" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1 数项级数与幂级数的收敛
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1 数项级数与幂级数的收敛">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-用部分和定义收敛" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1 用部分和定义收敛
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-幂级数何时代表一个函数" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2 幂级数何时代表一个函数
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-阿贝尔定理收敛半径与边界" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2 阿贝尔定理、收敛半径与边界
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2 阿贝尔定理、收敛半径与边界">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-为什么收敛域内部一定是圆盘" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 为什么收敛域内部一定是圆盘
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-同一半径下三种完全不同的圆周" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 同一半径下三种完全不同的圆周
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-边界和需要额外的径向极限定理" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3 边界和需要额外的径向极限定理
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-求半径与比较半径的方法" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3 求半径与比较半径的方法
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3 求半径与比较半径的方法">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-系数法缺项与奇点距离" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 系数法、缺项与奇点距离
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-从收敛信息与系数大小比较半径" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 从收敛信息与系数大小比较半径
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-逐项运算与泰勒系数唯一性" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4 逐项运算与泰勒系数唯一性
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-课堂复积分回顾倒数换元" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5 课堂复积分回顾：倒数换元
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-洛朗级数与圆环内的系数" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6 洛朗级数与圆环内的系数
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6 洛朗级数与圆环内的系数">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-为什么必须允许正幂和负幂" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1 为什么必须允许正幂和负幂
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62-系数公式为什么与所选圆周无关" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.2 系数公式为什么与所选圆周无关
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-课堂洛朗展开为每个区域选择小量" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7 课堂洛朗展开：为每个区域选择小量
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7 课堂洛朗展开：为每个区域选择小量">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71-同一分式的内外展开" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.1 同一分式的内外展开
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72-两个奇点划分三个展开区域" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.2 两个奇点划分三个展开区域
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-课末实积分例题与留数衔接" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8 课末实积分例题与留数衔接
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8 课末实积分例题与留数衔接">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81-单位圆换元处理整周期三角积分" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1 单位圆换元处理整周期三角积分
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82-平方三角分母与参数条件" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2 平方三角分母与参数条件
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#第三层-详细参考与拓展" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第三层 详细参考与拓展
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="第三层 详细参考与拓展">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#参考一-边界收敛与径向极限的依据" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        参考一 边界收敛与径向极限的依据
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#参考二-洛朗展开怎样由双圆周公式产生" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        参考二 洛朗展开怎样由双圆周公式产生
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#课末核心知识回顾" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        课末核心知识回顾
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC5%E8%AE%B2_%E9%9B%B6%E7%82%B9%E5%A5%87%E7%82%B9%E4%B8%8E%E7%95%99%E6%95%B0%E7%A7%AF%E5%88%86/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第5讲 零点奇点与留数积分
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    信号与系统
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    信号与系统
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%B3%BB%E7%BB%9F/%E8%AF%BE%E7%A8%8B%E8%AF%B4%E6%98%8E/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    课程说明
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%B3%BB%E7%BB%9F/%E7%AC%AC1%E8%AE%B2_%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF%E4%B8%8E%E5%9F%BA%E6%9C%AC%E8%AF%AD%E8%A8%80/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第1讲 学习路线与基本语言
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%B3%BB%E7%BB%9F/%E7%AC%AC2%E8%AE%B2_%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B%E7%BB%8F%E5%85%B8%E6%B3%95%E4%B8%8E%E5%93%8D%E5%BA%94%E5%88%86%E8%A7%A3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第2讲 微分方程经典法与响应分解
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%B3%BB%E7%BB%9F/%E7%AC%AC3%E8%AE%B2_%E5%82%85%E9%87%8C%E5%8F%B6%E7%BA%A7%E6%95%B0%E4%B8%8E%E9%A2%91%E8%B0%B1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第3讲 傅里叶级数与频谱
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%B3%BB%E7%BB%9F/%E7%AC%AC4%E8%AE%B2_%E5%82%85%E9%87%8C%E5%8F%B6%E5%8F%98%E6%8D%A2%E4%B8%8E%E5%85%B8%E5%9E%8B%E4%BF%A1%E5%8F%B7%E9%A2%91%E8%B0%B1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第4讲 傅里叶变换与典型信号频谱
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%B3%BB%E7%BB%9F/%E7%AC%AC5%E8%AE%B2_%E5%85%B8%E5%9E%8B%E5%8F%98%E6%8D%A2%E5%AF%B9%E4%B8%8E%E6%8A%BD%E6%A0%B7%E5%AE%9A%E7%90%86/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第5讲 典型变换对与抽样定理
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%B3%BB%E7%BB%9F/%E7%AC%AC6%E8%AE%B2_%E6%8B%89%E6%99%AE%E6%8B%89%E6%96%AF%E5%8F%98%E6%8D%A2%E7%9A%84%E6%80%A7%E8%B4%A8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第6讲 拉普拉斯变换的性质
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%B3%BB%E7%BB%9F/%E7%AC%AC7%E8%AE%B2_%E6%8B%89%E6%99%AE%E6%8B%89%E6%96%AF%E9%80%86%E5%8F%98%E6%8D%A2%E4%B8%8E%20s%20%E5%9F%9F%E6%A8%A1%E5%9E%8B/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第7讲 拉普拉斯逆变换与 s 域模型
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%B3%BB%E7%BB%9F/%E7%AC%AC8%E8%AE%B2_%E9%A2%91%E7%8E%87%E5%93%8D%E5%BA%94%E4%B8%8E%E7%A8%B3%E5%AE%9A%E6%80%A7/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第8讲 频率响应与稳定性
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    基础物理学2（光学）
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    基础物理学2（光学）
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%9F%BA%E7%A1%80%E7%89%A9%E7%90%86%E5%AD%A62/%E8%AF%BE%E7%A8%8B%E8%AF%B4%E6%98%8E/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    课程说明
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%9F%BA%E7%A1%80%E7%89%A9%E7%90%86%E5%AD%A62/%E7%AC%AC1%E8%AE%B2_%E5%87%A0%E4%BD%95%E5%85%89%E5%AD%A6%E7%AE%80%E4%BB%8B/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第1讲 几何光学简介
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%9F%BA%E7%A1%80%E7%89%A9%E7%90%86%E5%AD%A62/%E7%AC%AC2%E8%AE%B2_%E6%B3%A2%E5%8A%A8%E5%85%89%E5%AD%A6%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86%EF%BC%88%E4%B8%80%EF%BC%89/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第2讲 波动光学基本原理（一）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%9F%BA%E7%A1%80%E7%89%A9%E7%90%86%E5%AD%A62/%E7%AC%AC3%E8%AE%B2_%E5%85%89%E7%9A%84%E5%B9%B2%E6%B6%89%E4%B8%8E%E6%97%B6%E7%A9%BA%E7%9B%B8%E5%B9%B2%E6%80%A7/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第3讲 光的干涉与时空相干性
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%9F%BA%E7%A1%80%E7%89%A9%E7%90%86%E5%AD%A62/%E7%AC%AC4%E8%AE%B2_%E5%85%89%E7%9A%84%E8%A1%8D%E5%B0%84%E4%B8%8E%E5%88%86%E8%BE%A8%E6%9C%AC%E9%A2%86/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第4讲 光的衍射与分辨本领
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%9F%BA%E7%A1%80%E7%89%A9%E7%90%86%E5%AD%A62/%E7%AC%AC5%E8%AE%B2_%E8%A1%8D%E5%B0%84%E5%85%89%E6%A0%85%E4%B8%8E%E6%99%B6%E4%BD%93%E8%A1%8D%E5%B0%84/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第5讲 衍射光栅与晶体衍射
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%9F%BA%E7%A1%80%E7%89%A9%E7%90%86%E5%AD%A62/%E7%AC%AC6%E8%AE%B2_%E5%81%8F%E6%8C%AF%E6%80%81%E4%B8%8E%E8%8F%B2%E6%B6%85%E8%80%B3%E5%85%AC%E5%BC%8F/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第6讲 偏振态与菲涅耳公式
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%9F%BA%E7%A1%80%E7%89%A9%E7%90%86%E5%AD%A62/%E7%AC%AC7%E8%AE%B2_%E5%8F%8C%E6%8A%98%E5%B0%84%E4%B8%8E%E5%81%8F%E6%8C%AF%E5%85%89%E5%BA%94%E7%94%A8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第7讲 双折射与偏振光应用
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#第一层-课堂核心速览" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第一层 课堂核心速览
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="第一层 课堂核心速览">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#本节课的核心问题" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        本节课的核心问题
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#必要先修知识" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        必要先修知识
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#核心知识结构" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        核心知识结构
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#重要结论与条件" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        重要结论与条件
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#课堂听讲重点" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        课堂听讲重点
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#第二层-引导式学习正文" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第二层 引导式学习正文
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="第二层 引导式学习正文">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-数项级数与幂级数的收敛" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1 数项级数与幂级数的收敛
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1 数项级数与幂级数的收敛">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-用部分和定义收敛" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1 用部分和定义收敛
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-幂级数何时代表一个函数" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2 幂级数何时代表一个函数
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-阿贝尔定理收敛半径与边界" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2 阿贝尔定理、收敛半径与边界
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2 阿贝尔定理、收敛半径与边界">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-为什么收敛域内部一定是圆盘" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 为什么收敛域内部一定是圆盘
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-同一半径下三种完全不同的圆周" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 同一半径下三种完全不同的圆周
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-边界和需要额外的径向极限定理" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3 边界和需要额外的径向极限定理
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-求半径与比较半径的方法" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3 求半径与比较半径的方法
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3 求半径与比较半径的方法">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-系数法缺项与奇点距离" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 系数法、缺项与奇点距离
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-从收敛信息与系数大小比较半径" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 从收敛信息与系数大小比较半径
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-逐项运算与泰勒系数唯一性" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4 逐项运算与泰勒系数唯一性
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-课堂复积分回顾倒数换元" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5 课堂复积分回顾：倒数换元
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-洛朗级数与圆环内的系数" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6 洛朗级数与圆环内的系数
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6 洛朗级数与圆环内的系数">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-为什么必须允许正幂和负幂" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1 为什么必须允许正幂和负幂
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62-系数公式为什么与所选圆周无关" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.2 系数公式为什么与所选圆周无关
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-课堂洛朗展开为每个区域选择小量" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7 课堂洛朗展开：为每个区域选择小量
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7 课堂洛朗展开：为每个区域选择小量">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71-同一分式的内外展开" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.1 同一分式的内外展开
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72-两个奇点划分三个展开区域" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.2 两个奇点划分三个展开区域
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-课末实积分例题与留数衔接" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8 课末实积分例题与留数衔接
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8 课末实积分例题与留数衔接">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81-单位圆换元处理整周期三角积分" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1 单位圆换元处理整周期三角积分
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82-平方三角分母与参数条件" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2 平方三角分母与参数条件
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#第三层-详细参考与拓展" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第三层 详细参考与拓展
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="第三层 详细参考与拓展">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#参考一-边界收敛与径向极限的依据" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        参考一 边界收敛与径向极限的依据
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#参考二-洛朗展开怎样由双圆周公式产生" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        参考二 洛朗展开怎样由双圆周公式产生
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#课末核心知识回顾" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        课末核心知识回顾
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="第4讲-幂级数收敛与泰勒洛朗展开">第4讲 幂级数收敛与泰勒洛朗展开<a class="headerlink" href="#第4讲-幂级数收敛与泰勒洛朗展开" title="Permanent link">#</a></h1>
+<div class="admonition tip">
+<p class="admonition-title">本讲配套文件</p>
+<ul>
+<li><a href="../../%E6%96%87%E4%BB%B6/%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0%E4%B8%8E%E6%95%B0%E7%90%86%E6%96%B9%E7%A8%8B_%E7%AC%AC4%E8%AE%B2_%E5%B9%82%E7%BA%A7%E6%95%B0%E6%94%B6%E6%95%9B%E4%B8%8E%E6%B3%B0%E5%8B%92%E6%B4%9B%E6%9C%97%E5%B1%95%E5%BC%80_%E5%AD%A6%E4%B9%A0%E8%AE%B2%E4%B9%89.pdf">PDF 在线阅读（复变函数与数理方程_第4讲_幂级数收敛与泰勒洛朗展开_学习讲义.pdf）</a></li>
+<li><a href="../../%E6%96%87%E4%BB%B6/%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0%E4%B8%8E%E6%95%B0%E7%90%86%E6%96%B9%E7%A8%8B_%E7%AC%AC4%E8%AE%B2_%E5%B9%82%E7%BA%A7%E6%95%B0%E6%94%B6%E6%95%9B%E4%B8%8E%E6%B3%B0%E5%8B%92%E6%B4%9B%E6%9C%97%E5%B1%95%E5%BC%80_%E5%AD%A6%E4%B9%A0%E8%AE%B2%E4%B9%89.docx">Word 下载（复变函数与数理方程_第4讲_幂级数收敛与泰勒洛朗展开_学习讲义.docx）</a></li>
+</ul>
+</div>
+<h2 id="第一层-课堂核心速览">第一层 课堂核心速览<a class="headerlink" href="#第一层-课堂核心速览" title="Permanent link">#</a></h2>
+<h3 id="本节课的核心问题">本节课的核心问题<a class="headerlink" href="#本节课的核心问题" title="Permanent link">#</a></h3>
+<p>一个幂级数在哪些点收敛？它何时等于解析函数？同一个函数怎样随所选圆盘或圆环改变展开式？本讲先研究收敛，再用几何级数构造泰勒与洛朗展开。</p>
+<h3 id="必要先修知识">必要先修知识<a class="headerlink" href="#必要先修知识" title="Permanent link">#</a></h3>
+<p>① 复数模与极限，区分函数的定义域和级数的收敛域。② 实级数的比值、根值与比较判别法。③ 柯西积分公式与圆周正向。④ 等比级数及部分分式分解。</p>
+<h3 id="核心知识结构">核心知识结构<a class="headerlink" href="#核心知识结构" title="Permanent link">#</a></h3>
+<p>数项级数 → 幂级数 → 阿贝尔定理与收敛半径；圆内绝对收敛，边界逐点另判。
+逐项运算与系数唯一性 → 泰勒展开；允许负幂 → 环形收敛域与洛朗系数。
+定位奇点 → 分区域选择小量 → 合并幂次 → 回代与首项检查；课末实积分衔接留数法。</p>
+<h3 id="重要结论与条件">重要结论与条件<a class="headerlink" href="#重要结论与条件" title="Permanent link">#</a></h3>
+<div class="arithmatex">\[\frac1R=\limsup_{n\to\infty}|c_n|^{1/n},\qquad f(z)=\sum_{n=0}^{\infty}\frac{f^{(n)}(z_0)}{n!}(z-z_0)^n.\]</div>
+<p>第二式要求函数在相应圆盘内解析。逐项求导积分保持半径，却可能改变边界收敛情况。</p>
+<div class="arithmatex">\[c_n=\frac1{2\pi i}\oint_{|\zeta-z_0|=\rho}\frac{f(\zeta)}{(\zeta-z_0)^{n+1}}\,d\zeta\quad(n\in\mathbb Z).\]</div>
+<p>圆周须位于同一个解析圆环内，逆时针一圈；洛朗系数的唯一性必须连同中心和圆环说明。</p>
+<h3 id="课堂听讲重点">课堂听讲重点<a class="headerlink" href="#课堂听讲重点" title="Permanent link">#</a></h3>
+<p>求半径不等于求完整收敛域；边界展开发散不等于函数在那里有奇点。洛朗展开须让正、负幂分别收敛，每个分式的小量条件必须有非空交集。
+@break</p>
+<h2 id="第二层-引导式学习正文">第二层 引导式学习正文<a class="headerlink" href="#第二层-引导式学习正文" title="Permanent link">#</a></h2>
+<p>@contents</p>
+<h3 id="1-数项级数与幂级数的收敛">1 数项级数与幂级数的收敛<a class="headerlink" href="#1-数项级数与幂级数的收敛" title="Permanent link">#</a></h3>
+<h4 id="11-用部分和定义收敛">1.1 用部分和定义收敛<a class="headerlink" href="#11-用部分和定义收敛" title="Permanent link">#</a></h4>
+<p>设 <span class="arithmatex">\(c_n=a_n+ib_n\)</span>，其中 <span class="arithmatex">\(a_n,b_n\)</span> 为实数。级数收敛是指有限部分和 <span class="arithmatex">\(S_N=\sum_{n=0}^Nc_n\)</span> 有有限极限，而不是给“无穷多个数相加”直接赋值。</p>
+<div class="admonition abstract">
+<p class="admonition-title">核心结论</p>
+<p>复数列收敛等价于实部、虚部分别收敛，所以 <span class="arithmatex">\(\sum c_n\)</span> 收敛当且仅当 <span class="arithmatex">\(\sum a_n\)</span>、<span class="arithmatex">\(\sum b_n\)</span> 都收敛。必要条件是 <span class="arithmatex">\(c_n\to0\)</span>；反向不成立，调和级数即为反例。
+若 <span class="arithmatex">\(\sum|c_n|&lt;\infty\)</span>，称绝对收敛，由 <span class="arithmatex">\(|a_n|,|b_n|\le|c_n|\)</span> 可知原级数收敛；收敛而不绝对收敛称条件收敛。课堂例子为 <span class="arithmatex">\(\sum n^{-2}\)</span> 绝对收敛、<span class="arithmatex">\(\sum_{n=1}^{\infty}(-1)^n/n=-\ln2\)</span> 条件收敛。</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">分组不能制造收敛</p>
+<p><span class="arithmatex">\(1-1+1-1+\cdots\)</span> 的部分和为一、零交替，没有极限。分组得到零或一，只选取了不同子列，不能说明普通级数有多个和。</p>
+</div>
+<h4 id="12-幂级数何时代表一个函数">1.2 幂级数何时代表一个函数<a class="headerlink" href="#12-幂级数何时代表一个函数" title="Permanent link">#</a></h4>
+<p>给定中心 <span class="arithmatex">\(z_0\)</span> 和系数 <span class="arithmatex">\(c_n\)</span>，形式 <span class="arithmatex">\(\sum_{n=0}^{\infty}c_n(z-z_0)^n\)</span> 称幂级数。每固定 <span class="arithmatex">\(z\)</span>，它才成为一个数项级数；只在收敛点上能以和定义函数。
+若收敛半径 <span class="arithmatex">\(R&gt;0\)</span>，和函数在圆内解析，且该级数正是和函数在 <span class="arithmatex">\(z_0\)</span> 的泰勒级数。不能将“不是某个指定函数的泰勒级数”说成“不能成为任何函数的泰勒级数”。
+课堂例题：<span class="arithmatex">\(\sum n!z^n\)</span> 在零点取值一。若 <span class="arithmatex">\(z\ne0\)</span>，相邻项模比为 <span class="arithmatex">\((n+1)|z|\to\infty\)</span>，通项不趋零，故仅在中心收敛，<span class="arithmatex">\(R=0\)</span>。
+对几何级数，由有限等比和取极限得</p>
+<div class="arithmatex">\[\frac1{1-q}=\sum_{n=0}^{\infty}q^n\quad(|q|&lt;1). \tag{1}\]</div>
+<p>当 <span class="arithmatex">\(|q|\ge1\)</span> 时通项不趋零。于是 <span class="arithmatex">\(1/(1+z^2)=\sum(-1)^nz^{2n}\)</span> 只在 <span class="arithmatex">\(|z|&lt;1\)</span> 成立，尽管左侧函数在远大于这个圆盘的区域有定义。</p>
+<h3 id="2-阿贝尔定理收敛半径与边界">2 阿贝尔定理、收敛半径与边界<a class="headerlink" href="#2-阿贝尔定理收敛半径与边界" title="Permanent link">#</a></h3>
+<h4 id="21-为什么收敛域内部一定是圆盘">2.1 为什么收敛域内部一定是圆盘<a class="headerlink" href="#21-为什么收敛域内部一定是圆盘" title="Permanent link">#</a></h4>
+<div class="admonition abstract">
+<p class="admonition-title">阿贝尔定理</p>
+<p>若 <span class="arithmatex">\(\sum c_nz^n\)</span> 在 <span class="arithmatex">\(z_1\ne0\)</span> 收敛，则在 <span class="arithmatex">\(|z|&lt;|z_1|\)</span> 绝对收敛；若它在 <span class="arithmatex">\(z_2\)</span> 发散，则在 <span class="arithmatex">\(|z|&gt;|z_2|\)</span> 都发散。等号情形不在这两个结论中。</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">证明思路</p>
+<p>收敛点只需提供通项有界，再用一个模小于一的几何因子控制较小圆盘。
+由 <span class="arithmatex">\(c_nz_1^n\to0\)</span>，可取 <span class="arithmatex">\(M\)</span> 使 <span class="arithmatex">\(|c_nz_1^n|\le M\)</span>。对 <span class="arithmatex">\(|z|&lt;|z_1|\)</span>，</p>
+<div class="arithmatex">\[|c_nz^n|\le M\left(\frac{|z|}{|z_1|}\right)^n.\]</div>
+<p>右侧为收敛几何级数；在任一固定闭圆盘 <span class="arithmatex">\(|z|\le r&lt;|z_1|\)</span> 上上界还与 <span class="arithmatex">\(z\)</span> 无关，得到一致收敛。外发散由反证：若外侧存在收敛点，刚证的内收敛结论就使 <span class="arithmatex">\(z_2\)</span> 收敛，矛盾。
+因此存在唯一广义半径 <span class="arithmatex">\(R\in[0,\infty]\)</span>：<span class="arithmatex">\(|z-z_0|&lt;R\)</span> 绝对收敛，<span class="arithmatex">\(|z-z_0|&gt;R\)</span> 发散。<span class="arithmatex">\(R=0\)</span> 表示只在中心收敛，<span class="arithmatex">\(R=\infty\)</span> 表示全平面收敛。</p>
+</div>
+<h4 id="22-同一半径下三种完全不同的圆周">2.2 同一半径下三种完全不同的圆周<a class="headerlink" href="#22-同一半径下三种完全不同的圆周" title="Permanent link">#</a></h4>
+<p>三个课堂级数的半径都是一：<span class="arithmatex">\(\sum z^n\)</span>、<span class="arithmatex">\(\sum_{n=1}^{\infty}z^n/n\)</span>、<span class="arithmatex">\(\sum_{n=1}^{\infty}z^n/n^2\)</span>。在 <span class="arithmatex">\(|z|=1\)</span> 上，第一类通项模恒为一，处处发散；第二类仅 <span class="arithmatex">\(z=1\)</span> 发散，其余点条件收敛；第三类由 <span class="arithmatex">\(\sum1/n^2\)</span> 控制，处处绝对收敛。</p>
+<p><img alt="第4讲 插图 boundaries" loading="lazy" src="../%E6%8F%92%E5%9B%BE/%E7%AC%AC4%E8%AE%B2/boundaries.svg" /></p>
+<p>第二类在 <span class="arithmatex">\(z=e^{i\theta}\ne1\)</span> 时，<span class="arithmatex">\(z^n\)</span> 的有限部分和模不超过 <span class="arithmatex">\(2/|1-z|\)</span>，而 <span class="arithmatex">\(1/n\)</span> 单调趋零，狄利克雷判别法给出收敛；模级数是发散的调和级数。分部求和的细节见参考一。</p>
+<div class="admonition warning">
+<p class="admonition-title">圆内一致收敛的范围</p>
+<p>通常保证的是每个严格位于收敛圆内的闭圆盘，不能自动改成整个开圆盘或整个圆周。一致收敛与逐点收敛不可混用。</p>
+</div>
+<h4 id="23-边界和需要额外的径向极限定理">2.3 边界和需要额外的径向极限定理<a class="headerlink" href="#23-边界和需要额外的径向极限定理" title="Permanent link">#</a></h4>
+<p>在 <span class="arithmatex">\(|z|&lt;1\)</span> 内对几何级数积分，得到</p>
+<div class="arithmatex">\[F(z)=\sum_{n=1}^{\infty}\frac{z^n}{n}=-\operatorname{Log}(1-z).\]</div>
+<p>这里 <span class="arithmatex">\(\operatorname{Re}(1-z)&gt;0\)</span>，选取 <span class="arithmatex">\(\operatorname{Log}1=0\)</span> 的解析支。先证明边界级数收敛，再由阿贝尔径向极限定理将其和与圆内的径向极限对应，不能直接把 <span class="arithmatex">\(|z|&lt;1\)</span> 改成小于等于。
+对 <span class="arithmatex">\(0&lt;\theta&lt;2\pi\)</span>，因 <span class="arithmatex">\(\sin(\theta/2)&gt;0\)</span>，</p>
+<div class="arithmatex">\[1-e^{i\theta}=2\sin(\theta/2)e^{i(\theta/2-\pi/2)},\]</div>
+<p>从而</p>
+<div class="arithmatex">\[\sum_{n=1}^{\infty}\frac{e^{in\theta}}n=-\ln(2\sin(\theta/2))+i\frac{\pi-\theta}{2}. \tag{2}\]</div>
+<p>取 <span class="arithmatex">\(\theta=\pi\)</span> 得 <span class="arithmatex">\(-\ln2\)</span>，可同时检查实部符号与虚部。另一课堂关系是 <span class="arithmatex">\(F_3'(z)=F(z)/z\)</span>，其中 <span class="arithmatex">\(F_3=\sum z^n/n^2\)</span>；其原函数不是 <span class="arithmatex">\(F\)</span> 的直接积分，而是 <span class="arithmatex">\(F_3(z)=\int_0^zF(t)/t\,dt\)</span>，零点按极限补值。</p>
+<h3 id="3-求半径与比较半径的方法">3 求半径与比较半径的方法<a class="headerlink" href="#3-求半径与比较半径的方法" title="Permanent link">#</a></h3>
+<h4 id="31-系数法缺项与奇点距离">3.1 系数法、缺项与奇点距离<a class="headerlink" href="#31-系数法缺项与奇点距离" title="Permanent link">#</a></h4>
+<div class="admonition abstract">
+<p class="admonition-title">系数判据</p>
+<p>当系数从某项起非零且极限存在时，<span class="arithmatex">\(R=\lim|c_n/c_{n+1}|\)</span>；一般情形用</p>
+<div class="arithmatex">\[R^{-1}=\limsup_{n\to\infty}|c_n|^{1/n},\qquad 1/0=\infty,\quad1/\infty=0. \tag{3}\]</div>
+<p>比值或普通根值极限不存在，不代表半径不存在。对 <span class="arithmatex">\(\sum a_nz^{mn}\)</span>，宜先令 <span class="arithmatex">\(w=z^m\)</span>；若作为 <span class="arithmatex">\(w\)</span> 的级数半径为 <span class="arithmatex">\(\rho\)</span>，则原变量半径为 <span class="arithmatex">\(\rho^{1/m}\)</span>。零系数使机械相邻比值失效。
+例：<span class="arithmatex">\(c_n=n!\)</span> 给出 <span class="arithmatex">\(R=0\)</span>，<span class="arithmatex">\(c_n=1/n!\)</span> 给出 <span class="arithmatex">\(R=\infty\)</span>；<span class="arithmatex">\(1/(1+z^m)=\sum(-1)^nz^{mn}\)</span> 要求 <span class="arithmatex">\(|z|&lt;1\)</span>，最近的不可去奇点也都位于单位圆。
+对已知解析函数在指定中心的泰勒级数，半径是该函数元素可解析延拓的最大圆盘半径。本课有理函数等常用题可计算中心到最近不可去奇点的距离，须先检查约消。
+课堂函数为 <span class="arithmatex">\(f(z)=1/(1-z)+3/(3-z^2)+\sin(z^2/(1-z))\)</span>。零点附近的最近障碍是 <span class="arithmatex">\(z=1\)</span>，其余分母零点为 <span class="arithmatex">\(\pm\sqrt3\)</span>；正弦复合项在 <span class="arithmatex">\(z=1\)</span> 处的本性奇点不能被另两项消去，故 <span class="arithmatex">\(R=1\)</span>。</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">展开边界与奇点</p>
+<p><span class="arithmatex">\(\sum z^n\)</span> 在单位圆处处发散，但和函数 <span class="arithmatex">\(1/(1-z)\)</span> 只有 <span class="arithmatex">\(z=1\)</span> 是奇点，负一附近仍解析。有限非零半径的圆周至少有一个延拓障碍，不是每点都有障碍。</p>
+</div>
+<p><img alt="第4讲 插图 singularity" loading="lazy" src="../%E6%8F%92%E5%9B%BE/%E7%AC%AC4%E8%AE%B2/singularity.svg" /></p>
+<h4 id="32-从收敛信息与系数大小比较半径">3.2 从收敛信息与系数大小比较半径<a class="headerlink" href="#32-从收敛信息与系数大小比较半径" title="Permanent link">#</a></h4>
+<p>若在 <span class="arithmatex">\(z_1\ne z_0\)</span> 条件收敛，则 <span class="arithmatex">\(R=|z_1-z_0|\)</span>：收敛说明该点不在圆外；若在圆内就应绝对收敛，矛盾。仅知收敛只能推 <span class="arithmatex">\(R\ge|z_1-z_0|\)</span>，仅知发散只能推反向不等式，均允许等号。
+若从某项起 <span class="arithmatex">\(|c_n|\le|d_n|\)</span>，则 <span class="arithmatex">\(R_c\ge R_d\)</span>。理由是在任意 <span class="arithmatex">\(r&lt;R_d\)</span> 上比较两个非负模级数，再令 <span class="arithmatex">\(r\)</span> 逼近 <span class="arithmatex">\(R_d\)</span>。例如 <span class="arithmatex">\(n!\le n^n\)</span>，故 <span class="arithmatex">\(\sum z^n/n^n\)</span> 的半径不小于指数级数的无穷半径，因而也是无穷。
+设 <span class="arithmatex">\(c_n=a_n+ib_n\)</span>，其中 <span class="arithmatex">\(a_n,b_n\)</span> 为实数；三个系数列的半径分别为 <span class="arithmatex">\(R,R_a,R_b\)</span>，则</p>
+<div class="arithmatex">\[R=\min(R_a,R_b). \tag{4}\]</div>
+<p>共同圆内由 <span class="arithmatex">\(|c_n|\le|a_n|+|b_n|\)</span> 得 <span class="arithmatex">\(R\ge\min(R_a,R_b)\)</span>；反向用 <span class="arithmatex">\(|a_n|,|b_n|\le|c_n|\)</span> 得 <span class="arithmatex">\(R_a,R_b\ge R\)</span>。不可通过“无穷减无穷”证明。一般复系数相加只有半径不小于最小值，同半径可能抵消变大。</p>
+<h3 id="4-逐项运算与泰勒系数唯一性">4 逐项运算与泰勒系数唯一性<a class="headerlink" href="#4-逐项运算与泰勒系数唯一性" title="Permanent link">#</a></h3>
+<div class="admonition abstract">
+<p class="admonition-title">圆内运算</p>
+<p>设 <span class="arithmatex">\(R&gt;0\)</span>，<span class="arithmatex">\(f(z)=\sum c_n(z-z_0)^n\)</span>。在 <span class="arithmatex">\(|z-z_0|&lt;R\)</span> 内，</p>
+<div class="arithmatex">\[f'(z)=\sum_{n=1}^{\infty}nc_n(z-z_0)^{n-1},\qquad \int_{z_0}^zf(t)dt=\sum_{n=0}^{\infty}\frac{c_n}{n+1}(z-z_0)^{n+1}. \tag{5}\]</div>
+<p>两者半径仍为 <span class="arithmatex">\(R\)</span>；圆内积分路径不影响结果。边界上的收敛性质可以变化，式（5）并未授权在圆周上逐项求导。</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">证明思路</p>
+<p>在 <span class="arithmatex">\(r&lt;\rho&lt;R\)</span> 上用较大闭圆盘的系数界控制较小圆盘的导数级数；这比仅说“每项都可导”多出必要的一致收敛。
+取 <span class="arithmatex">\(|c_n|\rho^n\le M\)</span>，则 <span class="arithmatex">\(n|c_n|r^{n-1}\le(M/\rho)n(r/\rho)^{n-1}\)</span>，右侧求和收敛。故可逐项求导；原级数在较小闭圆盘一致收敛，允许沿有限长路径逐项积分。若导数级数半径更大，再积分就使原级数在更大圆盘收敛，矛盾；积分级数同理。
+反复求导并代入中心，只有相应幂次留下，所以</p>
+<div class="arithmatex">\[c_n=\frac{f^{(n)}(z_0)}{n!}. \tag{6}\]</div>
+<p>这证明同一函数在同一中心的泰勒系数唯一。常用的指数、正弦展开半径均无穷；有限多项式是后续系数全零的特例。</p>
+</div>
+<h3 id="5-课堂复积分回顾倒数换元">5 课堂复积分回顾：倒数换元<a class="headerlink" href="#5-课堂复积分回顾倒数换元" title="Permanent link">#</a></h3>
+<p>求正向圆 <span class="arithmatex">\(|z|=r&gt;1\)</span> 上 <span class="arithmatex">\(I_r=\oint e^{1/z}/(1+z)\,dz\)</span>。圈内零和负一都是奇点，不能直接对原函数用柯西定理。</p>
+<div class="admonition info">
+<p class="admonition-title">方法选择</p>
+<p>令 <span class="arithmatex">\(t=1/z\)</span>，使大圆变成半径 <span class="arithmatex">\(1/r&lt;1\)</span> 的小圆，将负一排除在新圈外。若 <span class="arithmatex">\(z=re^{i\theta}\)</span> 逆时针，则 <span class="arithmatex">\(t=r^{-1}e^{-i\theta}\)</span> 顺时针；同时</p>
+<div class="arithmatex">\[dz=-t^{-2}dt,\qquad \frac{e^{1/z}}{1+z}dz=-\frac{e^t}{t(1+t)}dt.\]</div>
+<p>微分负号与把顺时针改成逆时针的负号抵消，因此</p>
+<div class="arithmatex">\[I_r=\oint_{|t|=1/r}^{+}\frac{e^t}{t(1+t)}dt=2\pi i. \tag{7}\]</div>
+<p>最后一步对 <span class="arithmatex">\(g(t)=e^t/(1+t)\)</span> 使用柯西公式，<span class="arithmatex">\(g\)</span> 在小圆及内部解析且 <span class="arithmatex">\(g(0)=1\)</span>。</p>
+</div>
+<p><img alt="第4讲 插图 inversion" loading="lazy" src="../%E6%8F%92%E5%9B%BE/%E7%AC%AC4%E8%AE%B2/inversion.svg" /></p>
+<div class="admonition warning">
+<p class="admonition-title">两个符号分别记录</p>
+<p>方向翻转与微分变换是两件事。只处理其中一个，会错一个负号；<span class="arithmatex">\(r&gt;1\)</span> 是排除新奇点负一的条件。</p>
+</div>
+<h3 id="6-洛朗级数与圆环内的系数">6 洛朗级数与圆环内的系数<a class="headerlink" href="#6-洛朗级数与圆环内的系数" title="Permanent link">#</a></h3>
+<h4 id="61-为什么必须允许正幂和负幂">6.1 为什么必须允许正幂和负幂<a class="headerlink" href="#61-为什么必须允许正幂和负幂" title="Permanent link">#</a></h4>
+<p>当中心不解析，或研究避开中心的圆环时，采用</p>
+<div class="arithmatex">\[\sum_{n=-\infty}^{\infty}c_n(z-z_0)^n=\sum_{n=0}^{\infty}c_n(z-z_0)^n+\sum_{k=1}^{\infty}c_{-k}(z-z_0)^{-k}. \tag{8}\]</div>
+<p>正、负两部分必须分别收敛，不能借双向截断相消造出收敛。正幂要求 <span class="arithmatex">\(|z-z_0|&lt;R_2\)</span>；将负幂看作 <span class="arithmatex">\(w=1/(z-z_0)\)</span> 的幂级数，得到 <span class="arithmatex">\(|z-z_0|&gt;R_1\)</span>。交集是 <span class="arithmatex">\(R_1&lt;|z-z_0|&lt;R_2\)</span>，须 <span class="arithmatex">\(R_1&lt;R_2\)</span> 才非空。
+课堂例子 <span class="arithmatex">\(e^z+e^{1/z}-1=1+\sum_{n=1}^{\infty}z^n/n!+\sum_{n=1}^{\infty}z^{-n}/n!\)</span> 在 <span class="arithmatex">\(0&lt;|z|&lt;\infty\)</span> 成立，常数系数是一。
+两个几何级数给出</p>
+<div class="arithmatex">\[\sum_{n=0}^{\infty}(z/a)^n+\sum_{n=0}^{\infty}(b/z)^n=\frac{a}{a-z}+\frac{z}{z-b},\qquad |b|&lt;|z|&lt;|a|.\]</div>
+<p>这里 <span class="arithmatex">\(a,b\ne0\)</span>；两部分均从零开始，所以常数系数为二。令 <span class="arithmatex">\(b=0\)</span> 时第二部分仍有零次项一，不能无故丢掉。</p>
+<h4 id="62-系数公式为什么与所选圆周无关">6.2 系数公式为什么与所选圆周无关<a class="headerlink" href="#62-系数公式为什么与所选圆周无关" title="Permanent link">#</a></h4>
+<div class="admonition abstract">
+<p class="admonition-title">洛朗定理</p>
+<p>若 <span class="arithmatex">\(f\)</span> 在 <span class="arithmatex">\(r&lt;|z-z_0|&lt;R\)</span> 内解析，则有唯一的式（8）展开；对任意 <span class="arithmatex">\(r&lt;\rho&lt;R\)</span>，</p>
+<div class="arithmatex">\[c_n=\frac1{2\pi i}\oint_{|\zeta-z_0|=\rho}\frac{f(\zeta)}{(\zeta-z_0)^{n+1}}d\zeta,\qquad n\in\mathbb Z. \tag{9}\]</div>
+<p>积分均逆时针。换半径时两圈之间的被积函数解析，由复合闭路定理知积分相同。把已有展开乘以 <span class="arithmatex">\((z-z_0)^{-n-1}\)</span> 再绕圆积分，也只有第 <span class="arithmatex">\(n\)</span> 项留下，故系数唯一。</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">唯一性的范围</p>
+<p>同一个函数在不同圆环上可有不同系数；换圈越过奇点后，式（9）的积分不能再以“中间解析”为由保持不变。存在性的双圈推导见参考二。</p>
+</div>
+<h3 id="7-课堂洛朗展开为每个区域选择小量">7 课堂洛朗展开：为每个区域选择小量<a class="headerlink" href="#7-课堂洛朗展开为每个区域选择小量" title="Permanent link">#</a></h3>
+<h4 id="71-同一分式的内外展开">7.1 同一分式的内外展开<a class="headerlink" href="#71-同一分式的内外展开" title="Permanent link">#</a></h4>
+<p>由式（1），<span class="arithmatex">\(1/(1+z^2)\)</span> 在 <span class="arithmatex">\(|z|&lt;1\)</span> 为 <span class="arithmatex">\(\sum(-1)^nz^{2n}\)</span>；在 <span class="arithmatex">\(|z|&gt;1\)</span> 先提出 <span class="arithmatex">\(z^2\)</span>，得到 <span class="arithmatex">\(\sum(-1)^nz^{-2n-2}\)</span>，首项为 <span class="arithmatex">\(z^{-2}\)</span>。
+对课堂题 <span class="arithmatex">\(h(z)=z/(1-z^2)\)</span>，部分分式为 <span class="arithmatex">\([1/(1-z)-1/(1+z)]/2\)</span>，因此</p>
+<div class="arithmatex">\[h(z)=\sum_{k=0}^{\infty}z^{2k+1}\quad(|z|&lt;1),\qquad h(z)=-\sum_{k=0}^{\infty}z^{-2k-1}\quad(|z|&gt;1).\]</div>
+<div class="admonition warning">
+<p class="admonition-title">板书符号核对</p>
+<p>本题后续板书的符号有不一致，此处以题面 <span class="arithmatex">\(z/(1-z^2)\)</span> 通分核对，圆内首项应为正 <span class="arithmatex">\(z\)</span>，也可用 <span class="arithmatex">\(h'(0)=1\)</span> 检查；外部首项则为 <span class="arithmatex">\(-z^{-1}\)</span>。</p>
+</div>
+<h4 id="72-两个奇点划分三个展开区域">7.2 两个奇点划分三个展开区域<a class="headerlink" href="#72-两个奇点划分三个展开区域" title="Permanent link">#</a></h4>
+<p>课堂题 <span class="arithmatex">\(f(z)=1/[(z-1)(1-2z)]\)</span>。先定位奇点 <span class="arithmatex">\(1/2,1\)</span>，再作可回代的分解：</p>
+<div class="arithmatex">\[f(z)=\frac1{1-z}-\frac2{1-2z}. \tag{10}\]</div>
+<p>当 <span class="arithmatex">\(|z|&lt;1/2\)</span>，两个分式都用正幂，得</p>
+<div class="arithmatex">\[f(z)=\sum_{n=0}^{\infty}(1-2^{n+1})z^n.\]</div>
+<p>常数项为负一，等于 <span class="arithmatex">\(f(0)\)</span>，且负幂系数均零。对 <span class="arithmatex">\(1/2&lt;|z|&lt;1\)</span>，第一项仍用 <span class="arithmatex">\(z\)</span>，第二项改用 <span class="arithmatex">\(1/(2z)\)</span>：</p>
+<div class="arithmatex">\[-\frac2{1-2z}=\frac{z^{-1}}{1-(2z)^{-1}},\qquad f(z)=\sum_{n=0}^{\infty}z^n+\sum_{k=0}^{\infty}2^{-k}z^{-k-1}. \tag{11}\]</div>
+<p>若改成双向指标，<span class="arithmatex">\(n\ge0\)</span> 时 <span class="arithmatex">\(c_n=1\)</span>，<span class="arithmatex">\(n\le-1\)</span> 时 <span class="arithmatex">\(c_n=2^{n+1}\)</span>；特别地 <span class="arithmatex">\(c_{-1}=1,c_{-2}=1/2\)</span>。</p>
+<p><img alt="第4讲 插图 annuli" loading="lazy" src="../%E6%8F%92%E5%9B%BE/%E7%AC%AC4%E8%AE%B2/annuli.svg" /></p>
+<div class="admonition info">
+<p class="admonition-title">外部展开的检查</p>
+<p>在 <span class="arithmatex">\(|z|&gt;1\)</span> 两部分均写成负幂，得到 <span class="arithmatex">\(f(z)=\sum_{k=1}^{\infty}(2^{1-k}-1)z^{-k}\)</span>。负一次项抵消，首项为 <span class="arithmatex">\(-1/(2z^2)\)</span>，与原有理函数在无穷远处的渐近式相同。
+三个区域内的 <span class="arithmatex">\(c_{-1}\)</span> 依次为零、一、零，体现的是圆环改变，不违反唯一性。解题固定按“中心—奇点距离—圆环—各分式小量—条件交集—首项与回代”进行。</p>
+</div>
+<h3 id="8-课末实积分例题与留数衔接">8 课末实积分例题与留数衔接<a class="headerlink" href="#8-课末实积分例题与留数衔接" title="Permanent link">#</a></h3>
+<h4 id="81-单位圆换元处理整周期三角积分">8.1 单位圆换元处理整周期三角积分<a class="headerlink" href="#81-单位圆换元处理整周期三角积分" title="Permanent link">#</a></h4>
+<p>课堂以实积分预告留数法。此处只保留所需结论：设 <span class="arithmatex">\(C\)</span> 为正向分段光滑简单闭曲线，<span class="arithmatex">\(f\)</span> 在包含 <span class="arithmatex">\(C\)</span> 及其内部的开集内除有限个孤立奇点外解析，且 <span class="arithmatex">\(C\)</span> 上无奇点，则积分等于圈内各留数之和乘以 <span class="arithmatex">\(2\pi i\)</span>；简单极点 <span class="arithmatex">\(a\)</span> 的留数为 <span class="arithmatex">\(\lim_{z\to a}(z-a)f(z)\)</span>，系统理论见第五讲。
+设实参数 <span class="arithmatex">\(a,b\)</span> 满足 <span class="arithmatex">\(a&gt;|b|\)</span>，求 <span class="arithmatex">\(I=\int_0^{2\pi}d\theta/(a+b\cos\theta)\)</span>。<span class="arithmatex">\(b=0\)</span> 直接得 <span class="arithmatex">\(2\pi/a\)</span>。否则令 <span class="arithmatex">\(z=e^{i\theta}\)</span>，<span class="arithmatex">\(d\theta=dz/(iz)\)</span>、<span class="arithmatex">\(\cos\theta=(z+z^{-1})/2\)</span>：</p>
+<div class="arithmatex">\[I=\frac2i\oint_{|z|=1}\frac{dz}{bz^2+2az+b}.\]</div>
+<p>记 <span class="arithmatex">\(\Delta=\sqrt{a^2-b^2}&gt;0\)</span>，根为 <span class="arithmatex">\(z_\pm=(-a\pm\Delta)/b\)</span>。有理化得 <span class="arithmatex">\(z_+=-b/(a+\Delta)\)</span>，故 <span class="arithmatex">\(|z_+|&lt;1\)</span>；又 <span class="arithmatex">\(z_+z_-=1\)</span>，故另一根在圈外。
+圈内留数为 <span class="arithmatex">\(1/(2bz_++2a)=1/(2\Delta)\)</span>，所以</p>
+<div class="arithmatex">\[I=\frac{2\pi}{\sqrt{a^2-b^2}}. \tag{12}\]</div>
+<p>正弦版本由平移角度及周期性得到同值。结果为正，且 <span class="arithmatex">\(b=0\)</span> 回到直接计算值。</p>
+<h4 id="82-平方三角分母与参数条件">8.2 平方三角分母与参数条件<a class="headerlink" href="#82-平方三角分母与参数条件" title="Permanent link">#</a></h4>
+<p>设实参数 <span class="arithmatex">\(A,B\ne0\)</span>。四象限对称后，第一象限令 <span class="arithmatex">\(t=\tan\theta\)</span>：</p>
+<div class="arithmatex">\[J=\int_0^{2\pi}\frac{d\theta}{A^2\cos^2\theta+B^2\sin^2\theta}=4\int_0^{\infty}\frac{dt}{A^2+B^2t^2}=\frac{2\pi}{|AB|}. \tag{13}\]</div>
+<p>课堂给定 <span class="arithmatex">\(AB&gt;0\)</span> 时可写 <span class="arithmatex">\(2\pi/(AB)\)</span>；若只知非零，须保留绝对值。任一参数为零会产生不可积奇点，不能直接代公式。</p>
+<div class="admonition warning">
+<p class="admonition-title">末行题面尚需核对</p>
+<p>末张照片的半无限积分分子看似 <span class="arithmatex">\(x^2\sin(kx)\)</span>，参数条件不完整。若题面确为 <span class="arithmatex">\(\int_0^{\infty}x^2\sin(kx)/(x^2+a^2)dx\)</span>、<span class="arithmatex">\(a&gt;0,k\ne0\)</span>，普通反常积分不收敛：分解 <span class="arithmatex">\(x^2/(x^2+a^2)=1-a^2/(x^2+a^2)\)</span>，第二项绝对可积，第一项截断积分 <span class="arithmatex">\((1-\cos kT)/k\)</span> 无极限。因此不能擅改为分子 <span class="arithmatex">\(x\sin(kx)\)</span>，也不能赋予普通积分一个留数值。</p>
+</div>
+<h2 id="第三层-详细参考与拓展">第三层 详细参考与拓展<a class="headerlink" href="#第三层-详细参考与拓展" title="Permanent link">#</a></h2>
+<h3 id="参考一-边界收敛与径向极限的依据">参考一 边界收敛与径向极限的依据<a class="headerlink" href="#参考一-边界收敛与径向极限的依据" title="Permanent link">#</a></h3>
+<div class="admonition info">
+<p class="admonition-title">理解即可</p>
+<p>对 <span class="arithmatex">\(z=e^{i\theta}\ne1\)</span>，令 <span class="arithmatex">\(B_k=\sum_{j=p}^kz^j\)</span>，则 <span class="arithmatex">\(|B_k|\le2/|1-z|\)</span>。分部求和给出</p>
+<div class="arithmatex">\[\sum_{n=p}^q\frac{z^n}{n}=\frac{B_q}{q}+\sum_{n=p}^{q-1}B_n\left(\frac1n-\frac1{n+1}\right).\]</div>
+<p>取模后望远镜求和，上界为 <span class="arithmatex">\(2/(p|1-z|)\to0\)</span>，证明满足柯西准则。
+径向极限定理中，若 <span class="arithmatex">\(\sum b_n=S\)</span>，记 <span class="arithmatex">\(s_n=\sum_{k=1}^nb_k\)</span>。对 <span class="arithmatex">\(0&lt;r&lt;1\)</span>，有 <span class="arithmatex">\(\sum b_nr^n=(1-r)\sum s_nr^n\)</span>。写 <span class="arithmatex">\(s_n=S+(s_n-S)\)</span>，常数部分为 <span class="arithmatex">\(Sr\to S\)</span>；有限前段误差乘 <span class="arithmatex">\(1-r\)</span> 后趋零，尾段由任意小的 <span class="arithmatex">\(|s_n-S|\)</span> 控制，总权重不超过一。因此径向极限为 <span class="arithmatex">\(S\)</span>。它以前提“边界已收敛”为起点。</p>
+</div>
+<h3 id="参考二-洛朗展开怎样由双圆周公式产生">参考二 洛朗展开怎样由双圆周公式产生<a class="headerlink" href="#参考二-洛朗展开怎样由双圆周公式产生" title="Permanent link">#</a></h3>
+<div class="admonition abstract">
+<p class="admonition-title">重点</p>
+<p>简化取中心零。若 <span class="arithmatex">\(f\)</span> 在 <span class="arithmatex">\(r&lt;|z|&lt;R\)</span> 解析，固定 <span class="arithmatex">\(z\)</span>，选择 <span class="arithmatex">\(r&lt;\rho_1&lt;|z|&lt;\rho_2&lt;R\)</span>，则圆环柯西公式为</p>
+<div class="arithmatex">\[f(z)=\frac1{2\pi i}\oint_{|\zeta|=\rho_2}\frac{f(\zeta)}{\zeta-z}d\zeta-\frac1{2\pi i}\oint_{|\zeta|=\rho_1}\frac{f(\zeta)}{\zeta-z}d\zeta.\]</div>
+<p>两圈在式中都取逆时针，内圈实际负向由减号表示。外圈用 <span class="arithmatex">\(z/\zeta\)</span> 展开核，产生非负幂；内圈用 <span class="arithmatex">\(\zeta/z\)</span>，产生负幂：</p>
+<div class="arithmatex">\[\frac1{\zeta-z}=\sum_{n=0}^{\infty}\frac{z^n}{\zeta^{n+1}}\quad(|z|&lt;|\zeta|),\qquad \frac1{\zeta-z}=-\sum_{k=0}^{\infty}\frac{\zeta^k}{z^{k+1}}\quad(|\zeta|&lt;|z|).\]</div>
+<p>固定两圈上几何比一致小于一，允许逐项积分；内圈核的负号与双圈公式的减号抵消，得到式（8）和（9）。这也说明负幂不是任意加入，而是内边界贡献的自然结果。</p>
+</div>
+<h2 id="课末核心知识回顾">课末核心知识回顾<a class="headerlink" href="#课末核心知识回顾" title="Permanent link">#</a></h2>
+<p>幂级数先求半径，再另判圆周。圆内绝对收敛、较小闭圆盘一致收敛；一个条件收敛点可锁定半径，普通收敛或发散点通常只给不等式。
+系数比值需检查非零与极限条件，缺项宜换变量或用根值公式。奇点距离针对指定中心与指定函数元素，级数圆周处处发散不代表圆周处处是奇点。
+逐项求导积分保持半径，边界性质未必保留。泰勒系数由中心导数唯一确定；洛朗系数还依赖所选圆环，且正负两部分须分别收敛。
+展开题先定位奇点，按距离划分区域，为每个分式选模小于一的参数，再取条件交集。常数项、首项、幂次指标与通分回代都是有效检查。
+圆周积分只留下负一次项，将展开与留数法连接起来。每次换元同时跟踪路径方向、微分和奇点；未核实收敛前不能给普通反常积分强行赋值。</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="页脚" >
+        
+          
+          <a href="../%E7%AC%AC3%E8%AE%B2_%E5%A4%8D%E7%A7%AF%E5%88%86%E6%9F%AF%E8%A5%BF%E5%85%AC%E5%BC%8F%E4%B8%8E%E8%A7%A3%E6%9E%90%E5%87%BD%E6%95%B0%E7%9A%84%E6%95%B4%E4%BD%93%E6%80%A7%E8%B4%A8/" class="md-footer__link md-footer__link--prev" aria-label="上一页: 第3讲 复积分柯西公式与解析函数的整体性质">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                上一页
+              </span>
+              <div class="md-ellipsis">
+                第3讲 复积分柯西公式与解析函数的整体性质
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../%E7%AC%AC5%E8%AE%B2_%E9%9B%B6%E7%82%B9%E5%A5%87%E7%82%B9%E4%B8%8E%E7%95%99%E6%95%B0%E7%A7%AF%E5%88%86/" class="md-footer__link md-footer__link--next" aria-label="下一页: 第5讲 零点奇点与留数积分">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                下一页
+              </span>
+              <div class="md-ellipsis">
+                第5讲 零点奇点与留数积分
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.sections", "navigation.expand", "navigation.top", "navigation.footer", "toc.follow", "search.highlight", "search.share"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

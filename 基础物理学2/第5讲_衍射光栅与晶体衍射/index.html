@@ -1,0 +1,2721 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="大学课程个人学习讲义，按学期和课程组织，支持网页端直接阅读">
+      
+      
+      
+        <link rel="canonical" href="https://yunbianmailang.github.io/university-course-materials/%E5%9F%BA%E7%A1%80%E7%89%A9%E7%90%86%E5%AD%A62/%E7%AC%AC5%E8%AE%B2_%E8%A1%8D%E5%B0%84%E5%85%89%E6%A0%85%E4%B8%8E%E6%99%B6%E4%BD%93%E8%A1%8D%E5%B0%84/">
+      
+      
+        <link rel="prev" href="../%E7%AC%AC4%E8%AE%B2_%E5%85%89%E7%9A%84%E8%A1%8D%E5%B0%84%E4%B8%8E%E5%88%86%E8%BE%A8%E6%9C%AC%E9%A2%86/">
+      
+      
+        <link rel="next" href="../%E7%AC%AC6%E8%AE%B2_%E5%81%8F%E6%8C%AF%E6%80%81%E4%B8%8E%E8%8F%B2%E6%B6%85%E8%80%B3%E5%85%AC%E5%BC%8F/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>第5讲 衍射光栅与晶体衍射 - 大学课程学习资料</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/custom.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#第5讲-衍射光栅与晶体衍射" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../.." title="大学课程学习资料" class="md-header__button md-logo" aria-label="大学课程学习资料" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            大学课程学习资料
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              第5讲 衍射光栅与晶体衍射
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="indigo"  aria-label="切换到深色模式"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="切换到深色模式" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="indigo"  aria-label="切换到浅色模式"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="切换到浅色模式" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="分享" aria-label="分享" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/yunbianmailang/university-course-materials" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    大学课程学习资料
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="大学课程学习资料" class="md-nav__button md-logo" aria-label="大学课程学习资料" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    大学课程学习资料
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/yunbianmailang/university-course-materials" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    大学课程学习资料
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    首页
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    复变函数与数理方程
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    复变函数与数理方程
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0%E4%B8%8E%E6%95%B0%E7%90%86%E6%96%B9%E7%A8%8B/%E8%AF%BE%E7%A8%8B%E8%AF%B4%E6%98%8E/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    课程说明
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0%E4%B8%8E%E6%95%B0%E7%90%86%E6%96%B9%E7%A8%8B/%E7%AC%AC1%E8%AE%B2_%E5%A4%8D%E6%95%B0%E5%87%A0%E4%BD%95%E6%A8%A1%E7%9A%84%E6%9E%81%E5%80%BC%E4%B8%8E%E6%8C%87%E6%95%B0%E6%98%A0%E5%B0%84/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第1讲 复数几何模的极值与指数映射
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0%E4%B8%8E%E6%95%B0%E7%90%86%E6%96%B9%E7%A8%8B/%E7%AC%AC2%E8%AE%B2_%E5%A4%8D%E5%B9%82%E8%A7%A3%E6%9E%90%E6%80%A7%E4%B8%8E%E5%A4%8D%E5%B9%B3%E9%9D%A2%E6%98%A0%E5%B0%84/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第2讲 复幂解析性与复平面映射
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0%E4%B8%8E%E6%95%B0%E7%90%86%E6%96%B9%E7%A8%8B/%E7%AC%AC3%E8%AE%B2_%E5%A4%8D%E7%A7%AF%E5%88%86%E6%9F%AF%E8%A5%BF%E5%85%AC%E5%BC%8F%E4%B8%8E%E8%A7%A3%E6%9E%90%E5%87%BD%E6%95%B0%E7%9A%84%E6%95%B4%E4%BD%93%E6%80%A7%E8%B4%A8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第3讲 复积分柯西公式与解析函数的整体性质
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0%E4%B8%8E%E6%95%B0%E7%90%86%E6%96%B9%E7%A8%8B/%E7%AC%AC4%E8%AE%B2_%E5%B9%82%E7%BA%A7%E6%95%B0%E6%94%B6%E6%95%9B%E4%B8%8E%E6%B3%B0%E5%8B%92%E6%B4%9B%E6%9C%97%E5%B1%95%E5%BC%80/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第4讲 幂级数收敛与泰勒洛朗展开
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0%E4%B8%8E%E6%95%B0%E7%90%86%E6%96%B9%E7%A8%8B/%E7%AC%AC5%E8%AE%B2_%E9%9B%B6%E7%82%B9%E5%A5%87%E7%82%B9%E4%B8%8E%E7%95%99%E6%95%B0%E7%A7%AF%E5%88%86/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第5讲 零点奇点与留数积分
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    信号与系统
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    信号与系统
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%B3%BB%E7%BB%9F/%E8%AF%BE%E7%A8%8B%E8%AF%B4%E6%98%8E/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    课程说明
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%B3%BB%E7%BB%9F/%E7%AC%AC1%E8%AE%B2_%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF%E4%B8%8E%E5%9F%BA%E6%9C%AC%E8%AF%AD%E8%A8%80/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第1讲 学习路线与基本语言
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%B3%BB%E7%BB%9F/%E7%AC%AC2%E8%AE%B2_%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B%E7%BB%8F%E5%85%B8%E6%B3%95%E4%B8%8E%E5%93%8D%E5%BA%94%E5%88%86%E8%A7%A3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第2讲 微分方程经典法与响应分解
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%B3%BB%E7%BB%9F/%E7%AC%AC3%E8%AE%B2_%E5%82%85%E9%87%8C%E5%8F%B6%E7%BA%A7%E6%95%B0%E4%B8%8E%E9%A2%91%E8%B0%B1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第3讲 傅里叶级数与频谱
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%B3%BB%E7%BB%9F/%E7%AC%AC4%E8%AE%B2_%E5%82%85%E9%87%8C%E5%8F%B6%E5%8F%98%E6%8D%A2%E4%B8%8E%E5%85%B8%E5%9E%8B%E4%BF%A1%E5%8F%B7%E9%A2%91%E8%B0%B1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第4讲 傅里叶变换与典型信号频谱
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%B3%BB%E7%BB%9F/%E7%AC%AC5%E8%AE%B2_%E5%85%B8%E5%9E%8B%E5%8F%98%E6%8D%A2%E5%AF%B9%E4%B8%8E%E6%8A%BD%E6%A0%B7%E5%AE%9A%E7%90%86/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第5讲 典型变换对与抽样定理
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%B3%BB%E7%BB%9F/%E7%AC%AC6%E8%AE%B2_%E6%8B%89%E6%99%AE%E6%8B%89%E6%96%AF%E5%8F%98%E6%8D%A2%E7%9A%84%E6%80%A7%E8%B4%A8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第6讲 拉普拉斯变换的性质
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%B3%BB%E7%BB%9F/%E7%AC%AC7%E8%AE%B2_%E6%8B%89%E6%99%AE%E6%8B%89%E6%96%AF%E9%80%86%E5%8F%98%E6%8D%A2%E4%B8%8E%20s%20%E5%9F%9F%E6%A8%A1%E5%9E%8B/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第7讲 拉普拉斯逆变换与 s 域模型
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%B3%BB%E7%BB%9F/%E7%AC%AC8%E8%AE%B2_%E9%A2%91%E7%8E%87%E5%93%8D%E5%BA%94%E4%B8%8E%E7%A8%B3%E5%AE%9A%E6%80%A7/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第8讲 频率响应与稳定性
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    基础物理学2（光学）
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    基础物理学2（光学）
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E8%AF%BE%E7%A8%8B%E8%AF%B4%E6%98%8E/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    课程说明
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC1%E8%AE%B2_%E5%87%A0%E4%BD%95%E5%85%89%E5%AD%A6%E7%AE%80%E4%BB%8B/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第1讲 几何光学简介
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC2%E8%AE%B2_%E6%B3%A2%E5%8A%A8%E5%85%89%E5%AD%A6%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86%EF%BC%88%E4%B8%80%EF%BC%89/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第2讲 波动光学基本原理（一）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC3%E8%AE%B2_%E5%85%89%E7%9A%84%E5%B9%B2%E6%B6%89%E4%B8%8E%E6%97%B6%E7%A9%BA%E7%9B%B8%E5%B9%B2%E6%80%A7/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第3讲 光的干涉与时空相干性
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC4%E8%AE%B2_%E5%85%89%E7%9A%84%E8%A1%8D%E5%B0%84%E4%B8%8E%E5%88%86%E8%BE%A8%E6%9C%AC%E9%A2%86/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第4讲 光的衍射与分辨本领
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第5讲 衍射光栅与晶体衍射
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第5讲 衍射光栅与晶体衍射
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-从单缝到多缝衍射" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1 从单缝到多缝衍射
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1 从单缝到多缝衍射">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-光栅的三个结构量" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1 光栅的三个结构量
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-各缝的图样为什么重叠" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2 各缝的图样为什么重叠
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-主极大与暗纹" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.3 主极大与暗纹
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#例411-四缝之间有几条暗纹" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        例4.1.1 四缝之间有几条暗纹
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14-主极大半角宽" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.4 主极大半角宽
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-单缝包络与光栅强度公式" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2 单缝包络与光栅强度公式
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2 单缝包络与光栅强度公式">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-两个因子相乘" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 两个因子相乘
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-缺级条件与中央包络内的条纹数" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 缺级条件与中央包络内的条纹数
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-改变参数时先判断什么不变" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3 改变参数时先判断什么不变
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-斜入射与一般周期结构" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3 斜入射与一般周期结构
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3 斜入射与一般周期结构">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-先定角度符号-再写光程差" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 先定角度符号 再写光程差
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#例412-零级方向与相位扫描" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        例4.1.2 零级方向与相位扫描
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-一般周期光瞳的复振幅分解" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 一般周期光瞳的复振幅分解
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-黑白光栅与正弦振幅光栅" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3 黑白光栅与正弦振幅光栅
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-光栅光谱仪" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4 光栅光谱仪
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4 光栅光谱仪">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-怎样把不同波长分开" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 怎样把不同波长分开
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-色散本领控制谱线间隔" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 色散本领控制谱线间隔
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-色分辨本领还取决于谱线宽度" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3 色分辨本领还取决于谱线宽度
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#例421-分辨钠黄双线需要多少缝" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        例4.2.1 分辨钠黄双线需要多少缝
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#44-量程与自由光谱范围" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.4 量程与自由光谱范围
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-闪耀光栅与选波长" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5 闪耀光栅与选波长
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5 闪耀光栅与选波长">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-让单槽最强方向对准目标级次" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 让单槽最强方向对准目标级次
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-两种闪耀条件" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 两种闪耀条件
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#例422-红外闪耀光栅的刻槽密度" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        例4.2.2 红外闪耀光栅的刻槽密度
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-光谱仪怎样选出一个波长" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3 光谱仪怎样选出一个波长
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-晶体作为三维光栅" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6 晶体作为三维光栅
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6 晶体作为三维光栅">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-晶体为什么能衍射-x-射线" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1 晶体为什么能衍射 X 射线
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62-布拉格条件的两步推导" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.2 布拉格条件的两步推导
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63-一个晶体包含许多布拉格条件" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.3 一个晶体包含许多布拉格条件
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#64-为什么换一个晶面族就能描述-非零级推导" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.4 为什么换一个晶面族就能描述 非零级推导
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-劳厄法与粉末法" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7 劳厄法与粉末法
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-公式速查" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8 公式速查
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8 公式速查">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#多缝衍射与级次" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        多缝衍射与级次
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#周期结构与相位控制" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        周期结构与相位控制
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#光谱仪与闪耀" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        光谱仪与闪耀
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#晶体衍射" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        晶体衍射
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-易错点与自测" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9 易错点与自测
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="9 易错点与自测">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#易错清单" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        易错清单
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#自测题" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        自测题
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#资料定位" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        资料定位
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-自测答案" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10 自测答案
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10 自测答案">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#第1题-相干叠加" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第1题 相干叠加
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#第2题-先筛方向-再查缺级" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第2题 先筛方向 再查缺级
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#第3题-理想光栅能否分辨" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第3题 理想光栅能否分辨
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#第4题-有向角与整数范围" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第4题 有向角与整数范围
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#第5题-从散射角得到掠射角" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第5题 从散射角得到掠射角
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC6%E8%AE%B2_%E5%81%8F%E6%8C%AF%E6%80%81%E4%B8%8E%E8%8F%B2%E6%B6%85%E8%80%B3%E5%85%AC%E5%BC%8F/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第6讲 偏振态与菲涅耳公式
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC7%E8%AE%B2_%E5%8F%8C%E6%8A%98%E5%B0%84%E4%B8%8E%E5%81%8F%E6%8C%AF%E5%85%89%E5%BA%94%E7%94%A8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第7讲 双折射与偏振光应用
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-从单缝到多缝衍射" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1 从单缝到多缝衍射
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1 从单缝到多缝衍射">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-光栅的三个结构量" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1 光栅的三个结构量
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-各缝的图样为什么重叠" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2 各缝的图样为什么重叠
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-主极大与暗纹" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.3 主极大与暗纹
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#例411-四缝之间有几条暗纹" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        例4.1.1 四缝之间有几条暗纹
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14-主极大半角宽" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.4 主极大半角宽
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-单缝包络与光栅强度公式" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2 单缝包络与光栅强度公式
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2 单缝包络与光栅强度公式">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-两个因子相乘" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 两个因子相乘
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-缺级条件与中央包络内的条纹数" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 缺级条件与中央包络内的条纹数
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-改变参数时先判断什么不变" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3 改变参数时先判断什么不变
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-斜入射与一般周期结构" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3 斜入射与一般周期结构
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3 斜入射与一般周期结构">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-先定角度符号-再写光程差" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 先定角度符号 再写光程差
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#例412-零级方向与相位扫描" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        例4.1.2 零级方向与相位扫描
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-一般周期光瞳的复振幅分解" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 一般周期光瞳的复振幅分解
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-黑白光栅与正弦振幅光栅" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3 黑白光栅与正弦振幅光栅
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-光栅光谱仪" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4 光栅光谱仪
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4 光栅光谱仪">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-怎样把不同波长分开" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 怎样把不同波长分开
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-色散本领控制谱线间隔" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 色散本领控制谱线间隔
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-色分辨本领还取决于谱线宽度" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3 色分辨本领还取决于谱线宽度
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#例421-分辨钠黄双线需要多少缝" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        例4.2.1 分辨钠黄双线需要多少缝
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#44-量程与自由光谱范围" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.4 量程与自由光谱范围
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-闪耀光栅与选波长" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5 闪耀光栅与选波长
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5 闪耀光栅与选波长">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-让单槽最强方向对准目标级次" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 让单槽最强方向对准目标级次
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-两种闪耀条件" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 两种闪耀条件
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#例422-红外闪耀光栅的刻槽密度" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        例4.2.2 红外闪耀光栅的刻槽密度
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-光谱仪怎样选出一个波长" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3 光谱仪怎样选出一个波长
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-晶体作为三维光栅" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6 晶体作为三维光栅
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6 晶体作为三维光栅">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-晶体为什么能衍射-x-射线" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1 晶体为什么能衍射 X 射线
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62-布拉格条件的两步推导" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.2 布拉格条件的两步推导
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63-一个晶体包含许多布拉格条件" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.3 一个晶体包含许多布拉格条件
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#64-为什么换一个晶面族就能描述-非零级推导" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.4 为什么换一个晶面族就能描述 非零级推导
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-劳厄法与粉末法" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7 劳厄法与粉末法
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-公式速查" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8 公式速查
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8 公式速查">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#多缝衍射与级次" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        多缝衍射与级次
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#周期结构与相位控制" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        周期结构与相位控制
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#光谱仪与闪耀" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        光谱仪与闪耀
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#晶体衍射" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        晶体衍射
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-易错点与自测" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9 易错点与自测
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="9 易错点与自测">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#易错清单" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        易错清单
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#自测题" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        自测题
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#资料定位" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        资料定位
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-自测答案" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10 自测答案
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10 自测答案">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#第1题-相干叠加" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第1题 相干叠加
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#第2题-先筛方向-再查缺级" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第2题 先筛方向 再查缺级
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#第3题-理想光栅能否分辨" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第3题 理想光栅能否分辨
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#第4题-有向角与整数范围" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第4题 有向角与整数范围
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#第5题-从散射角得到掠射角" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第5题 从散射角得到掠射角
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="第5讲-衍射光栅与晶体衍射">第5讲 衍射光栅与晶体衍射<a class="headerlink" href="#第5讲-衍射光栅与晶体衍射" title="Permanent link">#</a></h1>
+<div class="admonition tip">
+<p class="admonition-title">本讲配套文件</p>
+<ul>
+<li><a href="../../%E6%96%87%E4%BB%B6/%E5%9F%BA%E7%A1%80%E7%89%A9%E7%90%86%E5%AD%A62_%E7%AC%AC5%E8%AE%B2_%E8%A1%8D%E5%B0%84%E5%85%89%E6%A0%85%E4%B8%8E%E6%99%B6%E4%BD%93%E8%A1%8D%E5%B0%84_%E5%AD%A6%E4%B9%A0%E8%AE%B2%E4%B9%89.pdf">PDF 在线阅读（基础物理学2_第5讲_衍射光栅与晶体衍射_学习讲义.pdf）</a></li>
+<li><a href="../../%E6%96%87%E4%BB%B6/%E5%9F%BA%E7%A1%80%E7%89%A9%E7%90%86%E5%AD%A62_%E7%AC%AC5%E8%AE%B2_%E8%A1%8D%E5%B0%84%E5%85%89%E6%A0%85%E4%B8%8E%E6%99%B6%E4%BD%93%E8%A1%8D%E5%B0%84_%E5%AD%A6%E4%B9%A0%E8%AE%B2%E4%B9%89.docx">Word 下载（基础物理学2_第5讲_衍射光栅与晶体衍射_学习讲义.docx）</a></li>
+<li><a href="../../%E6%96%87%E4%BB%B6/%E5%9F%BA%E7%A1%80%E7%89%A9%E7%90%86%E5%AD%A62_%E7%AC%AC5%E8%AE%B2_%E8%A1%8D%E5%B0%84%E5%85%89%E6%A0%85%E4%B8%8E%E6%99%B6%E4%BD%93%E8%A1%8D%E5%B0%84_%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93.pdf">知识点总结 PDF（基础物理学2_第5讲_衍射光栅与晶体衍射_知识点总结.pdf）</a></li>
+<li><a href="../../%E6%96%87%E4%BB%B6/%E5%9F%BA%E7%A1%80%E7%89%A9%E7%90%86%E5%AD%A62_%E7%AC%AC5%E8%AE%B2_%E8%A1%8D%E5%B0%84%E5%85%89%E6%A0%85%E4%B8%8E%E6%99%B6%E4%BD%93%E8%A1%8D%E5%B0%84_%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93.docx">知识点总结 Word（基础物理学2_第5讲_衍射光栅与晶体衍射_知识点总结.docx）</a></li>
+</ul>
+</div>
+<h2 id="1-从单缝到多缝衍射">1 从单缝到多缝衍射<a class="headerlink" href="#1-从单缝到多缝衍射" title="Permanent link">#</a></h2>
+<blockquote>
+<p><strong>资料范围</strong>：课件 PDF 2–15页；教材第四章§1.1–1.3，印刷253–259页。</p>
+</blockquote>
+<h3 id="11-光栅的三个结构量">1.1 光栅的三个结构量<a class="headerlink" href="#11-光栅的三个结构量" title="Permanent link">#</a></h3>
+<p><span class="pill pill-ppt">PPT重点</span>光栅是具有空间周期性的衍射结构。普通一维透射光栅由等宽、等间距的平行狭缝组成；反射光栅则由周期排列的反射单元组成。记透光缝宽为 <span class="arithmatex">\(a\)</span>、遮光宽为 <span class="arithmatex">\(b\)</span>，则光栅常数（周期）为 <span class="arithmatex">\(d=a+b\)</span>；<span class="arithmatex">\(N\)</span> 为实际被相干照明的缝数，刻线密度为 <span class="arithmatex">\(1/d\)</span>。
+<span class="pill pill-und">理解补充</span>本讲始终区分：<span class="arithmatex">\(a\)</span> 决定单缝包络，<span class="arithmatex">\(d\)</span> 决定相邻级次的位置，<span class="arithmatex">\(N\)</span> 决定干涉峰的细锐程度。给定照明宽度 <span class="arithmatex">\(W\)</span> 时，<span class="arithmatex">\(N\approx W/d\)</span>，不能把整块光栅的刻线总数直接当成有效缝数。</p>
+<h3 id="12-各缝的图样为什么重叠">1.2 各缝的图样为什么重叠<a class="headerlink" href="#12-各缝的图样为什么重叠" title="Permanent link">#</a></h3>
+<p><span class="pill pill-ppt">PPT重点</span>单色平面波照射光栅，接收透镜把同一出射方向的光会聚到后焦面的同一点。依次只开放一个缝，各缝的单缝强度图样重合；同时开放多个缝时，各缝之间还存在固定相位关系，必须相加复振幅。</p>
+<p><img alt="第5讲 插图 setup" loading="lazy" src="../%E6%8F%92%E5%9B%BE/%E7%AC%AC5%E8%AE%B2/setup.png" />
+<em>图1 四缝远场装置。相同衍射角的光在焦面同一点会聚；不同缝贡献的相位不同，不能把四个单缝强度直接相加。</em></p>
+<p>若各缝互不相干，强度只有单缝图样的 <span class="arithmatex">\(N\)</span> 倍；相干且同相时振幅为 <span class="arithmatex">\(N\)</span> 倍，强度为 <span class="arithmatex">\(N^2\)</span> 倍。后者只是峰值增强，伴随峰宽变窄，不代表总能量增加为 <span class="arithmatex">\(N^2\)</span> 倍。</p>
+<h3 id="13-主极大与暗纹">1.3 主极大与暗纹<a class="headerlink" href="#13-主极大与暗纹" title="Permanent link">#</a></h3>
+<p><span class="pill pill-must">必须掌握</span>正入射时，相邻缝沿同一出射方向的光程差及相位差为</p>
+<div class="arithmatex">\[\Delta L=d\sin\theta,\qquad\delta=\frac{2\pi d\sin\theta}{\lambda}\]</div>
+<p>这里 <span class="arithmatex">\(\theta\)</span> 从光栅法线量起；采用有正负号的级次 <span class="arithmatex">\(m=0,\pm1,\pm2,\cdots\)</span>。课件用 <span class="arithmatex">\(k\)</span> 表示级次，笔记改用 <span class="arithmatex">\(m\)</span>，避免与后文波数混淆。
+主极大对应所有矢量同向，即 <span class="arithmatex">\(\delta=2m\pi\)</span>：</p>
+<div class="arithmatex">\[d\sin\theta_m=m\lambda\]</div>
+<p>该式给出干涉因子的主极大位置；若该方向的单缝振幅为零，仍会缺级。存在传播方向还要求 <span class="arithmatex">\(|m\lambda/d|\le1\)</span>，等号对应掠射边界，实际装置通常收不到。
+暗纹对应振幅矢量首尾闭合，即 <span class="arithmatex">\(N\delta=2q\pi\)</span>，同时排除 <span class="arithmatex">\(\delta=2m\pi\)</span>：</p>
+<div class="arithmatex">\[d\sin\theta=\frac{q\lambda}{N},\qquad q\ne Nm\]</div>
+<p>在两个相邻主极大之间，<span class="arithmatex">\(q=Nm+1,\cdots,Nm+N-1\)</span>，因此有 <span class="arithmatex">\(N-1\)</span> 条暗纹、<span class="arithmatex">\(N-2\)</span> 个次极大。这个计数针对未乘单缝包络的干涉因子；课件把次极大位置标为“不重要”，这里只保留计数，不展开求根。</p>
+<h3 id="例411-四缝之间有几条暗纹">例4.1.1 四缝之间有几条暗纹<a class="headerlink" href="#例411-四缝之间有几条暗纹" title="Permanent link">#</a></h3>
+<p><span class="pill pill-ppt">PPT重点</span><span class="arithmatex">\(N=4\)</span>，求0级与1级主极大之间的暗纹数及相位差。模型是四束等幅、等相位差的相干叠加。</p>
+<div class="arithmatex">\[\sin\theta=\frac{\lambda}{4d},\frac{2\lambda}{4d},\frac{3\lambda}{4d}\quad\Rightarrow\quad\delta=\frac{\pi}{2},\pi,\frac{3\pi}{2}\]</div>
+<p>共3条暗纹。<span class="arithmatex">\(\delta=\pi\)</span> 时，两两反向相消；其余两个相位差使四个矢量组成闭合方形。<span class="arithmatex">\(\delta=2\pi\)</span> 已是1级主极大，不属于暗纹。</p>
+<p><img alt="第5讲 插图 phasors" loading="lazy" src="../%E6%8F%92%E5%9B%BE/%E7%AC%AC5%E8%AE%B2/phasors.png" />
+<em>图2 四缝的三种暗纹相量图，以及不同缝数的归一化干涉峰。峰高统一归一化为1，以便只比较宽度；实际同相峰值随缝数平方增长。</em></p>
+<h3 id="14-主极大半角宽">1.4 主极大半角宽<a class="headerlink" href="#14-主极大半角宽" title="Permanent link">#</a></h3>
+<p><span class="pill pill-must">必须掌握</span>半角宽是主极大中心到相邻第一暗纹的角间隔，不是半高宽。对第 <span class="arithmatex">\(m\)</span> 级，</p>
+<div class="arithmatex">\[d\sin\theta_m=m\lambda,\qquad d\sin(\theta_m+\Delta\theta)=\left(m+\frac{1}{N}\right)\lambda\]</div>
+<p>两式相减。若 <span class="arithmatex">\(\Delta\theta\)</span> 很小且不接近掠射，保留一阶项：</p>
+<div class="arithmatex">\[d\cos\theta_m\,\Delta\theta\approx\frac{\lambda}{N}\quad\Rightarrow\quad\Delta\theta\approx\frac{\lambda}{Nd\cos\theta_m}\]</div>
+<p>两侧第一暗纹间全宽约为 <span class="arithmatex">\(2\Delta\theta\)</span>。相邻级次在 <span class="arithmatex">\(\sin\theta\)</span> 坐标中的间隔为 <span class="arithmatex">\(\lambda/d\)</span>，暗纹间隔为 <span class="arithmatex">\(\lambda/(Nd)\)</span>；只有小角度时，才能直接把这些间隔理解为角度间隔。</p>
+<h2 id="2-单缝包络与光栅强度公式">2 单缝包络与光栅强度公式<a class="headerlink" href="#2-单缝包络与光栅强度公式" title="Permanent link">#</a></h2>
+<blockquote>
+<p><strong>资料范围</strong>：课件 PDF 16–23页；教材第四章§1.2–1.4，印刷255–260页。</p>
+</blockquote>
+<h3 id="21-两个因子相乘">2.1 两个因子相乘<a class="headerlink" href="#21-两个因子相乘" title="Permanent link">#</a></h3>
+<p><span class="pill pill-ppt">PPT重点</span>设单缝正前方强度为 <span class="arithmatex">\(I_{0s}\)</span>，令</p>
+<div class="arithmatex">\[\alpha=\frac{\pi a\sin\theta}{\lambda},\qquad\beta=\frac{\delta}{2}=\frac{\pi d\sin\theta}{\lambda}\]</div>
+<p>每缝沿 <span class="arithmatex">\(\theta\)</span> 方向的振幅含单缝因子 <span class="arithmatex">\(\sin\alpha/\alpha\)</span>。把相邻转角为 <span class="arithmatex">\(2\beta\)</span> 的 <span class="arithmatex">\(N\)</span> 个等长矢量首尾相接，外接圆半径为 <span class="arithmatex">\(r\)</span>，单矢量长度与合矢量长度分别为 <span class="arithmatex">\(2r|\sin\beta|\)</span>、<span class="arithmatex">\(2r|\sin N\beta|\)</span>，故</p>
+<div class="arithmatex">\[I(\theta)=I_{0s}\left(\frac{\sin\alpha}{\alpha}\right)^2\left(\frac{\sin N\beta}{\sin\beta}\right)^2\]</div>
+<p>前一项描述“每个缝向哪里送光”，后一项描述“周期排列使哪些方向相干增强”。<span class="arithmatex">\(\alpha=0\)</span> 或 <span class="arithmatex">\(\beta=m\pi\)</span> 时要取极限；尤其 <span class="arithmatex">\(\sin N\beta/\sin\beta\)</span> 的模趋于 <span class="arithmatex">\(N\)</span>，不是0。</p>
+<p><img alt="第5讲 插图 factors" loading="lazy" src="../%E6%8F%92%E5%9B%BE/%E7%AC%AC5%E8%AE%B2/factors.png" />
+<em>图3 同一横坐标下的单缝因子、归一化干涉因子及其乘积。取四缝、周期为缝宽的4倍，第四级恰落在包络零点而缺级。</em></p>
+<p><span class="pill pill-und">理解补充</span>课件所说“包络不改变位置与宽度”，指干涉因子的峰位和第一暗纹尺度。对有限 <span class="arithmatex">\(N\)</span>，总强度是乘积，变化较快的包络可使实际局部峰顶略偏；常用的窄主峰近似下忽略这种偏移。</p>
+<h3 id="22-缺级条件与中央包络内的条纹数">2.2 缺级条件与中央包络内的条纹数<a class="headerlink" href="#22-缺级条件与中央包络内的条纹数" title="Permanent link">#</a></h3>
+<p><span class="pill pill-must">必须掌握</span>同时满足干涉增强和单缝相消时出现缺级：</p>
+<div class="arithmatex">\[d\sin\theta=m\lambda,\qquad a\sin\theta=p\lambda\quad(p=\pm1,\pm2,\cdots)\]</div>
+<div class="arithmatex">\[m=\frac{d}{a}p\]</div>
+<p>只保留右侧算出为整数且方向可传播的 <span class="arithmatex">\(m\)</span>。若 <span class="arithmatex">\(d/a=r/s\)</span> 为最简正整数比，则缺 <span class="arithmatex">\(m=\pm r,\pm2r,\cdots\)</span>；不要求 <span class="arithmatex">\(d/a\)</span> 本身一定是整数。
+课堂图例：<span class="arithmatex">\(d=4a\)</span> 时缺 <span class="arithmatex">\(\pm4,\pm8,\cdots\)</span> 级；中央包络内满足 <span class="arithmatex">\(|m|&lt;4\)</span>，保留 <span class="arithmatex">\(0,\pm1,\pm2,\pm3\)</span>，共7个。<span class="arithmatex">\(d=10a\)</span> 时同理有19个；边界上的 <span class="arithmatex">\(\pm10\)</span> 级已经消失。这里默认这些方向都在可传播范围内。
+<span class="pill pill-und">理解补充</span>当比值不是整数时，直接列出满足 <span class="arithmatex">\(|m|&lt;d/a\)</span> 的整数最稳妥，避免机械套用 <span class="arithmatex">\(2d/a-1\)</span>。若 <span class="arithmatex">\(a=d\)</span>，屏成为连续开口，各个非零整数级位置相消，不能再把它看成有独立遮光间隔的多缝。</p>
+<h3 id="23-改变参数时先判断什么不变">2.3 改变参数时先判断什么不变<a class="headerlink" href="#23-改变参数时先判断什么不变" title="Permanent link">#</a></h3>
+<p>固定 <span class="arithmatex">\(a\)</span> 而减小 <span class="arithmatex">\(d\)</span>：包络不变，主极大间距增大，中央包络内级数减少。固定 <span class="arithmatex">\(d\)</span> 而减小 <span class="arithmatex">\(a\)</span>：主极大方向不变，包络变宽，中央包络可容纳更多级次。
+固定 <span class="arithmatex">\(a,d\)</span> 而增加 <span class="arithmatex">\(N\)</span>：级次方向和单缝包络不变，干涉峰变窄；在每缝入射振幅不变时，峰值增长。不要把“刻线更密”与“照明缝数更多”混为同一个操作。</p>
+<h2 id="3-斜入射与一般周期结构">3 斜入射与一般周期结构<a class="headerlink" href="#3-斜入射与一般周期结构" title="Permanent link">#</a></h2>
+<blockquote>
+<p><strong>资料范围</strong>：课件 PDF 24–36页；教材第四章§1.5及§1习题，印刷260–264页。</p>
+</blockquote>
+<h3 id="31-先定角度符号-再写光程差">3.1 先定角度符号 再写光程差<a class="headerlink" href="#31-先定角度符号-再写光程差" title="Permanent link">#</a></h3>
+<p><span class="pill pill-ppt">PPT重点</span>以从入射侧指向透射侧的法线为 <span class="arithmatex">\(+z\)</span>，缝排列方向为 <span class="arithmatex">\(+x\)</span>。入射、出射传播方向向 <span class="arithmatex">\(+x\)</span> 偏转时，对应的有向角 <span class="arithmatex">\(i,\theta\)</span> 为正。沿 <span class="arithmatex">\(+x\)</span> 的相邻点具有入射相位增量，传播到同一远场方向则产生相反符号的相位增量。</p>
+<p><img alt="第5讲 插图 oblique" loading="lazy" src="../%E6%8F%92%E5%9B%BE/%E7%AC%AC5%E8%AE%B2/oblique.png" />
+<em>图4 有向角取决于光的传播方向。图中入射光向右下传播，入射角为负；向右上传播的衍射光取正角。零级沿原传播方向透射。</em></p>
+<p><span class="pill pill-must">必须掌握</span>扣除入射阶段的路程差，斜入射光栅方程为</p>
+<div class="arithmatex">\[d(\sin\theta-\sin i)=m\lambda,\qquad m=0,\pm1,\pm2,\cdots\]</div>
+<p>判断可见级次时先写 <span class="arithmatex">\(\sin\theta=\sin i+m\lambda/d\)</span>，再筛选</p>
+<div class="arithmatex">\[-1\le\sin i+\frac{m\lambda}{d}\le1\]</div>
+<p><span class="pill pill-und">理解补充</span>斜入射可以让某一侧出现更高的级次，但正负级次不再对称。允许的整数区间长度仍为 <span class="arithmatex">\(2d/\lambda\)</span>，其平移会改变端点内的整数数目，因此课件“条纹总数不变”不能理解为任意角度下都严格成立；还要排除缺级与装置收不到的方向。</p>
+<h3 id="例412-零级方向与相位扫描">例4.1.2 零级方向与相位扫描<a class="headerlink" href="#例412-零级方向与相位扫描" title="Permanent link">#</a></h3>
+<p><span class="pill pill-ppt">PPT重点</span>令 <span class="arithmatex">\(m=0\)</span>，得 <span class="arithmatex">\(\sin\theta=\sin i\)</span>，即零级沿原入射方向传播。若相邻阵元的激励相位沿 <span class="arithmatex">\(+x\)</span> 方向递增 <span class="arithmatex">\(\delta_{\mathrm{in}}\)</span>，远场传播相位沿该方向递减 <span class="arithmatex">\(2\pi d\sin\theta/\lambda\)</span>，主瓣满足两者抵消：</p>
+<div class="arithmatex">\[\sin\theta=\frac{\lambda\delta_{\mathrm{in}}}{2\pi d}\]</div>
+<p>改变相位差便可扫描波束方向，这就是课件相控阵的物理入口；在相位差固定时改变波长也会改变方向。必须满足右侧绝对值不大于1；阵元间距较大时还可能出现其他干涉主瓣，不能把上式当作唯一波束保证。
+课件的一维射电阵列例子说明“单元方向性 × 阵列干涉”也适用于微波。这里只保留原理，不展开天线工程或历史设备参数。</p>
+<h3 id="32-一般周期光瞳的复振幅分解">3.2 一般周期光瞳的复振幅分解<a class="headerlink" href="#32-一般周期光瞳的复振幅分解" title="Permanent link">#</a></h3>
+<p><span class="pill pill-must">必须掌握</span>只要 <span class="arithmatex">\(N\)</span> 个单元完全相同、等间距且相干照明，就能先算一个单元，再算单元之间的叠加。正入射时，令波数 <span class="arithmatex">\(k_0=2\pi/\lambda\)</span>，单元局部坐标为 <span class="arithmatex">\(x\)</span>，单元波前复振幅为 <span class="arithmatex">\(\tilde U_0(x)\)</span>，有</p>
+<div class="arithmatex">\[\tilde u(\theta)=C\int_{-d/2}^{d/2}\tilde U_0(x)e^{-ik_0x\sin\theta}\,dx\]</div>
+<p>沿课件从上到下的单元编号，<span class="arithmatex">\(L_j=L_1+(j-1)d\sin\theta\)</span>。每个单元的局部积分相同，因此</p>
+<div class="arithmatex">\[\tilde U(\theta)=\tilde u(\theta)\sum_{j=1}^{N}e^{ik_0L_j}\]</div>
+<p>令 <span class="arithmatex">\(\beta=\pi d\sin\theta/\lambda\)</span>，用等比数列求和：</p>
+<div class="arithmatex">\[\sum_{j=1}^{N}e^{ik_0L_j}=e^{ik_0L_1}\frac{1-e^{i2N\beta}}{1-e^{i2\beta}}=e^{i\Phi(\theta)}\frac{\sin N\beta}{\sin\beta}\]</div>
+<div class="arithmatex">\[\Phi(\theta)=k_0L_1+(N-1)\beta=k_0L_0\]</div>
+<p>其中 <span class="arithmatex">\(L_0\)</span> 为光栅中心到观察点的相应光程。于是</p>
+<div class="arithmatex">\[\tilde U=\tilde u\,e^{i\Phi}\frac{\sin N\beta}{\sin\beta},\qquad I=|\tilde u|^2\left(\frac{\sin N\beta}{\sin\beta}\right)^2\]</div>
+<p>共同相位不影响本图样的强度。光瞳函数描述的是复振幅，不是强度透射率；改变单元内部结构会改变 <span class="arithmatex">\(\tilde u\)</span>，却不改变由周期性决定的干涉因子。</p>
+<h3 id="33-黑白光栅与正弦振幅光栅">3.3 黑白光栅与正弦振幅光栅<a class="headerlink" href="#33-黑白光栅与正弦振幅光栅" title="Permanent link">#</a></h3>
+<p><span class="pill pill-ppt">PPT重点</span>黑白光栅在单元中 <span class="arithmatex">\(|x|&lt;a/2\)</span> 区域透光，其余遮光，故积分只剩这一宽度，得到 <span class="arithmatex">\(\tilde u\propto\sin\alpha/\alpha\)</span>。
+正弦振幅光栅的单元光瞳为 <span class="arithmatex">\(\tilde U_0(x)\propto1+\cos(2\pi x/d)\)</span>。先把余弦展开为两个复指数，再逐项积分：</p>
+<div class="arithmatex">\[1+\cos\frac{2\pi x}{d}=1+\frac{1}{2}e^{i2\pi x/d}+\frac{1}{2}e^{-i2\pi x/d}\]</div>
+<div class="arithmatex">\[\tilde u(\theta)\propto\frac{\sin\beta}{\beta}+\frac{1}{2}\frac{\sin(\beta-\pi)}{\beta-\pi}+\frac{1}{2}\frac{\sin(\beta+\pi)}{\beta+\pi}\]</div>
+<p>三个分量具有相同的宽度尺度，中心分别在 <span class="arithmatex">\(\beta=0,\pm\pi\)</span>；课件“缝宽和中心位置不同”的表述应以这条公式为准，三项只发生平移并有不同系数。</p>
+<p><img alt="第5讲 插图 sinusoidal" loading="lazy" src="../%E6%8F%92%E5%9B%BE/%E7%AC%AC5%E8%AE%B2/sinusoidal.png" />
+<em>图5 黑白与正弦振幅光瞳，以及正弦光栅在整数级方向的相对强度。右图只标各级方向的峰值，不表示有限长度光栅处处只有三根无限细谱线。</em></p>
+<p><span class="pill pill-src">教材补充</span>教材263页指出：正弦光栅保留0、±1级，±1级振幅为0级的一半，强度为四分之一。因为在 <span class="arithmatex">\(\beta=m\pi\)</span> 处，单元因子只在 <span class="arithmatex">\(m=0,\pm1\)</span> 不为零，其余整数级均被消去。
+<span class="pill pill-und">理解补充</span>有限 <span class="arithmatex">\(N\)</span> 使各峰仍有宽度和旁瓣。“只有三种级次”指上述整数级的选择结果，并不是三个方向之外的强度严格为零；这个结论也不能套用于正弦相位光栅。</p>
+<h2 id="4-光栅光谱仪">4 光栅光谱仪<a class="headerlink" href="#4-光栅光谱仪" title="Permanent link">#</a></h2>
+<blockquote>
+<p><strong>资料范围</strong>：课件 PDF 37–44页；教材第四章§2.1–2.3，印刷266–269页。</p>
+</blockquote>
+<h3 id="41-怎样把不同波长分开">4.1 怎样把不同波长分开<a class="headerlink" href="#41-怎样把不同波长分开" title="Permanent link">#</a></h3>
+<p><span class="pill pill-ppt">PPT重点</span>正入射时，同一级 <span class="arithmatex">\(m\)</span> 满足 <span class="arithmatex">\(\sin\theta_m=m\lambda/d\)</span>。非零级中，波长越长，离零级的角距离越大，因此同一级光谱中紫光靠内、红光靠外；零级位置与波长无关，复色光在此重合。
+棱镜利用折射率随波长改变来分光，光栅利用周期结构的相干叠加分光。线状光谱的每个波长形成一条谱线；不同级次之间可能重叠，因此“颜色分开”与“确定级次”都很重要。</p>
+<h3 id="42-色散本领控制谱线间隔">4.2 色散本领控制谱线间隔<a class="headerlink" href="#42-色散本领控制谱线间隔" title="Permanent link">#</a></h3>
+<p><span class="pill pill-must">必须掌握</span>固定入射角和级次，对光栅方程微分：</p>
+<div class="arithmatex">\[d\cos\theta_m\,d\theta=m\,d\lambda\]</div>
+<div class="arithmatex">\[D_\theta=\left|\frac{d\theta}{d\lambda}\right|=\frac{|m|}{d\cos\theta_m}\]</div>
+<p>角色散本领表示单位波长差对应多大角间隔。对在中心光线附近工作的焦距 <span class="arithmatex">\(f\)</span> 的接收系统，局部像面距离 <span class="arithmatex">\(\delta\ell\approx f\delta\theta\)</span>，故</p>
+<div class="arithmatex">\[D_\ell\approx fD_\theta=\frac{|m|f}{d\cos\theta_m}\]</div>
+<p><span class="pill pill-und">理解补充</span>这里采用局部近轴成像。若始终用相对于固定光栅法线的平面坐标 <span class="arithmatex">\(x=f\tan\theta\)</span>，则微分还会带来 <span class="arithmatex">\(1/\cos^2\theta\)</span>；不要把课件的局部关系外推到任意大角度固定平面。</p>
+<h3 id="43-色分辨本领还取决于谱线宽度">4.3 色分辨本领还取决于谱线宽度<a class="headerlink" href="#43-色分辨本领还取决于谱线宽度" title="Permanent link">#</a></h3>
+<p><span class="pill pill-ppt">PPT重点</span>间隔大未必分得开，还要看峰是否足够窄。对接近的两个波长，按瑞利判据，当一个主峰中心与另一谱线的第一暗纹重合时，认为刚可分辨。</p>
+<div class="arithmatex">\[\delta\theta=D_\theta\delta\lambda_{\min}\approx\Delta\theta\]</div>
+<p>代入角色散与半角宽，</p>
+<div class="arithmatex">\[\delta\lambda_{\min}=\frac{\lambda}{Nd\cos\theta_m}\frac{d\cos\theta_m}{|m|}=\frac{\lambda}{|m|N}\]</div>
+<div class="arithmatex">\[\mathcal R\equiv\frac{\lambda}{\delta\lambda_{\min}}=|m|N\]</div>
+<p><span class="pill pill-must">必须掌握</span><span class="arithmatex">\(D_\theta\)</span> 衡量分开多远，<span class="arithmatex">\(\mathcal R\)</span> 衡量最小可分辨波长差。增大 <span class="arithmatex">\(N\)</span> 会使谱线更窄；增大焦距会同时放大谱线间距和线宽，因此单独增加 <span class="arithmatex">\(f\)</span> 不提高理想光栅的色分辨本领。</p>
+<p><img alt="第5讲 插图 resolution" loading="lazy" src="../%E6%8F%92%E5%9B%BE/%E7%AC%AC5%E8%AE%B2/resolution.png" />
+<em>图6 两条谱线的合成强度。左为线宽较大时的重叠，右为同样中心间距下的瑞利位置；虚线是各自谱线，实线是两者强度之和。</em></p>
+<p><span class="pill pill-src">教材补充</span>教材269页说明，仪器设计还需匹配角色散、接收系统和记录能力；<span class="arithmatex">\(|m|N\)</span> 是理想光栅的分辨上限。实际入射狭缝过宽、像差或探测器采样不足，都可能使分辨能力低于该值。</p>
+<h3 id="例421-分辨钠黄双线需要多少缝">例4.2.1 分辨钠黄双线需要多少缝<a class="headerlink" href="#例421-分辨钠黄双线需要多少缝" title="Permanent link">#</a></h3>
+<p><span class="pill pill-ppt">PPT重点</span><span class="arithmatex">\(\lambda_1=589.0\,\mathrm{nm}\)</span>、<span class="arithmatex">\(\lambda_2=589.6\,\mathrm{nm}\)</span>，分别用2级、3级光谱分辨。取平均波长 <span class="arithmatex">\(\bar\lambda=589.3\,\mathrm{nm}\)</span>，双线间隔为 <span class="arithmatex">\(0.6\,\mathrm{nm}\)</span>。</p>
+<div class="arithmatex">\[\mathcal R_{\mathrm{req}}=\frac{589.3}{0.6}\approx982.17,\qquad |m|N\ge982.17\]</div>
+<p>2级要求 <span class="arithmatex">\(N\ge491.083\cdots\)</span>，故至少492缝；3级要求 <span class="arithmatex">\(N\ge327.389\cdots\)</span>，故至少328缝。必须向上取整。课件将所需分辨本领约写为983，最终缝数相同。
+同时检查该级次是否存在、是否缺级，以及有效照明是否覆盖这些缝；只满足缝数而没有相应出射方向，也无法观测。</p>
+<h3 id="44-量程与自由光谱范围">4.4 量程与自由光谱范围<a class="headerlink" href="#44-量程与自由光谱范围" title="Permanent link">#</a></h3>
+<p><span class="pill pill-ppt">PPT重点</span>正入射时，第 <span class="arithmatex">\(|m|\)</span> 级存在要求 <span class="arithmatex">\(|m|\lambda\le d\)</span>；课件“最大波长不超过光栅常数”是对正入射一级的判断。斜入射应重新用有向角方程筛选，不能沿用这一上限。
+不同波长不同级次重合的条件是</p>
+<div class="arithmatex">\[m\lambda=m'\lambda'\]</div>
+<p>课堂重叠例：8000埃的一级与4000埃的二级重合，即800 nm与400 nm。二者可处于同一出射方向，不能仅凭谱线位置区分波长。
+只考察给定波段的正一级和二级，为使整段光谱不重叠，需</p>
+<div class="arithmatex">\[\lambda_{\max}&lt;2\lambda_{\min}\]</div>
+<p><span class="pill pill-und">理解补充</span>一般相邻 <span class="arithmatex">\(m,m+1\)</span> 级（<span class="arithmatex">\(m\ge1\)</span>）的无重叠条件为 <span class="arithmatex">\(m\lambda_{\max}&lt;(m+1)\lambda_{\min}\)</span>。在短波端 <span class="arithmatex">\(\lambda_{\min}\)</span> 附近，可容纳带宽小于约 <span class="arithmatex">\(\lambda_{\min}/m\)</span>。这是级次重叠限制，与分辨两个近邻波长的 <span class="arithmatex">\(\delta\lambda_{\min}\)</span> 完全不同；波段外杂散光仍需滤除。</p>
+<h2 id="5-闪耀光栅与选波长">5 闪耀光栅与选波长<a class="headerlink" href="#5-闪耀光栅与选波长" title="Permanent link">#</a></h2>
+<blockquote>
+<p><strong>资料范围</strong>：课件 PDF 45–49页；教材第四章§2.4，印刷269–272页。</p>
+</blockquote>
+<h3 id="51-让单槽最强方向对准目标级次">5.1 让单槽最强方向对准目标级次<a class="headerlink" href="#51-让单槽最强方向对准目标级次" title="Permanent link">#</a></h3>
+<p><span class="pill pill-ppt">PPT重点</span>普通透射光栅常把较多能量分配到无色散的零级。闪耀光栅将反射槽面做成锯齿形，槽面相对光栅平均平面倾斜 <span class="arithmatex">\(\theta_b\)</span>（闪耀角），使单槽的几何反射方向对准需要的非零级干涉主极大。
+关键仍是“单元衍射 × 周期干涉”：周期决定允许的级次方向，槽面的倾斜把单元包络移到目标级次。它主要改善目标波段的能量利用，理想分辨本领仍由 <span class="arithmatex">\(|m|N\)</span> 决定。</p>
+<p><img alt="第5讲 插图 blaze" loading="lazy" src="../%E6%8F%92%E5%9B%BE/%E7%AC%AC5%E8%AE%B2/blaze.png" />
+<em>图7 两种照明几何必须分开。左为垂直槽面入射，入射与出射沿同一槽面法线反向；右为垂直光栅平均平面入射，出射与平均法线夹角为闪耀角的两倍。</em></p>
+<h3 id="52-两种闪耀条件">5.2 两种闪耀条件<a class="headerlink" href="#52-两种闪耀条件" title="Permanent link">#</a></h3>
+<p><span class="pill pill-must">必须掌握</span>垂直槽面入射时，几何反射沿原路返回；入射、出射光线相对于光栅平均法线的几何夹角均为 <span class="arithmatex">\(\theta_b\)</span>。相邻槽的光程差为 <span class="arithmatex">\(2d\sin\theta_b\)</span>，第 <span class="arithmatex">\(m\)</span> 级闪耀条件为</p>
+<div class="arithmatex">\[m\lambda_b=2d\sin\theta_b\]</div>
+<p>一级闪耀波长为 <span class="arithmatex">\(\lambda_{1b}=2d\sin\theta_b\)</span>，二级为 <span class="arithmatex">\(\lambda_{2b}=d\sin\theta_b\)</span>。不要与晶面间的布拉格条件混为一个模型。
+<span class="pill pill-rec">建议理解</span>课件以槽面法线 <span class="arithmatex">\(\hat n\)</span> 和平均法线 <span class="arithmatex">\(\hat z\)</span> 分别描述单槽包络、槽间干涉。垂直槽面照明时，槽间增强满足 <span class="arithmatex">\(d(\sin\theta_b+\sin\theta)=m\lambda\)</span>，一级闪耀时 <span class="arithmatex">\(\theta=\theta_b\)</span>，零级在 <span class="arithmatex">\(\theta=-\theta_b\)</span>。
+单槽的暗纹相对槽面法线满足 <span class="arithmatex">\(a\sin\vartheta=p\lambda\)</span>。在 <span class="arithmatex">\(a\approx d\)</span> 且闪耀角较小时，其他级次接近单槽暗纹，零级等被明显抑制；有限角度下并不保证严格消失。课件的高效率描述是特定设计表现，不是由光栅方程独自保证的常数。
+<span class="pill pill-src">教材补充</span>教材271页还区分了垂直平均平面入射的第二种方式：几何反射方向与平均法线成 <span class="arithmatex">\(2\theta_b\)</span>，此时</p>
+<div class="arithmatex">\[m\lambda_b=d\sin(2\theta_b)\]</div>
+<p>两条公式的差异来自入射方向不同；做题前先画平均法线、槽面法线和光线。</p>
+<h3 id="例422-红外闪耀光栅的刻槽密度">例4.2.2 红外闪耀光栅的刻槽密度<a class="headerlink" href="#例422-红外闪耀光栅的刻槽密度" title="Permanent link">#</a></h3>
+<p><span class="pill pill-ppt">PPT重点</span>目标为 <span class="arithmatex">\(10.0\,\mu\mathrm m\)</span> 附近的一级光谱，闪耀角为 <span class="arithmatex">\(30^\circ\)</span>。按课堂解答采用垂直槽面入射：</p>
+<div class="arithmatex">\[\frac{1}{d}=\frac{2\sin30^\circ}{10.0\times10^{-6}\,\mathrm m}=1.00\times10^5\,\mathrm m^{-1}=100\,\mathrm{mm}^{-1}\]</div>
+<p>即每毫米100槽。教材271页的对应例题也采用这一结果。
+<span class="pill pill-und">理解补充</span>课件同页上方先介绍“垂直光栅平面入射”，下方例题却沿用垂直槽面的公式；这两个条件不能混用。若题目明确指定垂直平均平面入射，则应得 <span class="arithmatex">\(1/d=\sin60^\circ/\lambda_b\approx86.6\,\mathrm{mm}^{-1}\)</span>。</p>
+<h3 id="53-光谱仪怎样选出一个波长">5.3 光谱仪怎样选出一个波长<a class="headerlink" href="#53-光谱仪怎样选出一个波长" title="Permanent link">#</a></h3>
+<p><span class="pill pill-ppt">PPT重点</span>入射狭缝限定光源宽度，准直反射镜形成平行光，光栅按波长分开方向，成像反射镜把各方向汇聚成不同位置的谱线，出射狭缝选择窄波段，探测器记录强度。
+课件示意中通过联动保持相对照明几何，再转动光栅将不同波长送到固定出射狭缝。用于分析输入光时是光谱仪；配合光源输出窄波段时可作为单色仪。出射狭缝越宽，通光越多，但输出波段也更宽。</p>
+<h2 id="6-晶体作为三维光栅">6 晶体作为三维光栅<a class="headerlink" href="#6-晶体作为三维光栅" title="Permanent link">#</a></h2>
+<blockquote>
+<p><strong>资料范围</strong>：课件 PDF 50–64页；教材第四章§3.1–3.3，印刷276–281页。</p>
+</blockquote>
+<h3 id="61-晶体为什么能衍射-x-射线">6.1 晶体为什么能衍射 X 射线<a class="headerlink" href="#61-晶体为什么能衍射-x-射线" title="Permanent link">#</a></h3>
+<p><span class="pill pill-ppt">PPT重点</span>高压加速的电子轰击金属靶可产生 X 射线。其典型晶体衍射波长约为0.1 nm，与原子间距同量级；晶体的空间周期性便可充当天然三维光栅。原子中的电子在入射场驱动下散射出同频次波，观测图样来自这些次波的相干叠加。
+点阵是平移周期性的数学骨架；在每个格点放置同一组原子（基元），得到晶体结构。晶面是周期排列的原子层面，同取向的一组平行晶面构成课件所称的晶面族；不同取向的面族有不同面间距。</p>
+<p><img alt="第5讲 插图 lattice" loading="lazy" src="../%E6%8F%92%E5%9B%BE/%E7%AC%AC5%E8%AE%B2/lattice.png" />
+<em>图8 同一点阵可以按不同取向划分成平行晶面族。图为二维截面示意，线对应晶面与截面的交线；面间距沿垂直于晶面的方向测量。</em></p>
+<h3 id="62-布拉格条件的两步推导">6.2 布拉格条件的两步推导<a class="headerlink" href="#62-布拉格条件的两步推导" title="Permanent link">#</a></h3>
+<p><span class="pill pill-must">必须掌握</span>第一步，同一晶面内的散射在镜面反射方向可以同相相加。第二步，比较相邻平行晶面产生的这两束光：下层的一束在入射、出射阶段各多走一段路程。</p>
+<p><img alt="第5讲 插图 bragg" loading="lazy" src="../%E6%8F%92%E5%9B%BE/%E7%AC%AC5%E8%AE%B2/bragg.png" />
+<em>图9 布拉格几何。掠射角从晶面量起，两段额外路程各为面间距乘掠射角的正弦；入射传播方向与出射方向的夹角为两倍掠射角。</em></p>
+<p>令晶面间距为 <span class="arithmatex">\(d_h\)</span>，掠射角为 <span class="arithmatex">\(\varphi\)</span>，则</p>
+<div class="arithmatex">\[\Delta L=2d_h\sin\varphi\]</div>
+<p>所有相邻晶面同相叠加要求 <span class="arithmatex">\(\Delta L=n\lambda\)</span>，所以</p>
+<div class="arithmatex">\[2d_h\sin\varphi=n\lambda,\qquad n=1,2,3,\cdots\]</div>
+<p><span class="arithmatex">\(d_h\)</span> 对应课件的 <span class="arithmatex">\(d\)</span>，加下标只是为了区别一维光栅周期。<span class="arithmatex">\(\varphi\)</span> 从晶面量起，若给的是与法线夹角 <span class="arithmatex">\(i\)</span>，需用 <span class="arithmatex">\(\sin\varphi=\cos i\)</span>。仪器常报告散射角 <span class="arithmatex">\(2\varphi\)</span>，代公式前必须除以2。
+<span class="pill pill-und">理解补充</span>这里的“反射”是大量原子散射的相干结果，不是每一层都独立成为普通镜面。布拉格式给出可能增强的几何方向；不同基元内部还可能相消，所以满足几何条件也不保证峰强足够大。</p>
+<h3 id="63-一个晶体包含许多布拉格条件">6.3 一个晶体包含许多布拉格条件<a class="headerlink" href="#63-一个晶体包含许多布拉格条件" title="Permanent link">#</a></h3>
+<p><span class="pill pill-ppt">PPT重点</span>固定晶体和入射方向后，每个面族各有确定的 <span class="arithmatex">\(d_h,\varphi_h\)</span>。对固定单色波长，它们通常不能同时满足整数倍光程差；改变晶体取向、波长或采用多晶粉末，可让更多条件得到满足。
+<span class="pill pill-src">教材补充</span>教材280页说明，某一面族的非零级面内衍射，只要与层间叠加共同增强，其方向可以改由另一取向面族的镜面反射与布拉格条件表示。因此对所有可能面族讨论镜面反射，不会遗漏几何增强方向。</p>
+<h3 id="64-为什么换一个晶面族就能描述-非零级推导">6.4 为什么换一个晶面族就能描述 非零级推导<a class="headerlink" href="#64-为什么换一个晶面族就能描述-非零级推导" title="Permanent link">#</a></h3>
+<p><span class="pill pill-rec">建议理解</span>保留课件 PDF 62–63页的关键证明。取二维矩形点阵，水平间距为 <span class="arithmatex">\(b_0\)</span>、竖直间距为 <span class="arithmatex">\(a_0\)</span>。设新晶面与水平面的夹角为 <span class="arithmatex">\(\gamma\)</span>，入射与出射相对新面的掠射角均为 <span class="arithmatex">\(\varphi\)</span>。水平和竖直相邻点的相长条件分别化为</p>
+<div class="arithmatex">\[2b_0\sin\varphi\sin\gamma=p\lambda,\qquad2a_0\sin\varphi\cos\gamma=q\lambda\]</div>
+<p>两式相除得</p>
+<div class="arithmatex">\[\tan\gamma=\frac{pa_0}{qb_0}\]</div>
+<p>方向斜率由点阵间距的整数倍决定，因而可找到经过格点的新晶面。令 <span class="arithmatex">\(g\)</span> 是 <span class="arithmatex">\(|p|,|q|\)</span> 的最大公因数，<span class="arithmatex">\(p=gp_1,q=gq_1\)</span>，其中 <span class="arithmatex">\(p_1,q_1\)</span> 互素（不同时为零）。新面族间距为</p>
+<div class="arithmatex">\[d_h=\left(\frac{q_1^2}{a_0^2}+\frac{p_1^2}{b_0^2}\right)^{-1/2}\]</div>
+<p>平方相加消去 <span class="arithmatex">\(\gamma\)</span>，得到</p>
+<div class="arithmatex">\[4\sin^2\varphi=g^2\lambda^2\left(\frac{q_1^2}{a_0^2}+\frac{p_1^2}{b_0^2}\right)\quad\Rightarrow\quad2d_h\sin\varphi=g\lambda\]</div>
+<p>这正是新面族的布拉格条件。理解重点是“换取向后把一般衍射写成镜面反射”，不必把 <span class="arithmatex">\(p,q,g\)</span> 与一维光栅的级次混用。</p>
+<h2 id="7-劳厄法与粉末法">7 劳厄法与粉末法<a class="headerlink" href="#7-劳厄法与粉末法" title="Permanent link">#</a></h2>
+<blockquote>
+<p><strong>资料范围</strong>：课件 PDF 65–66页；教材第四章§3.4，印刷281–282页。</p>
+</blockquote>
+<p><span class="pill pill-ppt">PPT重点</span>固定单色光和固定单晶时，几何条件太苛刻，可能几乎无峰。实验可分别放宽波长或晶体取向，使更多允许方向出现。
+劳厄法：用连续波长的 X 射线照射固定单晶。每个面族的间距、掠射角固定，从入射谱中选择满足 <span class="arithmatex">\(2d_h\sin\varphi_h=n\lambda_h\)</span> 的波长，在探测屏上形成分立劳厄斑；主要用于判断晶体取向。
+粉末法：用固定波长 <span class="arithmatex">\(\lambda_0\)</span> 照射大量随机取向的小晶粒。同一面族在不同晶粒中有不同取向，总能有一部分晶粒接近合适掠射角。绕入射轴的等价方向形成衍射圆锥，平面探测屏上出现环状图样，可据峰位分析面间距和晶格常数。</p>
+<p><img alt="第5讲 插图 methods" loading="lazy" src="../%E6%8F%92%E5%9B%BE/%E7%AC%AC5%E8%AE%B2/methods.png" />
+<em>图10 两种实验改变的变量不同。左为连续谱加固定单晶，右为单色光加随机取向晶粒；屏上斑点与圆环为原理示意，不冒充具体样品的实验照片。</em></p>
+<p><span class="pill pill-und">理解补充</span>课件“所有晶面族都满足”是说明增加衍射机会的简化说法。实际还受到波长范围、<span class="arithmatex">\(n\lambda\le2d_h\)</span>、结构消光和探测角度的限制，不能据此保证所有面族都有可见斑点或衍射环。</p>
+<h2 id="8-公式速查">8 公式速查<a class="headerlink" href="#8-公式速查" title="Permanent link">#</a></h2>
+<p>@break</p>
+<h3 id="多缝衍射与级次">多缝衍射与级次<a class="headerlink" href="#多缝衍射与级次" title="Permanent link">#</a></h3>
+<div class="arithmatex">\[\alpha=\frac{\pi a\sin\theta}{\lambda},\quad\beta=\frac{\pi d\sin\theta}{\lambda},\quad I=I_{0s}\left(\frac{\sin\alpha}{\alpha}\right)^2\left(\frac{\sin N\beta}{\sin\beta}\right)^2\]</div>
+<p>正入射：<span class="arithmatex">\(d\sin\theta=m\lambda\)</span>；斜入射：<span class="arithmatex">\(d(\sin\theta-\sin i)=m\lambda\)</span>。先用 <span class="arithmatex">\(|\sin\theta|\le1\)</span> 检查传播方向，再查单元因子是否为零。</p>
+<div class="arithmatex">\[d\sin\theta=\frac{q\lambda}{N}\ (q\ne Nm),\qquad\Delta\theta\approx\frac{\lambda}{Nd\cos\theta_m}\]</div>
+<p>相邻主极大间有 <span class="arithmatex">\(N-1\)</span> 个干涉暗纹、<span class="arithmatex">\(N-2\)</span> 个次极大；半角宽按主峰到第一暗纹定义。缺级满足 <span class="arithmatex">\(m=(d/a)p\)</span>，<span class="arithmatex">\(p\)</span> 为非零整数，且 <span class="arithmatex">\(m\)</span> 必须为整数。</p>
+<h3 id="周期结构与相位控制">周期结构与相位控制<a class="headerlink" href="#周期结构与相位控制" title="Permanent link">#</a></h3>
+<div class="arithmatex">\[\tilde U(\theta)=\tilde u(\theta)e^{i\Phi(\theta)}\frac{\sin N\beta}{\sin\beta},\qquad\tilde u=C\int_{-d/2}^{d/2}\tilde U_0(x)e^{-ik_0x\sin\theta}\,dx\]</div>
+<p>正弦振幅光栅保留0、±1整数级，强度比为 <span class="arithmatex">\(1:1/4:1/4\)</span>。相控阵主瓣满足 <span class="arithmatex">\(\sin\theta=\lambda\delta_{\mathrm{in}}/(2\pi d)\)</span>，符号对应沿排列正方向的激励相位增量。</p>
+<h3 id="光谱仪与闪耀">光谱仪与闪耀<a class="headerlink" href="#光谱仪与闪耀" title="Permanent link">#</a></h3>
+<div class="arithmatex">\[D_\theta=\frac{|m|}{d\cos\theta_m},\qquad D_\ell\approx fD_\theta,\qquad\mathcal R=|m|N=\frac{\lambda}{\delta\lambda_{\min}}\]</div>
+<p>色散看间隔，分辨看间隔与线宽之比；<span class="arithmatex">\(N\)</span> 是实际照明缝数。局部近轴条件下用 <span class="arithmatex">\(D_\ell\approx fD_\theta\)</span>。级次重合：<span class="arithmatex">\(m\lambda=m'\lambda'\)</span>；正一级与二级无重叠：<span class="arithmatex">\(\lambda_{\max}&lt;2\lambda_{\min}\)</span>。</p>
+<div class="arithmatex">\[m\lambda_b=2d\sin\theta_b\quad\mathrm{(A)},\qquad m\lambda_b=d\sin2\theta_b\quad\mathrm{(B)}\]</div>
+<p>A为垂直槽面入射；B为垂直平均平面入射。闪耀改变能量分配，不改变周期干涉的基本级次条件。</p>
+<h3 id="晶体衍射">晶体衍射<a class="headerlink" href="#晶体衍射" title="Permanent link">#</a></h3>
+<div class="arithmatex">\[2d_h\sin\varphi=n\lambda,\qquad d_h=\frac{n\lambda}{2\sin\varphi}\]</div>
+<p>掠射角从晶面量起，散射角为 <span class="arithmatex">\(2\varphi\)</span>；<span class="arithmatex">\(n\lambda\le2d_h\)</span> 为必要条件。劳厄法改变可选波长，粉末法提供不同晶粒取向。</p>
+<h2 id="9-易错点与自测">9 易错点与自测<a class="headerlink" href="#9-易错点与自测" title="Permanent link">#</a></h2>
+<p>@break</p>
+<h3 id="易错清单">易错清单<a class="headerlink" href="#易错清单" title="Permanent link">#</a></h3>
+<ol>
+<li><span class="arithmatex">\(d\)</span> 是相邻单元周期，<span class="arithmatex">\(a\)</span> 是缝宽；只用其中一个无法同时判断峰位和包络。</li>
+<li>干涉因子在 <span class="arithmatex">\(\beta=m\pi\)</span> 为极限峰值，不是把“0除以0”判成暗纹。</li>
+<li>缺级必须同时满足主极大和单元零点；整数级次还需检查传播方向。</li>
+<li><span class="arithmatex">\(\Delta\theta\)</span> 是第一暗纹定义的半角宽，不是半高半宽；全宽需乘2。</li>
+<li>斜入射先统一传播方向的有向角，不能凭图中角度的绝对值乱加减。</li>
+<li>正弦振幅光栅的光瞳是振幅分布，不能换成强度分布或相位分布仍用同一结论。</li>
+<li>色散大不等于分辨率高；放大焦距会同时放大间距与线宽。</li>
+<li>垂直槽面与垂直光栅平均平面是不同条件，闪耀公式不可混用。</li>
+<li>布拉格角从晶面量起；仪器给出 <span class="arithmatex">\(2\varphi\)</span> 时先除以2，面间距也不是任意原子间距。</li>
+</ol>
+<h3 id="自测题">自测题<a class="headerlink" href="#自测题" title="Permanent link">#</a></h3>
+<p>以下为<span class="pill pill-und">理解补充</span>自编练习。先写模型和条件，再计算；答案在文末。
+1. 概念：同样的多缝装置，为什么相干同相时峰值可达单缝的 <span class="arithmatex">\(N^2\)</span> 倍，而互不相干时只有 <span class="arithmatex">\(N\)</span> 倍？这是否违反能量守恒？
+2. 级次与缺级：正入射光栅为500条/mm，<span class="arithmatex">\(a=d/3\)</span>，<span class="arithmatex">\(\lambda=600\,\mathrm{nm}\)</span>。列出可传播的整数级次、缺级及中央单缝包络内实际保留的级次。
+3. 色散与分辨：用600条/mm光栅的一级观察500.0 nm和500.2 nm谱线，有效照明宽度5.0 mm。求 <span class="arithmatex">\(N\)</span>、理想最小可分辨波长差，判断能否分辨；若接收焦距加倍，结论如何变化？
+4. 斜入射：<span class="arithmatex">\(d=2.0\,\mu\mathrm m\)</span>、<span class="arithmatex">\(\lambda=0.50\,\mu\mathrm m\)</span>、<span class="arithmatex">\(i=30^\circ\)</span>。忽略缺级，求零级方向和满足 <span class="arithmatex">\(|\sin\theta|&lt;1\)</span> 的整数级范围。与正入射比较，某侧能达到的最高级次如何变化？
+5. 晶体衍射：<span class="arithmatex">\(\lambda=0.154\,\mathrm{nm}\)</span>，某峰的散射角为 <span class="arithmatex">\(40.0^\circ\)</span>，按一级布拉格反射求面间距。若同一面族的二级允许出现，其散射角约是多少？</p>
+<h3 id="资料定位">资料定位<a class="headerlink" href="#资料定位" title="Permanent link">#</a></h3>
+<p>教师课件共66个PDF页面，含页脚编号跳号；本笔记引用均按PDF页序。多缝与周期结构2–36页，光谱仪37–49页，晶体衍射50–66页。保留4道编号课堂例题及缺级、谱线重叠等课堂图例。
+教材为赵凯华、钟锡华《光学（重排本）》第四章：§1，253–263页；§2.1–2.4，266–272页；§3，276–282页。均为印刷页，现有扫描PDF页序加13。<span class="pill pill-ppt">PPT重点</span>标课堂主线，<span class="pill pill-src">教材补充</span>标核对过的教材信息，<span class="pill pill-und">理解补充</span>标解释、条件澄清与自编练习。</p>
+<h2 id="10-自测答案">10 自测答案<a class="headerlink" href="#10-自测答案" title="Permanent link">#</a></h2>
+<p>@break</p>
+<h3 id="第1题-相干叠加">第1题 相干叠加<a class="headerlink" href="#第1题-相干叠加" title="Permanent link">#</a></h3>
+<p>同相时振幅相加，<span class="arithmatex">\(A=NA_s\)</span>，故峰值 <span class="arithmatex">\(I=N^2I_s\)</span>；互不相干时干涉交叉项平均为零，<span class="arithmatex">\(I=NI_s\)</span>。相干图样把光能集中到更窄主峰，总能量仍由实际入射和透射功率决定。</p>
+<h3 id="第2题-先筛方向-再查缺级">第2题 先筛方向 再查缺级<a class="headerlink" href="#第2题-先筛方向-再查缺级" title="Permanent link">#</a></h3>
+<div class="arithmatex">\[d=\frac{1}{500}\,\mathrm{mm}=2.00\,\mu\mathrm m,\qquad\frac{d}{\lambda}=3.333\cdots\]</div>
+<p>可传播的级次是 <span class="arithmatex">\(m=0,\pm1,\pm2,\pm3\)</span>。由于 <span class="arithmatex">\(d/a=3\)</span>，<span class="arithmatex">\(\pm3\)</span> 级缺失；中央包络内 <span class="arithmatex">\(|m|&lt;3\)</span>，实际保留 <span class="arithmatex">\(0,\pm1,\pm2\)</span>，共5个。</p>
+<h3 id="第3题-理想光栅能否分辨">第3题 理想光栅能否分辨<a class="headerlink" href="#第3题-理想光栅能否分辨" title="Permanent link">#</a></h3>
+<div class="arithmatex">\[N=600\times5.0=3000,\qquad\delta\lambda_{\min}\approx\frac{500.1}{3000}\,\mathrm{nm}=0.167\,\mathrm{nm}\]</div>
+<p>两线相差0.200 nm，大于理想分辨限，按瑞利判据可以分辨。一级在约 <span class="arithmatex">\(\theta=17.46^\circ\)</span>，角色散约 <span class="arithmatex">\(6.29\times10^{-4}\,\mathrm{rad/nm}\)</span>。焦距加倍会同时将像面间距和线宽加倍，理想分辨结论不变。</p>
+<h3 id="第4题-有向角与整数范围">第4题 有向角与整数范围<a class="headerlink" href="#第4题-有向角与整数范围" title="Permanent link">#</a></h3>
+<div class="arithmatex">\[\sin\theta=\frac{1}{2}+\frac{m}{4},\qquad-1&lt;\frac{1}{2}+\frac{m}{4}&lt;1\quad\Rightarrow\quad-6&lt;m&lt;2\]</div>
+<p>故 <span class="arithmatex">\(m=-5,-4,\cdots,0,1\)</span>，零级 <span class="arithmatex">\(\theta=i=30^\circ\)</span>。<span class="arithmatex">\(m=-6,2\)</span> 对应掠射边界而不计。正入射同样排除边界后为 <span class="arithmatex">\(m=-3,\cdots,3\)</span>；此例两者均为7个，但斜入射一侧可达 <span class="arithmatex">\(|m|=5\)</span>，不能由这一特例推出总数永远相同。</p>
+<h3 id="第5题-从散射角得到掠射角">第5题 从散射角得到掠射角<a class="headerlink" href="#第5题-从散射角得到掠射角" title="Permanent link">#</a></h3>
+<div class="arithmatex">\[\varphi_1=20.0^\circ,\qquad d_h=\frac{0.154}{2\sin20.0^\circ}\,\mathrm{nm}\approx0.225\,\mathrm{nm}\]</div>
+<p>同一面族二级满足 <span class="arithmatex">\(\sin\varphi_2=2\sin20.0^\circ\approx0.6840\)</span>，故 <span class="arithmatex">\(\varphi_2\approx43.16^\circ\)</span>，散射角 <span class="arithmatex">\(2\varphi_2\approx86.3^\circ\)</span>。这是几何允许位置，能否看到还取决于该反射的强度与实验范围。</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="页脚" >
+        
+          
+          <a href="../%E7%AC%AC4%E8%AE%B2_%E5%85%89%E7%9A%84%E8%A1%8D%E5%B0%84%E4%B8%8E%E5%88%86%E8%BE%A8%E6%9C%AC%E9%A2%86/" class="md-footer__link md-footer__link--prev" aria-label="上一页: 第4讲 光的衍射与分辨本领">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                上一页
+              </span>
+              <div class="md-ellipsis">
+                第4讲 光的衍射与分辨本领
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../%E7%AC%AC6%E8%AE%B2_%E5%81%8F%E6%8C%AF%E6%80%81%E4%B8%8E%E8%8F%B2%E6%B6%85%E8%80%B3%E5%85%AC%E5%BC%8F/" class="md-footer__link md-footer__link--next" aria-label="下一页: 第6讲 偏振态与菲涅耳公式">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                下一页
+              </span>
+              <div class="md-ellipsis">
+                第6讲 偏振态与菲涅耳公式
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.sections", "navigation.expand", "navigation.top", "navigation.footer", "toc.follow", "search.highlight", "search.share"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

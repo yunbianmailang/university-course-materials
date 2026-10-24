@@ -1,0 +1,2348 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="大学课程个人学习讲义，按学期和课程组织，支持网页端直接阅读">
+      
+      
+      
+        <link rel="canonical" href="https://yunbianmailang.github.io/university-course-materials/%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%B3%BB%E7%BB%9F/%E7%AC%AC3%E8%AE%B2_%E5%82%85%E9%87%8C%E5%8F%B6%E7%BA%A7%E6%95%B0%E4%B8%8E%E9%A2%91%E8%B0%B1/">
+      
+      
+        <link rel="prev" href="../%E7%AC%AC2%E8%AE%B2_%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B%E7%BB%8F%E5%85%B8%E6%B3%95%E4%B8%8E%E5%93%8D%E5%BA%94%E5%88%86%E8%A7%A3/">
+      
+      
+        <link rel="next" href="../%E7%AC%AC4%E8%AE%B2_%E5%82%85%E9%87%8C%E5%8F%B6%E5%8F%98%E6%8D%A2%E4%B8%8E%E5%85%B8%E5%9E%8B%E4%BF%A1%E5%8F%B7%E9%A2%91%E8%B0%B1/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>第3讲 傅里叶级数与频谱 - 大学课程学习资料</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/custom.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#第3讲-傅里叶级数与频谱" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../.." title="大学课程学习资料" class="md-header__button md-logo" aria-label="大学课程学习资料" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            大学课程学习资料
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              第3讲 傅里叶级数与频谱
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="indigo"  aria-label="切换到深色模式"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="切换到深色模式" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="indigo"  aria-label="切换到浅色模式"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="切换到浅色模式" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="分享" aria-label="分享" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/yunbianmailang/university-course-materials" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    大学课程学习资料
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="大学课程学习资料" class="md-nav__button md-logo" aria-label="大学课程学习资料" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    大学课程学习资料
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/yunbianmailang/university-course-materials" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    大学课程学习资料
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    首页
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    复变函数与数理方程
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    复变函数与数理方程
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0%E4%B8%8E%E6%95%B0%E7%90%86%E6%96%B9%E7%A8%8B/%E8%AF%BE%E7%A8%8B%E8%AF%B4%E6%98%8E/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    课程说明
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0%E4%B8%8E%E6%95%B0%E7%90%86%E6%96%B9%E7%A8%8B/%E7%AC%AC1%E8%AE%B2_%E5%A4%8D%E6%95%B0%E5%87%A0%E4%BD%95%E6%A8%A1%E7%9A%84%E6%9E%81%E5%80%BC%E4%B8%8E%E6%8C%87%E6%95%B0%E6%98%A0%E5%B0%84/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第1讲 复数几何模的极值与指数映射
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0%E4%B8%8E%E6%95%B0%E7%90%86%E6%96%B9%E7%A8%8B/%E7%AC%AC2%E8%AE%B2_%E5%A4%8D%E5%B9%82%E8%A7%A3%E6%9E%90%E6%80%A7%E4%B8%8E%E5%A4%8D%E5%B9%B3%E9%9D%A2%E6%98%A0%E5%B0%84/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第2讲 复幂解析性与复平面映射
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0%E4%B8%8E%E6%95%B0%E7%90%86%E6%96%B9%E7%A8%8B/%E7%AC%AC3%E8%AE%B2_%E5%A4%8D%E7%A7%AF%E5%88%86%E6%9F%AF%E8%A5%BF%E5%85%AC%E5%BC%8F%E4%B8%8E%E8%A7%A3%E6%9E%90%E5%87%BD%E6%95%B0%E7%9A%84%E6%95%B4%E4%BD%93%E6%80%A7%E8%B4%A8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第3讲 复积分柯西公式与解析函数的整体性质
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0%E4%B8%8E%E6%95%B0%E7%90%86%E6%96%B9%E7%A8%8B/%E7%AC%AC4%E8%AE%B2_%E5%B9%82%E7%BA%A7%E6%95%B0%E6%94%B6%E6%95%9B%E4%B8%8E%E6%B3%B0%E5%8B%92%E6%B4%9B%E6%9C%97%E5%B1%95%E5%BC%80/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第4讲 幂级数收敛与泰勒洛朗展开
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0%E4%B8%8E%E6%95%B0%E7%90%86%E6%96%B9%E7%A8%8B/%E7%AC%AC5%E8%AE%B2_%E9%9B%B6%E7%82%B9%E5%A5%87%E7%82%B9%E4%B8%8E%E7%95%99%E6%95%B0%E7%A7%AF%E5%88%86/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第5讲 零点奇点与留数积分
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    信号与系统
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    信号与系统
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E8%AF%BE%E7%A8%8B%E8%AF%B4%E6%98%8E/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    课程说明
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC1%E8%AE%B2_%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF%E4%B8%8E%E5%9F%BA%E6%9C%AC%E8%AF%AD%E8%A8%80/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第1讲 学习路线与基本语言
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC2%E8%AE%B2_%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B%E7%BB%8F%E5%85%B8%E6%B3%95%E4%B8%8E%E5%93%8D%E5%BA%94%E5%88%86%E8%A7%A3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第2讲 微分方程经典法与响应分解
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第3讲 傅里叶级数与频谱
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第3讲 傅里叶级数与频谱
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#01-本讲要解决什么问题" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        01 本讲要解决什么问题
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="01 本讲要解决什么问题">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#统一周期与系数约定" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        统一周期与系数约定
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#02-为什么选择复指数作为基本信号" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        02 为什么选择复指数作为基本信号
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#03-三角系数为什么这样积分" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        03 三角系数为什么这样积分
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="03 三角系数为什么这样积分">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#整周期积分与正交性" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        整周期积分与正交性
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#用投影提取一个系数" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        用投影提取一个系数
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#04-收敛到哪里与狄利克雷条件" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        04 收敛到哪里与狄利克雷条件
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#05-紧缩形式与相位象限" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        05 紧缩形式与相位象限
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#06-指数形式与单双边谱" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        06 指数形式与单双边谱
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#07-课件混合谐波例题全解" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        07 课件混合谐波例题全解
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#08-奇偶对称性怎样减少积分" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        08 奇偶对称性怎样减少积分
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#09-半波对称性与谐波缺失" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        09 半波对称性与谐波缺失
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-周期矩形脉冲-从积分到频谱" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10 周期矩形脉冲 从积分到频谱
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10 周期矩形脉冲 从积分到频谱">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#包络过零和实际缺失谱线不是一回事" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        包络过零和实际缺失谱线不是一回事
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#课件第-1819-页的右移矩形" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        课件第 18—19 页的右移矩形
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-脉宽-周期和带宽怎样分别影响频谱" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11 脉宽 周期和带宽怎样分别影响频谱
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-锯齿与双极方波的完整计算" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12 锯齿与双极方波的完整计算
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="12 锯齿与双极方波的完整计算">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#周期锯齿" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        周期锯齿
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#高低电平为正负-e-的对称方波" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        高低电平为正负 E 的对称方波
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13-帕塞瓦尔等式与功率核验" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13 帕塞瓦尔等式与功率核验
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14-为什么有限傅里叶和使均方误差最小" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14 为什么有限傅里叶和使均方误差最小
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#15-有限项重构与吉布斯现象" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        15 有限项重构与吉布斯现象
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#16-课下推导一-周期三角脉冲" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        16 课下推导一 周期三角脉冲
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#17-课下推导二-半波与全波余弦" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        17 课下推导二 半波与全波余弦
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#18-从离散谱走向傅里叶变换" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        18 从离散谱走向傅里叶变换
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#19-资料核对与作业记录" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        19 资料核对与作业记录
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="19 资料核对与作业记录">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#课件原列任务" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        课件原列任务
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20-闭卷自测" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        20 闭卷自测
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#21-自测详解与复习索引" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        21 自测详解与复习索引
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="21 自测详解与复习索引">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-至-5-系数-相位与矩形频谱" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1 至 5 系数 相位与矩形频谱
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-至-10-对称性-功率与收敛" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6 至 10 对称性 功率与收敛
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#11-至-14-典型波形与系统" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11 至 14 典型波形与系统
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#学完后的检查" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        学完后的检查
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC4%E8%AE%B2_%E5%82%85%E9%87%8C%E5%8F%B6%E5%8F%98%E6%8D%A2%E4%B8%8E%E5%85%B8%E5%9E%8B%E4%BF%A1%E5%8F%B7%E9%A2%91%E8%B0%B1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第4讲 傅里叶变换与典型信号频谱
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC5%E8%AE%B2_%E5%85%B8%E5%9E%8B%E5%8F%98%E6%8D%A2%E5%AF%B9%E4%B8%8E%E6%8A%BD%E6%A0%B7%E5%AE%9A%E7%90%86/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第5讲 典型变换对与抽样定理
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC6%E8%AE%B2_%E6%8B%89%E6%99%AE%E6%8B%89%E6%96%AF%E5%8F%98%E6%8D%A2%E7%9A%84%E6%80%A7%E8%B4%A8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第6讲 拉普拉斯变换的性质
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC7%E8%AE%B2_%E6%8B%89%E6%99%AE%E6%8B%89%E6%96%AF%E9%80%86%E5%8F%98%E6%8D%A2%E4%B8%8E%20s%20%E5%9F%9F%E6%A8%A1%E5%9E%8B/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第7讲 拉普拉斯逆变换与 s 域模型
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC8%E8%AE%B2_%E9%A2%91%E7%8E%87%E5%93%8D%E5%BA%94%E4%B8%8E%E7%A8%B3%E5%AE%9A%E6%80%A7/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第8讲 频率响应与稳定性
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    基础物理学2（光学）
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    基础物理学2（光学）
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%9F%BA%E7%A1%80%E7%89%A9%E7%90%86%E5%AD%A62/%E8%AF%BE%E7%A8%8B%E8%AF%B4%E6%98%8E/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    课程说明
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%9F%BA%E7%A1%80%E7%89%A9%E7%90%86%E5%AD%A62/%E7%AC%AC1%E8%AE%B2_%E5%87%A0%E4%BD%95%E5%85%89%E5%AD%A6%E7%AE%80%E4%BB%8B/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第1讲 几何光学简介
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%9F%BA%E7%A1%80%E7%89%A9%E7%90%86%E5%AD%A62/%E7%AC%AC2%E8%AE%B2_%E6%B3%A2%E5%8A%A8%E5%85%89%E5%AD%A6%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86%EF%BC%88%E4%B8%80%EF%BC%89/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第2讲 波动光学基本原理（一）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%9F%BA%E7%A1%80%E7%89%A9%E7%90%86%E5%AD%A62/%E7%AC%AC3%E8%AE%B2_%E5%85%89%E7%9A%84%E5%B9%B2%E6%B6%89%E4%B8%8E%E6%97%B6%E7%A9%BA%E7%9B%B8%E5%B9%B2%E6%80%A7/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第3讲 光的干涉与时空相干性
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%9F%BA%E7%A1%80%E7%89%A9%E7%90%86%E5%AD%A62/%E7%AC%AC4%E8%AE%B2_%E5%85%89%E7%9A%84%E8%A1%8D%E5%B0%84%E4%B8%8E%E5%88%86%E8%BE%A8%E6%9C%AC%E9%A2%86/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第4讲 光的衍射与分辨本领
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%9F%BA%E7%A1%80%E7%89%A9%E7%90%86%E5%AD%A62/%E7%AC%AC5%E8%AE%B2_%E8%A1%8D%E5%B0%84%E5%85%89%E6%A0%85%E4%B8%8E%E6%99%B6%E4%BD%93%E8%A1%8D%E5%B0%84/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第5讲 衍射光栅与晶体衍射
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%9F%BA%E7%A1%80%E7%89%A9%E7%90%86%E5%AD%A62/%E7%AC%AC6%E8%AE%B2_%E5%81%8F%E6%8C%AF%E6%80%81%E4%B8%8E%E8%8F%B2%E6%B6%85%E8%80%B3%E5%85%AC%E5%BC%8F/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第6讲 偏振态与菲涅耳公式
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%9F%BA%E7%A1%80%E7%89%A9%E7%90%86%E5%AD%A62/%E7%AC%AC7%E8%AE%B2_%E5%8F%8C%E6%8A%98%E5%B0%84%E4%B8%8E%E5%81%8F%E6%8C%AF%E5%85%89%E5%BA%94%E7%94%A8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第7讲 双折射与偏振光应用
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#01-本讲要解决什么问题" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        01 本讲要解决什么问题
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="01 本讲要解决什么问题">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#统一周期与系数约定" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        统一周期与系数约定
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#02-为什么选择复指数作为基本信号" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        02 为什么选择复指数作为基本信号
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#03-三角系数为什么这样积分" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        03 三角系数为什么这样积分
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="03 三角系数为什么这样积分">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#整周期积分与正交性" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        整周期积分与正交性
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#用投影提取一个系数" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        用投影提取一个系数
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#04-收敛到哪里与狄利克雷条件" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        04 收敛到哪里与狄利克雷条件
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#05-紧缩形式与相位象限" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        05 紧缩形式与相位象限
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#06-指数形式与单双边谱" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        06 指数形式与单双边谱
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#07-课件混合谐波例题全解" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        07 课件混合谐波例题全解
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#08-奇偶对称性怎样减少积分" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        08 奇偶对称性怎样减少积分
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#09-半波对称性与谐波缺失" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        09 半波对称性与谐波缺失
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-周期矩形脉冲-从积分到频谱" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10 周期矩形脉冲 从积分到频谱
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10 周期矩形脉冲 从积分到频谱">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#包络过零和实际缺失谱线不是一回事" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        包络过零和实际缺失谱线不是一回事
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#课件第-1819-页的右移矩形" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        课件第 18—19 页的右移矩形
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-脉宽-周期和带宽怎样分别影响频谱" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11 脉宽 周期和带宽怎样分别影响频谱
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-锯齿与双极方波的完整计算" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12 锯齿与双极方波的完整计算
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="12 锯齿与双极方波的完整计算">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#周期锯齿" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        周期锯齿
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#高低电平为正负-e-的对称方波" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        高低电平为正负 E 的对称方波
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13-帕塞瓦尔等式与功率核验" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13 帕塞瓦尔等式与功率核验
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14-为什么有限傅里叶和使均方误差最小" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14 为什么有限傅里叶和使均方误差最小
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#15-有限项重构与吉布斯现象" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        15 有限项重构与吉布斯现象
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#16-课下推导一-周期三角脉冲" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        16 课下推导一 周期三角脉冲
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#17-课下推导二-半波与全波余弦" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        17 课下推导二 半波与全波余弦
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#18-从离散谱走向傅里叶变换" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        18 从离散谱走向傅里叶变换
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#19-资料核对与作业记录" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        19 资料核对与作业记录
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="19 资料核对与作业记录">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#课件原列任务" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        课件原列任务
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20-闭卷自测" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        20 闭卷自测
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#21-自测详解与复习索引" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        21 自测详解与复习索引
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="21 自测详解与复习索引">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-至-5-系数-相位与矩形频谱" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1 至 5 系数 相位与矩形频谱
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-至-10-对称性-功率与收敛" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6 至 10 对称性 功率与收敛
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#11-至-14-典型波形与系统" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11 至 14 典型波形与系统
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#学完后的检查" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        学完后的检查
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="第3讲-傅里叶级数与频谱">第3讲 傅里叶级数与频谱<a class="headerlink" href="#第3讲-傅里叶级数与频谱" title="Permanent link">#</a></h1>
+<div class="admonition tip">
+<p class="admonition-title">本讲配套文件</p>
+<ul>
+<li><a href="../../%E6%96%87%E4%BB%B6/%E7%AC%AC%E4%B8%89%E8%8A%82%E8%AF%BE%20%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%B3%BB%E7%BB%9F%E8%87%AA%E5%AD%A6%E7%AC%94%E8%AE%B0.docx">Word 下载（第三节课 信号与系统自学笔记.docx）</a></li>
+</ul>
+</div>
+<h2 id="01-本讲要解决什么问题">01 本讲要解决什么问题<a class="headerlink" href="#01-本讲要解决什么问题" title="Permanent link">#</a></h2>
+<p>资料内容：课件第 2—12、47 页。上一讲把输入拆成冲激，用卷积求输出；这一讲换一组基本信号，把周期波形拆成不同频率的正弦或复指数。这样既能看清波形包含哪些频率，也便于理解系统怎样改变每个频率成分。
+本讲路线：第 02—05 节推导系数及形式转换；第 06—09 节学习频谱和对称性；第 10—15 节计算典型波形、功率、误差及吉布斯现象；第 16—17 节补全课下推导；第 18 节衔接傅里叶变换；最后核对易错点并自测。
+先修知识：定积分、分部积分、三角恒等式、复数模与辐角，以及上一讲的零状态 LTI 卷积。先记住欧拉公式 <span class="arithmatex">\(\mathrm e^{j\theta}=\cos\theta+j\sin\theta\)</span>，其中 <span class="arithmatex">\(j^2=-1\)</span>；虚数单位不是谐波下标。</p>
+<h3 id="统一周期与系数约定">统一周期与系数约定<a class="headerlink" href="#统一周期与系数约定" title="Permanent link">#</a></h3>
+<p>用 <span class="arithmatex">\(T&gt;0\)</span> 表示选定周期，<span class="arithmatex">\(\omega_1=2\pi/T\)</span> 是对应角频率，单位为弧度每秒；普通频率为 <span class="arithmatex">\(\nu_1=1/T\)</span>，单位为赫兹。课件写 <span class="arithmatex">\(T_1\)</span>，本笔记简写为 <span class="arithmatex">\(T\)</span>。若称基波，通常应取最小正周期；常量没有唯一的最小正周期。
+整数 <span class="arithmatex">\(n\)</span> 表示谐波序号，<span class="arithmatex">\(n\omega_1\)</span> 是谐波角频率。<span class="arithmatex">\(a_0\)</span> 是平均值，本讲采用 <span class="arithmatex">\(a_0+\sum\)</span>，不是另一些教材的 <span class="arithmatex">\(a_0/2+\sum\)</span>。<span class="arithmatex">\(a_n,b_n\)</span> 是带符号的实系数；<span class="arithmatex">\(c_n,d_n\)</span> 表示非负幅度；<span class="arithmatex">\(F_n\)</span> 是一般为复数的指数系数。除特别说明，三角形式讨论实信号。
+易错提醒：<span class="arithmatex">\(F_n\)</span> 是离散序号对应的级数系数；后续连续频率函数 <span class="arithmatex">\(F(\omega)\)</span> 是傅里叶变换，二者不能只因字母相同就直接等同。横轴是频率的离散谱，也不表示原信号在时间上是离散信号。</p>
+<h2 id="02-为什么选择复指数作为基本信号">02 为什么选择复指数作为基本信号<a class="headerlink" href="#02-为什么选择复指数作为基本信号" title="Permanent link">#</a></h2>
+<p>资料内容：课件第 5—7、11 页。补充推导：对零状态 LTI 系统，令输入为全轴存在的 <span class="arithmatex">\(\mathrm e^{j\omega t}\)</span>，从卷积出发：</p>
+<div class="arithmatex">\[r(t)=\int_{-\infty}^{\infty}h(\tau)\mathrm e^{j\omega(t-\tau)}d\tau.\]</div>
+<p>积分时 <span class="arithmatex">\(t\)</span> 固定，利用指数相乘关系把与积分变量无关的因子提出：</p>
+<div class="arithmatex">\[r(t)=\mathrm e^{j\omega t}H(\omega),\qquad H(\omega)=\int_{-\infty}^{\infty}h(\tau)\mathrm e^{-j\omega\tau}d\tau.\]</div>
+<p>因此频率不变，只乘一个复常数；模决定幅度缩放，辐角决定相位移动。这称复指数的特征函数性质。普通函数核 <span class="arithmatex">\(h\)</span> 绝对可积时，上式对全部实频率都存在；其他情况须另查收敛或分布意义。
+对实系统，输入 <span class="arithmatex">\(\cos\omega t\)</span> 是复指数的实部。线性和实系数保证输出可取实部：<span class="arithmatex">\(|H(\omega)|\cos[\omega t+\arg H(\omega)]\)</span>。输入在零时刻才接入且乘了阶跃，通常还会有启动暂态，不能直接用这条全轴公式代表全部过程。</p>
+<p><img alt="第3讲 插图 system" loading="lazy" src="../%E6%8F%92%E5%9B%BE/%E7%AC%AC3%E8%AE%B2/system.png" />
+<em>图 1 补充示意 同频率复指数经过零状态 LTI 系统</em></p>
+<p>补充例题：<span class="arithmatex">\(h(t)=\mathrm e^{-t}u(t)\)</span> 时，<span class="arithmatex">\(H(\omega)=\int_0^\infty\mathrm e^{-(1+j\omega)\tau}d\tau=1/(1+j\omega)\)</span>。于是模为 <span class="arithmatex">\(1/\sqrt{1+\omega^2}\)</span>，相位为 <span class="arithmatex">\(-\arctan\omega\)</span>。低频保留较多，高频幅度较小，输出还存在相位滞后。</p>
+<h2 id="03-三角系数为什么这样积分">03 三角系数为什么这样积分<a class="headerlink" href="#03-三角系数为什么这样积分" title="Permanent link">#</a></h2>
+<p>资料内容：课件第 13 页。补充推导：系数公式的核心是一个周期内的正交性。为避免一开始就对无穷级数逐项积分，先讨论有限和，再在平方可积的框架中作投影。</p>
+<h3 id="整周期积分与正交性">整周期积分与正交性<a class="headerlink" href="#整周期积分与正交性" title="Permanent link">#</a></h3>
+<p>令 <span class="arithmatex">\(k\)</span> 为非零整数，则指数积分端点相差 <span class="arithmatex">\(T\)</span>，指数因子相差 <span class="arithmatex">\(\mathrm e^{jk\omega_1T}=1\)</span>，故</p>
+<div class="arithmatex">\[\int_{t_0}^{t_0+T}\mathrm e^{jk\omega_1t}dt=0.\]</div>
+<p>当 <span class="arithmatex">\(k=0\)</span> 时积分为 <span class="arithmatex">\(T\)</span>。取实部、虚部得到整周期正弦余弦平均为零。再用积化和差，例如 <span class="arithmatex">\(2\cos m x\cos n x=\cos(m-n)x+\cos(m+n)x\)</span>，可知正整数 <span class="arithmatex">\(m,n\)</span> 满足</p>
+<div class="arithmatex">\[\frac1T\int_{t_0}^{t_0+T}\cos m\omega_1t\cos n\omega_1t\,dt=\begin{cases}1/2,&amp;m=n,\\0,&amp;m\ne n.\end{cases}\]</div>
+<p>两个正弦的结果相同；一正弦一余弦的积分总为零。常数与任意正整数次谐波也正交。注意三角基函数的平均平方是二分之一，常数一的平均平方是一。</p>
+<h3 id="用投影提取一个系数">用投影提取一个系数<a class="headerlink" href="#用投影提取一个系数" title="Permanent link">#</a></h3>
+<p>写出三角形式 <span class="arithmatex">\(f=a_0+\sum_{n=1}^{\infty}[a_n\cos n\omega_1t+b_n\sin n\omega_1t]\)</span>。平均一次，所有谐波项消失；乘第 <span class="arithmatex">\(m\)</span> 次余弦后平均，仅第 <span class="arithmatex">\(m\)</span> 次余弦的平均平方保留下来。于是</p>
+<div class="arithmatex">\[a_0=\frac1T\int_{t_0}^{t_0+T}f(t)dt,\]</div>
+<div class="arithmatex">\[a_n=\frac2T\int_{t_0}^{t_0+T}f(t)\cos n\omega_1t\,dt,\qquad n\ge1,\]</div>
+<div class="arithmatex">\[b_n=\frac2T\int_{t_0}^{t_0+T}f(t)\sin n\omega_1t\,dt,\qquad n\ge1.\]</div>
+<p>对有限和，上述消项是直接代数；对平方可积周期函数，这些式子定义正交投影系数，有限项的最优性见第 14 节。函数值能否由无穷级数逐点恢复，则另需收敛定理，不能由“写得出积分”自动推出。
+为什么任意起点都可以：被积函数也具有周期 <span class="arithmatex">\(T\)</span>。把跨界部分平移一个周期后，任意完整周期的积分都相同。选 <span class="arithmatex">\([-T/2,T/2]\)</span> 便于利用奇偶性，选 <span class="arithmatex">\([0,T]\)</span> 便于按开关时序分段。</p>
+<h2 id="04-收敛到哪里与狄利克雷条件">04 收敛到哪里与狄利克雷条件<a class="headerlink" href="#04-收敛到哪里与狄利克雷条件" title="Permanent link">#</a></h2>
+<p>资料内容：课件第 14—15、44 页。课件列出的工程常用充分条件是：每周期绝对可积，只有有限个跳变间断，只有有限个极值；使用时还应保证跳点左右极限有限。分段连续可微的常见波形满足足够的收敛条件。</p>
+<div class="arithmatex">\[\int_{t_0}^{t_0+T}|f(t)|dt&lt;\infty.\]</div>
+<p>在这些条件下，傅里叶级数在连续点收敛到函数值，在跳点收敛到两侧极限的平均：</p>
+<div class="arithmatex">\[\lim_{N\to\infty}S_N(t)=\frac{f(t^-)+f(t^+)}2.\]</div>
+<p>这是本讲使用的收敛定理。正文证明系数、对称性和均方误差所需关系；此处直接采用该定理，不把它误当成只由正交性就能证明的结论。周期边界的右侧要从下一周期取值。
+补充说明：改变有限个点的函数值不改变积分，所以不改变任何傅里叶系数。锯齿在接缝从正半幅跳到负半幅，级数在该点等于零，无论原图把端点画在哪一侧。
+课件三个“反例”说明不满足某条充分条件：无限缩小阶梯有无限跳点；<span class="arithmatex">\(\sin(2\pi/t)\)</span> 在零附近无限振荡；<span class="arithmatex">\(1/t\)</span> 在 <span class="arithmatex">\(0&lt;t\le1\)</span> 不绝对可积。前两者不能因此就判定“没有傅里叶级数”；未满足一组充分条件，不等于不可能收敛。后一例的普通系数积分本身就会遇到发散。
+易错提醒：均方收敛、逐点收敛、一致收敛不是同一回事。跳变波形的有限和都是连续函数，它们不能在包含跳点的全周期上一致收敛到不连续波形。</p>
+<h2 id="05-紧缩形式与相位象限">05 紧缩形式与相位象限<a class="headerlink" href="#05-紧缩形式与相位象限" title="Permanent link">#</a></h2>
+<p>资料内容：课件第 16—17 页。将同频率的两项合并时，要先确定采用余弦还是正弦，以及幅度必须非负。
+展开 <span class="arithmatex">\(c_n\cos(n\omega_1t+\varphi_n)\)</span> 并比较正弦余弦系数，得到</p>
+<div class="arithmatex">\[a_n=c_n\cos\varphi_n,\qquad b_n=-c_n\sin\varphi_n.\]</div>
+<p>因此 <span class="arithmatex">\(c_n=\sqrt{a_n^2+b_n^2}\)</span>，相位是平面向量 <span class="arithmatex">\((a_n,-b_n)\)</span> 的方向角，写作 <span class="arithmatex">\(\varphi_n=\operatorname{atan2}(-b_n,a_n)\)</span>。这里双参数反正切会检查象限；单独计算 <span class="arithmatex">\(-\arctan(b_n/a_n)\)</span> 只有补上象限后才可靠。
+正弦紧缩形式同理：<span class="arithmatex">\(d_n\sin(n\omega_1t+\theta_n)\)</span> 展开后有 <span class="arithmatex">\(a_n=d_n\sin\theta_n\)</span>、<span class="arithmatex">\(b_n=d_n\cos\theta_n\)</span>，故 <span class="arithmatex">\(d_n=c_n\)</span>，<span class="arithmatex">\(\theta_n=\operatorname{atan2}(a_n,b_n)\)</span>，也即 <span class="arithmatex">\(\theta_n=\varphi_n+\pi/2\)</span>，相位均按模 <span class="arithmatex">\(2\pi\)</span> 理解。
+补充例题：<span class="arithmatex">\(-\cos\omega_1t+\sin\omega_1t\)</span> 的向量为 <span class="arithmatex">\((-1,-1)\)</span>，所以 <span class="arithmatex">\(c_1=\sqrt2\)</span>、<span class="arithmatex">\(\varphi_1=-3\pi/4\)</span>。误用单值反正切会得到 <span class="arithmatex">\(\pi/4\)</span>，使整个波形反号。代回 <span class="arithmatex">\(c_1\cos\varphi_1=-1\)</span> 和 <span class="arithmatex">\(-c_1\sin\varphi_1=1\)</span> 可立即检查。</p>
+<p><img alt="第3讲 插图 phase" loading="lazy" src="../%E6%8F%92%E5%9B%BE/%E7%AC%AC3%E8%AE%B2/phase.png" />
+<em>图 2 补充示意 余弦相位由向量方向决定 不能只看比值</em></p>
+<p>易错提醒：系数为零时幅度为零，相位没有定义，不应画一条有意义的相位谱线。直流单独保留带符号平均值 <span class="arithmatex">\(a_0\)</span>，非零频率的“幅度非负”约定不能不加区分地套给负直流。</p>
+<h2 id="06-指数形式与单双边谱">06 指数形式与单双边谱<a class="headerlink" href="#06-指数形式与单双边谱" title="Permanent link">#</a></h2>
+<p>资料内容：课件第 22—25、29 页。欧拉公式给 <span class="arithmatex">\(\cos x=(\mathrm e^{jx}+\mathrm e^{-jx})/2\)</span>、<span class="arithmatex">\(\sin x=(\mathrm e^{jx}-\mathrm e^{-jx})/(2j)\)</span>。代入第 <span class="arithmatex">\(n\)</span> 对三角项并收集同频率项：</p>
+<div class="arithmatex">\[a_n\cos n\omega_1t+b_n\sin n\omega_1t=\frac{a_n-jb_n}{2}\mathrm e^{jn\omega_1t}+\frac{a_n+jb_n}{2}\mathrm e^{-jn\omega_1t}.\]</div>
+<p>于是统一写成</p>
+<div class="arithmatex">\[f(t)=\sum_{n=-\infty}^{\infty}F_n\mathrm e^{jn\omega_1t},\qquad F_n=\frac1T\int_{t_0}^{t_0+T}f(t)\mathrm e^{-jn\omega_1t}dt.\]</div>
+<p>积分式也可直接由复指数正交性证明：乘 <span class="arithmatex">\(\mathrm e^{-jm\omega_1t}\)</span> 并整周期平均，仅 <span class="arithmatex">\(n=m\)</span> 的项保留。<span class="arithmatex">\(F_0=a_0\)</span>；对正整数 <span class="arithmatex">\(n\)</span>，<span class="arithmatex">\(F_n=(a_n-jb_n)/2\)</span>、<span class="arithmatex">\(F_{-n}=(a_n+jb_n)/2\)</span>。
+对实信号，<span class="arithmatex">\(F_{-n}=\overline{F_n}\)</span>。把正负频率的一对相加，可得 <span class="arithmatex">\(2|F_n|\cos(n\omega_1t+\arg F_n)\)</span>。故单边余弦幅度为 <span class="arithmatex">\(c_n=2|F_n|\)</span>，相位为 <span class="arithmatex">\(\arg F_n\)</span>；直流不乘二。
+双边幅度谱画 <span class="arithmatex">\(|F_n|\)</span>，不是带符号的 <span class="arithmatex">\(F_n\)</span>；负实系数的模仍为正，其负号用相位 <span class="arithmatex">\(\pi\)</span> 表示。对实信号，幅度谱偶对称；共轭相位在模 <span class="arithmatex">\(2\pi\)</span> 意义下反对称，零谱线的相位除外。负实数的相位可选 <span class="arithmatex">\(\pi\)</span> 或 <span class="arithmatex">\(-\pi\)</span>，不应因主值分支看似不奇对称就误判信号不是实信号。
+补充讲解：正负频率表示相反方向的复平面旋转，是表达实振荡的一对数学分量。不能把课件“负频率无物理意义”推广成所有复信号的普遍结论；复信号未必有共轭对称谱。</p>
+<h2 id="07-课件混合谐波例题全解">07 课件混合谐波例题全解<a class="headerlink" href="#07-课件混合谐波例题全解" title="Permanent link">#</a></h2>
+<p>资料内容：课件第 26—28 页。给定</p>
+<div class="arithmatex">\[f(t)=1+\sin\omega_1t+2\cos\omega_1t+\cos(2\omega_1t+\pi/4).\]</div>
+<p>目标与策略：先按频率分组，再统一换成余弦幅相；随后把每个非零频率拆成正负一对。第一谐波有 <span class="arithmatex">\(a_1=2,b_1=1\)</span>，所以 <span class="arithmatex">\(c_1=\sqrt5\)</span>，<span class="arithmatex">\(\varphi_1=-\arctan(1/2)\approx-0.147584\pi\)</span>。第二谐波已是紧缩式，<span class="arithmatex">\(c_2=1,\varphi_2=\pi/4\)</span>。</p>
+<div class="arithmatex">\[f(t)=1+\sqrt5\cos[\omega_1t-\arctan(1/2)]+\cos(2\omega_1t+\pi/4).\]</div>
+<p>指数系数逐个写为 <span class="arithmatex">\(F_0=1\)</span>、<span class="arithmatex">\(F_1=1-j/2\)</span>、<span class="arithmatex">\(F_{-1}=1+j/2\)</span>、<span class="arithmatex">\(F_2=\mathrm e^{j\pi/4}/2\)</span>、<span class="arithmatex">\(F_{-2}=\mathrm e^{-j\pi/4}/2\)</span>，其余均零。因为 <span class="arithmatex">\(1/(2j)=-j/2\)</span>，正频率第一项的虚部为负。</p>
+<p><img alt="第3讲 插图 spectra" loading="lazy" src="../%E6%8F%92%E5%9B%BE/%E7%AC%AC3%E8%AE%B2/spectra.png" />
+<em>图 3 第 26—28 页频谱重绘 用精确系数区分单边与双边</em></p>
+<p>检查：双边第一对的模为 <span class="arithmatex">\(\sqrt5/2\)</span>，相位相反；第二对模为二分之一。直流仍为一。课件的 <span class="arithmatex">\(-0.15\pi\)</span> 与 <span class="arithmatex">\(1.12\)</span> 是近似值，计算和重构时保留精确量可避免不必要误差。</p>
+<h2 id="08-奇偶对称性怎样减少积分">08 奇偶对称性怎样减少积分<a class="headerlink" href="#08-奇偶对称性怎样减少积分" title="Permanent link">#</a></h2>
+<p>资料内容：课件第 31—33 页。以下先假设实信号，选关于零对称的一周期。函数的奇偶性依赖时间原点；移动原点后可能不再是奇函数或偶函数。
+若 <span class="arithmatex">\(f\)</span> 偶对称，<span class="arithmatex">\(f\sin n\omega_1t\)</span> 为奇函数，所以 <span class="arithmatex">\(b_n=0\)</span>。而 <span class="arithmatex">\(f\cos n\omega_1t\)</span> 为偶函数，可以把积分折半：</p>
+<div class="arithmatex">\[a_0=\frac2T\int_0^{T/2}f(t)dt,\qquad a_n=\frac4T\int_0^{T/2}f(t)\cos n\omega_1t\,dt.\]</div>
+<p>此时 <span class="arithmatex">\(F_n=a_n/2\)</span> 对非零整数频率为实数，但可能为负；非负幅度是 <span class="arithmatex">\(c_n=|a_n|\)</span>。例如 <span class="arithmatex">\(f=-\cos\omega_1t\)</span> 为偶函数，却有 <span class="arithmatex">\(a_1=-1\)</span>、<span class="arithmatex">\(c_1=1\)</span>。
+若 <span class="arithmatex">\(f\)</span> 奇对称，其平均为零，且与余弦相乘仍为奇函数，所以 <span class="arithmatex">\(a_0=a_n=0\)</span>；只需算</p>
+<div class="arithmatex">\[b_n=\frac4T\int_0^{T/2}f(t)\sin n\omega_1t\,dt.\]</div>
+<p>此时 <span class="arithmatex">\(F_n=-jb_n/2\)</span> 为纯虚数，幅度 <span class="arithmatex">\(c_n=|b_n|\)</span> 仍是非负实数。若 <span class="arithmatex">\(b_n&gt;0\)</span>，余弦相位为 <span class="arithmatex">\(-\pi/2\)</span>；若 <span class="arithmatex">\(b_n&lt;0\)</span>，为 <span class="arithmatex">\(\pi/2\)</span>。课件第 33 页把 <span class="arithmatex">\(c_n\)</span> 也写为虚数，与幅度定义不一致。
+补充一般分解：任意实信号可写为偶部 <span class="arithmatex">\([f(t)+f(-t)]/2\)</span> 与奇部 <span class="arithmatex">\([f(t)-f(-t)]/2\)</span> 的和。前者贡献直流和余弦，后者贡献正弦，适用于没有整体奇偶对称性的波形。</p>
+<h2 id="09-半波对称性与谐波缺失">09 半波对称性与谐波缺失<a class="headerlink" href="#09-半波对称性与谐波缺失" title="Permanent link">#</a></h2>
+<p>资料内容：课件第 31、34 页。半波反对称也称奇谐对称，条件是 <span class="arithmatex">\(f(t+T/2)=-f(t)\)</span>；它不同于 <span class="arithmatex">\(f(-t)=-f(t)\)</span>。例如关于原点偶对称的双极方波，也可以具有半波反对称。
+补充证明：把指数系数在零到一周期的积分拆成两半，第二半令 <span class="arithmatex">\(t=s+T/2\)</span>。指数因子多出 <span class="arithmatex">\(\mathrm e^{-jn\pi}=(-1)^n\)</span>，波形多出负号，得到</p>
+<div class="arithmatex">\[F_n=\frac{1-(-1)^n}{T}\int_0^{T/2}f(s)\mathrm e^{-jn\omega_1s}ds.\]</div>
+<p>当 <span class="arithmatex">\(n\)</span> 为偶数，包括零时，前因子为零；当 <span class="arithmatex">\(n\)</span> 为奇数，前因子为二。故直流和全部偶次谐波消失。取实虚部即得课件奇数序号的半周期积分公式，前系数为 <span class="arithmatex">\(4/T\)</span>。
+若 <span class="arithmatex">\(f(t+T/2)=f(t)\)</span>，相同换元给前因子 <span class="arithmatex">\(1+(-1)^n\)</span>，所以只保留偶次谐波和直流。这同时说明 <span class="arithmatex">\(T/2\)</span> 已是周期，若原来称 <span class="arithmatex">\(T\)</span> 为最小周期就矛盾；课件“偶谐函数”是相对于选定周期的说法。
+易错提醒：正负都有的波形不一定平均为零；必须比较正负面积。平均为零也不足以推出半波反对称。观察对称性只能消去确定为零的项，剩下的系数仍须积分。</p>
+<h2 id="10-周期矩形脉冲-从积分到频谱">10 周期矩形脉冲 从积分到频谱<a class="headerlink" href="#10-周期矩形脉冲-从积分到频谱" title="Permanent link">#</a></h2>
+<p>资料内容：课件第 35—40 页。先固定定义：每个周期以零为中心，高度 <span class="arithmatex">\(E&gt;0\)</span>、宽度 <span class="arithmatex">\(0&lt;\tau&lt;T\)</span>，在 <span class="arithmatex">\(|t|&lt;\tau/2\)</span> 为 <span class="arithmatex">\(E\)</span>，其余为零，并周期延拓。占空比 <span class="arithmatex">\(D=\tau/T\)</span>。
+由于波形为偶函数，系数实数。对 <span class="arithmatex">\(n\ne0\)</span>，直接积分：</p>
+<div class="arithmatex">\[F_n=\frac ET\int_{-\tau/2}^{\tau/2}\mathrm e^{-jn\omega_1t}dt=\frac{2E}{n\omega_1T}\sin\frac{n\omega_1\tau}{2}=\frac E{n\pi}\sin(n\pi D).\]</div>
+<p>零序号不能直接代入分母，单独算平均得到 <span class="arithmatex">\(F_0=E\tau/T=ED\)</span>。定义 <span class="arithmatex">\(\operatorname{Sa}(x)=\sin x/x\)</span>，并用连续延拓令 <span class="arithmatex">\(\operatorname{Sa}(0)=1\)</span>，便能统一写成</p>
+<div class="arithmatex">\[F_n=ED\operatorname{Sa}(n\pi D),\qquad n\in\mathbb Z.\]</div>
+<p>三角系数为 <span class="arithmatex">\(a_0=ED\)</span>、<span class="arithmatex">\(a_n=2ED\operatorname{Sa}(n\pi D)\)</span>、<span class="arithmatex">\(b_n=0\)</span>。紧缩幅度是 <span class="arithmatex">\(c_n=|a_n|\)</span>，非零项的相位按 <span class="arithmatex">\(a_n\)</span> 的正负取零或 <span class="arithmatex">\(\pi\)</span>。</p>
+<p><img alt="第3讲 插图 rect" loading="lazy" src="../%E6%8F%92%E5%9B%BE/%E7%AC%AC3%E8%AE%B2/rect.png" />
+<em>图 4 第 35—37 页矩形波与谱线重绘 补充取占空比四分之一</em></p>
+<h3 id="包络过零和实际缺失谱线不是一回事">包络过零和实际缺失谱线不是一回事<a class="headerlink" href="#包络过零和实际缺失谱线不是一回事" title="Permanent link">#</a></h3>
+<p>连续包络的非零零点是 <span class="arithmatex">\(\omega=2k\pi/\tau\)</span>，其中整数 <span class="arithmatex">\(k\ne0\)</span>；原点是峰值，不是零点。实际谱线只在 <span class="arithmatex">\(n\omega_1\)</span>，恰好落在零点的条件是 <span class="arithmatex">\(nD\)</span> 为非零整数。
+补充例题：<span class="arithmatex">\(E=2,T=4,\tau=1\)</span>，则 <span class="arithmatex">\(D=1/4\)</span>、<span class="arithmatex">\(\omega_1=\pi/2\)</span>，平均为二分之一。<span class="arithmatex">\(F_1=\sqrt2/\pi\)</span>、<span class="arithmatex">\(F_2=1/\pi\)</span>、<span class="arithmatex">\(F_3=\sqrt2/(3\pi)\)</span>、<span class="arithmatex">\(F_4=0\)</span>、<span class="arithmatex">\(F_5=-\sqrt2/(5\pi)\)</span>。第五次幅度取正，相位取 <span class="arithmatex">\(\pi\)</span>；不是画一条负幅度线。每第四条非零序号谱线消失。
+一般若 <span class="arithmatex">\(D=p/q\)</span> 为既约分数，缺失序号为 <span class="arithmatex">\(q\)</span> 的非零整数倍；若 <span class="arithmatex">\(D\)</span> 无理，没有非零整数序号恰好命中包络零点，但谱线仍会接近零点。</p>
+<h3 id="课件第-1819-页的右移矩形">课件第 18—19 页的右移矩形<a class="headerlink" href="#课件第-1819-页的右移矩形" title="Permanent link">#</a></h3>
+<p>那里的脉冲从零开始，而非以零为中心。设高电平区间为 <span class="arithmatex">\(0&lt;t&lt;\tau\)</span>，它等于上述中心矩形右移 <span class="arithmatex">\(\tau/2\)</span>。补充换元证明：在系数积分中令 <span class="arithmatex">\(s=t-t_d\)</span>，并利用一周期积分与起点无关，时移后系数为 <span class="arithmatex">\(F_n\mathrm e^{-jn\omega_1t_d}\)</span>。
+因此右移矩形的系数是 <span class="arithmatex">\(ED\operatorname{Sa}(n\pi D)\mathrm e^{-jn\pi D}\)</span>。也可直接算出 <span class="arithmatex">\(a_n=E\sin(2\pi nD)/(n\pi)\)</span>、<span class="arithmatex">\(b_n=E[1-\cos(2\pi nD)]/(n\pi)\)</span>。
+自检：若按课件图的归一化比例取 <span class="arithmatex">\(E=1,D=0.3\)</span>，则 <span class="arithmatex">\(a_1\approx0.30273\)</span>、<span class="arithmatex">\(b_1\approx0.41667\)</span>、<span class="arithmatex">\(c_1\approx0.51504\)</span>，余弦加相位约定下 <span class="arithmatex">\(\varphi_1=-0.3\pi\)</span>。第 19、24 页图中的正相位方向与该波形及“加相位”公式不一致；本笔记以系数积分核对，不能照抄相位正负。图中标记的 0.3 若是绝对时宽而非归一化时宽，应先算 <span class="arithmatex">\(D=0.3/T\)</span>，不能默认为占空比。</p>
+<h2 id="11-脉宽-周期和带宽怎样分别影响频谱">11 脉宽 周期和带宽怎样分别影响频谱<a class="headerlink" href="#11-脉宽-周期和带宽怎样分别影响频谱" title="Permanent link">#</a></h2>
+<p>资料内容：课件第 37—40、46 页。必须说明“保持什么不变”，否则比例关系容易误用。谱线间隔为 <span class="arithmatex">\(\Delta\omega=2\pi/T\)</span>；归一化连续包络为 <span class="arithmatex">\(\operatorname{Sa}(\omega\tau/2)\)</span>；完整包络还乘有 <span class="arithmatex">\(E\tau/T\)</span>。
+保持高度和脉宽不变而增大周期：谱线更密，直流及连续包络整体降低，第一包络零点 <span class="arithmatex">\(2\pi/\tau\)</span> 不变。但同一序号的 <span class="arithmatex">\(F_n\)</span> 还含变动的 <span class="arithmatex">\(n\pi\tau/T\)</span>，一般不能说它严格只按周期反比变化。
+保持高度和周期不变而缩短脉宽：间隔不变，包络第一零点向高频移动，直流降低，归一化频谱展开得更宽。不能据此断言每条高频谱线的绝对幅度都增大；各线要代入正弦函数计算。</p>
+<p><img alt="第3讲 插图 bandwidth" loading="lazy" src="../%E6%8F%92%E5%9B%BE/%E7%AC%AC3%E8%AE%B2/bandwidth.png" />
+<em>图 5 第 38—39 页规律重绘 固定脉宽改周期与固定周期改脉宽分开比较</em></p>
+<p>矩形周期信号的平均功率为 <span class="arithmatex">\(P=E^2\tau/T\)</span>，一个周期内的平方积分为 <span class="arithmatex">\(E^2\tau\)</span>。周期增长时前者下降，后者不变；非零周期信号在全轴的总能量通常无穷，不能把课件“能量减少”不加限定地理解为总能量减少。
+课件按第一零点定义工程带宽：单边角频率宽度 <span class="arithmatex">\(B_\omega=2\pi/\tau\)</span>，单边普通频率宽度 <span class="arithmatex">\(B_\nu=1/\tau\)</span>。若问双边主瓣宽度，则分别是 <span class="arithmatex">\(4\pi/\tau\)</span> 与 <span class="arithmatex">\(2/\tau\)</span>。矩形谱并不在此突然截止，严格带限带宽仍无穷。
+易错提醒：第一零点、幅度下降到峰值十分之一、包含指定功率比例等，是不同带宽约定。课件列出的是工程选择，不是所有周期信号通用的唯一带宽公式；作答先写采用哪一种。</p>
+<h2 id="12-锯齿与双极方波的完整计算">12 锯齿与双极方波的完整计算<a class="headerlink" href="#12-锯齿与双极方波的完整计算" title="Permanent link">#</a></h2>
+<p>资料内容：课件第 21、41 页。两题分别体现奇对称和偶对称加半波反对称。</p>
+<h3 id="周期锯齿">周期锯齿<a class="headerlink" href="#周期锯齿" title="Permanent link">#</a></h3>
+<p>设 <span class="arithmatex">\(f(t)=At/T\)</span>，<span class="arithmatex">\(-T/2&lt;t&lt;T/2\)</span>，周期延拓，<span class="arithmatex">\(A&gt;0\)</span> 是峰峰值。奇对称给 <span class="arithmatex">\(a_0=a_n=0\)</span>。用 <span class="arithmatex">\(\int t\sin kt\,dt=-t\cos kt/k+\sin kt/k^2\)</span>，在半周期积分：</p>
+<div class="arithmatex">\[b_n=\frac{4A}{T^2}\left[-\frac{t\cos n\omega_1t}{n\omega_1}+\frac{\sin n\omega_1t}{(n\omega_1)^2}\right]_0^{T/2}=\frac A{n\pi}(-1)^{n+1}.\]</div>
+<p>这里 <span class="arithmatex">\(\sin n\pi=0\)</span>、<span class="arithmatex">\(\cos n\pi=(-1)^n\)</span>，再用 <span class="arithmatex">\(\omega_1T=2\pi\)</span> 化简。故</p>
+<div class="arithmatex">\[f(t)=\frac A\pi\sum_{n=1}^{\infty}\frac{(-1)^{n+1}}n\sin n\omega_1t.\]</div>
+<p>指数系数 <span class="arithmatex">\(F_n=-jb_n/2\)</span>。紧缩正弦幅度为 <span class="arithmatex">\(|b_n|\)</span>，负系数另加相位 <span class="arithmatex">\(\pi\)</span>；课件带正负的 <span class="arithmatex">\(b_n\)</span> 图不是非负幅度图。接缝处两侧为 <span class="arithmatex">\(A/2\)</span> 和 <span class="arithmatex">\(-A/2\)</span>，级数收敛到零。</p>
+<h3 id="高低电平为正负-e-的对称方波">高低电平为正负 E 的对称方波<a class="headerlink" href="#高低电平为正负-e-的对称方波" title="Permanent link">#</a></h3>
+<p>令 <span class="arithmatex">\(q=E\)</span> 在 <span class="arithmatex">\(|t|&lt;T/4\)</span>，<span class="arithmatex">\(q=-E\)</span> 在 <span class="arithmatex">\(T/4&lt;|t|&lt;T/2\)</span>，周期延拓。它偶对称、平均零、半波反对称。将其写成高度为 <span class="arithmatex">\(E\)</span>、占空比二分之一的单极矩形 <span class="arithmatex">\(p\)</span> 的两倍减去常量：<span class="arithmatex">\(q=2p-E\)</span>。
+常量只改变直流。非零序号的指数系数为 <span class="arithmatex">\(2E\sin(n\pi/2)/(n\pi)\)</span>，余弦系数再乘二：</p>
+<div class="arithmatex">\[q(t)=\frac{4E}{\pi}\left[\cos\omega_1t-\frac13\cos3\omega_1t+\frac15\cos5\omega_1t-\cdots\right].\]</div>
+<p>也可直接积分核查第一项：<span class="arithmatex">\(a_1=(4/T)[\int_0^{T/4}E\cos\omega_1t\,dt-\int_{T/4}^{T/2}E\cos\omega_1t\,dt]=4E/\pi\)</span>。
+资料核对：第 41 页原图标出高低电平为 <span class="arithmatex">\(+E,-E\)</span>，但级数前系数写成 <span class="arithmatex">\(2E/\pi\)</span>。对这张图应改为 <span class="arithmatex">\(4E/\pi\)</span>；若把 <span class="arithmatex">\(E\)</span> 改定义成峰峰值，才是前者。本笔记依原图电平计算，不混用幅值定义。</p>
+<p><img alt="第3讲 插图 waves" loading="lazy" src="../%E6%8F%92%E5%9B%BE/%E7%AC%AC3%E8%AE%B2/waves.png" />
+<em>图 6 第 21 与 41 页波形重绘 并标出锯齿与方波接缝的级数值</em></p>
+<h2 id="13-帕塞瓦尔等式与功率核验">13 帕塞瓦尔等式与功率核验<a class="headerlink" href="#13-帕塞瓦尔等式与功率核验" title="Permanent link">#</a></h2>
+<p>资料内容：课件第 30 页。对平方可积周期信号，平均功率为 <span class="arithmatex">\(P=(1/T)\int_{t_0}^{t_0+T}|f(t)|^2dt\)</span>。实信号可以写平方；复信号必须取模平方。这里是信号归一化功率，换算实际电功率还应考虑阻抗。
+补充推导：有限三角和平方后，交叉项因正交性整周期平均为零；每个正弦余弦项贡献幅度平方的一半，直流贡献自身平方。因此</p>
+<div class="arithmatex">\[\frac1T\int|S_N(t)|^2dt=a_0^2+\frac12\sum_{n=1}^{N}(a_n^2+b_n^2)=\sum_{n=-N}^{N}|F_n|^2.\]</div>
+<p>上式的积分均取完整一周期。对平方可积周期函数，三角基的完备性保证 <span class="arithmatex">\(S_N\)</span> 均方收敛到 <span class="arithmatex">\(f\)</span>，于是取极限得到帕塞瓦尔等式：</p>
+<div class="arithmatex">\[P=a_0^2+\frac12\sum_{n=1}^{\infty}c_n^2=\sum_{n=-\infty}^{\infty}|F_n|^2.\]</div>
+<p>这一步的依据是均方收敛，不是无条件交换无穷求和、平方和积分。对复信号保留最右侧的模平方和即可。
+补充例题一：第 07 节波形的功率为 <span class="arithmatex">\(1^2+5/2+1/2=4\)</span>。双边谱算得 <span class="arithmatex">\(1+2(5/4)+2(1/4)=4\)</span>。若把单边幅度直接当 <span class="arithmatex">\(F_n\)</span>，就会出现四倍的谐波功率错误。
+补充例题二：方波平方处处为 <span class="arithmatex">\(E^2\)</span>，所以 <span class="arithmatex">\(P=E^2\)</span>。由系数又有 <span class="arithmatex">\(P=(8E^2/\pi^2)\sum_{k=0}^{\infty}1/(2k+1)^2\)</span>，故奇数倒数平方和为 <span class="arithmatex">\(\pi^2/8\)</span>。若误用课件漏掉二倍的系数，算得功率只有 <span class="arithmatex">\(E^2/4\)</span>，能够反证幅度错误。</p>
+<h2 id="14-为什么有限傅里叶和使均方误差最小">14 为什么有限傅里叶和使均方误差最小<a class="headerlink" href="#14-为什么有限傅里叶和使均方误差最小" title="Permanent link">#</a></h2>
+<p>资料内容：课件第 42—43 页。补充证明：不是随便截取一个级数就最优，而是在相同的直流与前 <span class="arithmatex">\(N\)</span> 次谐波张成的空间中，傅里叶系数给出最小均方误差。
+设任意候选 <span class="arithmatex">\(p_N=A_0+\sum_{n=1}^N[A_n\cos n\omega_1t+B_n\sin n\omega_1t]\)</span>。定义 <span class="arithmatex">\(\mathcal E(p_N)=(1/T)\int|f-p_N|^2dt\)</span>。用系数积分式可知，残差 <span class="arithmatex">\(f-S_N\)</span> 与每个保留的基函数正交，因此也与 <span class="arithmatex">\(S_N-p_N\)</span> 正交。
+把差写成 <span class="arithmatex">\(f-p_N=(f-S_N)+(S_N-p_N)\)</span>，平方积分，交叉项消失：</p>
+<div class="arithmatex">\[\mathcal E(p_N)=\mathcal E(S_N)+(a_0-A_0)^2+\frac12\sum_{n=1}^{N}[(a_n-A_n)^2+(b_n-B_n)^2].\]</div>
+<p>附加各项都非负，并且仅当所有候选系数等于傅里叶系数时同时为零。因此 <span class="arithmatex">\(S_N\)</span> 唯一最优；这里的唯一按均方意义理解，单点修改不影响结论。
+剩余误差就是未保留的平均功率：</p>
+<div class="arithmatex">\[\mathcal E_N=P-a_0^2-\frac12\sum_{n=1}^{N}(a_n^2+b_n^2)=\sum_{|n|&gt;N}|F_n|^2.\]</div>
+<p>补充例题：幅值为正负一的方波只保留基波，<span class="arithmatex">\(\mathcal E_1=1-8/\pi^2\approx0.18943\)</span>；再保留三次谐波，<span class="arithmatex">\(\mathcal E_3=1-(8/\pi^2)(1+1/9)\approx0.09937\)</span>。均方根误差分别约为 <span class="arithmatex">\(0.4352\)</span>、<span class="arithmatex">\(0.3152\)</span>，不能把均方误差直接叫均方根误差。
+易错提醒：增加一个系数恰为零的谐波时误差不变，所以更准确说“不增”，不是每一步都严格下降。这个最优性针对整周期均方误差，不保证每个时刻的误差都最小。</p>
+<h2 id="15-有限项重构与吉布斯现象">15 有限项重构与吉布斯现象<a class="headerlink" href="#15-有限项重构与吉布斯现象" title="Permanent link">#</a></h2>
+<p>资料内容：课件第 43—44 页。增加谐波可以改善整体波形，但跳点附近仍会出现振铃与过冲。第 04 节保证跳点本身收敛到中值；它并没有承诺跳点附近所有位置的最大误差都趋零。</p>
+<p><img alt="第3讲 插图 gibbs" loading="lazy" src="../%E6%8F%92%E5%9B%BE/%E7%AC%AC3%E8%AE%B2/gibbs.png" />
+<em>图 7 第 43—44 页有限项重构重绘 补充显示最高序号 1 5 25 的方波近似</em></p>
+<p>课件结论：对常见分段光滑跳变波形，过冲渐近约为总跳变量的百分之九。跳变越陡不意味着有限和能在一点内完成跳跃；增加项数主要让振铃集中在更窄的区域，过冲比例并不消失。
+补充解释：正负一方波的总跳变量为二，因此过冲约为 <span class="arithmatex">\(0.08949\times2=0.17898\)</span>，峰值趋近 <span class="arithmatex">\(1.17898\)</span>，不是 <span class="arithmatex">\(1.09\)</span>。百分比的分母是跳变量，而不是高电平。
+补充来源：对上升跳变附近作随项数缩放的局部坐标 <span class="arithmatex">\(z\)</span>，狄利克雷核积分给出归一化过渡 <span class="arithmatex">\(1/2+(1/\pi)\int_0^z(\sin v/v)dv\)</span>。其第一次极大出现在 <span class="arithmatex">\(z=\pi\)</span>，超过高电平的比例为 <span class="arithmatex">\((1/\pi)\int_0^\pi(\sin v/v)dv-1/2\approx0.08949\)</span>。此处给出常数的来源，核的完整极限证明属于补充理论，不作为本讲计算前提。
+均方误差仍趋零，因为过冲集中区的宽度缩小。固定远离跳点的时刻，与随项数移动到尖峰位置的时刻，是不同的取极限方式。
+补充条件：课件“连续信号不出现 Gibbs”应理解为常见分段光滑且波形本身无跳变时，没有由函数值跳跃引发的固定比例过冲；有限项仍可能有可见误差或波纹。不能据此断言任意连续函数的傅里叶级数都一致收敛。
+由分部积分理解衰减：分段光滑波形的函数值跳跃产生通常按 <span class="arithmatex">\(1/n\)</span> 量级衰减的边界项；若周期接缝也连续而导数存在跳跃，继续分部积分通常得到 <span class="arithmatex">\(1/n^2\)</span>。这解释方波与三角波的差别，但某些谐波仍会因对称性恰好为零。</p>
+<h2 id="16-课下推导一-周期三角脉冲">16 课下推导一 周期三角脉冲<a class="headerlink" href="#16-课下推导一-周期三角脉冲" title="Permanent link">#</a></h2>
+<p>资料内容：课件第 45 页要求自行推导若干波形，但没有给出全部幅值与宽度。本节和下一节均为补充例题，先明确定义；实际教材图不同，应按其定义重新代入。周期锯齿已在第 12 节完成。
+设每周期在 <span class="arithmatex">\(|t|\le T/2\)</span> 上 <span class="arithmatex">\(f(t)=A(1-2|t|/T)\)</span>，其中 <span class="arithmatex">\(A&gt;0\)</span>，即零点峰值为 <span class="arithmatex">\(A\)</span>、周期边界为零的三角波。偶对称给 <span class="arithmatex">\(b_n=0\)</span>。平均由三角形面积除周期得到 <span class="arithmatex">\(a_0=A/2\)</span>。</p>
+<div class="arithmatex">\[a_n=\frac{4A}{T}\int_0^{T/2}(1-2t/T)\cos n\omega_1t\,dt.\]</div>
+<p>先记 <span class="arithmatex">\(k=n\omega_1\)</span>。原函数为 <span class="arithmatex">\((1-2t/T)\sin kt/k-2\cos kt/(Tk^2)\)</span>；求导后两项正弦抵消，恢复被积函数。代上下限得到</p>
+<div class="arithmatex">\[a_n=\frac{8A}{T^2k^2}[1-(-1)^n]=\frac{2A}{\pi^2n^2}[1-(-1)^n].\]</div>
+<p>所以偶次项为零，奇次项为 <span class="arithmatex">\(4A/(\pi^2n^2)\)</span>，级数为</p>
+<div class="arithmatex">\[f(t)=\frac A2+\frac{4A}{\pi^2}\sum_{k=0}^{\infty}\frac{\cos(2k+1)\omega_1t}{(2k+1)^2}.\]</div>
+<p>检查：三角波本身不是半波反对称，因为它始终非负；减去平均值后才有半波反对称。这解释“只有奇次交流谐波，却仍有直流”。波形连续，角点处导数跳变，与 <span class="arithmatex">\(1/n^2\)</span> 衰减一致。直接平方积分给平均功率 <span class="arithmatex">\(A^2/3\)</span>。</p>
+<h2 id="17-课下推导二-半波与全波余弦">17 课下推导二 半波与全波余弦<a class="headerlink" href="#17-课下推导二-半波与全波余弦" title="Permanent link">#</a></h2>
+<p>补充例题：设 <span class="arithmatex">\(A&gt;0,\omega_0&gt;0\)</span>。半波整流余弦为 <span class="arithmatex">\(f_h(t)=A\max(\cos\omega_0t,0)\)</span>，最小周期 <span class="arithmatex">\(T_0=2\pi/\omega_0\)</span>。令 <span class="arithmatex">\(x=\omega_0t\)</span>，一周期内仅 <span class="arithmatex">\(|x|&lt;\pi/2\)</span> 有信号，偶对称给正弦系数零。
+平均为 <span class="arithmatex">\(a_0=(A/2\pi)\int_{-\pi/2}^{\pi/2}\cos x\,dx=A/\pi\)</span>。对正整数序号，</p>
+<div class="arithmatex">\[a_n=\frac{2A}{\pi}\int_0^{\pi/2}\cos x\cos nx\,dx.\]</div>
+<p>序号一必须单独算，<span class="arithmatex">\(\int_0^{\pi/2}\cos^2x\,dx=\pi/4\)</span>，故 <span class="arithmatex">\(a_1=A/2\)</span>。当 <span class="arithmatex">\(n\ne1\)</span>，积化和差并积分：</p>
+<div class="arithmatex">\[a_n=\frac A\pi\left[\frac{\sin((n-1)\pi/2)}{n-1}+\frac{\sin((n+1)\pi/2)}{n+1}\right].\]</div>
+<p>大于一的奇数项为零；当 <span class="arithmatex">\(n=2k\)</span>，两正弦分别为 <span class="arithmatex">\((-1)^{k-1}\)</span> 与 <span class="arithmatex">\((-1)^k\)</span>，相减分母得</p>
+<div class="arithmatex">\[f_h(t)=\frac A\pi+\frac A2\cos\omega_0t+\frac{2A}{\pi}\sum_{k=1}^{\infty}\frac{(-1)^{k-1}}{4k^2-1}\cos2k\omega_0t.\]</div>
+<p>全波整流余弦为 <span class="arithmatex">\(f_w=A|\cos\omega_0t|\)</span>。利用 <span class="arithmatex">\(f_w(t)=f_h(t)+f_h(t-T_0/2)\)</span>：直流加倍，一次项因移相 <span class="arithmatex">\(\pi\)</span> 抵消，偶次项加倍，所以</p>
+<div class="arithmatex">\[f_w(t)=\frac{2A}\pi+\frac{4A}\pi\sum_{k=1}^{\infty}\frac{(-1)^{k-1}}{4k^2-1}\cos2k\omega_0t.\]</div>
+<p>全波最小周期已变为 <span class="arithmatex">\(T_0/2\)</span>，其真正基频为 <span class="arithmatex">\(2\omega_0\)</span>。若继续用 <span class="arithmatex">\(\omega_0\)</span> 作参考，看到的是“只含偶次谐波”；换用真正基频后就不该说它没有基波。</p>
+<p><img alt="第3讲 插图 rectified" loading="lazy" src="../%E6%8F%92%E5%9B%BE/%E7%AC%AC3%E8%AE%B2/rectified.png" />
+<em>图 8 补充例题波形 定义三角脉冲 半波余弦与全波余弦</em></p>
+<p>自检：半波的平均功率为 <span class="arithmatex">\(A^2/4\)</span>，全波为 <span class="arithmatex">\(A^2/2\)</span>。求法是对有信号区间积分 <span class="arithmatex">\(A^2\cos^2x\)</span> 再除完整周期；全波取绝对值不改变平方，因此功率等于原余弦功率。</p>
+<h2 id="18-从离散谱走向傅里叶变换">18 从离散谱走向傅里叶变换<a class="headerlink" href="#18-从离散谱走向傅里叶变换" title="Permanent link">#</a></h2>
+<p>资料内容：课件第 7、38 页。此处只作本讲衔接，不提前展开下一讲的全部变换性质。固定一个宽度有限的脉冲，把重复周期拉长，谱线间隔 <span class="arithmatex">\(\Delta\omega=2\pi/T\)</span> 趋零，而每条级数系数也趋小。
+补充推导：单个脉冲 <span class="arithmatex">\(p\)</span> 的变换定义为 <span class="arithmatex">\(P(\omega)=\int_{-\infty}^{\infty}p(t)\mathrm e^{-j\omega t}dt\)</span>。当一周期包含整个脉冲，周期重复信号的系数恰为 <span class="arithmatex">\(F_n=P(n\Delta\omega)/T\)</span>。因此其级数可写成</p>
+<div class="arithmatex">\[\sum_{n=-\infty}^{\infty}F_n\mathrm e^{jn\Delta\omega t}=\frac1{2\pi}\sum_{n=-\infty}^{\infty}P(n\Delta\omega)\mathrm e^{jn\Delta\omega t}\Delta\omega.\]</div>
+<p>在适当收敛条件和解释下，这个黎曼和趋向逆变换积分 <span class="arithmatex">\(p(t)=(1/2\pi)\int P(\omega)\mathrm e^{j\omega t}d\omega\)</span>。矩形脉冲的 <span class="arithmatex">\(P(\omega)=E\tau\operatorname{Sa}(\omega\tau/2)\)</span>，跳点仍应取左右中值。
+关键区别：形成连续谱的是经过归一化的 <span class="arithmatex">\(TF_n=P(n\omega_1)\)</span>，不是直接把趋零的 <span class="arithmatex">\(F_n\)</span> 连成曲线。这也解释逆变换为何出现 <span class="arithmatex">\(1/(2\pi)\)</span>。
+补充系统衔接：若 <span class="arithmatex">\(h\)</span> 绝对可积、周期输入平方可积，输出各谐波系数满足 <span class="arithmatex">\(R_n=F_nH(n\omega_1)\)</span>，可在均方意义下理解。对有限三角和由线性直接成立；对无限和需要连续性与收敛依据。非零初始状态的响应仍需另外处理。</p>
+<h2 id="19-资料核对与作业记录">19 资料核对与作业记录<a class="headerlink" href="#19-资料核对与作业记录" title="Permanent link">#</a></h2>
+<p>本笔记以第三节课 Ch3_1.pdf 的 PDF 页码标注资料内容；历史介绍仅作背景，计算主线为傅里叶级数。本节列出会影响计算的核对点，方便对照而不混淆资料与补充。
+第 5 页冲激分解的通用形式应在全轴积分；若把冲激恰放在积分上端点，必须另说明分布端点约定。正文采用全轴卷积和全轴冲激分解。
+第 16—17 页相位公式需补象限，幅度应为 <span class="arithmatex">\(\sqrt{a_n^2+b_n^2}\)</span>；第 17 页印成 <span class="arithmatex">\(a_n^n\)</span> 的指数应为二。第 19、24 页相位图须与右移矩形和加相位约定一并核对，见第 10 节。
+第 21 页带符号正弦系数不等于非负幅度；第 25 页比较单双边应为 <span class="arithmatex">\(|F_n|=c_n/2\)</span>，不是一般复数 <span class="arithmatex">\(F_n=c_n/2\)</span>。直流单独处理。第 32—33 页非负幅度应取绝对值，奇实函数的 <span class="arithmatex">\(F_n\)</span> 可纯虚，但 <span class="arithmatex">\(c_n\)</span> 不能为虚数。
+第 37 页零点公式必须排除原点。第 37—39、46 页比例、包络和能量表述需说明固定参数、横轴和归一化方式，不能说所有谱线都与脉宽简单成正比，或完整包络与周期无关。
+第 41 页按图中高低电平正负 <span class="arithmatex">\(E\)</span>，方波余弦级数应以 <span class="arithmatex">\(4E/\pi\)</span> 开头。第 42—44 页要区分均方误差不增与逐点误差；跳点收敛到中值；吉布斯过冲百分比以总跳变量为基准。</p>
+<h3 id="课件原列任务">课件原列任务<a class="headerlink" href="#课件原列任务" title="Permanent link">#</a></h3>
+<p>第 45 页要求推导周期锯齿、三角脉冲、半波余弦、全波余弦。笔记已在明确波形定义下给出补充完整解，实际题图的幅值、宽度和时间原点仍需对应。
+第 47 页作业：3-4、3-5、3-6、3-9；预习第 3.4—3.7 节。该文件未给这些编号的完整题面，故这里只记录，不把自行编写的题目冒充教材原题。以下自测均为补充练习。</p>
+<h2 id="20-闭卷自测">20 闭卷自测<a class="headerlink" href="#20-闭卷自测" title="Permanent link">#</a></h2>
+<p>1．由整周期正交性推导三角系数前为什么有 <span class="arithmatex">\(2/T\)</span>，而平均值前只有 <span class="arithmatex">\(1/T\)</span>。若选非最小周期两倍，频率网格怎样变化？
+2．将 <span class="arithmatex">\(-3\cos\omega_1t+4\sin\omega_1t\)</span> 写成非负幅度的余弦形式，给出正负频率指数系数。
+3．第 07 节波形右移 <span class="arithmatex">\(T/4\)</span> 后，各非零指数系数怎样变化？平均功率是否改变？
+4．幅度二、周期四、宽度一的中心矩形，求平均值、第一和第五谐波的单边幅度及相位，指出缺失谱线。
+5．同一矩形脉冲保持宽度与幅度、周期改为八，求谱线间隔、第一包络零点和平均功率。解释不能说第一条系数恰好减半。
+6．说明奇函数与奇谐函数的差别，分别给出一个只有其中一种对称性的波形。
+7．重算峰峰值为 <span class="arithmatex">\(A\)</span> 的锯齿 <span class="arithmatex">\(b_n\)</span>，指出接缝的级数值；用时域平方积分求平均功率。
+8．正负二方波的第一、第三余弦系数是多少？只保留基波的均方误差与渐近过冲峰值约是多少？
+9．第 07 节信号只保留直流和第一谐波，均方误差是多少？证明其他系数选择无法降低误差。
+10．一个信号在某个点从零跳到三，原定义该点值为三。级数收敛到多少？改变该单点值会改变系数吗？
+11．求第 16 节三角波的平均值、第三和第四余弦系数，解释为何直流不破坏“交流部分只有奇次项”。
+12．全波整流余弦的最小周期与平均值是什么？若频率轴仍以原余弦的角频率为单位，为什么只见偶序号？
+13．判断并解释：幅度谱可以为负；零谱线有确定相位；均方误差趋零就没有过冲；脉宽变小意味着每条高频绝对幅度增大；方波第一零点之外频谱全为零。
+14．输入为 <span class="arithmatex">\(1+2\cos t\)</span>，实 LTI 系统 <span class="arithmatex">\(h=\mathrm e^{-t}u(t)\)</span>，输入在全轴存在。求输出并说明为何没有额外启动暂态。</p>
+<h2 id="21-自测详解与复习索引">21 自测详解与复习索引<a class="headerlink" href="#21-自测详解与复习索引" title="Permanent link">#</a></h2>
+<h3 id="1-至-5-系数-相位与矩形频谱">1 至 5 系数 相位与矩形频谱<a class="headerlink" href="#1-至-5-系数-相位与矩形频谱" title="Permanent link">#</a></h3>
+<p>1．常数基函数平均平方为一，正弦余弦为二分之一，投影需除以各自平均平方，所以产生不同前系数。周期改取两倍时网格间隔减半，但原有频率只落在新网格的偶序号，奇序号系数为零；真正最小周期没有改变。
+2．幅度五，向量 <span class="arithmatex">\((-3,-4)\)</span> 在第三象限；可取 <span class="arithmatex">\(\varphi=-\pi+\arctan(4/3)\approx-2.21430\)</span>。代回 <span class="arithmatex">\(5\cos\varphi=-3\)</span>、<span class="arithmatex">\(-5\sin\varphi=4\)</span>。<span class="arithmatex">\(F_1=(-3-4j)/2\)</span>，<span class="arithmatex">\(F_{-1}=(-3+4j)/2\)</span>，直流零。
+3．乘时移因子 <span class="arithmatex">\(\mathrm e^{-jn\pi/2}\)</span>。<span class="arithmatex">\(F_0=1\)</span> 不变；新 <span class="arithmatex">\(F_1=(1-j/2)(-j)=-1/2-j\)</span>，新 <span class="arithmatex">\(F_{-1}=-1/2+j\)</span>；新 <span class="arithmatex">\(F_2=-\mathrm e^{j\pi/4}/2\)</span>，负序号取共轭。所有模不变，因此功率仍为四。
+4．<span class="arithmatex">\(D=1/4\)</span>，平均为 <span class="arithmatex">\(ED=1/2\)</span>。<span class="arithmatex">\(F_1=\sqrt2/\pi&gt;0\)</span>，故 <span class="arithmatex">\(c_1=2\sqrt2/\pi,\varphi_1=0\)</span>。<span class="arithmatex">\(F_5=-\sqrt2/(5\pi)\)</span>，故 <span class="arithmatex">\(c_5=2\sqrt2/(5\pi),\varphi_5=\pi\)</span>。缺失为非零四的倍数序号。
+5．新间隔 <span class="arithmatex">\(\pi/4\)</span>，第一包络零点仍为 <span class="arithmatex">\(2\pi\)</span>；功率 <span class="arithmatex">\(4/8=1/2\)</span>。新 <span class="arithmatex">\(F_1=(2/\pi)\sin(\pi/8)\)</span>，原为 <span class="arithmatex">\((2/\pi)\sin(\pi/4)\)</span>，两者比为 <span class="arithmatex">\(\sin(\pi/8)/\sin(\pi/4)\)</span>，并不等于二分之一。</p>
+<h3 id="6-至-10-对称性-功率与收敛">6 至 10 对称性 功率与收敛<a class="headerlink" href="#6-至-10-对称性-功率与收敛" title="Permanent link">#</a></h3>
+<p>6．奇对称比较原点两侧，半波反对称比较平移半周期后。第 12 节中心双极方波偶对称却半波反对称，所以不是奇函数。中心锯齿是奇函数，但例如 <span class="arithmatex">\(t=T/8\)</span> 与 <span class="arithmatex">\(t+T/2\)</span> 的周期取值分别为 <span class="arithmatex">\(A/8,-3A/8\)</span>，不互为相反数，因此不是奇谐函数。
+7．用分部积分得 <span class="arithmatex">\(b_n=A(-1)^{n+1}/(n\pi)\)</span>，接缝两侧平均为零。功率由 <span class="arithmatex">\(P=(A^2/T^3)\int_{-T/2}^{T/2}t^2dt=A^2/12\)</span>；也可用 <span class="arithmatex">\((1/2)\sum b_n^2\)</span> 核验。
+8．<span class="arithmatex">\(a_1=8/\pi\)</span>、<span class="arithmatex">\(a_3=-8/(3\pi)\)</span>。功率四，只留基波得 <span class="arithmatex">\(\mathcal E_1=4-32/\pi^2\approx0.75772\)</span>。总跳变量四，峰值约 <span class="arithmatex">\(2+0.08949\times4=2.35796\)</span>。这是增加项数后的尖峰极限；只留基波时的峰值为 <span class="arithmatex">\(8/\pi\)</span>，两者不是同一个问题。
+9．丢弃的第二谐波幅度一，所以误差为二分之一。任何候选系数偏离原直流一、第一余弦二、第一正弦一，都会附加 <span class="arithmatex">\((A_0-1)^2+[(A_1-2)^2+(B_1-1)^2]/2\)</span>，不能使误差更小。
+10．跳点收敛到 <span class="arithmatex">\(3/2\)</span>；原定义的单点值不能决定级数和。改变一个点不改变任何系数积分。</p>
+<h3 id="11-至-14-典型波形与系统">11 至 14 典型波形与系统<a class="headerlink" href="#11-至-14-典型波形与系统" title="Permanent link">#</a></h3>
+<p>11．平均 <span class="arithmatex">\(A/2\)</span>，<span class="arithmatex">\(a_3=4A/(9\pi^2)\)</span>，<span class="arithmatex">\(a_4=0\)</span>。原波形不半波反对称，减去平均后才满足，因此结论是交流项只有奇次，直流仍存在。
+12．最小周期 <span class="arithmatex">\(\pi/\omega_0\)</span>，平均 <span class="arithmatex">\(2A/\pi\)</span>。真正基频是 <span class="arithmatex">\(2\omega_0\)</span>；以旧基频计序号时，它的每个谐波都落在偶序号，不能说真正基波缺失。
+13．五条均不成立。幅度是模而非带符号系数；零复数无辐角；均方误差是积分指标而过冲看局部最大值；脉宽变化同时改变比例因子与正弦采样；矩形第一零点是工程带宽边界，不是严格截止频率。
+14．<span class="arithmatex">\(H(0)=1\)</span>、<span class="arithmatex">\(H(1)=1/(1+j)\)</span>，模为 <span class="arithmatex">\(1/\sqrt2\)</span>，辐角为 <span class="arithmatex">\(-\pi/4\)</span>。因此输出 <span class="arithmatex">\(r=1+\sqrt2\cos(t-\pi/4)\)</span>。输入在全轴存在且卷积从负无穷进行，这里没有另加零时刻开关；若输入改成乘阶跃，则须重新处理启动过程。</p>
+<h3 id="学完后的检查">学完后的检查<a class="headerlink" href="#学完后的检查" title="Permanent link">#</a></h3>
+<p>能否从正交性推出系数而不是只背公式；能否用象限判断和系数代回核验相位；能否区分单边幅度、双边模和带符号系数；能否把奇偶对称与半波反对称分别检查；能否明确宽度、周期和带宽的固定条件；能否用功率发现方波漏因子；能否同时解释均方误差下降与吉布斯过冲不消失。
+系数与相位出错回看第 03、05—07 节；对称性出错回看第 08—09 节；矩形、带宽与方波回看第 10—12 节；功率与误差回看第 13—15 节；课下四类波形回看第 12、16—17 节；资料中不同写法的核对见第 19 节。</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="页脚" >
+        
+          
+          <a href="../%E7%AC%AC2%E8%AE%B2_%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B%E7%BB%8F%E5%85%B8%E6%B3%95%E4%B8%8E%E5%93%8D%E5%BA%94%E5%88%86%E8%A7%A3/" class="md-footer__link md-footer__link--prev" aria-label="上一页: 第2讲 微分方程经典法与响应分解">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                上一页
+              </span>
+              <div class="md-ellipsis">
+                第2讲 微分方程经典法与响应分解
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../%E7%AC%AC4%E8%AE%B2_%E5%82%85%E9%87%8C%E5%8F%B6%E5%8F%98%E6%8D%A2%E4%B8%8E%E5%85%B8%E5%9E%8B%E4%BF%A1%E5%8F%B7%E9%A2%91%E8%B0%B1/" class="md-footer__link md-footer__link--next" aria-label="下一页: 第4讲 傅里叶变换与典型信号频谱">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                下一页
+              </span>
+              <div class="md-ellipsis">
+                第4讲 傅里叶变换与典型信号频谱
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.sections", "navigation.expand", "navigation.top", "navigation.footer", "toc.follow", "search.highlight", "search.share"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
