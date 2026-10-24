@@ -1,0 +1,128 @@
+/* 大学课程学习资料 站点样式
+   对应笔记规范 V3.0 的三类固定强调模块与学习优先级标识 */
+
+/* ===== 三类知识强调模块 ===== */
+/* 模块A（abstract）：定理/核心结论 —— 细蓝左线 + 极浅蓝底 */
+.md-typeset .admonition.abstract,
+.md-typeset details.abstract {
+  border-left: 0.2rem solid #2e526f;
+  border-right: none;
+  border-top: none;
+  border-bottom: none;
+  background-color: rgba(46, 82, 111, 0.05);
+}
+.md-typeset .admonition.abstract > .admonition-title,
+.md-typeset details.abstract > summary {
+  background-color: rgba(46, 82, 111, 0.09);
+  border-left: 0.2rem solid #2e526f;
+}
+.md-typeset .admonition.abstract > .admonition-title::before,
+.md-typeset details.abstract > summary::after {
+  background-color: #2e526f;
+}
+
+/* 模块B（info）：思路/理解提示 —— 极浅蓝灰底 */
+.md-typeset .admonition.info,
+.md-typeset details.info {
+  border: none;
+  border-left: 0.2rem solid #8aa6bd;
+  background-color: rgba(138, 166, 189, 0.12);
+}
+.md-typeset .admonition.info > .admonition-title,
+.md-typeset details.info > summary {
+  background-color: rgba(138, 166, 189, 0.18);
+  border-left: 0.2rem solid #8aa6bd;
+}
+.md-typeset .admonition.info > .admonition-title::before,
+.md-typeset details.info > summary::after {
+  background-color: #3c6683;
+}
+
+/* 模块C（warning）：易错点/重要提醒 —— 低饱和暖橙左线 */
+.md-typeset .admonition.warning,
+.md-typeset details.warning {
+  border: none;
+  border-left: 0.2rem solid #cf9455;
+  background-color: rgba(207, 148, 85, 0.05);
+}
+.md-typeset .admonition.warning > .admonition-title,
+.md-typeset details.warning > summary {
+  background-color: rgba(207, 148, 85, 0.11);
+  border-left: 0.2rem solid #cf9455;
+}
+.md-typeset .admonition.warning > .admonition-title::before,
+.md-typeset details.warning > summary::after {
+  background-color: #b07a3c;
+}
+
+/* tip（配套文件提示）低调处理 */
+.md-typeset .admonition.tip {
+  border: none;
+  border-left: 0.2rem solid #6f9e6f;
+  background-color: rgba(111, 158, 111, 0.06);
+}
+
+/* ===== 学习优先级徽章 ===== */
+.pill {
+  display: inline-block;
+  padding: 0.02rem 0.45rem;
+  margin-right: 0.35rem;
+  border-radius: 0.6rem;
+  font-size: 0.72rem;
+  font-weight: 500;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+.pill-must {
+  background: rgba(46, 82, 111, 0.12);
+  color: #2e526f;
+  border: 1px solid rgba(46, 82, 111, 0.45);
+}
+.pill-rec {
+  background: rgba(138, 166, 189, 0.16);
+  color: #3c6683;
+  border: 1px solid rgba(138, 166, 189, 0.55);
+}
+.pill-ext {
+  background: rgba(160, 130, 70, 0.12);
+  color: #8a6d3b;
+  border: 1px solid rgba(160, 130, 70, 0.45);
+}
+
+/* 深色模式下徽章保持可读 */
+[data-md-color-scheme="slate"] .pill-must {
+  background: rgba(120, 170, 210, 0.15);
+  color: #a8c8e0;
+  border-color: rgba(120, 170, 210, 0.5);
+}
+[data-md-color-scheme="slate"] .pill-rec {
+  background: rgba(150, 175, 195, 0.15);
+  color: #b9cdda;
+  border-color: rgba(150, 175, 195, 0.5);
+}
+[data-md-color-scheme="slate"] .pill-ext {
+  background: rgba(200, 170, 110, 0.15);
+  color: #d8c193;
+  border-color: rgba(200, 170, 110, 0.5);
+}
+
+/* ===== 插图 ===== */
+.md-typeset img {
+  display: block;
+  margin-inline: auto;
+  max-width: min(100%, 42rem);
+  height: auto;
+}
+
+/* 首页课程卡片 */
+.course-card {
+  border: 1px solid rgba(46, 82, 111, 0.25);
+  border-radius: 0.4rem;
+  padding: 0.6rem 1rem;
+  margin-block: 0.6rem;
+  background: rgba(46, 82, 111, 0.04);
+}
+[data-md-color-scheme="slate"] .course-card {
+  border-color: rgba(150, 175, 195, 0.3);
+  background: rgba(150, 175, 195, 0.06);
+}

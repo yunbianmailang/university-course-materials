@@ -1,0 +1,6 @@
+# MkDocs 构建产物（部署由 GitHub Actions 完成，不入库）
+site/
+
+# 系统杂项
+Thumbs.db
+Desktop.ini

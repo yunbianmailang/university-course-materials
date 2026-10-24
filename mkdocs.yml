@@ -1,0 +1,63 @@
+site_name: 大学课程学习资料
+site_description: 大学课程个人学习讲义，按学期和课程组织，支持网页端直接阅读
+site_url: https://yunbianmailang.github.io/大学课程学习资料/
+repo_url: https://github.com/yunbianmailang/大学课程学习资料
+repo_name: 大学课程学习资料
+edit_uri: edit/main/网站源/
+
+docs_dir: 网站源
+site_dir: site
+
+theme:
+  name: material
+  language: zh
+  font: false
+  features:
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.footer
+    - toc.follow
+    - search.highlight
+    - search.share
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      toggle:
+        icon: material/weather-night
+        name: 切换到深色模式
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      toggle:
+        icon: material/weather-sunny
+        name: 切换到浅色模式
+
+extra_css:
+  - stylesheets/custom.css
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.arithmatex:
+      generic: true
+  - toc:
+      permalink: "#"
+      slugify: !!python/name:markdown.extensions.toc.slugify_unicode
+
+nav:
+  - 首页: index.md
+  - 复变函数与数理方程:
+      - 课程说明: 课程说明.md
+      - 第1讲 复数几何模的极值与指数映射: 第1讲_复数几何模的极值与指数映射.md
+      - 第2讲 复幂解析性与复平面映射: 第2讲_复幂解析性与复平面映射.md
+      - 第3讲 复积分柯西公式与解析函数的整体性质: 第3讲_复积分柯西公式与解析函数的整体性质.md
+      - 第4讲 幂级数收敛与泰勒洛朗展开: 第4讲_幂级数收敛与泰勒洛朗展开.md
+      - 第5讲 零点奇点与留数积分: 第5讲_零点奇点与留数积分.md
