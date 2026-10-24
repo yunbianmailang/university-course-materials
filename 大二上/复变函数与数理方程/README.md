@@ -14,7 +14,7 @@
 
 以上均为 2026-10-23/24 按规范 V3.0 完成的最新版本（第1–4讲为 10-24 重制版，第5讲为 10-23 版）。
 
-在线阅读：https://yunbianmailang.github.io/大学课程学习资料/
+在线阅读：https://yunbianmailang.github.io/university-course-materials/
 
 ## 每讲结构
 

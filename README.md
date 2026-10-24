@@ -19,9 +19,14 @@
 
 ## 在线阅读
 
-- 网页版站点：https://yunbianmailang.github.io/大学课程学习资料/
-- 站点由 `.github/workflows/deploy-pages.yml` 在每次推送到 main 后自动构建部署。
+- 网页版站点：https://yunbianmailang.github.io/university-course-materials/
+- 站点源为 `网站源/` + `mkdocs.yml`，构建产物发布在 `gh-pages` 分支。
+- 更新站点：改完 `网站源/` 后运行 `python -m mkdocs gh-deploy` 即可重新发布。
 - 每讲页面顶部提供 PDF 在线阅读与 Word 下载链接。
+- 仓库另预留了 GitHub Actions 自动部署工作流（`工具/deploy-pages.disabled.yml`）：
+  当前 GitHub 令牌缺少 `workflow` 权限，暂以分支方式部署；之后运行
+  `gh auth refresh -s workflow` 补权限，把该文件移回 `.github/workflows/deploy-pages.yml`
+  提交推送，即可改为推送后自动部署。
 
 ## 笔记规范要点（V3.0）
 
@@ -36,7 +41,7 @@
 1. 把新讲的正式讲义 `复变函数与数理方程_第X讲_主题_学习讲义.docx/pdf` 放入对应课程 `笔记/`。
 2. 在 `工具/转换网页版.py` 的 `LECTURES` 列表里登记该讲（源稿目录、课次文件夹、讲次号）。
 3. 运行 `python 工具/转换网页版.py`，再在 `mkdocs.yml` 的 `nav` 里加一行。
-4. 本地 `python -m mkdocs serve` 预览无误后提交推送，站点自动更新。
+4. 本地 `python -m mkdocs serve` 预览无误后提交推送，并运行 `python -m mkdocs gh-deploy` 更新在线站点。
 
 ## 相关约定
 
