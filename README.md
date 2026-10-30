@@ -43,7 +43,7 @@ python -m mkdocs serve
 
 所有构建输入均在本仓库内，下载项目即可构建，无需访问维护者的个人目录。新增一讲时登记 `课程目录.json`，再运行构建；首页、课程说明与导航会一起更新。维护者如需从现有本地定稿导入，使用 `python 工具/导入本地讲义.py --study-root <原材料目录> --date YYYY-MM-DD`。
 
-当前可使用 `python -m mkdocs gh-deploy` 发布。自动发布方案见 [发布说明](工具/发布说明.md)，以实际启用状态为准。
+已启用 **GitHub Actions 自动检查与发布**：推送到 main 后生成站点、严格构建、校验资料与链接，通过后更新 GitHub Pages；Pull Request 仅检查。详见 [发布说明](工具/发布说明.md)。
 
 ## 纠错与复用
 
