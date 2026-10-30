@@ -1,0 +1,15 @@
+# 许可范围
+
+Copyright (c) 2026 yunbianmailang 及项目贡献者。
+
+本项目按内容类型分别授权：
+
+- 原创笔记文字、原创图示和项目说明文档采用 **Creative Commons Attribution-ShareAlike 4.0 International（CC BY-SA 4.0）**。允许分享和改编，须适当署名、提供许可链接并说明修改，改编作品以相同许可分享。完整条款：https://creativecommons.org/licenses/by-sa/4.0/legalcode.zh-hans
+- `工具/` 中的原创脚本、站点自定义样式与项目自编配置采用 **MIT License**，全文见 `LICENSE-CODE`。
+- 教师课件、教材节选、课堂题目、教师原图、第三方库与主题等引用内容不包含在上述原创内容授权中。其权利由原权利人保留，已有许可的按原许可执行。不能仅因这些内容出现在本项目中，就推定它们可按 CC BY-SA 或 MIT 再分发。
+
+使用本项目时，建议署名：“大学课程学习资料，yunbianmailang 及贡献者”，同时链接项目地址与相应许可，并说明所作修改。
+
+项目地址：https://github.com/yunbianmailang/university-course-materials
+
+引用来源和标记规则见 `网站源/项目说明/来源与许可.md`。如果发现归属不清或不宜公开的材料，请通过仓库 Issue 联系维护者说明位置及依据。

@@ -4,3 +4,10 @@ site/
 # 系统杂项
 Thumbs.db
 Desktop.ini
+
+# 网页配套文件与讲次插图由公开内容源在构建时生成
+网站源/文件/
+网站源/*/插图/
+__pycache__/
+*.pyc
+.venv/

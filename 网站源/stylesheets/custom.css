@@ -126,3 +126,12 @@
   border-color: rgba(150, 175, 195, 0.3);
   background: rgba(150, 175, 195, 0.06);
 }
+
+/* 阅读宽度与公式溢出 */
+.md-grid { max-width: 78rem; }
+.md-typeset { font-size: .85rem; line-height: 1.85; }
+.md-typeset h1, .md-typeset h2, .md-typeset h3 { line-height: 1.5; }
+.md-typeset .arithmatex { overflow-x: auto; overflow-y: hidden; }
+.md-typeset table:not([class]) { font-size: .76rem; }
+.md-typeset img { background: #fff; border-radius: .2rem; }
+.md-typeset a[id^="error-"] { scroll-margin-top: 5rem; }

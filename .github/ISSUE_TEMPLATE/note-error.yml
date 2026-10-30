@@ -1,0 +1,27 @@
+name: 笔记纠错
+description: 报告公式、推导、图示、链接或排版问题
+title: "[纠错] "
+body:
+  - type: input
+    id: location
+    attributes:
+      label: 课程、讲次与位置
+      description: 请注明章节、公式编号；PDF 请给出文件名及页码。
+    validations:
+      required: true
+  - type: input
+    id: link
+    attributes:
+      label: 网页或文件链接
+  - type: textarea
+    id: problem
+    attributes:
+      label: 问题描述
+      description: 当前内容是什么，疑点在哪里？
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: 修改建议与依据
+      description: 可提供推导、教材章节或公开资料链接；无需填写个人信息。
